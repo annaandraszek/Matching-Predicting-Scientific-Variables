@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+.idea/
+my_measurements - backup.csv
+my_units - backup.csv
+
+raw datasets/not in use/
+raw datasets/models/
