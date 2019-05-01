@@ -1,6 +1,6 @@
 import preprocessing
 import resource_creation
-#from machine_learning import NeuralNetwork
+from machine_learning import NeuralNetwork
 from machine_learning import Classifier
 import pandas as pd
 
@@ -73,7 +73,7 @@ def tag_features(dataset, type):
 
 def nn_train_predict():
     model = 'basic'
-    ml = NeuralNewtork('my_measurements.csv')
+    ml = NeuralNetwork('my_measurements.csv')
     ml.train(model)
     print(ml.predict(['wind'], model))
     #print('humidity' in unit_terms, 'humidity' in measurement_terms)
@@ -99,11 +99,11 @@ if __name__ == '__main__':
 
     #Run to make predictions (using Complement Naive Bayes)
     u = Classifier()
-    u.train('my_units.csv')
+    u.train('my_units.csv', t='u')
     #u.predict(['meter', 'watt', 'zloty', 'watt per'])
 
     m = Classifier()
-    m.train('my_measurements.csv')
+    m.train('my_measurements.csv', t='m')
 
     #m.predict(['wind', 'pressure', 'concentration', 'nitrate', 'wind vector', 'par', 'photosynthetically active radiation'])
     #m.predict_top_x(['wind', 'pressure'], 5)
@@ -116,6 +116,6 @@ if __name__ == '__main__':
             break
         t = str(input('Enter m if measurement u if unit: '))
         if t=='m':
-            m.predict_top_x([s], pred_num)
+            m.predict_top_x([s], pred_num, t, load_model=True)
         elif t=='u':
-            u.predict_top_x([s], pred_num)
+            u.predict_top_x([s], pred_num, t, load_model=True)

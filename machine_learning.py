@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.naive_bayes import ComplementNB
+from joblib import dump, load
 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder
@@ -22,13 +23,9 @@ class Classifier():
     test_size = 0.15
 
     def __init__(self):
-        #self.categories = self.target.unique()
-        #self.count_vect = CountVectorizer()
-        #self.tfidf_transformer = None
-        #self.clf = None
         self.text_clf = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('clf', ComplementNB())])
 
-    def train(self, file):
+    def train(self, file, t):
         df = pd.read_csv(file)
         x = df['native'].dropna()
         y_names = df['class'].dropna() # need to represent this y as ints, and create a symmetric array of the names
@@ -39,44 +36,32 @@ class Classifier():
         x_train = x
         y_train = y
         self.text_clf.fit(x_train, y_train)
+        dump(self.text_clf, 'cnb_model_' + t + '.joblib')
+        dump(self.classes, 'cnb_classes_' + t + '.joblib')
 
-        #predicted = self.text_clf.predict(x_test)
-        accuracy =  self.text_clf.score(x_train, y_train) # np.mean(predicted == y_test)
-        print('Test set accuracy: ', accuracy)
+        accuracy = self.text_clf.score(x_train, y_train)
+        print('(', file, ') Test set accuracy: ', accuracy)
 
-    def predict(self, new):
+    def predict(self, new, t, load_model=False):
+        if load_model:
+            self.text_clf = load('cnb_model.joblib')
+            self.classes = load('cnb_classes.joblib')
         predicted = self.text_clf.predict(new)
         for doc, category in zip(new, predicted):
             print('%r => %s' % (doc, self.classes[category]))
 
-    def predict_top_x(self, new, x):
+    def predict_top_x(self, new, x, t, load_model=False):
+        if load_model:
+            self.text_clf = load('cnb_model_' + t + '.joblib')
+            self.classes = load('cnb_classes_' + t + '.joblib')
         predicted = self.text_clf.predict_proba(new)
         for doc, predictions in zip(new, predicted):
             sorted_pred = np.argsort(-predictions) # stores indexes
             for i in range(x):
-                print(i, predictions[sorted_pred[i]], self.classes[sorted_pred[i]]) #, sorted[i], self.classes[category]))
+                print(i, predictions[sorted_pred[i]], self.classes[sorted_pred[i]])
 
 
-    # def train(self):
-    #     x_train, x_test, y_train, y_test = train_test_split(self.x, self.target, self.test_size)  # may want to do fitting on WHOLE data - due to its nature and size
-    #     x_train_counts = self.count_vect.fit_transform(x_train)
-    #     self.tfidf_transformer = TfidfTransformer(use_idf=False).fit(x_train_counts)
-    #     x_train_tfidf = self.tfidf_transformer.transform(x_train_counts)
-    #
-    #     self.clf = MultinomialNB().fit(x_train_tfidf, self.target)
-    #
-    #     predicted = text_clf.predict(docs_test)
-    #     np.mean(predicted == twenty_test.target)
-    #
-    # def predict(self, new_terms):
-    #     x_new_counts = self.count_vect.transform(new_terms)
-    #     x_new_tfidf = self.tfidf_transformer.transform(x_new_counts)
-    #     predicted = self.clf.predict(x_new_tfidf)
-    #
-    #     for doc, category in zip(new_terms, predicted):
-    #         print('%r => %s' % (doc, self.target[category]))
-
-class MachineLearning(): #give this arguments like: model type, train/test file
+class NeuralNetwork(): #give this arguments like: model type, train/test file
     max_words = 100
     max_len = 10
     tok = Tokenizer(num_words=max_words)
