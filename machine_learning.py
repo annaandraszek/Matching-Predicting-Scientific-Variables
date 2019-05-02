@@ -6,13 +6,14 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import ComplementNB
 from joblib import dump, load
 from sklearn.pipeline import Pipeline
+from sklearn.metrics import classification_report
 
 
 class Classifier():
     test_size = 0.15
 
     def __init__(self):
-        self.text_clf = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('clf', ComplementNB())])
+        self.text_clf = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('clf', ComplementNB(norm=True))])
 
     def train(self, file, t):
         df = pd.read_csv(file)
@@ -30,6 +31,7 @@ class Classifier():
 
         accuracy = self.text_clf.score(x_train, y_train)
         print('(', file, ') Test set accuracy: ', accuracy)
+        #print(classification_report(y_train, self.text_clf.predict(x_train), target_names=self.classes))
 
     def predict(self, new, t, load_model=False):
         if load_model:
@@ -48,3 +50,9 @@ class Classifier():
             sorted_pred = np.argsort(-predictions) # stores indexes
             for i in range(x):
                 print(i, predictions[sorted_pred[i]], self.classes[sorted_pred[i]])
+
+    def get_attributes(self):
+        print("feature_log_prob_:", self.text_clf.named_steps['clf'].feature_log_prob_)
+        print("class_count_:", self.text_clf.named_steps['clf'].class_count_)
+        print("feature_count_ :", self.text_clf.named_steps['clf'].feature_count_ )
+        print("feature_all_ :", self.text_clf.named_steps['clf'].feature_all_ )
