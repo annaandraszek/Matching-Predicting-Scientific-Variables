@@ -8,10 +8,16 @@ datasets_path = "C:/Users/Anna/Documents/ml_approach/raw datasets/"
 # raw_file indicates whether to clean the file, save it, and create tokens, or only create tokens
 def create_reference(file, raw_file=True): #creates a set of "dictionary" values from a qudt file (quantity or unit)
     path = 'raw datasets/'
-    if 'property' in file:
+    if 'qudt-property' in file:
         df = pd.read_csv(path+file, usecols=['rdfs:label'])
-    elif 'unit' in file:
+        col_to_tokenise = 'rdfs:label'
+    elif 'qudt-unit' in file:
         df = pd.read_csv(path+file, usecols=['rdfs:label', 'qudt:symbol', 'qudt:abbreviation'])
+        col_to_tokenise = 'rdfs:label'
+
+    else:
+        df = pd.read_csv(file)
+        col_to_tokenise = 'native'
 
     if raw_file:
         df.replace('\\^\\^xsd:string', '', regex=True, inplace=True)
@@ -23,8 +29,9 @@ def create_reference(file, raw_file=True): #creates a set of "dictionary" values
 
         df.to_csv(path + 'proc_' + file, index=False)
 
-    tokens = preprocessing.tokenise_column_values(df['rdfs:label'])
-    tokens = tokens.union({'okta', 'hectopascal', 'micromole', 'from'})
+    tokens = preprocessing.tokenise_column_values(df[col_to_tokenise])
+    if 'qudt' in file:
+        tokens = tokens.union({'okta', 'hectopascal', 'micromole', 'from'})
     return tokens
 
 
