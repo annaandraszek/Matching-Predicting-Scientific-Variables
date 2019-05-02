@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import stringdist
+import re
+import math
 
 import resource_creation
 
@@ -148,12 +150,17 @@ def solve_abbreviations(units, unit_terms): #takes the unit tokens #todo: do I a
                 except KeyError:
                     print('no abbreviation for', w)
                     #StopIteration  # if the word/abbreviation doesn't exist in the unit or abbreviation dictionary
-
     return units
 
 
-def clean_table(table, measurements='parameter', has_measurements=True, units='units', has_units=False):
-    table = table_to_lower(table)
+def clean_table(table, measurements='parameter', has_measurements=True, units='units', has_units=False): #has_abbreviations=False
+    table.replace('http://registry.it.csiro.au/def/environment/unit/', '', regex=True, inplace=True)
+    table.replace('http://qudt.org/vocab/unit#', '', regex=True, inplace=True)
+    table.replace('http://', '', regex=True, inplace=True)
+    table.replace('<', '', regex=True, inplace=True)
+    table.replace('>', '', regex=True, inplace=True)
+    table.replace('\\|', ' or ', regex=True, inplace=True)
+
     table.replace('_', ' ', regex=True, inplace=True)
     table.replace('\\(', '', regex=True, inplace=True)
     table.replace('\\)', '', regex=True, inplace=True)
@@ -163,14 +170,44 @@ def clean_table(table, measurements='parameter', has_measurements=True, units='u
     table.replace('-', ' ', regex=True, inplace=True)
     table.replace(',', ' ', regex=True, inplace=True)
     table.replace('   ', ' ', regex=True, inplace=True)
+    table.replace('\\^ ', '^', regex=True, inplace=True)
+    table.replace('\\^', ' ^', regex=True, inplace=True)
+    table.replace('\\^1', '', regex=True, inplace=True)
+    table.replace('\\*', ' * ', regex=True, inplace=True)
 
     if has_units:
+        table[units] = from_camelcase(table[units])
         table[units].replace('/', 'per', regex=True, inplace=True) # if the unit column isn't called 'units' either change earlier or pass in as arg
         table[units].replace('%', 'percent', regex=True, inplace=True)
         table[units].replace('°', 'degree ', regex=True, inplace=True)
+    #if has_abbreviations: #would need fixing, probably undesired
+        #new = [from_camelcase([x]) if isinstance(x, str) and ('deg' in x or 'Deg' in x) else x for x in table['qudt:symbol']]
+        #table['qudt:symbol'] = table['qudt:symbol'].where('deg' not in table['qudt:symbol'], from_camelcase(table['qudt:symbol']))
+        #table['qudt:abbreviation'] = table['qudt:abbreviation'].where('deg' not in table['qudt:abbreviation'] or 'Deg' not in table['qudt:abbreviation'], from_camelcase(table['qudt:abbreviation']))
+
+    table.replace('DegC', 'degC', inplace=True)
+    table = table_to_lower(table)
     return table
+
+
+def from_camelcase(array):
+    us = []
+    for unit in array:
+        if unit == 'pH':
+            us.append('pH')
+            continue
+        elif isinstance(unit, float) and math.isnan(unit):
+            us.append(np.nan)
+            continue
+        elif unit != 'pH' and not isinstance(unit, float):
+            #unit = unit.replace('_', ' ')
+            unit = re.sub('(?!^)([A-Z][a-z]+)', r' \1', str(unit)).split()
+            us.append(' '.join(unit))
+    return us
+
 
 def table_to_lower(table):
     for column in table:
-        table[column] = table[column].str.lower()
+        if 'symbol' not in column and 'abbreviation' not in column:
+            table[column] = table[column].str.lower()
     return table
