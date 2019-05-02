@@ -1,19 +1,19 @@
-native
-degree from north
-direction degree
-kilometer per hour
-hour pa
-second
-meter
-megajoule per square meter
-millimeter
-hecto pascal
-hour
-degree
-degree celsius
-percent
-micromole per second per square meter
-watt per square meter
-okta
-millimeter per hour
-meter per second
+native,class
+degree from north,degree angle
+direction degree,degree angle
+kilometer per hour,kilometer per hour
+hpa,hectopascal
+second,second
+meter,meter
+megajoule per square meter,megajoule per square meter
+millimeter,millimeter
+hectopascal,hectopascal
+hour,hour
+degree,degree angle
+degree celsius,degree celsius
+percent,percent
+micromole per second per square meter,micromole per second per square meter
+watt per square meter,watt per square meter
+okta,okta
+millimeter per hour,millimeter per hour
+meter per second,meter per second
