@@ -66,6 +66,7 @@ def raw_to_clean(filename): #this method will export pre-processed sets of nativ
     else:
         print('Enter a valid filename')
         return 1
+    df = table_to_lower(df)
 
     df = clean_table(df, measurements_col, has_measurements, units_col, has_units)
 
@@ -153,7 +154,7 @@ def solve_abbreviations(units, unit_terms): #takes the unit tokens #todo: do I a
     return units
 
 
-def clean_table(table, measurements='parameter', has_measurements=True, units='units', has_units=False): #has_abbreviations=False
+def clean_table(table, measurements='parameter', has_measurements=True, units='units', has_units=False, has_abbreviations=False):
     table.replace('http://registry.it.csiro.au/def/environment/unit/', '', regex=True, inplace=True)
     table.replace('http://qudt.org/vocab/unit#', '', regex=True, inplace=True)
     table.replace('http://', '', regex=True, inplace=True)
@@ -176,7 +177,8 @@ def clean_table(table, measurements='parameter', has_measurements=True, units='u
     table.replace('\\*', ' * ', regex=True, inplace=True)
 
     if has_units:
-        table[units] = from_camelcase(table[units])
+        if has_abbreviations:
+            table[units] = from_camelcase(table[units])
         table[units].replace('/', 'per', regex=True, inplace=True) # if the unit column isn't called 'units' either change earlier or pass in as arg
         table[units].replace('%', 'percent', regex=True, inplace=True)
         table[units].replace('°', 'degree ', regex=True, inplace=True)

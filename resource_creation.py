@@ -17,7 +17,7 @@ def create_reference(file, raw_file=True): #creates a set of "dictionary" values
         df.replace('\\^\\^xsd:string', '', regex=True, inplace=True)
         df.replace("'", '', regex=True, inplace=True)
         if 'unit' in file:
-            df = preprocessing.clean_table(df, has_measurements=False, units='rdfs:label', has_units=True) #has_abbreviations=True
+            df = preprocessing.clean_table(df, has_measurements=False, units='rdfs:label', has_units=True, has_abbreviations=True)
         if 'property' in file:
             df = preprocessing.clean_table(df, measurements='rdfs:label') #, units='qudt:unit', has_units=True)
 
@@ -29,6 +29,7 @@ def create_reference(file, raw_file=True): #creates a set of "dictionary" values
 
 
 def extract_features_to_tag(datasets):
+    path = 'raw datasets/'
     units = []
     measurements = []
 
@@ -45,25 +46,25 @@ def extract_features_to_tag(datasets):
     units_df = pd.DataFrame(data=units, columns=['native'])
     measurements_df = pd.DataFrame(data=measurements, columns=['native'])
     try:
-        tagged_units = pd.read_csv('hand_tagged_unit.csv')
+        tagged_units = pd.read_csv(path+'hand_tagged_unit.csv')
         units_df = tagged_units.append(units_df, sort=True)
         units_df.sort_values(by='class', inplace=True)
         units_df.drop_duplicates('native', inplace=True)
-        units_df.to_csv('hand_tagged_unit.csv', index=False)
+        units_df.to_csv(path+'hand_tagged_unit.csv', index=False)
 
     except FileNotFoundError:
         print('Will make new hand_tagged_unit.csv')
-        units_df.to_csv('hand_tagged_unit.csv', index=False)
+        units_df.to_csv(path+'hand_tagged_unit.csv', index=False)
 
     try:
-        tagged_properties = pd.read_csv('hand_tagged_property.csv')
+        tagged_properties = pd.read_csv(path+'hand_tagged_property.csv')
         measurements_df = tagged_properties.append(measurements_df, sort=True)
         measurements_df.sort_values(by='class', inplace=True)
         measurements_df.drop_duplicates('native', inplace=True)
-        measurements_df.to_csv('hand_tagged_property.csv', index=False)
+        measurements_df.to_csv(path+'hand_tagged_property.csv', index=False)
     except FileNotFoundError:
         print('Will make new hand_tagged_property.csv')
-        measurements_df.to_csv('hand_tagged_property.csv', index=False)
+        measurements_df.to_csv(path+'hand_tagged_property.csv', index=False)
 
     #merge_with_my(units_df, 'unit')
     #merge_with_my(measurements_df, 'property')
@@ -115,6 +116,7 @@ def tag_features(dataset, t):
             df['class'] = df['native']
             merge_with_my(df, t)
     else:
+        #old_df = preprocessing.table_to_lower(old_df)
         merge_with_my(old_df, t)
 
 

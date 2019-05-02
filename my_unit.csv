@@ -1,150 +1,150 @@
 class,native
-abampere,abampere
 abampere,abA
-abampere per square centimeter,abA  /  cm ^2
+abampere,abampere
 abampere per square centimeter,abampere per square centimeter
-abcoulomb,abcoulomb
+abampere per square centimeter,abA  /  cm ^2
 abcoulomb,abC
+abcoulomb,abcoulomb
 abcoulomb per square centimeter,abcoulomb per square centimeter
 abcoulomb per square centimeter,abC / cm ^2
-abfarad,abF
 abfarad,abfarad
-abfarad per centimeter,abfarad per centimeter
+abfarad,abF
 abfarad per centimeter,abF / cm
+abfarad per centimeter,abfarad per centimeter
 abhenry,abH
 abhenry,abhenry
-abohm,abohm
 abohm,abOhm
+abohm,abohm
 absiemen,aS
 absiemen,absiemen
 abtesla,abT
 abtesla,abtesla
-abvolt,abvolt
 abvolt,abV
+abvolt,abvolt
 abvolt centimeter,abvolt centimeter
 abvolt centimeter,abV cm
 abvolt per centimeter,abvolt per centimeter
 abvolt per centimeter,abV / cm
 abvolt second,abvolt second
 abvolt second,abV s
-acre,ac
 acre,acre
-acre foot,acre foot
+acre,ac
 acre foot,ac ft
-afghani,afghani
+acre foot,acre foot
 afghani,AFN
+afghani,afghani
 algerian dinar,algerian dinar
 algerian dinar,DZD
-ampere,ampere
 ampere,A
+ampere,ampere
 ampere hour,ampere hour
 ampere hour,A hr
 ampere per degree,ampere per degree
 ampere per degree,A / deg
 ampere per joule,ampere per joule
 ampere per joule,A J 
-ampere per meter,ampere per meter
 ampere per meter,A / m
-ampere per radian,ampere per radian
+ampere per meter,ampere per meter
 ampere per radian,A / rad
+ampere per radian,ampere per radian
 ampere per square meter,A / m ^2
 ampere per square meter,ampere per square meter
 ampere turn,ampere turn
 ampere turn,At
 ampere turn per inch,At / in
 ampere turn per inch,ampere turn per inch
-ampere turn per meter,At / m
 ampere turn per meter,ampere turn per meter
-angstrom,angstrom
+ampere turn per meter,At / m
 angstrom,Å
+angstrom,angstrom
 arc minute,arcMin
 arc minute,arc minute
 arc second,arc second
 arc second,arcSec
-are,a
 are,are
-argentine peso,ARS
+are,a
 argentine peso,argentine peso
-armenian dram,AMD
+argentine peso,ARS
 armenian dram,armenian dram
+armenian dram,AMD
 aruban guilder,AWG
 aruban guilder,aruban guilder
-astronomical unit,au
 astronomical unit,astronomical unit
-atomic mass unit,atomic mass unit
+astronomical unit,au
 atomic mass unit,u
-atomic number,atomic number
+atomic mass unit,atomic mass unit
 atomic number,Z
+atomic number,atomic number
 atto,atto
-australian dollar,AUD
 australian dollar,australian dollar
+australian dollar,AUD
 azerbaijanian manat,azerbaijanian manat
 azerbaijanian manat,AZN
-bahamian dollar,BSD
 bahamian dollar,bahamian dollar
+bahamian dollar,BSD
 bahraini dinar,bahraini dinar
 bahraini dinar,BHD
 baht,THB
 baht,baht
-balboa,balboa
 balboa,PAB
+balboa,balboa
 ban,ban
-bangladeshi taka,bangladeshi taka
 bangladeshi taka,BDT
+bangladeshi taka,bangladeshi taka
 bar,bar
 barbados dollar,BBD
 barbados dollar,barbados dollar
-barn,barn
 barn,b
-barrel,bbl
+barn,barn
 barrel,barrel
-becquerel,becquerel
+barrel,bbl
 becquerel,Bq
+becquerel,becquerel
 belarussian ruble,belarussian ruble
 belarussian ruble,BYR
-belize dollar,BZD
 belize dollar,belize dollar
-bermuda dollar,bermuda dollar
+belize dollar,BZD
 bermuda dollar,BMD
-biot,biot
+bermuda dollar,bermuda dollar
 biot,Bi
+biot,biot
 bit,bit
-bits per second,bps
 bits per second,bits per second
-board foot,Bf
+bits per second,bps
 board foot,board foot
-bolivian mvdol funds code,BOV
+board foot,Bf
 bolivian mvdol funds code,bolivian mvdol funds code
+bolivian mvdol funds code,BOV
 boliviano,BOB
 boliviano,boliviano
 brazilian real,BRL
 brazilian real,brazilian real
 breath,breath
-breath per minute,breath per minute
 breath per minute,breaths / min
-british thermal unit international steam table,british thermal unit international steam table
+breath per minute,breath per minute
 british thermal unit international steam table,Btu
+british thermal unit international steam table,british thermal unit international steam table
 british thermal unit thermochemical calorie,british thermal unit thermochemical calorie
 brunei dollar,brunei dollar
 brunei dollar,BND
-btu foot,btu foot
 btu foot,Btu ft
+btu foot,btu foot
 btu foot per square foot hour degree fahrenheit,Btu ft / hr ft ^2 degF
 btu foot per square foot hour degree fahrenheit,btu foot per square foot hour degree fahrenheit
 btu inch,Btu in
 btu inch,btu inch
-btu inch per square foot hour degree fahrenheit,Btu in / hr ft ^2 degF
 btu inch per square foot hour degree fahrenheit,btu inch per square foot hour degree fahrenheit
-btu inch per square foot second degree fahrenheit,Btu in / ft ^2 s degF
+btu inch per square foot hour degree fahrenheit,Btu in / hr ft ^2 degF
 btu inch per square foot second degree fahrenheit,btu inch per square foot second degree fahrenheit
+btu inch per square foot second degree fahrenheit,Btu in / ft ^2 s degF
 btu per degree fahrenheit,btu per degree fahrenheit
 btu per degree fahrenheit,Btu / degF
-btu per degree rankine,Btu / degR
 btu per degree rankine,btu per degree rankine
+btu per degree rankine,Btu / degR
 btu per hour,Btu / hr
 btu per hour,btu per hour
-btu per hour square foot,Btu / hr ft ^2
 btu per hour square foot,btu per hour square foot
+btu per hour square foot,Btu / hr ft ^2
 btu per pound,Btu / lb
 btu per pound,btu per pound
 btu per pound degree fahrenheit,Btu / lb degF
@@ -153,48 +153,48 @@ btu per pound degree rankine,btu per pound degree rankine
 btu per pound degree rankine,Btu / lb degR
 btu per pound mole,Btu / lb mol
 btu per pound mole,btu per pound mole
-btu per pound mole degree fahrenheit,Btu / lb mol degF
 btu per pound mole degree fahrenheit,btu per pound mole degree fahrenheit
-btu per second,btu per second
+btu per pound mole degree fahrenheit,Btu / lb mol degF
 btu per second,Btu / s
+btu per second,btu per second
 btu per second square foot,btu per second square foot
 btu per second square foot,Btu / s ft ^2
 btu per square foot,btu per square foot
 btu per square foot,Btu / ft ^2
-btu per square foot hour degree fahrenheit,btu per square foot hour degree fahrenheit
 btu per square foot hour degree fahrenheit,Btu / hr ft ^2 degF
-btu per square foot second degree fahrenheit,btu per square foot second degree fahrenheit
+btu per square foot hour degree fahrenheit,btu per square foot hour degree fahrenheit
 btu per square foot second degree fahrenheit,Btu / ft ^2 s degF
+btu per square foot second degree fahrenheit,btu per square foot second degree fahrenheit
 bulgarian lev,BGN
 bulgarian lev,bulgarian lev
-burundian franc,BIF
 burundian franc,burundian franc
-bushel,bushel
+burundian franc,BIF
 bushel,bu
-byte,byte
+bushel,bushel
 byte,B
-calorie per centimeter second degree celsius,cal / cm s degC
+byte,byte
 calorie per centimeter second degree celsius,calorie per centimeter second degree celsius
-calorie per gram degree celsius,kcal / gm degC
+calorie per centimeter second degree celsius,cal / cm s degC
 calorie per gram degree celsius,calorie per gram degree celsius
-canadian dollar,CAD
+calorie per gram degree celsius,kcal / gm degC
 canadian dollar,canadian dollar
-candela,cd
+canadian dollar,CAD
 candela,candela
-candela per square inch,candela per square inch
+candela,cd
 candela per square inch,cd / in ^2
+candela per square inch,candela per square inch
 candela per square meter,candela per square meter
 candela per square meter,cd / m ^2
 candle,candle
 candlepower,candlepower
-cape verde escudo,cape verde escudo
 cape verde escudo,CVE
+cape verde escudo,cape verde escudo
 carat,Nm / ct
 carat,carat
 cayman islands dollar,KYD
 cayman islands dollar,cayman islands dollar
-cedi,cedi
 cedi,GHS
+cedi,cedi
 centi,c
 centi,centi
 centimeter,centimeter
@@ -203,33 +203,33 @@ centimeter of water,centimeter of water
 centimeter of water,cmH2O
 centimeter per second,centimeter per second
 centimeter per second,cm / s
-centimeter per second squared,centimeter per second squared
 centimeter per second squared,cm / s ^2
+centimeter per second squared,centimeter per second squared
 centimeter second degree celsius,cm s degC
 centimeter second degree celsius,centimeter second degree celsius
-centipoise,cP
 centipoise,centipoise
-centistokes,centistokes
+centipoise,cP
 centistokes,cSt
+centistokes,centistokes
 cfa franc bceao,cfa franc bceao
 cfa franc bceao,XOF
 cfa franc beac,cfa franc beac
 cfa franc beac,XAF
-cfp franc,XPF
 cfp franc,cfp franc
+cfp franc,XPF
 chain,ch
 chain,chain
 chilean peso,CLP
 chilean peso,chilean peso
-circular mil,cmil
 circular mil,circular mil
+circular mil,cmil
 clo,clo
 colombian peso,colombian peso
 colombian peso,COP
 colony forming unit,colony forming unit
 colony forming unit,CFU
-comoro franc,comoro franc
 comoro franc,KMF
+comoro franc,comoro franc
 convertible marks,convertible marks
 convertible marks,BAM
 cord,cord
@@ -239,31 +239,31 @@ cordoba oro,NIO
 costa rican colon,costa rican colon
 costa rican colon,CRC
 coulomb,coulomb
-coulomb meter,coulomb meter
 coulomb meter,C m
-coulomb per cubic meter,C m ^3
+coulomb meter,coulomb meter
 coulomb per cubic meter,coulomb per cubic meter
+coulomb per cubic meter,C m ^3
 coulomb per kilogram,coulomb per kilogram
 coulomb per kilogram,C kg 
-coulomb per meter,coulomb per meter
 coulomb per meter,C / m
-coulomb per mole,C mol 
+coulomb per meter,coulomb per meter
 coulomb per mole,coulomb per mole
-coulomb per square meter,C m ^2
+coulomb per mole,C mol 
 coulomb per square meter,coulomb per square meter
+coulomb per square meter,C m ^2
 coulomb square meter,coulomb square meter
 croatian kuna,HRK
 croatian kuna,croatian kuna
-cuban peso,CUP
 cuban peso,cuban peso
-cubic centimeter,cm ^3
+cuban peso,CUP
 cubic centimeter,cubic centimeter
+cubic centimeter,cm ^3
 cubic coulomb meter per square joule,cubic coulomb meter per square joule
 cubic coulomb meter per square joule,C ^3 m ^3 J ^2
 cubic foot,ft ^3
 cubic foot,cubic foot
-cubic foot per minute,cubic foot per minute
 cubic foot per minute,ft ^3 / min
+cubic foot per minute,cubic foot per minute
 cubic foot per second,ft ^3 / s
 cubic foot per second,cubic foot per second
 cubic inch,cubic inch
@@ -272,22 +272,22 @@ cubic inch per minute,cubic inch per minute
 cubic inch per minute,in ^3 / min
 cubic kilometer per second squared,km ^3 / s ^2
 cubic kilometer per second squared,cubic kilometer per second squared
-cubic meter,cubic meter
 cubic meter,m ^3
-cubic meter per hour,cubic meter per hour
+cubic meter,cubic meter
 cubic meter per hour,m ^3 / h
+cubic meter per hour,cubic meter per hour
 cubic meter per kelvin,cubic meter per kelvin
 cubic meter per kelvin,m ^3 / K
-cubic meter per kilogram,m ^3 / kg
 cubic meter per kilogram,cubic meter per kilogram
-cubic meter per kilogram second squared,m ^3 kg  s ^2
+cubic meter per kilogram,m ^3 / kg
 cubic meter per kilogram second squared,cubic meter per kilogram second squared
-cubic meter per mole,m ^3 mol 
+cubic meter per kilogram second squared,m ^3 kg  s ^2
 cubic meter per mole,cubic meter per mole
+cubic meter per mole,m ^3 mol 
 cubic meter per second,m ^3 / s
 cubic meter per second,cubic meter per second
-cubic meter per second squared,m ^3 / s ^2
 cubic meter per second squared,cubic meter per second squared
+cubic meter per second squared,m ^3 / s ^2
 cubic mile,mi ^3
 cubic mile,cubic mile
 cubic millimeter,cubic millimeter
@@ -297,12 +297,12 @@ cubic yard per minute,yd ^3 / min
 cubic yard per minute,cubic yard per minute
 curie,Ci
 curie,curie
-cyprus pound,cyprus pound
 cyprus pound,CYP
-czech koruna,CZK
+cyprus pound,cyprus pound
 czech koruna,czech koruna
-dalasi,dalasi
+czech koruna,CZK
 dalasi,GMD
+dalasi,dalasi
 dalton,dalton
 dalton,Da
 danish krone,danish krone
@@ -310,80 +310,83 @@ danish krone,DKK
 day,d
 day,day
 day sidereal,day sidereal
-debye,D
 debye,debye
+debye,D
 deca,deca
 deca,da
 deci,deci
-decibel,decibel
 decibel,dB
-decibel carrier unit,decibel carrier unit
+decibel,decibel
 decibel carrier unit,dBc
+decibel carrier unit,decibel carrier unit
 decibel referred to 1mw,decibel referred to 1mw
 decibel referred to 1mw,dBm
 decimeter,decimeter
-degree angle,degree angle
 degree angle,°
+degree angle,degree angle
+degree angle,degree from north
+degree angle,direction degree
+degree angle,degree
 degree celsius,degC
 degree celsius,degree celsius
 degree celsius centimeter,degree celsius centimeter
 degree celsius centimeter,cm degC
-degree celsius per hour,degree celsius per hour
 degree celsius per hour,degC  /  hr
-degree celsius per minute,degC  /  m
+degree celsius per hour,degree celsius per hour
 degree celsius per minute,degree celsius per minute
-degree celsius per second,degC  /  s
+degree celsius per minute,degC  /  m
 degree celsius per second,degree celsius per second
+degree celsius per second,degC  /  s
 degree centigrade,degree centigrade
 degree fahrenheit,degree fahrenheit
 degree fahrenheit,degF
-degree fahrenheit hour,degF hr
 degree fahrenheit hour,degree fahrenheit hour
+degree fahrenheit hour,degF hr
 degree fahrenheit hour per btu,degree fahrenheit hour per btu
 degree fahrenheit hour per btu,degF hr / Btu
-degree fahrenheit per hour,degree fahrenheit per hour
 degree fahrenheit per hour,degF  /  h
-degree fahrenheit per minute,degF  /  m
+degree fahrenheit per hour,degree fahrenheit per hour
 degree fahrenheit per minute,degree fahrenheit per minute
-degree fahrenheit per second,degree fahrenheit per second
+degree fahrenheit per minute,degF  /  m
 degree fahrenheit per second,degF  /  s
+degree fahrenheit per second,degree fahrenheit per second
 degree per hour,deg / h
 degree per hour,degree per hour
 degree per minute,degree per minute
 degree per second,deg / s
 degree per second,degree per second
-degree per second squared,degree per second squared
 degree per second squared,deg / s ^2
+degree per second squared,degree per second squared
 degree rankine,degR
 degree rankine,degree rankine
-degree rankine per hour,degree rankine per hour
 degree rankine per hour,degR  /  h
+degree rankine per hour,degree rankine per hour
 degree rankine per minute,degree rankine per minute
 degree rankine per minute,degR  /  m
-degree rankine per second,degR  /  s
 degree rankine per second,degree rankine per second
-denar,denar
+degree rankine per second,degR  /  s
 denar,MKD
+denar,denar
 denier,denier
 diopter,diopter
 djibouti franc,DJF
 djibouti franc,djibouti franc
-dobra,dobra
 dobra,STD
+dobra,dobra
 dominican peso,dominican peso
 dominican peso,DOP
-dry gallon us,dry gallon us
 dry gallon us,dry gal
+dry gallon us,dry gallon us
 dyne,dyne
 dyne,dyn
-dyne centimeter,dyn cm
 dyne centimeter,dyne centimeter
-dyne per square centimeter,dyne per square centimeter
+dyne centimeter,dyn cm
 dyne per square centimeter,dyn / cm ^2
+dyne per square centimeter,dyne per square centimeter
 east caribbean dollar,XCD
 east caribbean dollar,east caribbean dollar
-egyptian pound,egyptian pound
 egyptian pound,EGP
+egyptian pound,egyptian pound
 electron volt,eV
 electron volt,electron volt
 electron volt per kelvin,eV K 
@@ -393,17 +396,17 @@ electron volt per tesla,electron volt per tesla
 electron volt second,electron volt second
 electron volt second,eV s
 erg,erg
-erg per cubic centimeter,erg / cm ^3
 erg per cubic centimeter,erg per cubic centimeter
+erg per cubic centimeter,erg / cm ^3
 erg per gram,erg per gram
-erg per second,erg per second
 erg per second,erg / s
+erg per second,erg per second
 erg per square centimeter second,erg per square centimeter second
 erg per square centimeter second,erg / cm ^2 s
 erg second,erg s
 erg second,erg second
-ethiopian birr,ETB
 ethiopian birr,ethiopian birr
+ethiopian birr,ETB
 euro,EUR
 euro,euro
 european composite unit eurco bonds market unit,XBA
@@ -418,114 +421,114 @@ exa,E
 exa,exa
 exbi,Ei
 exbi,exbi
-falkland islands pound,falkland islands pound
 falkland islands pound,FKP
+falkland islands pound,falkland islands pound
 farad,F
 farad,farad
 farad per meter,F m 
 farad per meter,farad per meter
 faraday,faraday
-fathom,fathom
 fathom,fath
+fathom,fathom
 femto,femto
 femto,f
-femtometer,femtometer
 femtometer,fm
+femtometer,femtometer
 fermi,fermi
-fiji dollar,FJD
 fiji dollar,fiji dollar
+fiji dollar,FJD
 flight,flight
 foot,ft
 foot,foot
 foot candle,fc
 foot candle,foot candle
-foot lambert,ft L
 foot lambert,foot lambert
-foot of water,foot of water
+foot lambert,ft L
 foot of water,ftH2O
+foot of water,foot of water
 foot per hour,foot per hour
 foot per hour,ft / hr
-foot per minute,foot per minute
 foot per minute,ft / min
+foot per minute,foot per minute
 foot per second,foot per second
 foot per second,ft / s
 foot per second squared,foot per second squared
 foot per second squared,ft / s ^2
-foot pound force,ft lbf
 foot pound force,foot pound force
+foot pound force,ft lbf
 foot pound force per hour,foot pound force per hour
 foot pound force per hour,ft lbf / hr
 foot pound force per minute,foot pound force per minute
 foot pound force per minute,ft lbf / min
 foot pound force per second,ft lbf / s
 foot pound force per second,foot pound force per second
-foot pound force per square foot second,ft lbfft ^2 s
 foot pound force per square foot second,foot pound force per square foot second
+foot pound force per square foot second,ft lbfft ^2 s
 foot pound force per square meter,foot pound force per square meter
 foot pound force per square meter,ft lbf / m ^2
 foot pound force second,lbf  /  s
 foot pound force second,foot pound force second
-foot pound per square foot,ft lbf / ft ^2
 foot pound per square foot,foot pound per square foot
-foot poundal,foot poundal
+foot pound per square foot,ft lbf / ft ^2
 foot poundal,ft pdl
-forint,forint
+foot poundal,foot poundal
 forint,HUF
-fractional area,fa
+forint,forint
 fractional area,fractional area
+fractional area,fa
 frame per second,fps
 frame per second,frame per second
 franc congolais,franc congolais
 franc congolais,CDF
 franklin,franklin
 franklin,Fr
-furlong,furlong
 furlong,fur
-gal,Gal
+furlong,furlong
 gal,gal
+gal,Gal
 gamma,gamma
 gauss,gauss
 gauss,G
-gibi,gibi
 gibi,Gi
+gibi,gibi
 gibraltar pound,GIP
 gibraltar pound,gibraltar pound
 giga,giga
 giga electron volt,GeV
 giga electron volt,giga electron volt
-gigahertz,gigahertz
 gigahertz,GHz
+gigahertz,gigahertz
 gilbert,gilbert
-gold franc special settlement currency,XFO
 gold franc special settlement currency,gold franc special settlement currency
-gold one troy ounce,XAU
+gold franc special settlement currency,XFO
 gold one troy ounce,gold one troy ounce
+gold one troy ounce,XAU
 gon,gon
 grad,grad
 grade,gr
 grade,grade
 grain,grain
-grain per gallon,grain per gallon
 grain per gallon,gr / gal
+grain per gallon,grain per gallon
 gram,g
 gram,gram
 gram degree celsius,gram degree celsius
 gram degree celsius,g degC
 gravity,gravity
-gray,gray
 gray,Gy
-gray per second,gray per second
+gray,gray
 gray per second,Gy / s
+gray per second,gray per second
 guarani,PYG
 guarani,guarani
-guinea franc,GNF
 guinea franc,guinea franc
+guinea franc,GNF
 guyana dollar,guyana dollar
 guyana dollar,GYD
-haiti gourde,haiti gourde
 haiti gourde,HTG
-hartree,hartree
+haiti gourde,haiti gourde
 hartree,E h
+hartree,hartree
 heart beat,heart beat
 heart beat per minute,BPM
 heart beat per minute,heart beat per minute
@@ -533,28 +536,30 @@ hectare,hectare
 hectare,ha
 hecto,hecto
 hecto,h
+hectopascal,hectopascal
+hectopascal,hpa
 henry,henry
 henry,H
-henry per meter,henry per meter
 henry per meter,H / m
-hertz,hertz
+henry per meter,henry per meter
 hertz,Hz
-hertz per kelvin,Hz K 
+hertz,hertz
 hertz per kelvin,hertz per kelvin
+hertz per kelvin,Hz K 
 hertz per tesla,Hz T 
 hertz per tesla,hertz per tesla
-hertz per volt,Hz V 
 hertz per volt,hertz per volt
-hong kong dollar,HKD
+hertz per volt,Hz V 
 hong kong dollar,hong kong dollar
+hong kong dollar,HKD
 horsepower,HP
 horsepower,horsepower
 horsepower boiler,hp / boiler
 horsepower boiler,horsepower boiler
 horsepower electric,hp / V
 horsepower electric,horsepower electric
-horsepower metric,horsepower metric
 horsepower metric,hp / m
+horsepower metric,horsepower metric
 horsepower water,horsepower water
 horsepower water,hp / H2O
 hour,hr
@@ -562,171 +567,171 @@ hour,hour
 hour sidereal,hour sidereal
 hour square foot,hr ft ^2
 hour square foot,hour square foot
-hryvnia,UAH
 hryvnia,hryvnia
+hryvnia,UAH
 hundred weight long,cwt
 hundred weight long,hundred weight long
 hundred weight short,hundred weight short
-iceland krona,iceland krona
 iceland krona,ISK
+iceland krona,iceland krona
 imperial gallon,imperial gallon
 imperial ounce,imperial ounce
 imperial ounce,oz
-imperial pint,imperial pint
 imperial pint,pi
-inch,in
+imperial pint,imperial pint
 inch,inch
+inch,in
 inch of mercury,inHg
 inch of mercury,inch of mercury
-inch of water,inAq
 inch of water,inch of water
+inch of water,inAq
 inch per second,inch per second
 inch per second squared,inch per second squared
 inch per second squared,in / s ^2
-inch pound force,in lbf
 inch pound force,inch pound force
+inch pound force,in lbf
 indian rupee,INR
 indian rupee,indian rupee
 international unit,IU
 international unit,international unit
-international unit per liter,international unit per liter
 international unit per liter,IU / L
+international unit per liter,international unit per liter
 inverse second,inverse second
 inverse second,s 
-iranian rial,IRR
 iranian rial,iranian rial
+iranian rial,IRR
 iraqi dinar,IQD
 iraqi dinar,iraqi dinar
 jamaican dollar,jamaican dollar
 jamaican dollar,JMD
-japanese yen,japanese yen
 japanese yen,JPY
-jordanian dinar,jordanian dinar
+japanese yen,japanese yen
 jordanian dinar,JOD
-joule,joule
+jordanian dinar,jordanian dinar
 joule,J
-joule meter per mole,joule meter per mole
+joule,joule
 joule meter per mole,J m mol 
-joule per cubic meter,joule per cubic meter
+joule meter per mole,joule meter per mole
 joule per cubic meter,J / m ^3
+joule per cubic meter,joule per cubic meter
 joule per cubic meter kelvin,joule per cubic meter kelvin
 joule per cubic meter kelvin,J / m ^3 K
-joule per kelvin,joule per kelvin
 joule per kelvin,J K 
+joule per kelvin,joule per kelvin
 joule per kilogram,J / kg
 joule per kilogram,joule per kilogram
-joule per kilogram kelvin,J / kg K
 joule per kilogram kelvin,joule per kilogram kelvin
+joule per kilogram kelvin,J / kg K
 joule per kilogram kelvin per cubic meter,joule per kilogram kelvin per cubic meter
 joule per kilogram kelvin per cubic meter,J / kg K m ^3
 joule per kilogram kelvin per pascal,joule per kilogram kelvin per pascal
 joule per kilogram kelvin per pascal,J / km K Pa
 joule per mole,J / mol
 joule per mole,joule per mole
-joule per mole kelvin,J mol  K 
 joule per mole kelvin,joule per mole kelvin
-joule per square meter,joule per square meter
+joule per mole kelvin,J mol  K 
 joule per square meter,J / m ^2
-joule per square tesla,J T ^2
+joule per square meter,joule per square meter
 joule per square tesla,joule per square tesla
-joule per tesla,J T 
+joule per square tesla,J T ^2
 joule per tesla,joule per tesla
-joule second,joule second
+joule per tesla,J T 
 joule second,J s
-joule second per mole,J s mol 
+joule second,joule second
 joule second per mole,joule second per mole
+joule second per mole,J s mol 
 katal,kat
 katal,katal
-kelvin,K
 kelvin,kelvin
+kelvin,K
 kelvin per hour,kelvin per hour
 kelvin per hour,K  /  h
 kelvin per minute,kelvin per minute
 kelvin per minute,K  /  m
 kelvin per second,K  /  s
 kelvin per second,kelvin per second
-kelvin per tesla,kelvin per tesla
 kelvin per tesla,K T 
+kelvin per tesla,kelvin per tesla
 kelvin per watt,kelvin per watt
 kelvin per watt,K / W
 kenyan shilling,kenyan shilling
 kenyan shilling,KES
 kibi,Ki
 kibi,kibi
-kilo,kilo
 kilo,k
-kilo electron volt,kilo electron volt
+kilo,kilo
 kilo electron volt,keV
+kilo electron volt,kilo electron volt
 kilo electron volt per micrometer,keV / µm
 kilo electron volt per micrometer,kilo electron volt per micrometer
 kilobit per second,kbps
 kilobit per second,kilobit per second
-kilocalorie,kilocalorie
 kilocalorie,kcal
+kilocalorie,kilocalorie
 kilocalorie per gram,kilocalorie per gram
 kilocalorie per gram,kcal / gm
 kilocalorie per minute,kilocalorie per minute
 kilocalorie per minute,kcal / min
 kilocalorie per mole,kilocalorie per mole
 kilocalorie per mole,kcal / mol
-kilocalorie per mole degree celsius,kilocalorie per mole degree celsius
 kilocalorie per mole degree celsius,kcal / mol degC
+kilocalorie per mole degree celsius,kilocalorie per mole degree celsius
 kilocalorie per second,kcal / s
 kilocalorie per second,kilocalorie per second
-kilocalorie per square centimeter,kcal / cm ^2
 kilocalorie per square centimeter,kilocalorie per square centimeter
-kilocalorie per square centimeter minute,kcal / cm ^2 min
+kilocalorie per square centimeter,kcal / cm ^2
 kilocalorie per square centimeter minute,kilocalorie per square centimeter minute
+kilocalorie per square centimeter minute,kcal / cm ^2 min
 kilocalorie per square centimeter second,kilocalorie per square centimeter second
 kilocalorie per square centimeter second,kcal / cm ^2 s
-kilogram,kilogram
 kilogram,kg
-kilogram force,kilogram force
+kilogram,kilogram
 kilogram force,kgf
-kilogram force meter,kgf m
+kilogram force,kilogram force
 kilogram force meter,kilogram force meter
-kilogram force per square centimeter,kilogram force per square centimeter
+kilogram force meter,kgf m
 kilogram force per square centimeter,kgf / cm ^2
+kilogram force per square centimeter,kilogram force per square centimeter
 kilogram kelvin,kg K
 kilogram kelvin,kilogram kelvin
 kilogram meter per second,kilogram meter per second
 kilogram meter per second,kg m s 
-kilogram meter squared,kg m ^2
 kilogram meter squared,kilogram meter squared
-kilogram per cubic meter,kilogram per cubic meter
+kilogram meter squared,kg m ^2
 kilogram per cubic meter,kg / m ^3
+kilogram per cubic meter,kilogram per cubic meter
 kilogram per hour,kilogram per hour
 kilogram per hour,kg / h
-kilogram per meter,kilogram per meter
 kilogram per meter,kg / m
-kilogram per mole,kg mol 
+kilogram per meter,kilogram per meter
 kilogram per mole,kilogram per mole
-kilogram per second,kilogram per second
+kilogram per mole,kg mol 
 kilogram per second,kg / s
-kilogram per square meter,kilogram per square meter
+kilogram per second,kilogram per second
 kilogram per square meter,kg / m ^2
+kilogram per square meter,kilogram per square meter
 kilogram second squared,kilogram second squared
 kilogram second squared,kg s ^2
-kilohertz,KHz
 kilohertz,kilohertz
+kilohertz,KHz
 kilometer,km
 kilometer,kilometer
-kilometer per hour,km / hr
 kilometer per hour,kilometer per hour
-kilometer per second,kilometer per second
+kilometer per hour,km / hr
 kilometer per second,km / s
-kilopascal,KPa
+kilometer per second,kilometer per second
 kilopascal,kilopascal
+kilopascal,KPa
 kilopascal absolute,kilopascal absolute
 kilopascal absolute,KPaA
-kilopond,kilopond
 kilopond,kp
+kilopond,kilopond
 kilowatt,kilowatt
 kilowatt,kW
-kilowatthour,kilowatthour
 kilowatthour,kW hr
-kina,kina
+kilowatthour,kilowatthour
 kina,PGK
+kina,kina
 kip,kip
 kip per square inch,kip per square inch
 kip per square inch,kip / in ^2
@@ -740,140 +745,142 @@ kuwaiti dinar,kuwaiti dinar
 kuwaiti dinar,KWD
 kwanza,kwanza
 kwanza,AOA
-kyat,MMK
 kyat,kyat
+kyat,MMK
 lambert,L
 lambert,lambert
-laos kip,₭
 laos kip,laos kip
-lari,lari
+laos kip,₭
 lari,GEL
+lari,lari
 latvian lats,LVL
 latvian lats,latvian lats
 launch,launch
-lebanese pound,lebanese pound
 lebanese pound,LBP
-lek,ALL
+lebanese pound,lebanese pound
 lek,lek
+lek,ALL
 lempira,HNL
 lempira,lempira
 leone,SLL
 leone,leone
-liberian dollar,LRD
 liberian dollar,liberian dollar
-libyan dinar,LYD
+liberian dollar,LRD
 libyan dinar,libyan dinar
-light year,light year
+libyan dinar,LYD
 light year,ly
+light year,light year
 lilangeni,lilangeni
 lilangeni,SZL
 liter,liter
-lithuanian litas,lithuanian litas
 lithuanian litas,LTL
+lithuanian litas,lithuanian litas
 loti,loti
 loti,LSL
-lumen,lumen
 lumen,lm
+lumen,lumen
 lumen per watt,lumen per watt
-lumen second,lumen second
 lumen second,lm s
-lux,lx
+lumen second,lumen second
 lux,lux
+lux,lx
 mach,mach
 malagasy ariary,malagasy ariary
 malagasy ariary,MGA
-malawi kwacha,malawi kwacha
 malawi kwacha,MWK
+malawi kwacha,malawi kwacha
 malaysian ringgit,malaysian ringgit
 malaysian ringgit,MYR
-maltese lira,MTL
 maltese lira,maltese lira
-manat,manat
+maltese lira,MTL
 manat,TMM
-mauritius rupee,mauritius rupee
+manat,manat
 mauritius rupee,MUR
+mauritius rupee,mauritius rupee
 maxwell,Mx
 maxwell,maxwell
 mebi,Mi
 mebi,mebi
-mega,M
 mega,mega
+mega,M
 mega electron volt,MeV
 mega electron volt,mega electron volt
 mega electron volt femtometer,MeV fm
 mega electron volt femtometer,mega electron volt femtometer
-mega electron volt per centimeter,mega electron volt per centimeter
 mega electron volt per centimeter,MeV / cm
-mega electron volt per speed of light,MeV / c
+mega electron volt per centimeter,mega electron volt per centimeter
 mega electron volt per speed of light,mega electron volt per speed of light
-mega hertz per kelvin,mega hertz per kelvin
+mega electron volt per speed of light,MeV / c
 mega hertz per kelvin,MHz K 
-mega hertz per tesla,MHz T 
+mega hertz per kelvin,mega hertz per kelvin
 mega hertz per tesla,mega hertz per tesla
-megabit per second,megabit per second
+mega hertz per tesla,MHz T 
 megabit per second,mbps
+megabit per second,megabit per second
 megahertz,megahertz
 megahertz,MHz
+megajoule per square meter,megajoule per square meter
 meter,meter
 meter,m
 meter kelvin,meter kelvin
 meter kelvin,m K
-meter kelvin per watt,K m / W
 meter kelvin per watt,meter kelvin per watt
+meter kelvin per watt,K m / W
 meter kilogram,meter kilogram
 meter kilogram,m kg
-meter per farad,m / F
 meter per farad,meter per farad
+meter per farad,m / F
 meter per hour,m h 
 meter per hour,meter per hour
 meter per kelvin,m / K
 meter per kelvin,meter per kelvin
-meter per minute,meter per minute
 meter per minute,m min 
+meter per minute,meter per minute
 meter per second,m s 
 meter per second,meter per second
-meter per second squared,meter per second squared
 meter per second squared,m s ^2
-metical,MZN
+meter per second squared,meter per second squared
 metical,metical
+metical,MZN
 metric ton,metric ton
 metric ton,mT
-mexican peso,mexican peso
 mexican peso,MXN
+mexican peso,mexican peso
 mexican unidad de inversion udi funds code,MXV
 mexican unidad de inversion udi funds code,mexican unidad de inversion udi funds code
 mho,mho
-micro,µ
 micro,micro
-micro torr,µtorr
+micro,µ
 micro torr,micro torr
+micro torr,µtorr
 microfarad,microfarad
 microfarad,microF
 microgravity,microgravity
 microgravity,microG
 microhenry,microhenry
 microhenry,microH
-microinch,microinch
 microinch,in ^6
-micrometer,micrometer
+microinch,microinch
 micrometer,µm
-microsecond,microsec
+micrometer,micrometer
+micromole per second per square meter,micromole per second per square meter
 microsecond,microsecond
+microsecond,microsec
 mil angle nato,mil angle nato
 mil angle nato,mil
 mil length,mil length
-mile international standard,mi
 mile international standard,mile international standard
-mile per hour,mi / hr
+mile international standard,mi
 mile per hour,mile per hour
+mile per hour,mi / hr
 mile per minute,mi / min
 mile per minute,mile per minute
 mile us statute,mile us statute
 milli,milli
-milli torr,milli torr
 milli torr,utorr
-millibar,millibar
+milli torr,milli torr
 millibar,mbar
+millibar,millibar
 milligravity,mG
 milligravity,milligravity
 millihenry,milliH
@@ -882,18 +889,19 @@ millimeter,millimeter
 millimeter,mm
 millimeter of mercury,millimeter of mercury
 millimeter of mercury,mmHg
-millimeter of mercury absolute,mmHgA
 millimeter of mercury absolute,millimeter of mercury absolute
+millimeter of mercury absolute,mmHgA
+millimeter per hour,millimeter per hour
 million us dollars,million us dollars
 million us dollars,Million USD
-million us dollars per flight,M$ / Flight
 million us dollars per flight,million us dollars per flight
-million us dollars per year,million us dollars per year
+million us dollars per flight,M$ / Flight
 million us dollars per year,M$ / yr
-millisecond,ms
+million us dollars per year,million us dollars per year
 millisecond,millisecond
-minute angle,\
+millisecond,ms
 minute angle,minute angle
+minute angle,\
 minute sidereal,minute sidereal
 minute sidereal,min
 minute time,minute time
@@ -901,22 +909,22 @@ moldovan leu,moldovan leu
 moldovan leu,MDL
 mole,mole
 mole,mol
-mole degree celsius,mole degree celsius
 mole degree celsius,mol degC
+mole degree celsius,mole degree celsius
 mole kelvin,mol K
 mole kelvin,mole kelvin
-mole per cubic meter,mole per cubic meter
 mole per cubic meter,mol / m ^3
-mole per kilogram,mol / kg
+mole per cubic meter,mole per cubic meter
 mole per kilogram,mole per kilogram
+mole per kilogram,mol / kg
 moroccan dirham,moroccan dirham
 moroccan dirham,MAD
 naira,naira
 naira,NGN
 nakfa,ERN
 nakfa,nakfa
-namibian dollar,namibian dollar
 namibian dollar,NAD
+namibian dollar,namibian dollar
 nano,n
 nano,nano
 nanofarad,nanofarad
@@ -930,28 +938,28 @@ nautical mile per minute,nautical mile per minute
 nautical mile per minute,nmi / min
 nepalese rupee,nepalese rupee
 nepalese rupee,NPR
-nephelometry turbidity unit,nephelometry turbidity unit
 nephelometry turbidity unit,NTU
-netherlands antillian guilder,ANG
+nephelometry turbidity unit,nephelometry turbidity unit
 netherlands antillian guilder,netherlands antillian guilder
-new israeli shekel,ILS
+netherlands antillian guilder,ANG
 new israeli shekel,new israeli shekel
+new israeli shekel,ILS
 new taiwan dollar,TWD
 new taiwan dollar,new taiwan dollar
 new turkish lira,new turkish lira
 new turkish lira,TRY
 new zealand dollar,new zealand dollar
 new zealand dollar,NZD
-newton,newton
 newton,N
+newton,newton
 newton meter,N m
 newton meter,newton meter
 newton per coulomb,N / C
 newton per coulomb,newton per coulomb
 newton per kilogram,newton per kilogram
 newton per kilogram,N / kg
-newton per meter,newton per meter
 newton per meter,N / m
+newton per meter,newton per meter
 ngultrum,BTN
 ngultrum,ngultrum
 north korean won,north korean won
@@ -964,25 +972,26 @@ number,number
 number,#
 number per year,number per year
 number per year,# / yr
-nutritional calorie,nutritional calorie
 nutritional calorie,Cal
+nutritional calorie,nutritional calorie
 oersted,oersted
 oersted,Oe
 oersted centimeter,Oe cm
 oersted centimeter,oersted centimeter
 ohm,ohm
-ouguiya,MRO
+okta,okta
 ouguiya,ouguiya
-ounce force,ozf
+ouguiya,MRO
 ounce force,ounce force
-ounce force inch,ozf in
+ounce force,ozf
 ounce force inch,ounce force inch
+ounce force inch,ozf in
 ounce mass,ozm
 ounce mass,ounce mass
 ounce per cubic inch,ounce per cubic inch
 ounce per cubic inch,oz / in ^3
-ounce per gallon,ounce per gallon
 ounce per gallon,oz / gal
+ounce per gallon,ounce per gallon
 ounce per square foot,oz / ft ^2
 ounce per square foot,ounce per square foot
 ounce per square yard,ounce per square yard
@@ -990,12 +999,12 @@ ounce per square yard,oz / yd ^2
 ounce troy,ounce troy
 pa\anga,pa\anga
 pa\anga,TOP
-pakistan rupee,pakistan rupee
 pakistan rupee,PKR
+pakistan rupee,pakistan rupee
 palladium one troy ounce,palladium one troy ounce
 palladium one troy ounce,XPD
-parsec,parsec
 parsec,pc
+parsec,parsec
 pascal,pascal
 pascal,Pa
 pascal per hour,pascal per hour
@@ -1006,42 +1015,42 @@ pascal per second,pascal per second
 pascal per second,P  /  s
 pascal second,Pa s
 pascal second,pascal second
-pataca,pataca
 pataca,MOP
-pebi,pebi
+pataca,pataca
 pebi,Pi
+pebi,pebi
 penny weight,penny weight
 penny weight,dwt
 per cubic meter,per cubic meter
 per meter kelvin unit,per meter kelvin unit
 per meter kelvin unit,m  K 
-per meter unit,per meter unit
 per meter unit,m 
-per mole unit,per mole unit
+per meter unit,per meter unit
 per mole unit,mol 
+per mole unit,per mole unit
 per square giga electron volt unit,GeV ^2
 per square giga electron volt unit,per square giga electron volt unit
-per tesla meter unit,per tesla meter unit
 per tesla meter unit,m  T 
-per tesla second unit,per tesla second unit
+per tesla meter unit,per tesla meter unit
 per tesla second unit,s  T 
-percent,percent
+per tesla second unit,per tesla second unit
 percent,%
+percent,percent
 person,person
 peso uruguayo,UYU
 peso uruguayo,peso uruguayo
-peta,P
 peta,peta
+peta,P
 philippine peso,philippine peso
 philippine peso,PHP
-phot,phot
 phot,ph
+phot,phot
 pica,Pm
 pica,pica
-pico,pico
 pico,p
-picofarad,pF
+pico,pico
 picofarad,picofarad
+picofarad,pF
 planck area,planck area
 planck charge,Q p
 planck charge,planck charge
@@ -1051,67 +1060,67 @@ planck density,planck density
 planck energy,planck energy
 planck force,planck force
 planck frequency,planck frequency
-planck length,l P
 planck length,planck length
-planck mass,m P
+planck length,l P
 planck mass,planck mass
+planck mass,m P
 planck momentum,planck momentum
 planck power,planck power
 planck pressure,planck pressure
 planck resistance,planck resistance
-planck temperature,planck temperature
 planck temperature,Θ P
-planck time,planck time
+planck temperature,planck temperature
 planck time,t P
+planck time,planck time
 planck volt,planck volt
 planck volume,planck volume
-platinum one troy ounce,XPT
 platinum one troy ounce,platinum one troy ounce
+platinum one troy ounce,XPT
 point,point
 point,pt
 poise,poise
-pound degree fahrenheit,lb degF
 pound degree fahrenheit,pound degree fahrenheit
-pound degree rankine,pound degree rankine
+pound degree fahrenheit,lb degF
 pound degree rankine,lb degR
-pound force,pound force
+pound degree rankine,pound degree rankine
 pound force,lbf
-pound force foot,lbf ft
+pound force,pound force
 pound force foot,pound force foot
+pound force foot,lbf ft
 pound force inch,pound force inch
 pound force inch,lbf in
-pound force per foot,lbf / ft
 pound force per foot,pound force per foot
-pound force per inch,lbf / in
+pound force per foot,lbf / ft
 pound force per inch,pound force per inch
-pound force per pound,pound force per pound
+pound force per inch,lbf / in
 pound force per pound,lbf / lb
+pound force per pound,pound force per pound
 pound force per square foot,pound force per square foot
 pound force per square foot,lbf / ft ^2
-pound force per square inch,pound force per square inch
 pound force per square inch,psi
+pound force per square inch,pound force per square inch
 pound force per square inch second,lbf  /  in ^2 s
 pound force per square inch second,pound force per square inch second
-pound force second per square foot,lbf s / ft ^2
 pound force second per square foot,pound force second per square foot
-pound force second per square inch,pound force second per square inch
+pound force second per square foot,lbf s / ft ^2
 pound force second per square inch,lbf s / in ^2
-pound mass,lbm
+pound force second per square inch,pound force second per square inch
 pound mass,pound mass
-pound mole,lb mol
+pound mass,lbm
 pound mole,pound mole
-pound mole degree fahrenheit,pound mole degree fahrenheit
+pound mole,lb mol
 pound mole degree fahrenheit,lb mol degF
-pound per cubic foot,lb / ft ^3
+pound mole degree fahrenheit,pound mole degree fahrenheit
 pound per cubic foot,pound per cubic foot
+pound per cubic foot,lb / ft ^3
 pound per cubic inch,pound per cubic inch
 pound per cubic inch,lb / in ^3
 pound per cubic meter,lbm / m ^3
 pound per cubic meter,pound per cubic meter
 pound per cubic yard,lb / yd ^3
 pound per cubic yard,pound per cubic yard
-pound per foot,lb / ft
 pound per foot,pound per foot
+pound per foot,lb / ft
 pound per foot hour,pound per foot hour
 pound per foot hour,lb / ft hr
 pound per foot second,pound per foot second
@@ -1120,23 +1129,23 @@ pound per gallon,lb / gal
 pound per gallon,pound per gallon
 pound per hour,lb / hr
 pound per hour,pound per hour
-pound per inch,pound per inch
 pound per inch,lb / in
+pound per inch,pound per inch
 pound per minute,lb / min
 pound per minute,pound per minute
-pound per square foot,lb / ft ^2
 pound per square foot,pound per square foot
+pound per square foot,lb / ft ^2
 pound sterling,pound sterling
 pound sterling,GBP
 pound troy,pound troy
-poundal,pdl
 poundal,poundal
+poundal,pdl
 poundal per square foot,pdl / ft ^2
 poundal per square foot,poundal per square foot
 pula,BWP
 pula,pula
-qatari rial,QAR
 qatari rial,qatari rial
+qatari rial,QAR
 quad,quad
 quartic coulomb meter per cubic energy,C ^4 m ^4 J ^3
 quartic coulomb meter per cubic energy,quartic coulomb meter per cubic energy
@@ -1146,39 +1155,39 @@ rad,rad
 radian,radian
 radian per hour,radian per hour
 radian per hour,rad / h
-radian per second,rad / m
-radian per second,rad / s
 radian per second,radian per second
+radian per second,rad / s
+radian per second,rad / m
 radian per second squared,rad / s ^2
 radian per second squared,radian per second squared
 register ton,RT
 register ton,register ton
 relative permeability,μr
 relative permeability,relative permeability
-relative permittivity,relative permittivity
 relative permittivity,εr
+relative permittivity,relative permittivity
 rem,rem
-revolution,revolution
 revolution,rev
+revolution,revolution
 revolution per hour,revolution per hour
 revolution per hour,rev / h
-revolution per minute,revolution per minute
 revolution per minute,rev / min
+revolution per minute,revolution per minute
 revolution per second,rev / s
 revolution per second,revolution per second
 revolution per second squared,revolution per second squared
 rial omani,OMR
 rial omani,rial omani
-riel,riel
 riel,KHR
+riel,riel
 rod,rod
 rod,rd
 roentgen,R
 roentgen,roentgen
-romanian new leu,romanian new leu
 romanian new leu,RON
-rufiyaa,rufiyaa
+romanian new leu,romanian new leu
 rufiyaa,MVR
+rufiyaa,rufiyaa
 rupiah,IDR
 rupiah,rupiah
 russian ruble,RUB
@@ -1187,29 +1196,29 @@ rwanda franc,rwanda franc
 rwanda franc,RWF
 saint helena pound,SHP
 saint helena pound,saint helena pound
-samoan tala,WST
 samoan tala,samoan tala
+samoan tala,WST
 sample per second,sample per second
-saudi riyal,saudi riyal
 saudi riyal,SAR
+saudi riyal,saudi riyal
 second,second
 second,s
-second angle,""""
 second angle,second angle
+second angle,""""
 second square foot,s ft ^2
 second square foot,second square foot
-second time squared,s ^2
 second time squared,second time squared
-serbian dinar,RSD
+second time squared,s ^2
 serbian dinar,serbian dinar
-seychelles rupee,SCR
+serbian dinar,RSD
 seychelles rupee,seychelles rupee
-shake,shake
+seychelles rupee,SCR
 shake,Sh
-short ton per hour,short ton per hour
+shake,shake
 short ton per hour,ton / hr
-siemens,siemens
+short ton per hour,short ton per hour
 siemens,S
+siemens,siemens
 sievert,sievert
 sievert,Sv
 silver one troy ounce,silver one troy ounce
@@ -1221,30 +1230,30 @@ slovak koruna,SKK
 slug,slug
 slug per cubic foot,slug per cubic foot
 slug per cubic foot,slug / ft ^3
-slug per foot,slug per foot
 slug per foot,slug / ft
+slug per foot,slug per foot
 slug per foot second,slug per foot second
 slug per foot second,slug / ft s
-slug per second,slug / s
 slug per second,slug per second
-slug per square foot,slug / ft ^2
+slug per second,slug / s
 slug per square foot,slug per square foot
+slug per square foot,slug / ft ^2
 solomon islands dollar,solomon islands dollar
 solomon islands dollar,SBD
 som,KGS
 som,som
-somali shilling,somali shilling
 somali shilling,SOS
+somali shilling,somali shilling
 somoni,TJS
 somoni,somoni
-south african rand,south african rand
 south african rand,ZAR
-south korean won,KRW
+south african rand,south african rand
 south korean won,south korean won
-special drawing rights,XDR
+south korean won,KRW
 special drawing rights,special drawing rights
-square centimeter,square centimeter
+special drawing rights,XDR
 square centimeter,cm ^2
+square centimeter,square centimeter
 square centimeter minute,cm ^2 m
 square centimeter minute,square centimeter minute
 square centimeter second,square centimeter second
@@ -1265,44 +1274,44 @@ square foot per btu inch,ft ^2 / Btu in
 square foot per btu inch,square foot per btu inch
 square foot per hour,ft ^2 / hr
 square foot per hour,square foot per hour
-square foot per second,ft ^2 / s
 square foot per second,square foot per second
+square foot per second,ft ^2 / s
 square foot second degree fahrenheit,square foot second degree fahrenheit
 square foot second degree fahrenheit,ft ^2 s degF
-square inch,square inch
 square inch,in ^2
-square meter,square meter
+square inch,square inch
 square meter,m ^2
-square meter kelvin,m ^2 K
+square meter,square meter
 square meter kelvin,square meter kelvin
+square meter kelvin,m ^2 K
 square meter kelvin per watt,K ^2m / W
 square meter kelvin per watt,square meter kelvin per watt
-square meter per kelvin,square meter per kelvin
 square meter per kelvin,m ^2 / K
+square meter per kelvin,square meter per kelvin
 square meter per second,square meter per second
 square meter per second,m ^2 s 
-square meter steradian,square meter steradian
 square meter steradian,m ^2 sr
-square mile,mi ^2
+square meter steradian,square meter steradian
 square mile,square mile
-square yard,yd ^2
+square mile,mi ^2
 square yard,square yard
-sri lanka rupee,sri lanka rupee
+square yard,yd ^2
 sri lanka rupee,LKR
-standard atmosphere,standard atmosphere
+sri lanka rupee,sri lanka rupee
 standard atmosphere,atm
+standard atmosphere,standard atmosphere
 statampere,statampere
 statampere,statA
-statampere per square centimeter,statampere per square centimeter
 statampere per square centimeter,statA  /  cm ^2
+statampere per square centimeter,statampere per square centimeter
 statcoulomb,statcoulomb
 statcoulomb,statC
 statcoulomb per mole,statcoulomb per mole
 statcoulomb per mole,statC / mol
 statcoulomb per square centimeter,statC / cm ^2
 statcoulomb per square centimeter,statcoulomb per square centimeter
-statfarad,statfarad
 statfarad,statF
+statfarad,statfarad
 stathenry,statH
 stathenry,stathenry
 stathenry per centimeter,statH / cm
@@ -1315,12 +1324,12 @@ statvolt,statvolt
 statvolt,statV
 statvolt centimeter,statvolt centimeter
 statvolt centimeter,statV cm
-statvolt per centimeter,statvolt per centimeter
 statvolt per centimeter,statV / cm
-steradian,steradian
+statvolt per centimeter,statvolt per centimeter
 steradian,sr
-stere,stere
+steradian,steradian
 stere,st
+stere,stere
 stilb,stilb
 stilb,sb
 stokes,stokes
@@ -1329,42 +1338,42 @@ sudanese pound,SDG
 sudanese pound,sudanese pound
 surinam dollar,surinam dollar
 surinam dollar,SRD
-swedish krona,swedish krona
 swedish krona,SEK
-swiss franc,swiss franc
+swedish krona,swedish krona
 swiss franc,CHF
+swiss franc,swiss franc
 syrian pound,SYP
 syrian pound,syrian pound
-tablespoon,tbsp
 tablespoon,tablespoon
+tablespoon,tbsp
 tanzanian shilling,TZS
 tanzanian shilling,tanzanian shilling
 teaspoon,teaspoon
 teaspoon,tsp
 tebi,tebi
 tebi,Ti
-technical atmosphere,technical atmosphere
 technical atmosphere,at
+technical atmosphere,technical atmosphere
 tenge,KZT
 tenge,tenge
-tera,tera
 tera,T
+tera,tera
 tesla,tesla
-tesla meter,tesla meter
 tesla meter,m T
-tesla second,s T
+tesla meter,tesla meter
 tesla second,tesla second
+tesla second,s T
 tex,tex
 therm ec,therm EC
 therm ec,therm ec
 therm us,therm US
 therm us,therm us
-thermochemical calorie,cal
 thermochemical calorie,thermochemical calorie
-ton assay,ton assay
+thermochemical calorie,cal
 ton assay,AT
-ton energy,ton energy
+ton assay,ton assay
 ton energy,t / lbf
+ton energy,ton energy
 ton long,ton long
 ton long,ton
 ton long per cubic yard,ton long per cubic yard
@@ -1380,32 +1389,32 @@ ton short per cubic yard,ton short per cubic yard
 torr,torr
 trinidad and tobago dollar,trinidad and tobago dollar
 trinidad and tobago dollar,TTD
-tugrik,MNT
 tugrik,tugrik
-tunisian dinar,TND
+tugrik,MNT
 tunisian dinar,tunisian dinar
+tunisian dinar,TND
 uganda shilling,UGX
 uganda shilling,uganda shilling
-uic franc special settlement currency,XFU
 uic franc special settlement currency,uic franc special settlement currency
-unidad de valor real,COU
+uic franc special settlement currency,XFU
 unidad de valor real,unidad de valor real
-unidades de formento funds code,unidades de formento funds code
+unidad de valor real,COU
 unidades de formento funds code,CLF
+unidades de formento funds code,unidades de formento funds code
 unified atomic mass unit,unified atomic mass unit
 unit pole,unit pole
 unit pole,U / nWb
 united arab emirates dirham,united arab emirates dirham
 united arab emirates dirham,AED
-united states dollar next day funds code,USN
 united states dollar next day funds code,united states dollar next day funds code
+united states dollar next day funds code,USN
 united states dollar same day funds code,united states dollar same day funds code
 unitless,unitless
 unitless,U
 us dollar,us dollar
 us dollar,USD
-us dry pint,dry pt
 us dry pint,us dry pint
+us dry pint,dry pt
 us dry quart,us dry quart
 us dry quart,dry qt
 us gallon,us gallon
@@ -1422,31 +1431,31 @@ us liquid quart,qt
 us peck,us peck
 us peck,pk
 us survey foot,us survey foot
-uzbekistan som,uzbekistan som
 uzbekistan som,UZS
+uzbekistan som,uzbekistan som
 vatu,vatu
 vatu,VUV
 venezuelan bol�var,VEB
 venezuelan bol�var,venezuelan bol�var
 video frame,video frame
-vietnamese ??ng,VND
 vietnamese ??ng,vietnamese ??ng
-volt,volt
+vietnamese ??ng,VND
 volt,V
-volt meter,m V
+volt,volt
 volt meter,volt meter
-volt per meter,V m 
+volt meter,m V
 volt per meter,volt per meter
+volt per meter,V m 
 volt per second,volt per second
 volt per second,V  /  sec
-volt per square meter,volt per square meter
 volt per square meter,V m ^2
+volt per square meter,volt per square meter
 watt,watt
 watt,W
-watt per meter kelvin,watt per meter kelvin
 watt per meter kelvin,W / m * K
-watt per square centimeter,W / cm ^2
+watt per meter kelvin,watt per meter kelvin
 watt per square centimeter,watt per square centimeter
+watt per square centimeter,W / cm ^2
 watt per square foot,W / ft ^2
 watt per square foot,watt per square foot
 watt per square inch,W / in ^2
@@ -1457,55 +1466,46 @@ watt per square meter kelvin,W / m ^2 K
 watt per square meter kelvin,watt per square meter kelvin
 watt per square meter quartic kelvin,watt per square meter quartic kelvin
 watt per square meter quartic kelvin,W m ^2 K ^4
-watt per square meter steradian,watt per square meter steradian
 watt per square meter steradian,W / m ^2 sr
-watt per steradian,W sr 
+watt per square meter steradian,watt per square meter steradian
 watt per steradian,watt per steradian
-watt square meter,W m ^2
+watt per steradian,W sr 
 watt square meter,watt square meter
-watt square meter per steradian,watt square meter per steradian
+watt square meter,W m ^2
 watt square meter per steradian,W m ^2 sr 
+watt square meter per steradian,watt square meter per steradian
 watthour,watthour
 watthour,W hr
 weber,weber
 weber,Wb
-wir euro complementary currency,wir euro complementary currency
 wir euro complementary currency,CHE
-wir franc complementary currency,CHW
+wir euro complementary currency,wir euro complementary currency
 wir franc complementary currency,wir franc complementary currency
+wir franc complementary currency,CHW
 yard,yd
 yard,yard
-year 365 day,year 365 day
 year 365 day,yr
+year 365 day,year 365 day
 year sidereal,year sidereal
 year tropical,year tropical
 yemeni rial,YER
 yemeni rial,yemeni rial
-yobi,Yi
 yobi,yobi
-yocto,yocto
+yobi,Yi
 yocto,y
-yotta,Y
+yocto,yocto
 yotta,yotta
-yuan renminbi,CNY
+yotta,Y
 yuan renminbi,yuan renminbi
+yuan renminbi,CNY
 zambian kwacha,zambian kwacha
 zambian kwacha,ZMK
-zebi,Zi
 zebi,zebi
+zebi,Zi
 zepto,zepto
 zepto,z
 zetta,zetta
-zimbabwe dollar,zimbabwe dollar
 zimbabwe dollar,ZWD
+zimbabwe dollar,zimbabwe dollar
 zloty,zloty
 zloty,PLN
-,hecto pascal
-,okta
-,degree
-,direction degree
-,hour pa
-,megajoule per square meter
-,micromole per second per square meter
-,millimeter per hour
-,degree from north

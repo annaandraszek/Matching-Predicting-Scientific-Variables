@@ -52,15 +52,15 @@ def run_classifier():
 if __name__ == '__main__':
     #process_raw_qudt()
 
-    #Run after making changes to training sets
+    #Run ONLY ONCE after making changes to training sets
     resource_creation.extract_features_to_tag(datasets)
 
     #Tag untagged (taken from raw datasets) features by hand before running
-    #resource_creation.tag_features('hand_tagged_unit.csv', 'unit')
-    #resource_creation.tag_features('hand_tagged_property.csv', 'property')
+    resource_creation.tag_features('hand_tagged_unit.csv', 'unit')
+    resource_creation.tag_features('hand_tagged_property.csv', 'property')
 
-    #resource_creation.tag_features('proc_qudt-property.csv', 'property')
-    #resource_creation.tag_features('proc_qudt-unit.csv', 'unit')
+    resource_creation.tag_features('proc_qudt-property.csv', 'property')
+    resource_creation.tag_features('proc_qudt-unit.csv', 'unit')
 
 
 
