@@ -16,7 +16,7 @@ class Classifier():
     file_suffix = '.joblib'
 
     def __init__(self):
-        self.text_clf = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('clf', ComplementNB(norm=True))])  # pipeline of fit/transforms;
+        self.text_clf = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('clf', ComplementNB(norm=True))])  # pipeline of fit/transforms
 
     def train(self, file, t, print_report=False):
         df = pd.read_csv(file)  # loading training set file

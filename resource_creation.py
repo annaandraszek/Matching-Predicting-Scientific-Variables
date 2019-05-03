@@ -61,7 +61,7 @@ def extract_features_to_tag(datasets):
 
     type = ['property', 'unit']
     dfs = [properties_df, units_df]
-    for t, df in type, dfs:
+    for (t, df) in zip(type, dfs):
         try:
             tagged = pd.read_csv(path + 'hand_tagged_' + t + '.csv')
             df = tagged.append(df, sort=True)

@@ -41,6 +41,7 @@ def run_classifier():
     p = Classifier()
     p.train('my_property.csv', t='p')
 
+    # Input loop for user to provide strings for prediction
     print('Enter xxx to end')
     while True:
         predictions_to_return = 10
@@ -62,6 +63,8 @@ def run_classifier():
 def run_classifier_from_saved():
     c = Classifier()
     print('Enter xxx to exit')
+
+    # Input loop for user to provide strings for prediction
     while True:
         predictions_to_return = 10
         s = str(input('Enter a string to predict:'))
@@ -93,22 +96,23 @@ def property_or_unit(input):
 
 
 if __name__ == '__main__':
+    # Process the qudt files first if haven't already
     #process_raw_qudt()
 
-    #Run after making changes to training sets
+    # Run after making changes to training set datasets
+    # Extract features from datasets without labels
     #resource_creation.extract_features_to_tag(datasets)
 
-    #Tag untagged (taken from raw datasets) features by hand before running
+    # Tag untagged (taken from raw datasets) features by hand before running these
+    # Extract features and labels from labelled datasets
     #resource_creation.tag_features('hand_tagged_unit.csv', 'unit')
     #resource_creation.tag_features('hand_tagged_property.csv', 'property')
-
     #resource_creation.tag_features('proc_qudt-property.csv', 'property')
     #resource_creation.tag_features('proc_qudt-unit.csv', 'unit')
 
-    #Run to make predictions (using Complement Naive Bayes)
-
-    #run_classifier()
-    run_classifier_from_saved()
+    # Make predictions (using Complement Naive Bayes) - choose one of the two methods below
+    run_classifier()  # run if want to re-train the model before making predictions
+    #run_classifier_from_saved()  # run if want to use a pre-trained model to make predictions
 
 
 
