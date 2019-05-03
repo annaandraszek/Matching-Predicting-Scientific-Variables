@@ -30,8 +30,10 @@ def process_raw_qudt():
 
 
 def run_classifier():
-    u = Classifier().train('my_unit.csv', t='u')
-    p = Classifier().train('my_property.csv', t='p')
+    u = Classifier()
+    u.train('my_unit.csv', t='u')
+    p = Classifier()
+    p.train('my_property.csv', t='p')
 
     print('Enter xxx to end')
     while True:
@@ -44,7 +46,7 @@ def run_classifier():
             t = str(input('Enter p if property u if unit: '))
         if t == 'p':
             p.predict_top_x([s], predictions_to_return, t)
-        if t == 'u':
+        elif t == 'u':
             u.predict_top_x([s], predictions_to_return, t)
         else:
             print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
@@ -94,6 +96,7 @@ if __name__ == '__main__':
     #resource_creation.tag_features('proc_qudt-unit.csv', 'unit')
 
     #Run to make predictions (using Complement Naive Bayes)
+
     #run_classifier()
     run_classifier_from_saved()
 

@@ -1,9 +1,12 @@
 import pandas as pd
 import numpy as np
 import preprocessing
+import platform
 
-datasets_path = "C:/Users/Anna/Documents/ml_approach/raw datasets/"
-#datasets_path = "C:/Users/AND522/Documents/ml_approach/raw datasets/"
+if 'FIJI-DP' in platform.uname()[1]:
+    datasets_path = "C:/Users/AND522/Documents/Matching-Predicting-Scientific-Variables/raw datasets/"
+else:
+    datasets_path = "C:/Users/Anna/Documents/ml_approach/raw datasets/"
 
 # raw_file indicates whether to clean the file, save it, and create tokens, or only create tokens
 def create_reference(file, raw_file=True): #creates a set of "dictionary" values from a qudt file (quantity or unit)
@@ -23,9 +26,9 @@ def create_reference(file, raw_file=True): #creates a set of "dictionary" values
         df.replace('\\^\\^xsd:string', '', regex=True, inplace=True)
         df.replace("'", '', regex=True, inplace=True)
         if 'unit' in file:
-            df = preprocessing.clean_table(df, has_measurements=False, units='rdfs:label', has_units=True, has_abbreviations=True)
+            df = preprocessing.clean_table(df, has_properties=False, units='rdfs:label', has_units=True, has_abbreviations=True)
         if 'property' in file:
-            df = preprocessing.clean_table(df, measurements='rdfs:label') #, units='qudt:unit', has_units=True)
+            df = preprocessing.clean_table(df, properties='rdfs:label') #, units='qudt:unit', has_units=True)
 
         df.to_csv(path + 'proc_' + file, index=False)
 
@@ -38,20 +41,20 @@ def create_reference(file, raw_file=True): #creates a set of "dictionary" values
 def extract_features_to_tag(datasets):
     path = 'raw datasets/'
     units = []
-    measurements = []
+    properties = []
 
     for dataset in datasets:
-        set_units, set_measurements = preprocessing.raw_to_clean(datasets_path+dataset)
+        set_units, set_properties = preprocessing.raw_to_clean(datasets_path+dataset)
         if set_units:
             units = units + list(set_units)
-        if set_measurements:
-            measurements = measurements + list(set_measurements)
+        if set_properties:
+            properties = properties + list(set_properties)
 
-    measurements = set(measurements)
+    properties = set(properties)
     units = set(units)
 
     units_df = pd.DataFrame(data=units, columns=['native'])
-    measurements_df = pd.DataFrame(data=measurements, columns=['native'])
+    properties_df = pd.DataFrame(data=properties, columns=['native'])
     try:
         tagged_units = pd.read_csv(path+'hand_tagged_unit.csv')
         units_df = tagged_units.append(units_df, sort=True)
@@ -65,16 +68,16 @@ def extract_features_to_tag(datasets):
 
     try:
         tagged_properties = pd.read_csv(path+'hand_tagged_property.csv')
-        measurements_df = tagged_properties.append(measurements_df, sort=True)
-        measurements_df.sort_values(by='class', inplace=True)
-        measurements_df.drop_duplicates('native', inplace=True)
-        measurements_df.to_csv(path+'hand_tagged_property.csv', index=False)
+        properties_df = tagged_properties.append(properties_df, sort=True)
+        properties_df.sort_values(by='class', inplace=True)
+        properties_df.drop_duplicates('native', inplace=True)
+        properties_df.to_csv(path+'hand_tagged_property.csv', index=False)
     except FileNotFoundError:
         print('Will make new hand_tagged_property.csv')
-        measurements_df.to_csv(path+'hand_tagged_property.csv', index=False)
+        properties_df.to_csv(path+'hand_tagged_property.csv', index=False)
 
     #merge_with_my(units_df, 'unit')
-    #merge_with_my(measurements_df, 'property')
+    #merge_with_my(properties_df, 'property')
 
 
 def merge_with_my(df, type):
@@ -91,8 +94,8 @@ def merge_with_my(df, type):
 
     elif type == 'property':
         try:
-            my_measurements = pd.read_csv('my_' + type +'.csv')
-            df = my_measurements.append(df, sort=True)
+            my_properties = pd.read_csv('my_' + type +'.csv')
+            df = my_properties.append(df, sort=True)
 
         except FileNotFoundError:
             print('Will make new my_' + type + '.csv')
@@ -108,9 +111,9 @@ def merge_with_my(df, type):
 
 def tag_features(dataset, t):
     old_df = pd.read_csv(datasets_path+dataset)
-    df = pd.DataFrame()
 
     if 'qudt' in dataset:
+        df = pd.DataFrame()
         df = old_df[~old_df['rdfs:label'].str.contains('@en')]
         if 'unit' in t:
             new_df = pd.DataFrame()
