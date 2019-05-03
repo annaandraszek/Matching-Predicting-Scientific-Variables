@@ -3,19 +3,17 @@ import numpy as np
 import stringdist
 import re
 import math
-
 import resource_creation
 
-# pt 1: take completely raw datasets and create several tables
-    # drop unecessary cols and do pre-processing on text
 
-def raw_to_clean(filename): #this method will export pre-processed sets of native property and unit terms, which
+# Takes datasets which contain features that will make up the training set, and extracts them
+# each file needs special treatment to get necessary features from it as they come in different internal formats
+def raw_to_clean(filename):
     unit_col = 'units'
     property_col = 'parameter'
     has_units = True
-    has_properties = True
-    # can be merged with sets of these from other files to create a table which will be manually tagged
-    # not a method you'd use each time, as it requires manual work after
+    has_property = True
+
     if 'NingalooReef' in filename:
         old_df = pd.read_csv(filename, usecols=[property_col, unit_col])
         df = pd.DataFrame()
@@ -57,7 +55,6 @@ def raw_to_clean(filename): #this method will export pre-processed sets of nativ
             unit_col = None
             has_units = False
             property_col = 'rdfs:label'
-
         elif 'unit' in filename:
             has_property = False
             property_col = None
@@ -89,11 +86,17 @@ def raw_to_clean(filename): #this method will export pre-processed sets of nativ
     elif property_col and not unit_col:
         return None, native_properties
 
+
+# Returns the set of unique words in a dataframe column
 def tokenise_column_values(column):
     return set(column.str.split(' ', expand=True).stack().unique())
 
 
-def segment_properties_units(raw_strings, segment_on='p'): #assume units in parentheses
+# For raw strings which contain both property and unit
+# Splits the string into two, based on value of segment_on - if =='p', parentheses; if =='lw', last word
+    # this can depend on the file - the method can be extended if strings come along that need different segmentation
+    # property is assumed to be before unit
+def segment_properties_units(raw_strings, segment_on='p'):
     units = []
     properties = []
     if segment_on == 'p': #parentheses
@@ -111,9 +114,11 @@ def segment_properties_units(raw_strings, segment_on='p'): #assume units in pare
             p, u = raw.rsplit(' ', 1)
             units.append(u)
             properties.append(p)
-
     return units, properties
 
+
+# Tries to match terms not in a unit or property set to words in that set, based on string modification distance
+# eg. 'metre' => 'meter', 'meters' => 'meter'
 def solve_similar_spelling(units, unit_terms, max_distance=2):
     for s in range(len(units)):
         p = units[s].split(' ')
@@ -133,7 +138,8 @@ def solve_similar_spelling(units, unit_terms, max_distance=2):
     return units
 
 
-def solve_abbreviations(units, unit_terms): #takes the unit tokens #todo: do I also want to transform the unit token set?
+# Tries to identify common unit abbreviations and change to the appropriate unit term
+def solve_abbreviations(units, unit_terms): #todo: do I also want to transform the unit token set?
     unit_abbrev_dict = {'deg':'degree', 'c':'celsius', '¡c':'degree celsius', 'hpa':'hectopascal', 'km':'kilometer', 'm':'meter',
                         'm2':'square meter', 's':'second', 'μmol':'micromole', 'mcmol':'micromole', 'h':'hour', 'mm':'millimeter',
                         'w':'watt', 'dir':'direction', 'mj': 'megajoule'}
@@ -144,38 +150,39 @@ def solve_abbreviations(units, unit_terms): #takes the unit tokens #todo: do I a
             if not w in unit_terms:
                 try:
                     value = unit_abbrev_dict[w]
-                    #print('before ', units[s])
                     units[s] = units[s].replace(w, value)
-                    #print('after ', units[s])
 
-                except KeyError:
+                except KeyError:  # the term doesn't exist in the abbreviation dictionary
                     print('no abbreviation for', w)
-                    #StopIteration  # if the word/abbreviation doesn't exist in the unit or abbreviation dictionary
     return units
 
 
+# Performs string-cleaning operations on a dataframe to prepare it for being input to the classifier
 def clean_table(table, properties='parameter', has_properties=True, units='units', has_units=False, has_abbreviations=False):
-    table.replace('http://registry.it.csiro.au/def/environment/unit/', '', regex=True, inplace=True)
-    table.replace('http://qudt.org/vocab/unit#', '', regex=True, inplace=True)
-    table.replace('http://', '', regex=True, inplace=True)
-    table.replace('<', '', regex=True, inplace=True)
-    table.replace('>', '', regex=True, inplace=True)
-    table.replace('\\|', ' or ', regex=True, inplace=True)
-
-    table.replace('_', ' ', regex=True, inplace=True)
-    table.replace('\\(', '', regex=True, inplace=True)
-    table.replace('\\)', '', regex=True, inplace=True)
-    table.replace('\\[', '', regex=True, inplace=True)
-    table.replace('\\]', '', regex=True, inplace=True)
-    table.replace('/', ' / ', regex=True, inplace=True)
-    table.replace('-', ' ', regex=True, inplace=True)
-    table.replace(',', ' ', regex=True, inplace=True)
-    table.replace('   ', ' ', regex=True, inplace=True)
-    table.replace('\\^ ', '^', regex=True, inplace=True)
-    table.replace('\\^', ' ^', regex=True, inplace=True)
-    table.replace('\\^1', '', regex=True, inplace=True)
-    table.replace('\\*', ' * ', regex=True, inplace=True)
-
+    replacements = {
+        '\\^\\^xsd:string': '',
+        "'": '',
+        'http://registry.it.csiro.au/def/environment/unit/' : '',
+        'http://qudt.org/vocab/unit#': '',
+        'http://': '',
+        '<': '',
+        '>': '',
+        '\\|': ' or ',
+        '_': ' ',
+        '\\(': '',
+        '\\)': '',
+        '\\[': '',
+        '\\]': '',
+        '/': ' / ',
+        '-': ' ',
+        ',': ' ',
+        '   ': ' ',
+        '\\^ ': '^',
+        '\\^': ' ^',
+        '\\^1': '',
+        '\\*': ' * ',
+    }
+    table.replace(replacements, regex=True, inplace=True)
     if has_units:
         if has_abbreviations:
             table[units] = from_camelcase(table[units])
@@ -192,6 +199,7 @@ def clean_table(table, properties='parameter', has_properties=True, units='units
     return table
 
 
+# Tries to identify camelCase terms which need to be split into two words, and splits them (with some exceptions)
 def from_camelcase(array):
     us = []
     for unit in array:
@@ -208,6 +216,7 @@ def from_camelcase(array):
     return us
 
 
+# Transforms all strings in a dataframe to lowercase
 def table_to_lower(table):
     for column in table:
         if 'symbol' not in column and 'abbreviation' not in column:

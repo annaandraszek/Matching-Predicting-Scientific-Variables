@@ -5,10 +5,15 @@ from machine_learning import Classifier
 import pandas as pd
 import numpy as np
 
+# Raw downloaded/created datasets which will have features (properties/units) extracted and used in the training set
 datasets = ['AIMS_NingalooReef_AirTemperature_WindSpeed(Scalaravg10min)_WindDirection(VectorA-edited.csv',
                'ELI01m10m_201901.csv', 'IDCJDW4019.201903.csv', 'undownloadable.csv', ]
-only_qudt_datasets = ['proc_qudt-property.csv', 'proc_qudt-unit.csv']
+
+#Downloaded datasets in which the native features can also seve as their class features
 raw_qudt_datasets = ['qudt-property.csv', 'qudt-unit.csv']
+
+#Pre-processed versions of the qudt datasets
+only_qudt_datasets = ['proc_qudt-property.csv', 'proc_qudt-unit.csv']
 
 
 # def nn_train_predict():
@@ -23,12 +28,13 @@ raw_qudt_datasets = ['qudt-property.csv', 'qudt-unit.csv']
 #     ml = NeuralNetwork('my_property.csv')
 #     print(ml.predict([string], model))
 
-
+#Cleans up/pre-processes the raw qudt datasets and saves as files in only_qudt_datasets
 def process_raw_qudt():
     for dataset in raw_qudt_datasets:
         resource_creation.create_reference(dataset, raw_file=True)
 
 
+#Runs training and prediction on the Naive Bayes classifier
 def run_classifier():
     u = Classifier()
     u.train('my_unit.csv', t='u')
@@ -51,6 +57,8 @@ def run_classifier():
         else:
             print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
 
+
+#Runs prediction on a saved Naive Bayes classifier model
 def run_classifier_from_saved():
     c = Classifier()
     print('Enter xxx to exit')
@@ -68,6 +76,7 @@ def run_classifier_from_saved():
             print("Please try again and enter 'p' for property or 'u' for unit or 'xxx' to exit")
 
 
+#Tries to categorise user input as belonging to property or unit
 def property_or_unit(input):
     s_tokens = set(input.split())
     unit_vocab = resource_creation.create_reference('my_unit.csv', raw_file=False)
@@ -81,6 +90,7 @@ def property_or_unit(input):
         return 'p'
     else:
         return 1
+
 
 if __name__ == '__main__':
     #process_raw_qudt()
