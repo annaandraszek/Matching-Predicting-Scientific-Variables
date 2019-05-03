@@ -9,15 +9,15 @@ import resource_creation
 # pt 1: take completely raw datasets and create several tables
     # drop unecessary cols and do pre-processing on text
 
-def raw_to_clean(filename): #this method will export pre-processed sets of native measurement and unit terms, which
-    units_col = 'units'
-    measurements_col = 'parameter'
+def raw_to_clean(filename): #this method will export pre-processed sets of native property and unit terms, which
+    unit_col = 'units'
+    property_col = 'parameter'
     has_units = True
-    has_measurements = True
+    has_properties = True
     # can be merged with sets of these from other files to create a table which will be manually tagged
     # not a method you'd use each time, as it requires manual work after
     if 'NingalooReef' in filename:
-        old_df = pd.read_csv(filename, usecols=['parameter', 'units'])
+        old_df = pd.read_csv(filename, usecols=[property_col, unit_col])
         df = pd.DataFrame()
         for column in old_df:  # filter out duplicates here for speed
             #print(old_df[column].unique())
@@ -27,26 +27,26 @@ def raw_to_clean(filename): #this method will export pre-processed sets of nativ
         old_df = pd.read_csv(filename, skiprows=8, encoding='unicode_escape')
         old_df.drop(['Date'], axis=1, inplace=True)
 
-        parameters = []
+        properties = []
         for col in old_df:
-            parameters.append(col)
-        units, measurements = segment_units_measurements(parameters, 'p')
-        df = pd.DataFrame(data={'units': units, 'parameter': measurements})
+            properties.append(col)
+        units, properties = segment_properties_units(properties, 'p')
+        df = pd.DataFrame(data={unit_col: units, property_col: properties})
 
     elif 'ELI01m10m' in filename:
         old_df = pd.read_csv(filename)
         old_df.drop(['Date Time', 'Unnamed: 10', 'Unnamed: 11'], axis=1, inplace=True)
 
-        parameters = []
+        properties = []
         for col in old_df:
-            parameters.append(col)
-        units, measurements = segment_units_measurements(parameters, 'lw')
-        df = pd.DataFrame(data={'units': units, 'parameter': measurements})
+            properties.append(col)
+        units, properties = segment_properties_units(properties, 'lw')
+        df = pd.DataFrame(data={unit_col: units, property_col: properties})
 
     elif 'undownloadable' in filename:
         old_df = pd.read_csv(filename, usecols=['string'])
-        units, measurements = segment_units_measurements(old_df['string'], 'p')
-        df = pd.DataFrame(data={'units': units, 'parameter': measurements})
+        units, properties = segment_properties_units(old_df['string'], 'p')
+        df = pd.DataFrame(data={'units': units, property_col: properties})
 
     elif 'qudt' in filename:  # this section assumes files containing property and units are mutually exclusive. change if otherwise
         if 'proc' not in filename:
@@ -54,65 +54,65 @@ def raw_to_clean(filename): #this method will export pre-processed sets of nativ
             return 1
         df = pd.read_csv(filename)
         if 'property' in filename:
-            units_col = None
+            unit_col = None
             has_units = False
-            measurements_col = 'rdfs:label'
+            property_col = 'rdfs:label'
 
         elif 'unit' in filename:
-            has_measurements = False
-            measurements_col = None
-            units_col = 'rdfs:label'
+            has_property = False
+            property_col = None
+            unit_col = 'rdfs:label'
 
     else:
         print('Enter a valid filename')
         return 1
     df = table_to_lower(df)
 
-    df = clean_table(df, measurements_col, has_measurements, units_col, has_units)
+    df = clean_table(df, property_col, has_property, unit_col, has_units)
 
-    #create a set of native measurement/unit names
-    if units_col:
-        native_units = pd.Series.unique(df[units_col].dropna())
+    #create a set of native property/unit names
+    if unit_col:
+        native_units = pd.Series.unique(df[unit_col].dropna())
         unit_terms = resource_creation.create_reference('proc_qudt-unit.csv', raw_file=False)
         native_units = solve_abbreviations(native_units, unit_terms)
         native_units = solve_similar_spelling(native_units, unit_terms)
         native_units = [x.strip() for x in native_units]
 
-    if measurements_col:
-        native_measurements = pd.Series.unique(df[measurements_col])
-        native_measurements = [x.strip() for x in native_measurements] # remove whitespace which can cause them to not be identified as duplicates
+    if property_col:
+        native_properties = pd.Series.unique(df[property_col])
+        native_properties = [x.strip() for x in native_properties] # remove whitespace which can cause them to not be identified as duplicates
 
-    if units_col and measurements_col:
-        return native_units, native_measurements
-    elif units_col and not measurements_col:
+    if unit_col and property_col:
+        return native_units, native_properties
+    elif unit_col and not property_col:
         return native_units, None
-    elif measurements_col and not units_col:
-        return None, native_measurements
+    elif property_col and not unit_col:
+        return None, native_properties
 
 def tokenise_column_values(column):
     return set(column.str.split(' ', expand=True).stack().unique())
 
 
-def segment_units_measurements(raw_strings, segment_on='p'): #assume units in parentheses
+def segment_properties_units(raw_strings, segment_on='p'): #assume units in parentheses
     units = []
-    measurements = []
+    properties = []
     if segment_on == 'p': #parentheses
         for raw in raw_strings:
             if '(' in raw:
-                m, u = raw.rsplit('(', 1)
+                p, u = raw.rsplit('(', 1)
                 u = u.rstrip(')')
             else:
-                m = raw
+                p = raw
                 u = np.nan
             units.append(u)
-            measurements.append(m)
+            properties.append(p)
     elif segment_on == 'lw': # last word
         for raw in raw_strings:
-            m, u = raw.rsplit(' ', 1)
+            p, u = raw.rsplit(' ', 1)
             units.append(u)
-            measurements.append(m)
+            properties.append(p)
 
-    return units, measurements
+    return units, properties
 
 def solve_similar_spelling(units, unit_terms, max_distance=2):
     for s in range(len(units)):
@@ -154,7 +154,7 @@ def solve_abbreviations(units, unit_terms): #takes the unit tokens #todo: do I a
     return units
 
 
-def clean_table(table, measurements='parameter', has_measurements=True, units='units', has_units=False, has_abbreviations=False):
+def clean_table(table, properties='parameter', has_properties=True, units='units', has_units=False, has_abbreviations=False):
     table.replace('http://registry.it.csiro.au/def/environment/unit/', '', regex=True, inplace=True)
     table.replace('http://qudt.org/vocab/unit#', '', regex=True, inplace=True)
     table.replace('http://', '', regex=True, inplace=True)

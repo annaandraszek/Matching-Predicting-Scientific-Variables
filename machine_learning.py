@@ -11,6 +11,9 @@ from sklearn.metrics import classification_report
 
 class Classifier():
     test_size = 0.15
+    model_file_prefix = 'cnb_model_'
+    class_file_prefix = 'cnb_classes_'
+    file_suffix = '.joblib'
 
     def __init__(self):
         self.text_clf = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('clf', ComplementNB(norm=True))])
@@ -26,8 +29,7 @@ class Classifier():
         x_train = x
         y_train = y
         self.text_clf.fit(x_train, y_train)
-        dump(self.text_clf, 'cnb_model_' + t + '.joblib')
-        dump(self.classes, 'cnb_classes_' + t + '.joblib')
+        self.save_model_and_classes(t)
 
         accuracy = self.text_clf.score(x_train, y_train)
         print('(', file, ') Test set accuracy: ', accuracy)
@@ -35,21 +37,26 @@ class Classifier():
 
     def predict(self, new, t, load_model=False):
         if load_model:
-            self.text_clf = load('cnb_model.joblib')
-            self.classes = load('cnb_classes.joblib')
+            self.text_clf, self.classes = self.load_model_and_classes(t)
         predicted = self.text_clf.predict(new)
         for doc, category in zip(new, predicted):
             print('%r => %s' % (doc, self.classes[category]))
 
     def predict_top_x(self, new, x, t, load_model=False):
         if load_model:
-            self.text_clf = load('cnb_model_' + t + '.joblib')
-            self.classes = load('cnb_classes_' + t + '.joblib')
+            self.text_clf, self.classes = self.load_model_and_classes(t)
         predicted = self.text_clf.predict_proba(new)
         for doc, predictions in zip(new, predicted):
             sorted_pred = np.argsort(-predictions) # stores indexes
             for i in range(x):
                 print(i, predictions[sorted_pred[i]], self.classes[sorted_pred[i]])
+
+    def load_model_and_classes(self, t):
+        return load(self.model_file_prefix + t + self.file_suffix), load(self.class_file_prefix + t + self.file_suffix)
+
+    def save_model_and_classes(self, t):
+        dump(self.text_clf, self.model_file_prefix + t + self.file_suffix)
+        dump(self.classes, self.class_file_prefix + t + self.file_suffix)
 
     def get_attributes(self):
         print("feature_log_prob_:", self.text_clf.named_steps['clf'].feature_log_prob_)
