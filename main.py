@@ -15,6 +15,9 @@ raw_qudt_datasets = ['qudt-property.csv', 'qudt-unit.csv']
 #Pre-processed versions of the qudt datasets
 only_qudt_datasets = ['proc_qudt-property.csv', 'proc_qudt-unit.csv']
 
+unit_vocab = resource_creation.create_reference('my_unit.csv', raw_file=False)
+property_vocab = resource_creation.create_reference('my_property.csv', raw_file=False)
+
 
 # def nn_train_predict():
 #     model = 'basic'
@@ -33,6 +36,27 @@ def process_raw_qudt():
     for dataset in raw_qudt_datasets:
         resource_creation.create_reference(dataset, raw_file=True)
 
+
+def process_user_input():
+    s = str(input('Enter a string to predict:'))
+    if s == 'xxx':
+        return 1
+    s_tokens = set(s.split())
+    dictionary_s_tokens = (s_tokens.intersection(unit_vocab)).union(s_tokens.intersection(property_vocab))
+    property_and_unit_tokens = unit_vocab.union(property_vocab)
+    if len(dictionary_s_tokens) != len(s_tokens):
+        s = s.lower()
+        s = preprocessing.solve_abbreviations(s, property_and_unit_tokens, input_is_string=True)  # need to adapt this and next method for just strings
+        s = preprocessing.solve_similar_spelling(s, property_and_unit_tokens, input_is_string=True)
+        s_tokens = set(s.split())
+    t = property_or_unit(s_tokens)
+    if t == 1:
+        t = str(input('Enter p if property u if unit: '))
+    if t == 'p' or t == 'u':
+        return s, t
+    else:
+        print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
+        return 0
 
 #Runs training and prediction on the Naive Bayes classifier
 def run_classifier():
@@ -59,28 +83,13 @@ def run_classifier():
 
 
 #Runs prediction on a saved Naive Bayes classifier model
-def run_classifier_from_saved():
+def run_classifier_from_saved(s, t, predictions_to_return=10):
     c = Classifier()
-    print('Enter xxx to exit')
-    while True:
-        predictions_to_return = 10
-        s = str(input('Enter a string to predict:'))
-        if s == 'xxx':
-            break
-        t = property_or_unit(s)
-        if t == 1:
-            t = str(input('Enter p if property u if unit: '))
-        if t == 'p' or t == 'u':
-            c.predict_top_x([s], predictions_to_return, t, load_model=True)
-        else:
-            print("Please try again and enter 'p' for property or 'u' for unit or 'xxx' to exit")
+    c.predict_top_x([s], predictions_to_return, t, load_model=True)
 
 
 #Tries to categorise user input as belonging to property or unit
-def property_or_unit(input):
-    s_tokens = set(input.split())
-    unit_vocab = resource_creation.create_reference('my_unit.csv', raw_file=False)
-    property_vocab = resource_creation.create_reference('my_property.csv', raw_file=False)
+def property_or_unit(s_tokens):
     unit_prob = len(s_tokens.intersection(unit_vocab))
     property_prob = len(s_tokens.intersection(property_vocab))
     #print("Unit probability:", unit_prob, " Property probability:", property_prob)
@@ -107,8 +116,16 @@ if __name__ == '__main__':
 
     #Run to make predictions (using Complement Naive Bayes)
 
-    #run_classifier()
-    run_classifier_from_saved()
+    while True:
+        t = process_user_input()
+        if t == 1:
+            break
+        if t == 0:
+            continue
+        else:
+            user_string, type = t
+            #run_classifier()
+            run_classifier_from_saved(user_string, type)
 
 
 
