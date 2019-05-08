@@ -40,6 +40,11 @@ def create_reference(file, raw_file=True):
     return tokens
 
 
+def create_set_of_native(file):
+    df = pd.read_csv(file)
+    accepted_inputs = [line for line in df['native']] # {frozenset(line.split()) for line in df['native']}
+    return accepted_inputs
+
 # Extracts unlabelled properties, units from raw datasets and saves to a file to label manually
 def extract_features_to_tag(datasets):
     path = 'raw datasets/'

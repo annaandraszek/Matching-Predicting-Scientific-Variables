@@ -158,7 +158,7 @@ def solve_similar_spelling(units, unit_terms, max_distance=2, input_is_string=Fa
 def solve_abbreviations(units, unit_terms, input_is_string=False): #todo: do I also want to transform the unit token set?
     unit_abbrev_dict = {'deg':'degree', 'c':'celsius', '¡c':'degree celsius', 'hpa':'hectopascal', 'km':'kilometer', 'm':'meter',
                         'm2':'square meter', 's':'second', 'μmol':'micromole', 'mcmol':'micromole', 'h':'hour', 'mm':'millimeter',
-                        'w':'watt', 'dir':'direction', 'mj': 'megajoule'}
+                        'w':'watt', 'dir':'direction', 'mj': 'megajoule', 'temp':'temperature'}
 
     if input_is_string:
         p = units.split()

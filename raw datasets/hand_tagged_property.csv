@@ -16,7 +16,7 @@ dew point temperature,dew point
 evaporation,evaporation
 global radiation,daily cumulative global radiation downward shortwave since local midnight
 hours of sunlight,sunshine
-maximum temperature,maximum temperature
+air temperature,maximum temperature
 maximum wind gust,maximum wind gust in ten minute period prior to observation time at 4m
 maximum wind gust,speed of maximum wind gust
 maximum wind gust,maximum wind gust in ten minute period prior to observation time at 2m
@@ -73,3 +73,12 @@ wind speed,9am wind speed
 wind speed,wind speed
 wind velocity,wind vector e / w
 wind velocity,wind vector n / s
+water colour,water color
+subsurface temperature,soil temperature
+hours of sunlight,hours of sunlight
+hours of sunlight,sunlight
+dew point temperature,dew point temperature
+tsr,total solar radiation
+par,photosynthetically active radiation
+global radiation,global radiation
+msl pressure,mean sea level pressure

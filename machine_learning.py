@@ -6,6 +6,7 @@ from sklearn.naive_bayes import ComplementNB
 from joblib import dump, load
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
+from sklearn.model_selection import GridSearchCV
 
 
 # Machine learning classifier using Naive Bayes method
@@ -26,15 +27,15 @@ class Classifier():
         y = [list(self.classes).index(name) for name in y_names]  # representing y as ints
 
         #x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=self.test_size)  # ideally would split into training and testing sets - but don't due to (small) size of class samples
-        x_train = x
-        y_train = y
-        self.text_clf.fit(x_train, y_train)  # putting training set through the text classification pipeline
+        self.x_train = x
+        self.y_train = y
+        self.text_clf.fit(self.x_train, self.y_train)  # putting training set through the text classification pipeline
         self.save_model_and_classes(t)  # saving the resulting model and its accompanying class names
 
-        accuracy = self.text_clf.score(x_train, y_train)  # get accuracy by comparing model predictions from x_train to ground truth (y_train)
+        accuracy = self.text_clf.score(self.x_train, self.y_train)  # get accuracy by comparing model predictions from x_train to ground truth (y_train)
         print('(', file, ') Test set accuracy: ', accuracy)
         if print_report:  # set print_report=True for more information on the model's training performance
-            print(classification_report(y_train, self.text_clf.predict(x_train), target_names=self.classes))
+            print(classification_report(self.y_train, self.text_clf.predict(self.x_train), target_names=self.classes))
 
     # Print the top class prediction for the input
     def predict(self, new, t, load_model=False, have_return=False):
@@ -76,3 +77,19 @@ class Classifier():
         print("class_count_:", self.text_clf.named_steps['clf'].class_count_)
         print("feature_count_ :", self.text_clf.named_steps['clf'].feature_count_ )
         print("feature_all_ :", self.text_clf.named_steps['clf'].feature_all_ )
+
+    def parameter_tuning(self):
+        parameters = {
+            'vect__ngram_range': [(1, 1), (1,2)],
+            'tfidf__use_idf': (True, False),
+            'clf__alpha': (1, 9e-1, 8e-1, 7e-1, 6e-1, 5e-1, 4e-1, 3e-1, 2e-1, 1e-2),
+            'clf__norm': (True, False)
+        }
+        gs_clf = GridSearchCV(self.text_clf, parameters, cv=5, iid=False, n_jobs=-1)
+        gs_clf = gs_clf.fit(self.x_train, self.y_train)
+        print(self.classes[gs_clf.predict(['water'])[0]])
+        print(self.classes[gs_clf.predict(['degree'])[0]])
+        print(gs_clf.best_score_)
+        for param_name in sorted(parameters.keys()):
+            print("%s: %r" % (param_name, gs_clf.best_params_[param_name]))
+        #print(gs_clf.cv_results_)
