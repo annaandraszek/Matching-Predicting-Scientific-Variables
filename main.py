@@ -59,35 +59,21 @@ def process_user_input():
         print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
         return 0
 
-#Runs training and prediction on the Naive Bayes classifier
-def run_classifier():
+#Runs training on the Naive Bayes classifier
+def train_classifier():
     u = Classifier()
     u.train('my_unit.csv', t='u')
     p = Classifier()
     p.train('my_property.csv', t='p')
 
-    # Input loop for user to provide strings for prediction
-    print('Enter xxx to end')
-    while True:
-        predictions_to_return = 10
-        s = str(input('Enter a string to predict:'))
-        if s == 'xxx':
-            break
-        t = property_or_unit(s)
-        if t == 1:
-            t = str(input('Enter p if property u if unit: '))
-        if t == 'p':
-            p.predict_top_x([s], predictions_to_return, t)
-        elif t == 'u':
-            u.predict_top_x([s], predictions_to_return, t)
-        else:
-            print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
-
 
 #Runs prediction on a saved Naive Bayes classifier model
-def run_classifier_from_saved(s, t, predictions_to_return=10):
+def run_classifier_from_saved(s, t, predictions_to_return=10, ranked=False):
     c = Classifier()
-    c.predict_top_x([s], predictions_to_return, t, load_model=True)
+    if ranked:
+        c.predict_top_x([s], predictions_to_return, t, load_model=True)
+    else:
+        return c.predict([s], t, load_model=True, have_return=True)
 
 
 #Tries to categorise user input as belonging to property or unit
@@ -120,6 +106,8 @@ if __name__ == '__main__':
 
     # User input-prediction loop
     # Run to make predictions (using Complement Naive Bayes)
+
+    #train_classifier()
     while True:
         t = process_user_input()
         if t == 1:
@@ -131,7 +119,7 @@ if __name__ == '__main__':
             #run_classifier() # would recommend against running this method as-is right now - as it would be
                                 # re-trained on every user input
                                 # run if want to re-train the model before making predictions
-            run_classifier_from_saved(user_string, type) # run if want to use a pre-trained model to make predictions
+            print(run_classifier_from_saved(user_string, type)) # run if want to use a pre-trained model to make predictions
 
 
 

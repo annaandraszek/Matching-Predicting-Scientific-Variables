@@ -37,12 +37,19 @@ class Classifier():
             print(classification_report(y_train, self.text_clf.predict(x_train), target_names=self.classes))
 
     # Print the top class prediction for the input
-    def predict(self, new, t, load_model=False):
+    def predict(self, new, t, load_model=False, have_return=False):
         if load_model:
             self.text_clf, self.classes = self.load_model_and_classes(t)
         predicted = self.text_clf.predict(new)
-        for doc, category in zip(new, predicted):
-            print('%r => %s' % (doc, self.classes[category]))
+        if not have_return:
+            for doc, category in zip(new, predicted):
+                print('%r => %s' % (doc, self.classes[category]))
+        else:
+            classes = []
+            for doc, category in zip(new, predicted):
+                classes.append(self.classes[category])
+            return classes
+
 
     # Print x ranked class predictions for the input
     def predict_top_x(self, new, x, t, load_model=False):
