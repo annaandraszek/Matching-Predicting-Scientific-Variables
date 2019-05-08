@@ -15,8 +15,8 @@ raw_qudt_datasets = ['qudt-property.csv', 'qudt-unit.csv']
 #Pre-processed versions of the qudt datasets
 only_qudt_datasets = ['proc_qudt-property.csv', 'proc_qudt-unit.csv']
 
-unit_vocab = resource_creation.create_reference('my_unit.csv', raw_file=False)
-property_vocab = resource_creation.create_reference('my_property.csv', raw_file=False)
+unit_vocab = {str.lower(t) for t in resource_creation.create_reference('my_unit.csv', raw_file=False)}
+property_vocab = {str.lower(t) for t in resource_creation.create_reference('my_property.csv', raw_file=False)}
 
 
 # def nn_train_predict():
@@ -45,7 +45,8 @@ def process_user_input():
     dictionary_s_tokens = (s_tokens.intersection(unit_vocab)).union(s_tokens.intersection(property_vocab))
     property_and_unit_tokens = unit_vocab.union(property_vocab)
     if len(dictionary_s_tokens) != len(s_tokens):
-        s = s.lower()
+        s = str.lower(s)
+        #property_and_unit_tokens = [str.lower(token) for token in property_and_unit_tokens]
         s = preprocessing.solve_abbreviations(s, property_and_unit_tokens, input_is_string=True)  # need to adapt this and next method for just strings
         s = preprocessing.solve_similar_spelling(s, property_and_unit_tokens, input_is_string=True)
         s_tokens = set(s.split())
@@ -124,7 +125,8 @@ if __name__ == '__main__':
             continue
         else:
             user_string, type = t
-            #run_classifier()
+            #run_classifier() # would recommend against running this method as-is right now - as it would be
+                                # re-trained on every user input
             run_classifier_from_saved(user_string, type)
 
 
