@@ -119,9 +119,9 @@ def segment_properties_units(raw_strings, segment_on='p'):
 
 # Tries to match terms not in a unit or property set to words in that set, based on string modification distance
 # eg. 'metre' => 'meter', 'meters' => 'meter'
-def solve_similar_spelling(units, unit_terms, max_distance=2):
-    for s in range(len(units)):
-        p = units[s].split(' ')
+def solve_similar_spelling(units, unit_terms, max_distance=2, input_is_string=False):
+    if input_is_string:
+        p = units.split()
         for w in p:
             if not w in unit_terms:
                 best_u = ''
@@ -132,28 +132,55 @@ def solve_similar_spelling(units, unit_terms, max_distance=2):
                         if dist <= best_udist:
                             best_udist = dist
                             best_u = u
-                            #print(w, u, dist)
+                            print(w, u, dist)
                 if best_u != '':
-                    units[s] = units[s].replace(w, best_u)
+                    units = units.replace(w, best_u)
+    else:
+        for s in range(len(units)):
+            p = units[s].split(' ')
+            for w in p:
+                if not w in unit_terms:
+                    best_u = ''
+                    best_udist = max_distance
+                    for u in unit_terms:
+                        dist = stringdist.rdlevenshtein(w, u)
+                        if dist < len(w) - 1:
+                            if dist <= best_udist:
+                                best_udist = dist
+                                best_u = u
+                                #print(w, u, dist)
+                    if best_u != '':
+                        units[s] = units[s].replace(w, best_u)
     return units
 
 
 # Tries to identify common unit abbreviations and change to the appropriate unit term
-def solve_abbreviations(units, unit_terms): #todo: do I also want to transform the unit token set?
+def solve_abbreviations(units, unit_terms, input_is_string=False): #todo: do I also want to transform the unit token set?
     unit_abbrev_dict = {'deg':'degree', 'c':'celsius', '¡c':'degree celsius', 'hpa':'hectopascal', 'km':'kilometer', 'm':'meter',
                         'm2':'square meter', 's':'second', 'μmol':'micromole', 'mcmol':'micromole', 'h':'hour', 'mm':'millimeter',
                         'w':'watt', 'dir':'direction', 'mj': 'megajoule'}
 
-    for s in range(len(units)):
-        p = units[s].split(' ')
+    if input_is_string:
+        p = units.split()
         for w in p:
             if not w in unit_terms:
                 try:
                     value = unit_abbrev_dict[w]
-                    units[s] = units[s].replace(w, value)
+                    units = units.replace(w, value)
 
                 except KeyError:  # the term doesn't exist in the abbreviation dictionary
                     print('no abbreviation for', w)
+    else:
+        for s in range(len(units)):
+            p = units[s].split(' ')
+            for w in p:
+                if not w in unit_terms:
+                    try:
+                        value = unit_abbrev_dict[w]
+                        units[s] = units[s].replace(w, value)
+
+                    except KeyError:  # the term doesn't exist in the abbreviation dictionary
+                        print('no abbreviation for', w)
     return units
 
 
