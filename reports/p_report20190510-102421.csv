@@ -1,0 +1,445 @@
+,f1-score,precision,recall,support
+1 1 1 2 tetrachloroethane concentration,0.6666666666666666,0.5,1.0,1.0
+1 1 1 trichloroethane concentration,0.6666666666666666,0.5,1.0,1.0
+1 1 2 2 tetrachloroethane concentration,0.0,0.0,0.0,1.0
+1 1 2 trichloroethane concentration,0.0,0.0,0.0,1.0
+1 1 dichloro 1 propene concentration,1.0,1.0,1.0,1.0
+1 1 dichloroethane concentration,0.6666666666666666,0.5,1.0,1.0
+1 1 dichloroethene concentration,1.0,1.0,1.0,1.0
+1 2 3 trichlorobenzene concentration,0.5,0.3333333333333333,1.0,1.0
+1 2 3 trichloropropane concentration,1.0,1.0,1.0,1.0
+1 2 4 trichlorobenzene concentration,0.0,0.0,0.0,1.0
+1 2 4 trimethylbenzene concentration,0.6666666666666666,0.5,1.0,1.0
+1 2 dibromo 3 chloropropane concentration,1.0,1.0,1.0,1.0
+1 2 dibromoethane concentration,1.0,1.0,1.0,1.0
+1 2 dichlorobenzene concentration,0.5,0.3333333333333333,1.0,1.0
+1 2 dichloroethane concentration,0.0,0.0,0.0,1.0
+1 2 dichloroethane d4 concentration,1.0,1.0,1.0,1.0
+1 2 dichloropropane concentration,0.5,0.3333333333333333,1.0,1.0
+1 2 dihydroacenaphthylene concentration,1.0,1.0,1.0,1.0
+1 3 1 4 dimethylbenzene concentration,1.0,1.0,1.0,1.0
+1 3 5 trimethylbenzene concentration,0.0,0.0,0.0,1.0
+1 3 dichlorobenzene concentration,0.0,0.0,0.0,1.0
+1 3 dichloropropane concentration,0.0,0.0,0.0,1.0
+1 4 dichlorobenzene concentration,0.0,0.0,0.0,1.0
+1 bromo 4 fluorobenzene concentration,1.0,1.0,1.0,1.0
+1 chloro 2 methylbenzene concentration,0.6666666666666666,0.5,1.0,1.0
+1 chloro 4 methylbenzene concentration,0.0,0.0,0.0,1.0
+1 phenylbutane concentration,1.0,1.0,1.0,1.0
+2 2 dichloropropane concentration,0.0,0.0,0.0,1.0
+2 2 dimethylpropane concentration,1.0,1.0,1.0,1.0
+2 4 5 trichlorophenol concentration,0.6666666666666666,0.5,1.0,1.0
+2 4 6 tribromophenol concentration,1.0,1.0,1.0,1.0
+2 4 6 trichlorophenol concentration,0.0,0.0,0.0,1.0
+2 4 dichlorophenol concentration,0.6666666666666666,0.5,1.0,1.0
+2 4 dimethylphenol concentration,1.0,1.0,1.0,1.0
+2 6 dichlorophenol concentration,0.0,0.0,0.0,1.0
+2 chlorophenol 3 4 5 6 d4 concentration,1.0,1.0,1.0,1.0
+2 chlorophenol concentration,1.0,1.0,1.0,1.0
+2 fluorobiphenyl concentration,1.0,1.0,1.0,1.0
+2 methoxy 2 methylpropane concentration,1.0,1.0,1.0,1.0
+2 methylphenol concentration,1.0,1.0,1.0,1.0
+2 nitrophenol concentration,1.0,1.0,1.0,1.0
+20 day biochemical oxygen demand,1.0,1.0,1.0,1.0
+20 day nitrogenous biochemical oxygen demand,1.0,1.0,1.0,1.0
+36cl cl ratio,1.0,1.0,1.0,1.0
+4 chloro 3 methylphenol concentration,1.0,1.0,1.0,1.0
+4 isopropyltoluene concentration,1.0,1.0,1.0,1.0
+4 methylpentan 2 one concentration,1.0,1.0,1.0,1.0
+4 terphenyl d14 concentration,1.0,1.0,1.0,1.0
+5 day biochemical oxygen demand,1.0,1.0,1.0,1.0
+5 day carbonaceous biochemical oxygen demand,1.0,1.0,1.0,1.0
+5 day nitrogenous biochemical oxygen demand,1.0,1.0,1.0,1.0
+absorption by colored dissolved organic matter,1.0,1.0,1.0,1.0
+absorption by coloured and detrital matter,1.0,1.0,1.0,1.0
+absorption by non algal particles,1.0,1.0,1.0,1.0
+absorption by particles,1.0,1.0,1.0,1.0
+absorption by phytoplankton,1.0,1.0,1.0,1.0
+acenaphthylene concentration,1.0,1.0,1.0,1.0
+actinide concentration,1.0,1.0,1.0,1.0
+active sediment layer thickness,1.0,1.0,1.0,1.0
+air pressure,0.0,0.0,0.0,1.0
+air temperature,0.8695652173913044,0.7692307692307693,1.0,10.0
+albuminoid nitrogen concentration,1.0,1.0,1.0,1.0
+aldrin concentration,1.0,1.0,1.0,1.0
+alkali metal concentration,1.0,1.0,1.0,1.0
+alkaline earth metal concentration,1.0,1.0,1.0,1.0
+alpha endosulfan concentration,1.0,1.0,1.0,1.0
+alpha hexachlorocyclohexane concentration,1.0,1.0,1.0,1.0
+aluminium concentration,1.0,1.0,1.0,1.0
+ammonia and ammonium as n concentration,0.0,0.0,0.0,1.0
+ammonia and ammonium as nh4 concentration,1.0,1.0,1.0,1.0
+ammonia and ammonium concentration,0.6666666666666666,0.5,1.0,1.0
+ammonia as n concentration,0.0,0.0,0.0,1.0
+ammonia concentration,0.6666666666666666,0.5,1.0,1.0
+ammonium as n concentration,1.0,1.0,1.0,1.0
+ammonium nh4 concentration,1.0,1.0,1.0,1.0
+anion concentration,1.0,1.0,1.0,1.0
+anthracene concentration,1.0,1.0,1.0,1.0
+anthracene d10 concentration,1.0,1.0,1.0,1.0
+antimony concentration,1.0,1.0,1.0,1.0
+arsenic concentration,1.0,1.0,1.0,1.0
+attenuation coefficient with depth,1.0,1.0,1.0,1.0
+backscatter by non algal particles,1.0,1.0,1.0,1.0
+backscatter by particles,1.0,1.0,1.0,1.0
+backscatter by phytoplankton,1.0,1.0,1.0,1.0
+bacteria total plate count,1.0,1.0,1.0,1.0
+barium concentration,1.0,1.0,1.0,1.0
+barometric pressure,1.0,1.0,1.0,1.0
+benzaanthracene concentration,1.0,1.0,1.0,1.0
+benzene  toluene  ethylbenzene  xylene concentration,1.0,1.0,1.0,1.0
+benzene concentration,1.0,1.0,1.0,1.0
+benzoapyrene concentration,1.0,1.0,1.0,1.0
+benzobfluoranthene concentration,1.0,1.0,1.0,1.0
+benzoghiperylene concentration,1.0,1.0,1.0,1.0
+benzokfluoranthene concentration,1.0,1.0,1.0,1.0
+beryllium concentration,1.0,1.0,1.0,1.0
+beta endosulfan concentration,1.0,1.0,1.0,1.0
+bicarbonate alkalinity as caco3,1.0,1.0,1.0,1.0
+bicarbonate concentration,1.0,1.0,1.0,1.0
+biochemical oxygen demand,1.0,1.0,1.0,1.0
+bismuth concentration,1.0,1.0,1.0,1.0
+boron concentration,1.0,1.0,1.0,1.0
+bromide concentration,1.0,1.0,1.0,1.0
+bromine concentration,1.0,1.0,1.0,1.0
+bromobenzene concentration,1.0,1.0,1.0,1.0
+bromochloromethane concentration,1.0,1.0,1.0,1.0
+bromodichloromethane concentration,1.0,1.0,1.0,1.0
+bromomethane concentration,1.0,1.0,1.0,1.0
+bromophos ethyl concentration,1.0,1.0,1.0,1.0
+butane concentration,0.6666666666666666,0.5,1.0,1.0
+butanone concentration,1.0,1.0,1.0,1.0
+c10   c14 hydrocarbon fraction concentration,0.6666666666666666,0.5,1.0,1.0
+c10   c236 hydrocarbon fraction concentration,0.6666666666666666,0.5,1.0,1.0
+c10 c14 hydrocarbon fraction concentration,0.0,0.0,0.0,1.0
+c10 c236 hydrocarbon fraction concentration,0.0,0.0,0.0,1.0
+c15   c28 hydrocarbon fraction concentration,0.6666666666666666,0.5,1.0,1.0
+c15 c28 hydrocarbon fraction concentration,0.0,0.0,0.0,1.0
+c29   c36 hydrocarbon fraction concentration,0.6666666666666666,0.5,1.0,1.0
+c29 c36 hydrocarbon fraction concentration,0.0,0.0,0.0,1.0
+c6   c9 hydrocarbon fraction concentration,0.6666666666666666,0.5,1.0,1.0
+c6 c9 hydrocarbon fraction concentration,0.0,0.0,0.0,1.0
+cadmium concentration,1.0,1.0,1.0,1.0
+caesium concentration,1.0,1.0,1.0,1.0
+calcium carbonate concentration,1.0,1.0,1.0,1.0
+calcium concentration,1.0,1.0,1.0,1.0
+carbon   average content,0.6666666666666666,0.5,1.0,1.0
+carbon   dissolved inorganic concentration,0.6666666666666666,0.5,1.0,1.0
+carbon   dissolved organic concentration,0.6666666666666666,0.5,1.0,1.0
+carbon   inorganic concentration,0.6666666666666666,0.5,1.0,1.0
+carbon   organic concentration,0.6666666666666666,0.5,1.0,1.0
+carbon   suspended inorganic concentration,0.6666666666666666,0.5,1.0,1.0
+carbon   suspended organic concentration,0.6666666666666666,0.5,1.0,1.0
+carbon   suspended total,0.6666666666666666,0.5,1.0,1.0
+carbon 13 concentration,1.0,1.0,1.0,1.0
+carbon 14 concentration,1.0,1.0,1.0,1.0
+carbon average content,0.0,0.0,0.0,1.0
+carbon concentration,1.0,1.0,1.0,1.0
+carbon dioxide flux,1.0,1.0,1.0,1.0
+carbon dioxide storage flux,1.0,1.0,1.0,1.0
+carbon dissolved inorganic concentration,0.0,0.0,0.0,1.0
+carbon dissolved organic concentration,0.0,0.0,0.0,1.0
+carbon disulfide concentration,1.0,1.0,1.0,1.0
+carbon inorganic concentration,0.0,0.0,0.0,1.0
+carbon monoxide concentration,1.0,1.0,1.0,1.0
+carbon organic concentration,0.0,0.0,0.0,1.0
+carbon suspended inorganic concentration,0.0,0.0,0.0,1.0
+carbon suspended organic concentration,0.0,0.0,0.0,1.0
+carbon suspended total,0.0,0.0,0.0,1.0
+carbonaceous biochemical oxygen demand,1.0,1.0,1.0,1.0
+carbonate alkalinity as caco3,1.0,1.0,1.0,1.0
+carbonate concentration,1.0,1.0,1.0,1.0
+cation concentration,1.0,1.0,1.0,1.0
+cerium concentration,1.0,1.0,1.0,1.0
+chemical compound concentration,1.0,1.0,1.0,1.0
+chemical entity concentration,1.0,1.0,1.0,1.0
+chemical oxygen demand,1.0,1.0,1.0,1.0
+chlordane concentration,1.0,1.0,1.0,1.0
+chloride concentration,1.0,1.0,1.0,1.0
+chlorinated volatile organic compound concentration,1.0,1.0,1.0,1.0
+chlorine 36 concentration,1.0,1.0,1.0,1.0
+chlorine concentration,1.0,1.0,1.0,1.0
+chlorobenzene concentration,1.0,1.0,1.0,1.0
+chloroethane concentration,1.0,1.0,1.0,1.0
+chloroethene concentration,1.0,1.0,1.0,1.0
+chloroform concentration,1.0,1.0,1.0,1.0
+chloromethane concentration,1.0,1.0,1.0,1.0
+chlorophenylmethane concentration,1.0,1.0,1.0,1.0
+chlorophyll a concentration,0.4,0.25,1.0,1.0
+chlorophyll b concentration,0.0,0.0,0.0,1.0
+chlorophyll c concentration,0.0,0.0,0.0,1.0
+chlorophyll concentration,0.0,0.0,0.0,1.0
+chlorpyrifos concentration,1.0,1.0,1.0,1.0
+chromium  hexavalent concentration,1.0,1.0,1.0,1.0
+chromium  trivalent concentration,1.0,1.0,1.0,1.0
+chromium concentration,1.0,1.0,1.0,1.0
+chrysene concentration,1.0,1.0,1.0,1.0
+cis 1 2 dichloroethene concentration,1.0,1.0,1.0,1.0
+cis 1 3 dichloropropene concentration,1.0,1.0,1.0,1.0
+cis 1 4 dichloro 2 butene concentration,1.0,1.0,1.0,1.0
+clay fraction,1.0,1.0,1.0,1.0
+cloud amount,1.0,1.0,1.0,2.0
+cobalt concentration,1.0,1.0,1.0,1.0
+coliform concentration,1.0,1.0,1.0,1.0
+copper concentration,1.0,1.0,1.0,1.0
+crocodile concentration,1.0,1.0,1.0,1.0
+degree heating days,1.0,1.0,1.0,1.0
+deuterium concentration,1.0,1.0,1.0,1.0
+dew point temperature,1.0,1.0,1.0,2.0
+dibenza hanthracene concentration,1.0,1.0,1.0,1.0
+dibromochloromethane concentration,1.0,1.0,1.0,1.0
+dibromomethane concentration,1.0,1.0,1.0,1.0
+dichlorodifluoromethane concentration,1.0,1.0,1.0,1.0
+dichlorodiphenyldichloroethane concentration,1.0,1.0,1.0,1.0
+dichlorodiphenyldichloroethylene concentration,1.0,1.0,1.0,1.0
+dichlorodiphenyltrichloroethane concentration,1.0,1.0,1.0,1.0
+dichloromethane concentration,1.0,1.0,1.0,1.0
+dieldrin concentration,1.0,1.0,1.0,1.0
+discharge,1.0,1.0,1.0,1.0
+dissolved inorganic phosphorus concentration,1.0,1.0,1.0,1.0
+dissolved nitrogen concentration,1.0,1.0,1.0,1.0
+dissolved organic matter,1.0,1.0,1.0,1.0
+dissolved organic phosphorus concentration,1.0,1.0,1.0,1.0
+dissolved oxygen concentration,1.0,1.0,1.0,1.0
+dissolved volatile solids,1.0,1.0,1.0,1.0
+dysprosium concentration,1.0,1.0,1.0,1.0
+eastward sea water current,1.0,1.0,1.0,1.0
+electrical conductivity of water,1.0,1.0,1.0,1.0
+endosulfan concentration,1.0,1.0,1.0,1.0
+endrin concentration,1.0,1.0,1.0,1.0
+erbium concentration,1.0,1.0,1.0,1.0
+escherichia coli count,1.0,1.0,1.0,1.0
+estuarine crocodile concentration,1.0,1.0,1.0,1.0
+ethane concentration,1.0,1.0,1.0,1.0
+ethenyl acetate concentration,1.0,1.0,1.0,1.0
+ethion concentration,1.0,1.0,1.0,1.0
+ethyl acetate concentration,1.0,1.0,1.0,1.0
+ethylbenzene concentration,1.0,1.0,1.0,1.0
+europium concentration,1.0,1.0,1.0,1.0
+evaporation,1.0,1.0,1.0,1.0
+faecal coliform concentration,1.0,1.0,1.0,1.0
+faecal streptococci concentration,1.0,1.0,1.0,1.0
+figure of merit ratio,1.0,1.0,1.0,1.0
+filterable reactive phosphate as p concentration,1.0,1.0,1.0,1.0
+fine total suspended solids,1.0,1.0,1.0,1.0
+fixed dissolved solids,1.0,1.0,1.0,1.0
+fixed suspended solids,1.0,1.0,1.0,1.0
+fluoranthene concentration,1.0,1.0,1.0,1.0
+fluorene concentration,1.0,1.0,1.0,1.0
+fluoride concentration,1.0,1.0,1.0,1.0
+fluorine concentration,1.0,1.0,1.0,1.0
+formaldehyde concentration,1.0,1.0,1.0,1.0
+gadolinium concentration,1.0,1.0,1.0,1.0
+gallium concentration,1.0,1.0,1.0,1.0
+gamma hexachlorocyclohexane concentration,1.0,1.0,1.0,1.0
+global radiation,1.0,1.0,1.0,2.0
+hafnium concentration,1.0,1.0,1.0,1.0
+halide concentration,1.0,1.0,1.0,1.0
+haloalkane concentration,1.0,1.0,1.0,1.0
+halocarbon concentration,1.0,1.0,1.0,1.0
+halogen concentration,1.0,1.0,1.0,1.0
+helium concentration,1.0,1.0,1.0,1.0
+heptachlor concentration,1.0,1.0,1.0,1.0
+heptachlor epoxide concentration,1.0,1.0,1.0,1.0
+hexachlorobenzene concentration,1.0,1.0,1.0,1.0
+hexachlorobutadiene concentration,1.0,1.0,1.0,1.0
+hexan 2 one concentration,1.0,1.0,1.0,1.0
+hexane concentration,1.0,1.0,1.0,1.0
+holmium concentration,1.0,1.0,1.0,1.0
+hours of sunlight,1.0,1.0,1.0,3.0
+hydrocarbon concentration,1.0,1.0,1.0,1.0
+hydrogen sulfide concentration,1.0,1.0,1.0,1.0
+hydroxide alkalinity as caco3,1.0,1.0,1.0,1.0
+immobilised particulate inorganic phosphorus concentration,1.0,1.0,1.0,1.0
+indeno1 2 3 c dpyrene concentration,1.0,1.0,1.0,1.0
+indium concentration,1.0,1.0,1.0,1.0
+inorganic nitrogen concentration,1.0,1.0,1.0,1.0
+inorganic phosphorus concentration,1.0,1.0,1.0,1.0
+iodide concentration,1.0,1.0,1.0,1.0
+iodine concentration,1.0,1.0,1.0,1.0
+iodomethane concentration,1.0,1.0,1.0,1.0
+iron concentration,1.0,1.0,1.0,1.0
+iron ii concentration,1.0,1.0,1.0,1.0
+iron iii concentration,1.0,1.0,1.0,1.0
+iron sulfide concentration or iron sulphide concentration,1.0,1.0,1.0,1.0
+isobutane concentration,1.0,1.0,1.0,1.0
+isopentane concentration,1.0,1.0,1.0,1.0
+isopropylbenzene concentration,1.0,1.0,1.0,1.0
+johnston\s crocodile concentration,1.0,1.0,1.0,1.0
+lanthanide concentration,1.0,1.0,1.0,1.0
+lanthanum concentration,1.0,1.0,1.0,1.0
+lead concentration,1.0,1.0,1.0,1.0
+lithium concentration,1.0,1.0,1.0,1.0
+lutetium concentration,1.0,1.0,1.0,1.0
+magnesium concentration,1.0,1.0,1.0,1.0
+manganese concentration,1.0,1.0,1.0,1.0
+maximum wind gust,1.0,1.0,1.0,7.0
+mercury concentration,1.0,1.0,1.0,1.0
+metal concentration,1.0,1.0,1.0,1.0
+metalloid concentration,1.0,1.0,1.0,1.0
+methane concentration,1.0,1.0,1.0,1.0
+methoxychlor concentration,1.0,1.0,1.0,1.0
+molybdenum concentration,1.0,1.0,1.0,1.0
+monocyclic aromatic hydrocarbon concentration,1.0,1.0,1.0,1.0
+monomethylmercuryii cation concentration,1.0,1.0,1.0,1.0
+msl pressure,1.0,1.0,1.0,3.0
+n butane concentration,0.0,0.0,0.0,1.0
+naphthalene concentration,1.0,1.0,1.0,1.0
+neodymium concentration,1.0,1.0,1.0,1.0
+nickel concentration,1.0,1.0,1.0,1.0
+nitrate and nitrite n concentration,1.0,1.0,1.0,1.0
+nitrate n concentration,1.0,1.0,1.0,1.0
+nitrite n concentration,1.0,1.0,1.0,1.0
+nitrogen concentration,1.0,1.0,1.0,1.0
+nitrogen concentration   kjeldahl method,0.6666666666666666,0.5,1.0,1.0
+nitrogen concentration kjeldahl method,0.0,0.0,0.0,1.0
+nitrogen oxides concentration,1.0,1.0,1.0,1.0
+nitrogenous biochemical oxygen demand,1.0,1.0,1.0,1.0
+noble gas concentration,1.0,1.0,1.0,1.0
+non carbonate hardness,1.0,1.0,1.0,1.0
+non metal concentration,1.0,1.0,1.0,1.0
+northward sea water current,1.0,1.0,1.0,1.0
+nutrient concentration,1.0,1.0,1.0,1.0
+organic compound concentration,1.0,1.0,1.0,1.0
+organic nitrogen concentration,1.0,1.0,1.0,1.0
+organic phosphorus concentration,1.0,1.0,1.0,1.0
+organic sulphur concentration or organic sulfur concentration,0.0,0.0,0.0,1.0
+organochlorine concentration,1.0,1.0,1.0,1.0
+organochlorine pesticide concentration,1.0,1.0,1.0,1.0
+organophosphate concentration,1.0,1.0,1.0,1.0
+organophosphate pesticide concentration,1.0,1.0,1.0,1.0
+orthophosphate as p concentration,0.0,0.0,0.0,1.0
+orthophosphate as po4 concentration,1.0,1.0,1.0,1.0
+orthophosphate concentration,0.6666666666666666,0.5,1.0,1.0
+oxygen 18 concentration,1.0,1.0,1.0,1.0
+oxygen concentration,1.0,1.0,1.0,1.0
+par,1.0,1.0,1.0,2.0
+particulate inorganic phosphorus concentration,1.0,1.0,1.0,1.0
+pentachloroethane concentration,1.0,1.0,1.0,1.0
+pentachlorophenol concentration,1.0,1.0,1.0,1.0
+pentane concentration,1.0,1.0,1.0,1.0
+pesticide concentration,1.0,1.0,1.0,1.0
+petroleum hydrocarbon concentration,1.0,1.0,1.0,1.0
+ph,0.6666666666666666,0.5,1.0,1.0
+phenanthrene concentration,1.0,1.0,1.0,1.0
+phenol concentration,1.0,1.0,1.0,1.0
+phenol d6 concentration,1.0,1.0,1.0,1.0
+phosphate as p concentration,0.0,0.0,0.0,1.0
+phosphate concentration,0.6666666666666666,0.5,1.0,1.0
+phosphorus concentration,1.0,1.0,1.0,1.0
+photosynthetic photon flux,1.0,1.0,1.0,1.0
+polyatomic ion concentration,1.0,1.0,1.0,1.0
+polycyclic aromatic hydrocarbon concentration,1.0,1.0,1.0,1.0
+polyphosphate as po4 concentration,1.0,1.0,1.0,1.0
+post transition metal concentration,1.0,1.0,1.0,1.0
+potassium concentration,1.0,1.0,1.0,1.0
+practical salinity,1.0,1.0,1.0,1.0
+praseodymium concentration,1.0,1.0,1.0,1.0
+propane concentration,1.0,1.0,1.0,1.0
+propylbenzene concentration,1.0,1.0,1.0,1.0
+purgeable halocarbon concentration,1.0,1.0,1.0,1.0
+pyrene concentration,1.0,1.0,1.0,1.0
+pyrite  concentration,1.0,1.0,1.0,1.0
+radon 220 concentration,1.0,1.0,1.0,1.0
+radon 222 concentration,1.0,1.0,1.0,1.0
+radon 226 concentration,1.0,1.0,1.0,1.0
+radon concentration,1.0,1.0,1.0,1.0
+rain accumulation,1.0,1.0,1.0,1.0
+rain duration,1.0,1.0,1.0,1.0
+rain intensity,1.0,1.0,1.0,1.0
+rainfall,1.0,1.0,1.0,1.0
+rare earth element concentration,1.0,1.0,1.0,1.0
+relative humidity,1.0,1.0,1.0,5.0
+residual alkalinity hazard,1.0,1.0,1.0,1.0
+rubidium concentration,1.0,1.0,1.0,1.0
+samarium concentration,1.0,1.0,1.0,1.0
+sand fraction,1.0,1.0,1.0,1.0
+sea surface elevation,1.0,1.0,1.0,1.0
+sea water density,1.0,1.0,1.0,1.0
+sea water potential density,1.0,1.0,1.0,1.0
+sea water temperature,0.0,0.0,0.0,1.0
+sec butylbenzene concentration,1.0,1.0,1.0,1.0
+secchi depth   turbidity,0.6666666666666666,0.5,1.0,1.0
+secchi depth turbidity,0.0,0.0,0.0,1.0
+selenium concentration,1.0,1.0,1.0,1.0
+semi volatile organic compound concentration,1.0,1.0,1.0,1.0
+silicate as si concentration,1.0,1.0,1.0,1.0
+silicate as sio2 concentration,1.0,1.0,1.0,1.0
+silicon concentration,1.0,1.0,1.0,1.0
+silicon dioxide concentration,1.0,1.0,1.0,1.0
+silt fraction,1.0,1.0,1.0,1.0
+silver concentration,1.0,1.0,1.0,1.0
+snow accumulation,1.0,1.0,1.0,1.0
+sodium concentration,1.0,1.0,1.0,1.0
+streptococcus concentration,1.0,1.0,1.0,1.0
+strontium concentration,1.0,1.0,1.0,1.0
+styrene concentration,1.0,1.0,1.0,1.0
+subsurface temperature,1.0,1.0,1.0,6.0
+sulfate as s concentration,1.0,1.0,1.0,1.0
+sulfide concentration or sulphide concentration,0.6666666666666666,0.5,1.0,1.0
+sulfite as s concentration or sulphite as s concentration,0.0,0.0,0.0,1.0
+sulfite concentration or sulphite concentration,0.6666666666666666,0.5,1.0,1.0
+sulphate concentration or sulfate concentration,1.0,1.0,1.0,1.0
+sulphide as s concentration or sulfide as s concentration,0.0,0.0,0.0,1.0
+sulphur concentration or sulfur concentration,0.6666666666666666,0.5,1.0,1.0
+sulphur dioxide concentration or sulfur dioxide concentration,1.0,1.0,1.0,1.0
+suspended volatile solids,1.0,1.0,1.0,1.0
+tellurium concentration,1.0,1.0,1.0,1.0
+terbium concentration,1.0,1.0,1.0,1.0
+tert butylbenzene concentration,1.0,1.0,1.0,1.0
+tetrachloroethene concentration,1.0,1.0,1.0,1.0
+tetrachloromethane concentration,1.0,1.0,1.0,1.0
+thallium concentration,1.0,1.0,1.0,1.0
+thorium concentration,1.0,1.0,1.0,1.0
+thulium concentration,1.0,1.0,1.0,1.0
+tin concentration,1.0,1.0,1.0,1.0
+titanium concentration,1.0,1.0,1.0,1.0
+toluene concentration,1.0,1.0,1.0,1.0
+toluene d8 concentration,1.0,1.0,1.0,1.0
+total absorption,1.0,1.0,1.0,1.0
+total alkalinity as caco3,1.0,1.0,1.0,1.0
+total bacteria,1.0,1.0,1.0,1.0
+total dissolved carbon dioxide concentration,1.0,1.0,1.0,1.0
+total dissolved ions,1.0,1.0,1.0,1.0
+total dissolved solids,1.0,1.0,1.0,1.0
+total fixed solids,1.0,1.0,1.0,1.0
+total hardness as caco3,1.0,1.0,1.0,1.0
+total sediment thickness,1.0,1.0,1.0,1.0
+total solids,1.0,1.0,1.0,1.0
+total suspended solids,1.0,1.0,1.0,1.0
+total volatile solids,1.0,1.0,1.0,1.0
+trans 1 2 dichloroethene concentration,1.0,1.0,1.0,1.0
+trans 1 3 dichloropropene concentration,1.0,1.0,1.0,1.0
+trans 1 4 dichloro 2 butene concentration,1.0,1.0,1.0,1.0
+transition metal concentration,1.0,1.0,1.0,1.0
+tribromomethane concentration,1.0,1.0,1.0,1.0
+trichlorobenzene concentration,0.0,0.0,0.0,1.0
+trichloroethene concentration,1.0,1.0,1.0,1.0
+trichlorofluoromethane concentration,1.0,1.0,1.0,1.0
+tricresol concentration,1.0,1.0,1.0,1.0
+trihalomethane concentration,1.0,1.0,1.0,1.0
+tritium concentration,1.0,1.0,1.0,1.0
+tsr,1.0,1.0,1.0,2.0
+upward sea water current,1.0,1.0,1.0,1.0
+uranium concentration,1.0,1.0,1.0,1.0
+vanadium concentration,1.0,1.0,1.0,1.0
+volatile organic compound concentration,1.0,1.0,1.0,1.0
+water colour,1.0,1.0,1.0,2.0
+water density,1.0,1.0,1.0,1.0
+water electrical conductivity @ 25c,1.0,1.0,1.0,1.0
+water ph,0.0,0.0,0.0,1.0
+water reduction potential,1.0,1.0,1.0,1.0
+water sodium adsorption ratio,1.0,1.0,1.0,1.0
+water temperature,0.0,0.0,0.0,1.0
+water turbidity,1.0,1.0,1.0,1.0
+wind direction,0.888888888888889,0.8571428571428571,0.9230769230769231,13.0
+wind speed,0.967741935483871,0.9375,1.0,15.0
+wind velocity,0.0,0.0,0.0,2.0
+xylene concentration,1.0,1.0,1.0,1.0
+ytterbium concentration,1.0,1.0,1.0,1.0
+yttrium concentration,1.0,1.0,1.0,1.0
+zinc concentration,1.0,1.0,1.0,1.0
+zirconium concentration,1.0,1.0,1.0,1.0
+micro avg,0.9083665338645418,0.9083665338645418,0.9083665338645418,502.0
+macro avg,0.8714123870939472,0.8578545887219357,0.9000523286237572,502.0
+weighted avg,0.8791514012517795,0.8638399697911651,0.9083665338645418,502.0

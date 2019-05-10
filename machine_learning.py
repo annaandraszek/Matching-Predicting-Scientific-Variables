@@ -7,8 +7,9 @@ from joblib import dump, load
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 from sklearn.model_selection import GridSearchCV
+import datetime
 
-
+report_path = 'reports/'
 # Machine learning classifier using Naive Bayes method
 class Classifier():
     test_size = 0.15  # percentage of training set to use as testing set
@@ -36,6 +37,10 @@ class Classifier():
         print('(', file, ') Test set accuracy: ', accuracy)
         if print_report:  # set print_report=True for more information on the model's training performance
             print(classification_report(self.y_train, self.text_clf.predict(self.x_train), target_names=self.classes))
+        else:
+            report = classification_report(self.y_train, self.text_clf.predict(self.x_train), target_names=self.classes, output_dict=True)
+            df = pd.DataFrame(report).transpose()
+            df.to_csv(report_path + t + '_report' + str(datetime.datetime.now().strftime("%Y%m%d-%H%M%S")) + '.csv')
 
     # Print the top class prediction for the input
     def predict(self, new, t, load_model=False, have_return=False):

@@ -1,0 +1,803 @@
+,f1-score,precision,recall,support
+abampere,0.028368794326241138,0.014388489208633094,1.0,2.0
+abampere per square centimeter,0.0,0.0,0.0,2.0
+abcoulomb,0.6666666666666666,0.5,1.0,2.0
+abcoulomb per square centimeter,0.0,0.0,0.0,2.0
+abfarad,0.6666666666666666,0.5,1.0,2.0
+abfarad per centimeter,0.0,0.0,0.0,2.0
+abhenry,1.0,1.0,1.0,2.0
+abohm,1.0,1.0,1.0,2.0
+absiemen,1.0,1.0,1.0,2.0
+abtesla,1.0,1.0,1.0,2.0
+abvolt,0.3333333333333333,0.25,0.5,2.0
+abvolt centimeter,0.0,0.0,0.0,2.0
+abvolt per centimeter,0.0,0.0,0.0,2.0
+abvolt second,0.3333333333333333,0.25,0.5,2.0
+acre,0.6666666666666666,0.5,1.0,2.0
+acre foot,0.0,0.0,0.0,2.0
+afghani,1.0,1.0,1.0,2.0
+algerian dinar,1.0,1.0,1.0,2.0
+ampere,0.28571428571428575,0.2,0.5,2.0
+ampere hour,0.0,0.0,0.0,2.0
+ampere per degree,0.0,0.0,0.0,2.0
+ampere per joule,0.5,1.0,0.3333333333333333,3.0
+ampere per meter,0.0,0.0,0.0,2.0
+ampere per radian,0.6666666666666666,1.0,0.5,2.0
+ampere per square meter,0.0,0.0,0.0,2.0
+ampere turn,0.3333333333333333,0.25,0.5,2.0
+ampere turn per inch,0.0,0.0,0.0,2.0
+ampere turn per meter,0.3333333333333333,0.25,0.5,2.0
+angstrom,0.6666666666666666,1.0,0.5,2.0
+arc minute,0.6666666666666666,1.0,0.5,2.0
+arc second,0.8,0.6666666666666666,1.0,2.0
+are,0.6666666666666666,1.0,0.5,2.0
+argentine peso,1.0,1.0,1.0,2.0
+armenian dram,1.0,1.0,1.0,2.0
+aruban guilder,1.0,1.0,1.0,2.0
+astronomical unit,1.0,1.0,1.0,2.0
+atomic mass unit,0.6666666666666666,1.0,0.5,2.0
+atomic number,0.6666666666666666,1.0,0.5,2.0
+atto,1.0,1.0,1.0,1.0
+australian dollar,1.0,1.0,1.0,2.0
+azerbaijanian manat,1.0,1.0,1.0,2.0
+bahamian dollar,1.0,1.0,1.0,2.0
+bahraini dinar,1.0,1.0,1.0,2.0
+baht,1.0,1.0,1.0,2.0
+balboa,1.0,1.0,1.0,2.0
+ban,1.0,1.0,1.0,1.0
+bangladeshi taka,1.0,1.0,1.0,2.0
+bar,1.0,1.0,1.0,1.0
+barbados dollar,1.0,1.0,1.0,2.0
+barn,0.6666666666666666,1.0,0.5,2.0
+barrel,1.0,1.0,1.0,2.0
+becquerel,1.0,1.0,1.0,2.0
+belarussian ruble,1.0,1.0,1.0,2.0
+belize dollar,1.0,1.0,1.0,2.0
+bermuda dollar,1.0,1.0,1.0,2.0
+biot,1.0,1.0,1.0,2.0
+bit,1.0,1.0,1.0,1.0
+bits per second,1.0,1.0,1.0,2.0
+board foot,1.0,1.0,1.0,2.0
+bolivian mvdol funds code,1.0,1.0,1.0,2.0
+boliviano,1.0,1.0,1.0,2.0
+brazilian real,1.0,1.0,1.0,2.0
+breath,0.6666666666666666,0.5,1.0,1.0
+breath per minute,0.6666666666666666,1.0,0.5,2.0
+british thermal unit international steam table,0.6666666666666666,1.0,0.5,2.0
+british thermal unit thermochemical calorie,1.0,1.0,1.0,1.0
+brunei dollar,1.0,1.0,1.0,2.0
+btu foot,0.6666666666666666,0.5,1.0,2.0
+btu foot per square foot hour degree fahrenheit,0.0,0.0,0.0,2.0
+btu inch,0.5,0.5,0.5,2.0
+btu inch per square foot hour degree fahrenheit,1.0,1.0,1.0,2.0
+btu inch per square foot second degree fahrenheit,0.6666666666666666,1.0,0.5,2.0
+btu per degree fahrenheit,0.6666666666666666,0.5,1.0,2.0
+btu per degree rankine,0.8,0.6666666666666666,1.0,2.0
+btu per hour,0.8,0.6666666666666666,1.0,2.0
+btu per hour square foot,0.6666666666666666,1.0,0.5,2.0
+btu per pound,1.0,1.0,1.0,2.0
+btu per pound degree fahrenheit,0.6666666666666666,1.0,0.5,2.0
+btu per pound degree rankine,0.6666666666666666,1.0,0.5,2.0
+btu per pound mole,1.0,1.0,1.0,2.0
+btu per pound mole degree fahrenheit,1.0,1.0,1.0,2.0
+btu per second,0.8,0.6666666666666666,1.0,2.0
+btu per second square foot,0.6666666666666666,1.0,0.5,2.0
+btu per square foot,0.6666666666666666,1.0,0.5,2.0
+btu per square foot hour degree fahrenheit,0.3333333333333333,0.25,0.5,2.0
+btu per square foot second degree fahrenheit,0.6666666666666666,1.0,0.5,2.0
+bulgarian lev,1.0,1.0,1.0,2.0
+burundian franc,1.0,1.0,1.0,2.0
+bushel,1.0,1.0,1.0,2.0
+byte,0.6666666666666666,1.0,0.5,2.0
+calorie per centimeter second degree celsius,0.6666666666666666,1.0,0.5,2.0
+calorie per gram degree celsius,0.6666666666666666,1.0,0.5,2.0
+canadian dollar,1.0,1.0,1.0,2.0
+candela,0.4,0.3333333333333333,0.5,2.0
+candela per square inch,0.0,0.0,0.0,2.0
+candela per square meter,0.4,0.3333333333333333,0.5,2.0
+candle,0.6666666666666666,0.5,1.0,1.0
+candlepower,1.0,1.0,1.0,1.0
+cape verde escudo,1.0,1.0,1.0,2.0
+carat,1.0,1.0,1.0,2.0
+cayman islands dollar,1.0,1.0,1.0,2.0
+cedi,1.0,1.0,1.0,2.0
+centi,0.6666666666666666,1.0,0.5,2.0
+centimeter,0.33333333333333337,0.2,1.0,2.0
+centimeter of water,1.0,1.0,1.0,2.0
+centimeter per second,0.0,0.0,0.0,2.0
+centimeter per second squared,0.6666666666666666,1.0,0.5,2.0
+centimeter second degree celsius,0.0,0.0,0.0,2.0
+centipoise,1.0,1.0,1.0,2.0
+centistokes,1.0,1.0,1.0,2.0
+cfa franc bceao,1.0,1.0,1.0,2.0
+cfa franc beac,1.0,1.0,1.0,2.0
+cfp franc,1.0,1.0,1.0,2.0
+chain,1.0,1.0,1.0,2.0
+chilean peso,1.0,1.0,1.0,2.0
+circular mil,1.0,1.0,1.0,2.0
+clo,1.0,1.0,1.0,1.0
+colombian peso,1.0,1.0,1.0,2.0
+colony forming unit,1.0,1.0,1.0,2.0
+comoro franc,1.0,1.0,1.0,2.0
+convertible marks,1.0,1.0,1.0,2.0
+cord,0.6666666666666666,1.0,0.5,2.0
+cordoba oro,1.0,1.0,1.0,2.0
+costa rican colon,1.0,1.0,1.0,2.0
+coulomb,0.2857142857142857,0.16666666666666666,1.0,1.0
+coulomb meter,0.0,0.0,0.0,2.0
+coulomb per cubic meter,0.0,0.0,0.0,3.0
+coulomb per kilogram,0.5,1.0,0.3333333333333333,3.0
+coulomb per meter,0.0,0.0,0.0,2.0
+coulomb per mole,0.5,1.0,0.3333333333333333,3.0
+coulomb per square meter,0.0,0.0,0.0,3.0
+coulomb square meter,0.0,0.0,0.0,1.0
+croatian kuna,1.0,1.0,1.0,2.0
+cuban peso,0.6666666666666666,1.0,0.5,2.0
+cubic centimeter,0.6666666666666666,1.0,0.5,2.0
+cubic coulomb meter per square joule,0.5,1.0,0.3333333333333333,3.0
+cubic foot,0.3076923076923077,0.18181818181818182,1.0,2.0
+cubic foot per minute,0.6666666666666666,1.0,0.5,2.0
+cubic foot per second,0.6666666666666666,1.0,0.5,2.0
+cubic inch,0.6666666666666666,1.0,0.5,2.0
+cubic inch per minute,0.6666666666666666,1.0,0.5,2.0
+cubic kilometer per second squared,0.0,0.0,0.0,2.0
+cubic meter,0.5,0.5,0.5,2.0
+cubic meter per hour,0.6666666666666666,1.0,0.5,2.0
+cubic meter per kelvin,0.6666666666666666,1.0,0.5,2.0
+cubic meter per kilogram,0.5,0.5,0.5,2.0
+cubic meter per kilogram second squared,0.0,0.0,0.0,3.0
+cubic meter per mole,0.0,0.0,0.0,3.0
+cubic meter per second,0.6666666666666666,1.0,0.5,2.0
+cubic meter per second squared,0.6666666666666666,1.0,0.5,2.0
+cubic mile,0.0,0.0,0.0,2.0
+cubic millimeter,0.0,0.0,0.0,1.0
+cubic yard,0.0,0.0,0.0,2.0
+cubic yard per minute,0.6666666666666666,1.0,0.5,2.0
+curie,1.0,1.0,1.0,2.0
+cyprus pound,1.0,1.0,1.0,2.0
+czech koruna,1.0,1.0,1.0,2.0
+dalasi,1.0,1.0,1.0,2.0
+dalton,0.8,0.6666666666666666,1.0,2.0
+danish krone,1.0,1.0,1.0,2.0
+day,0.6666666666666666,1.0,0.5,2.0
+day sidereal,1.0,1.0,1.0,1.0
+debye,0.6666666666666666,1.0,0.5,2.0
+deca,0.6666666666666666,1.0,0.5,2.0
+deci,1.0,1.0,1.0,1.0
+decibel,1.0,1.0,1.0,2.0
+decibel carrier unit,1.0,1.0,1.0,2.0
+decibel referred to 1mw,1.0,1.0,1.0,2.0
+decimeter,1.0,1.0,1.0,1.0
+degree angle,0.6153846153846154,0.5,0.8,5.0
+degree celsius,0.33333333333333337,0.2,1.0,2.0
+degree celsius centimeter,0.5,0.5,0.5,2.0
+degree celsius per hour,0.6666666666666666,1.0,0.5,2.0
+degree celsius per minute,0.6666666666666666,1.0,0.5,2.0
+degree celsius per second,0.0,0.0,0.0,2.0
+degree centigrade,1.0,1.0,1.0,1.0
+degree fahrenheit,0.3636363636363636,0.2222222222222222,1.0,2.0
+degree fahrenheit hour,0.6666666666666666,0.5,1.0,2.0
+degree fahrenheit hour per btu,0.6666666666666666,0.5,1.0,2.0
+degree fahrenheit per hour,0.0,0.0,0.0,2.0
+degree fahrenheit per minute,0.6666666666666666,1.0,0.5,2.0
+degree fahrenheit per second,0.0,0.0,0.0,2.0
+degree per hour,0.0,0.0,0.0,2.0
+degree per minute,0.0,0.0,0.0,1.0
+degree per second,0.0,0.0,0.0,2.0
+degree per second squared,0.6666666666666666,1.0,0.5,2.0
+degree rankine,0.33333333333333337,0.2,1.0,2.0
+degree rankine per hour,0.0,0.0,0.0,2.0
+degree rankine per minute,0.0,0.0,0.0,2.0
+degree rankine per second,0.0,0.0,0.0,2.0
+denar,1.0,1.0,1.0,2.0
+denier,1.0,1.0,1.0,1.0
+diopter,1.0,1.0,1.0,1.0
+djibouti franc,1.0,1.0,1.0,2.0
+dobra,1.0,1.0,1.0,2.0
+dominican peso,1.0,1.0,1.0,2.0
+dry gallon us,1.0,1.0,1.0,2.0
+dyne,0.5,0.3333333333333333,1.0,2.0
+dyne centimeter,0.0,0.0,0.0,2.0
+dyne per square centimeter,0.0,0.0,0.0,2.0
+east caribbean dollar,1.0,1.0,1.0,2.0
+egyptian pound,1.0,1.0,1.0,2.0
+electron volt,0.4,0.3333333333333333,0.5,2.0
+electron volt per kelvin,0.4444444444444444,0.3333333333333333,0.6666666666666666,3.0
+electron volt per tesla,0.5,1.0,0.3333333333333333,3.0
+electron volt second,0.0,0.0,0.0,2.0
+erg,0.0,0.0,0.0,1.0
+erg per cubic centimeter,0.0,0.0,0.0,2.0
+erg per gram,0.0,0.0,0.0,1.0
+erg per second,0.0,0.0,0.0,2.0
+erg per square centimeter second,0.0,0.0,0.0,2.0
+erg second,0.3636363636363636,0.2222222222222222,1.0,2.0
+ethiopian birr,1.0,1.0,1.0,2.0
+euro,1.0,1.0,1.0,2.0
+european composite unit eurco bonds market unit,1.0,1.0,1.0,2.0
+european monetary unit e.m.u. 6 bonds market unit,1.0,1.0,1.0,2.0
+european unit of account 17 e.u.a. 17 bonds market unit,1.0,1.0,1.0,2.0
+european unit of account 9 e.u.a. 9 bonds market unit,1.0,1.0,1.0,2.0
+exa,0.6666666666666666,1.0,0.5,2.0
+exbi,1.0,1.0,1.0,2.0
+falkland islands pound,1.0,1.0,1.0,2.0
+farad,0.4,0.3333333333333333,0.5,2.0
+farad per meter,0.0,0.0,0.0,3.0
+faraday,1.0,1.0,1.0,1.0
+fathom,1.0,1.0,1.0,2.0
+femto,0.6666666666666666,1.0,0.5,2.0
+femtometer,0.8,0.6666666666666666,1.0,2.0
+fermi,1.0,1.0,1.0,1.0
+fiji dollar,1.0,1.0,1.0,2.0
+flight,0.0,0.0,0.0,1.0
+foot,0.5,0.4,0.6666666666666666,3.0
+foot candle,0.6666666666666666,1.0,0.5,2.0
+foot lambert,0.0,0.0,0.0,2.0
+foot of water,1.0,1.0,1.0,2.0
+foot per hour,0.2,0.14285714285714285,0.3333333333333333,3.0
+foot per minute,0.6666666666666666,1.0,0.5,2.0
+foot per second,0.28571428571428575,0.25,0.3333333333333333,3.0
+foot per second squared,0.6666666666666666,1.0,0.5,2.0
+foot pound force,0.25,0.16666666666666666,0.5,2.0
+foot pound force per hour,1.0,1.0,1.0,2.0
+foot pound force per minute,0.6666666666666666,1.0,0.5,2.0
+foot pound force per second,0.0,0.0,0.0,2.0
+foot pound force per square foot second,0.6666666666666666,1.0,0.5,2.0
+foot pound force per square meter,0.6666666666666666,1.0,0.5,2.0
+foot pound force second,0.5,0.5,0.5,2.0
+foot pound per square foot,0.6666666666666666,1.0,0.5,2.0
+foot poundal,0.0,0.0,0.0,2.0
+forint,1.0,1.0,1.0,2.0
+fractional area,1.0,1.0,1.0,2.0
+frame per second,1.0,1.0,1.0,2.0
+franc congolais,1.0,1.0,1.0,2.0
+franklin,1.0,1.0,1.0,2.0
+furlong,1.0,1.0,1.0,2.0
+gal,0.5,0.3333333333333333,1.0,2.0
+gamma,1.0,1.0,1.0,1.0
+gauss,0.6666666666666666,1.0,0.5,2.0
+gibi,1.0,1.0,1.0,2.0
+gibraltar pound,1.0,1.0,1.0,2.0
+giga,0.5,0.3333333333333333,1.0,1.0
+giga electron volt,0.0,0.0,0.0,2.0
+gigahertz,1.0,1.0,1.0,2.0
+gilbert,1.0,1.0,1.0,1.0
+gold franc special settlement currency,1.0,1.0,1.0,2.0
+gold one troy ounce,1.0,1.0,1.0,2.0
+gon,1.0,1.0,1.0,1.0
+grad,1.0,1.0,1.0,1.0
+grade,0.8,0.6666666666666666,1.0,2.0
+grain,0.6666666666666666,0.5,1.0,1.0
+grain per gallon,0.0,0.0,0.0,2.0
+gram,0.4,0.3333333333333333,0.5,2.0
+gram degree celsius,0.0,0.0,0.0,2.0
+gravity,1.0,1.0,1.0,1.0
+gray,0.5,0.5,0.5,2.0
+gray per second,0.5,0.5,0.5,2.0
+guarani,1.0,1.0,1.0,2.0
+guinea franc,1.0,1.0,1.0,2.0
+guyana dollar,1.0,1.0,1.0,2.0
+haiti gourde,1.0,1.0,1.0,2.0
+hartree,0.6666666666666666,1.0,0.5,2.0
+heart beat,0.6666666666666666,0.5,1.0,1.0
+heart beat per minute,0.6666666666666666,1.0,0.5,2.0
+hectare,1.0,1.0,1.0,2.0
+hecto,0.6666666666666666,1.0,0.5,2.0
+hectopascal,1.0,1.0,1.0,2.0
+henry,0.5,0.5,0.5,2.0
+henry per meter,0.0,0.0,0.0,2.0
+hertz,0.4,0.3333333333333333,0.5,2.0
+hertz per kelvin,0.4,0.2857142857142857,0.6666666666666666,3.0
+hertz per tesla,0.5,1.0,0.3333333333333333,3.0
+hertz per volt,0.0,0.0,0.0,3.0
+hong kong dollar,1.0,1.0,1.0,2.0
+horsepower,0.6666666666666666,0.5,1.0,2.0
+horsepower boiler,1.0,1.0,1.0,2.0
+horsepower electric,0.6666666666666666,1.0,0.5,2.0
+horsepower metric,0.6666666666666666,1.0,0.5,2.0
+horsepower water,1.0,1.0,1.0,2.0
+hour,0.3333333333333333,0.25,0.5,2.0
+hour sidereal,1.0,1.0,1.0,1.0
+hour square foot,0.4,0.3333333333333333,0.5,2.0
+hryvnia,1.0,1.0,1.0,2.0
+hundred weight long,1.0,1.0,1.0,2.0
+hundred weight short,1.0,1.0,1.0,1.0
+iceland krona,1.0,1.0,1.0,2.0
+imperial gallon,1.0,1.0,1.0,1.0
+imperial ounce,0.6666666666666666,0.5,1.0,2.0
+imperial pint,0.8,0.6666666666666666,1.0,2.0
+inch,0.4,0.3333333333333333,0.5,2.0
+inch of mercury,1.0,1.0,1.0,2.0
+inch of water,1.0,1.0,1.0,2.0
+inch per second,0.0,0.0,0.0,1.0
+inch per second squared,0.6666666666666666,1.0,0.5,2.0
+inch pound force,0.25,0.16666666666666666,0.5,2.0
+indian rupee,1.0,1.0,1.0,2.0
+international unit,0.8,0.6666666666666666,1.0,2.0
+international unit per liter,0.0,0.0,0.0,2.0
+inverse second,0.5,1.0,0.3333333333333333,3.0
+iranian rial,1.0,1.0,1.0,2.0
+iraqi dinar,1.0,1.0,1.0,2.0
+jamaican dollar,1.0,1.0,1.0,2.0
+japanese yen,1.0,1.0,1.0,2.0
+jordanian dinar,1.0,1.0,1.0,2.0
+joule,0.4,0.3333333333333333,0.5,2.0
+joule meter per mole,0.0,0.0,0.0,3.0
+joule per cubic meter,0.6666666666666666,1.0,0.5,2.0
+joule per cubic meter kelvin,0.6666666666666666,1.0,0.5,2.0
+joule per kelvin,0.5,1.0,0.3333333333333333,3.0
+joule per kilogram,0.6666666666666666,1.0,0.5,2.0
+joule per kilogram kelvin,0.5,0.5,0.5,2.0
+joule per kilogram kelvin per cubic meter,0.0,0.0,0.0,2.0
+joule per kilogram kelvin per pascal,0.6666666666666666,1.0,0.5,2.0
+joule per mole,0.4,0.3333333333333333,0.5,2.0
+joule per mole kelvin,0.5,1.0,0.3333333333333333,3.0
+joule per square meter,0.0,0.0,0.0,2.0
+joule per square tesla,0.0,0.0,0.0,3.0
+joule per tesla,0.4,0.5,0.3333333333333333,3.0
+joule second,0.0,0.0,0.0,2.0
+joule second per mole,0.0,0.0,0.0,3.0
+katal,1.0,1.0,1.0,2.0
+kelvin,0.5,0.5,0.5,2.0
+kelvin per hour,0.6666666666666666,1.0,0.5,2.0
+kelvin per minute,0.6666666666666666,1.0,0.5,2.0
+kelvin per second,0.0,0.0,0.0,2.0
+kelvin per tesla,0.0,0.0,0.0,3.0
+kelvin per watt,0.28571428571428575,0.2,0.5,2.0
+kenyan shilling,1.0,1.0,1.0,2.0
+kibi,1.0,1.0,1.0,2.0
+kilo,0.5,0.5,0.5,2.0
+kilo electron volt,0.6666666666666666,1.0,0.5,2.0
+kilo electron volt per micrometer,0.6666666666666666,1.0,0.5,2.0
+kilobit per second,1.0,1.0,1.0,2.0
+kilocalorie,0.2857142857142857,0.16666666666666666,1.0,2.0
+kilocalorie per gram,0.8,0.6666666666666666,1.0,2.0
+kilocalorie per minute,0.0,0.0,0.0,2.0
+kilocalorie per mole,0.0,0.0,0.0,2.0
+kilocalorie per mole degree celsius,1.0,1.0,1.0,2.0
+kilocalorie per second,0.0,0.0,0.0,2.0
+kilocalorie per square centimeter,0.0,0.0,0.0,2.0
+kilocalorie per square centimeter minute,0.0,0.0,0.0,2.0
+kilocalorie per square centimeter second,0.0,0.0,0.0,2.0
+kilogram,0.25,0.16666666666666666,0.5,2.0
+kilogram force,0.5714285714285715,0.4,1.0,2.0
+kilogram force meter,0.0,0.0,0.0,2.0
+kilogram force per square centimeter,0.6666666666666666,1.0,0.5,2.0
+kilogram kelvin,0.6666666666666666,1.0,0.5,2.0
+kilogram meter per second,0.16666666666666666,0.09523809523809523,0.6666666666666666,3.0
+kilogram meter squared,0.5,0.5,0.5,2.0
+kilogram per cubic meter,0.0,0.0,0.0,2.0
+kilogram per hour,0.6666666666666666,1.0,0.5,2.0
+kilogram per meter,0.0,0.0,0.0,2.0
+kilogram per mole,0.6666666666666666,0.6666666666666666,0.6666666666666666,3.0
+kilogram per second,0.0,0.0,0.0,2.0
+kilogram per square meter,0.0,0.0,0.0,2.0
+kilogram second squared,0.6666666666666666,1.0,0.5,2.0
+kilohertz,1.0,1.0,1.0,2.0
+kilometer,0.28571428571428575,0.2,0.5,2.0
+kilometer per hour,0.0,0.0,0.0,2.0
+kilometer per second,0.4,0.3333333333333333,0.5,2.0
+kilopascal,1.0,1.0,1.0,2.0
+kilopascal absolute,1.0,1.0,1.0,2.0
+kilopond,1.0,1.0,1.0,2.0
+kilowatt,0.8,0.6666666666666666,1.0,2.0
+kilowatthour,0.6666666666666666,1.0,0.5,2.0
+kina,1.0,1.0,1.0,2.0
+kip,0.0,0.0,0.0,1.0
+kip per square inch,0.8,0.6666666666666666,1.0,2.0
+knot,0.8,0.6666666666666666,1.0,2.0
+knot per second,0.6666666666666666,1.0,0.5,2.0
+kroon,1.0,1.0,1.0,2.0
+kuwaiti dinar,1.0,1.0,1.0,2.0
+kwanza,1.0,1.0,1.0,2.0
+kyat,1.0,1.0,1.0,2.0
+lambert,0.5,0.5,0.5,2.0
+laos kip,0.6666666666666666,1.0,0.5,2.0
+lari,1.0,1.0,1.0,2.0
+latvian lats,1.0,1.0,1.0,2.0
+launch,1.0,1.0,1.0,1.0
+lebanese pound,1.0,1.0,1.0,2.0
+lek,1.0,1.0,1.0,2.0
+lempira,1.0,1.0,1.0,2.0
+leone,1.0,1.0,1.0,2.0
+liberian dollar,1.0,1.0,1.0,2.0
+libyan dinar,1.0,1.0,1.0,2.0
+light year,1.0,1.0,1.0,2.0
+lilangeni,1.0,1.0,1.0,2.0
+liter,0.6666666666666666,0.5,1.0,1.0
+lithuanian litas,1.0,1.0,1.0,2.0
+loti,1.0,1.0,1.0,2.0
+lumen,0.4,0.3333333333333333,0.5,2.0
+lumen per watt,0.0,0.0,0.0,1.0
+lumen second,0.5,0.5,0.5,2.0
+lux,1.0,1.0,1.0,2.0
+mach,1.0,1.0,1.0,1.0
+malagasy ariary,1.0,1.0,1.0,2.0
+malawi kwacha,1.0,1.0,1.0,2.0
+malaysian ringgit,1.0,1.0,1.0,2.0
+maltese lira,1.0,1.0,1.0,2.0
+manat,1.0,1.0,1.0,2.0
+mauritius rupee,1.0,1.0,1.0,2.0
+maxwell,1.0,1.0,1.0,2.0
+mebi,0.6666666666666666,1.0,0.5,2.0
+mega,0.6666666666666666,1.0,0.5,2.0
+mega electron volt,0.5714285714285715,0.4,1.0,2.0
+mega electron volt femtometer,0.6666666666666666,1.0,0.5,2.0
+mega electron volt per centimeter,0.0,0.0,0.0,2.0
+mega electron volt per speed of light,0.6666666666666666,1.0,0.5,2.0
+mega hertz per kelvin,0.6666666666666666,0.5,1.0,3.0
+mega hertz per tesla,0.5,1.0,0.3333333333333333,3.0
+megabit per second,1.0,1.0,1.0,2.0
+megahertz,0.6666666666666666,1.0,0.5,2.0
+megajoule per square meter,1.0,1.0,1.0,1.0
+meter,0.6666666666666666,1.0,0.5,2.0
+meter kelvin,0.5,0.5,0.5,2.0
+meter kelvin per watt,0.0,0.0,0.0,2.0
+meter kilogram,0.0,0.0,0.0,2.0
+meter per farad,0.0,0.0,0.0,2.0
+meter per hour,0.0,0.0,0.0,3.0
+meter per kelvin,0.0,0.0,0.0,2.0
+meter per minute,0.4,0.25,1.0,3.0
+meter per second,0.5,1.0,0.3333333333333333,3.0
+meter per second squared,0.5,1.0,0.3333333333333333,3.0
+metical,1.0,1.0,1.0,2.0
+metric ton,0.6666666666666666,1.0,0.5,2.0
+mexican peso,1.0,1.0,1.0,2.0
+mexican unidad de inversion udi funds code,1.0,1.0,1.0,2.0
+mho,1.0,1.0,1.0,1.0
+micro,0.6666666666666666,1.0,0.5,2.0
+micro torr,1.0,1.0,1.0,2.0
+microfarad,1.0,1.0,1.0,2.0
+microgravity,1.0,1.0,1.0,2.0
+microhenry,1.0,1.0,1.0,2.0
+microinch,0.2857142857142857,0.16666666666666666,1.0,3.0
+micrometer,0.8,0.6666666666666666,1.0,2.0
+micromole per second per square meter,1.0,1.0,1.0,1.0
+microsecond,1.0,1.0,1.0,2.0
+mil angle nato,1.0,1.0,1.0,2.0
+mil length,1.0,1.0,1.0,1.0
+mile international standard,0.6666666666666666,1.0,0.5,2.0
+mile per hour,0.0,0.0,0.0,2.0
+mile per minute,0.0,0.0,0.0,2.0
+mile us statute,1.0,1.0,1.0,1.0
+milli,1.0,1.0,1.0,1.0
+milli torr,1.0,1.0,1.0,2.0
+millibar,1.0,1.0,1.0,2.0
+milligravity,1.0,1.0,1.0,2.0
+millihenry,1.0,1.0,1.0,2.0
+millimeter,0.6666666666666666,0.5,1.0,2.0
+millimeter of mercury,1.0,1.0,1.0,2.0
+millimeter of mercury absolute,1.0,1.0,1.0,2.0
+millimeter per hour,0.0,0.0,0.0,1.0
+million us dollars,0.8,0.6666666666666666,1.0,2.0
+million us dollars per flight,0.8,0.6666666666666666,1.0,2.0
+million us dollars per year,0.0,0.0,0.0,2.0
+millisecond,1.0,1.0,1.0,2.0
+minute angle,0.6666666666666666,1.0,0.5,2.0
+minute sidereal,0.6666666666666666,1.0,0.5,2.0
+minute time,1.0,1.0,1.0,1.0
+moldovan leu,1.0,1.0,1.0,2.0
+mole,0.6666666666666666,1.0,0.5,2.0
+mole degree celsius,0.6666666666666666,1.0,0.5,2.0
+mole kelvin,0.6666666666666666,1.0,0.5,2.0
+mole per cubic meter,0.5,0.5,0.5,2.0
+mole per kilogram,0.5,0.5,0.5,2.0
+moroccan dirham,1.0,1.0,1.0,2.0
+naira,1.0,1.0,1.0,2.0
+nakfa,1.0,1.0,1.0,2.0
+namibian dollar,1.0,1.0,1.0,2.0
+nano,0.6666666666666666,1.0,0.5,2.0
+nanofarad,1.0,1.0,1.0,2.0
+nat,1.0,1.0,1.0,1.0
+nautical mile,0.4,0.25,1.0,2.0
+nautical mile per hour,0.6666666666666666,1.0,0.5,2.0
+nautical mile per minute,0.6666666666666666,1.0,0.5,2.0
+nepalese rupee,1.0,1.0,1.0,2.0
+nephelometry turbidity unit,1.0,1.0,1.0,2.0
+netherlands antillian guilder,1.0,1.0,1.0,2.0
+new israeli shekel,1.0,1.0,1.0,2.0
+new taiwan dollar,1.0,1.0,1.0,2.0
+new turkish lira,1.0,1.0,1.0,2.0
+new zealand dollar,1.0,1.0,1.0,2.0
+newton,0.28571428571428575,0.2,0.5,2.0
+newton meter,0.0,0.0,0.0,2.0
+newton per coulomb,0.0,0.0,0.0,2.0
+newton per kilogram,0.0,0.0,0.0,2.0
+newton per meter,0.0,0.0,0.0,2.0
+ngultrum,1.0,1.0,1.0,2.0
+north korean won,1.0,1.0,1.0,2.0
+norwegian krone,1.0,1.0,1.0,2.0
+nuevo sol,1.0,1.0,1.0,2.0
+number,0.6666666666666666,1.0,0.5,2.0
+number per year,0.6666666666666666,0.5,1.0,2.0
+nutritional calorie,0.6666666666666666,1.0,0.5,2.0
+oersted,0.6666666666666666,0.5,1.0,2.0
+oersted centimeter,0.0,0.0,0.0,2.0
+ohm,1.0,1.0,1.0,1.0
+okta,1.0,1.0,1.0,1.0
+ouguiya,1.0,1.0,1.0,2.0
+ounce force,0.8,0.6666666666666666,1.0,2.0
+ounce force inch,0.6666666666666666,1.0,0.5,2.0
+ounce mass,1.0,1.0,1.0,2.0
+ounce per cubic inch,0.6666666666666666,1.0,0.5,2.0
+ounce per gallon,0.6666666666666666,1.0,0.5,2.0
+ounce per square foot,0.6666666666666666,1.0,0.5,2.0
+ounce per square yard,1.0,1.0,1.0,2.0
+ounce troy,1.0,1.0,1.0,1.0
+pa\anga,1.0,1.0,1.0,2.0
+pakistan rupee,1.0,1.0,1.0,2.0
+palladium one troy ounce,1.0,1.0,1.0,2.0
+parsec,1.0,1.0,1.0,2.0
+pascal,0.25,0.16666666666666666,0.5,2.0
+pascal per hour,0.0,0.0,0.0,2.0
+pascal per minute,0.0,0.0,0.0,2.0
+pascal per second,0.0,0.0,0.0,2.0
+pascal second,0.5,0.5,0.5,2.0
+pataca,1.0,1.0,1.0,2.0
+pebi,0.6666666666666666,1.0,0.5,2.0
+penny weight,1.0,1.0,1.0,2.0
+per cubic meter,0.0,0.0,0.0,2.0
+per meter kelvin unit,0.5,1.0,0.3333333333333333,3.0
+per meter unit,0.5,1.0,0.3333333333333333,3.0
+per mole unit,0.2857142857142857,0.16666666666666666,1.0,3.0
+per square giga electron volt unit,0.6666666666666666,0.6666666666666666,0.6666666666666666,3.0
+per tesla meter unit,0.5,1.0,0.3333333333333333,3.0
+per tesla second unit,0.5,1.0,0.3333333333333333,3.0
+percent,0.6666666666666666,1.0,0.5,2.0
+person,1.0,1.0,1.0,1.0
+peso uruguayo,1.0,1.0,1.0,2.0
+peta,0.6666666666666666,1.0,0.5,2.0
+philippine peso,1.0,1.0,1.0,2.0
+phot,1.0,1.0,1.0,2.0
+pica,1.0,1.0,1.0,2.0
+pico,0.6666666666666666,1.0,0.5,2.0
+picofarad,1.0,1.0,1.0,2.0
+planck area,1.0,1.0,1.0,1.0
+planck charge,0.6666666666666666,1.0,0.5,2.0
+planck current,1.0,1.0,1.0,1.0
+planck current density,1.0,1.0,1.0,1.0
+planck density,1.0,1.0,1.0,1.0
+planck energy,1.0,1.0,1.0,1.0
+planck force,1.0,1.0,1.0,1.0
+planck frequency,1.0,1.0,1.0,1.0
+planck length,0.6666666666666666,1.0,0.5,2.0
+planck mass,0.6666666666666666,1.0,0.5,2.0
+planck momentum,1.0,1.0,1.0,1.0
+planck power,1.0,1.0,1.0,1.0
+planck pressure,1.0,1.0,1.0,1.0
+planck resistance,1.0,1.0,1.0,1.0
+planck temperature,0.6666666666666666,1.0,0.5,2.0
+planck time,0.6666666666666666,1.0,0.5,2.0
+planck volt,1.0,1.0,1.0,1.0
+planck volume,1.0,1.0,1.0,1.0
+platinum one troy ounce,1.0,1.0,1.0,2.0
+point,1.0,1.0,1.0,2.0
+poise,1.0,1.0,1.0,1.0
+pound degree fahrenheit,1.0,1.0,1.0,2.0
+pound degree rankine,0.0,0.0,0.0,2.0
+pound force,0.2857142857142857,0.16666666666666666,1.0,2.0
+pound force foot,0.0,0.0,0.0,2.0
+pound force inch,0.0,0.0,0.0,2.0
+pound force per foot,0.0,0.0,0.0,2.0
+pound force per inch,0.0,0.0,0.0,2.0
+pound force per pound,0.6666666666666666,1.0,0.5,2.0
+pound force per square foot,0.0,0.0,0.0,2.0
+pound force per square inch,0.6666666666666666,1.0,0.5,2.0
+pound force per square inch second,0.0,0.0,0.0,2.0
+pound force second per square foot,0.6666666666666666,1.0,0.5,2.0
+pound force second per square inch,0.0,0.0,0.0,2.0
+pound mass,0.6666666666666666,1.0,0.5,2.0
+pound mole,0.6666666666666666,1.0,0.5,2.0
+pound mole degree fahrenheit,1.0,1.0,1.0,2.0
+pound per cubic foot,0.6666666666666666,1.0,0.5,2.0
+pound per cubic inch,0.6666666666666666,1.0,0.5,2.0
+pound per cubic meter,0.8,0.6666666666666666,1.0,2.0
+pound per cubic yard,0.6666666666666666,1.0,0.5,2.0
+pound per foot,0.5714285714285715,0.4,1.0,2.0
+pound per foot hour,0.0,0.0,0.0,2.0
+pound per foot second,0.0,0.0,0.0,2.0
+pound per gallon,0.6666666666666666,1.0,0.5,2.0
+pound per hour,0.5,0.5,0.5,2.0
+pound per inch,0.6666666666666666,1.0,0.5,2.0
+pound per minute,0.6666666666666666,1.0,0.5,2.0
+pound per square foot,0.6666666666666666,1.0,0.5,2.0
+pound sterling,1.0,1.0,1.0,2.0
+pound troy,1.0,1.0,1.0,1.0
+poundal,0.5,0.3333333333333333,1.0,2.0
+poundal per square foot,0.0,0.0,0.0,2.0
+pula,1.0,1.0,1.0,2.0
+qatari rial,1.0,1.0,1.0,2.0
+quad,1.0,1.0,1.0,1.0
+quartic coulomb meter per cubic energy,0.5,1.0,0.3333333333333333,3.0
+quetzal,1.0,1.0,1.0,2.0
+rad,0.0,0.0,0.0,1.0
+radian,0.4,0.25,1.0,1.0
+radian per hour,0.0,0.0,0.0,2.0
+radian per second,0.4444444444444444,0.3333333333333333,0.6666666666666666,3.0
+radian per second squared,0.0,0.0,0.0,2.0
+register ton,1.0,1.0,1.0,2.0
+relative permeability,1.0,1.0,1.0,2.0
+relative permittivity,1.0,1.0,1.0,2.0
+rem,1.0,1.0,1.0,1.0
+revolution,0.25,0.16666666666666666,0.5,2.0
+revolution per hour,0.0,0.0,0.0,2.0
+revolution per minute,0.0,0.0,0.0,2.0
+revolution per second,0.4,0.3333333333333333,0.5,2.0
+revolution per second squared,0.0,0.0,0.0,1.0
+rial omani,1.0,1.0,1.0,2.0
+riel,1.0,1.0,1.0,2.0
+rod,1.0,1.0,1.0,2.0
+roentgen,0.6666666666666666,1.0,0.5,2.0
+romanian new leu,1.0,1.0,1.0,2.0
+rufiyaa,1.0,1.0,1.0,2.0
+rupiah,1.0,1.0,1.0,2.0
+russian ruble,1.0,1.0,1.0,2.0
+rwanda franc,1.0,1.0,1.0,2.0
+saint helena pound,1.0,1.0,1.0,2.0
+samoan tala,1.0,1.0,1.0,2.0
+sample per second,1.0,1.0,1.0,1.0
+saudi riyal,1.0,1.0,1.0,2.0
+second,0.0,0.0,0.0,2.0
+second angle,0.6666666666666666,1.0,0.5,2.0
+second square foot,0.0,0.0,0.0,2.0
+second time squared,0.6666666666666666,1.0,0.5,2.0
+serbian dinar,1.0,1.0,1.0,2.0
+seychelles rupee,1.0,1.0,1.0,2.0
+shake,1.0,1.0,1.0,2.0
+short ton per hour,0.5,0.5,0.5,2.0
+siemens,0.6666666666666666,1.0,0.5,2.0
+sievert,1.0,1.0,1.0,2.0
+silver one troy ounce,1.0,1.0,1.0,2.0
+singapore dollar,1.0,1.0,1.0,2.0
+slovak koruna,1.0,1.0,1.0,2.0
+slug,0.0,0.0,0.0,1.0
+slug per cubic foot,0.0,0.0,0.0,2.0
+slug per foot,0.0,0.0,0.0,2.0
+slug per foot second,0.0,0.0,0.0,2.0
+slug per second,0.3076923076923077,0.18181818181818182,1.0,2.0
+slug per square foot,0.0,0.0,0.0,2.0
+solomon islands dollar,1.0,1.0,1.0,2.0
+som,1.0,1.0,1.0,2.0
+somali shilling,1.0,1.0,1.0,2.0
+somoni,1.0,1.0,1.0,2.0
+south african rand,1.0,1.0,1.0,2.0
+south korean won,1.0,1.0,1.0,2.0
+special drawing rights,1.0,1.0,1.0,2.0
+square centimeter,0.6666666666666666,1.0,0.5,2.0
+square centimeter minute,0.6666666666666666,1.0,0.5,2.0
+square centimeter second,0.6666666666666666,1.0,0.5,2.0
+square coulomb meter per joule,0.5,1.0,0.3333333333333333,3.0
+square degree,0.28571428571428575,0.2,0.5,2.0
+square foot,0.4,0.5,0.3333333333333333,3.0
+square foot degree fahrenheit,0.0,0.0,0.0,2.0
+square foot hour degree fahrenheit,0.6666666666666666,1.0,0.5,2.0
+square foot hour degree fahrenheit per btu,0.0,0.0,0.0,2.0
+square foot per btu inch,0.0,0.0,0.0,2.0
+square foot per hour,0.0,0.0,0.0,2.0
+square foot per second,0.0,0.0,0.0,2.0
+square foot second degree fahrenheit,0.6666666666666666,1.0,0.5,2.0
+square inch,0.0,0.0,0.0,2.0
+square meter,0.6666666666666666,1.0,0.5,2.0
+square meter kelvin,0.5,0.5,0.5,2.0
+square meter kelvin per watt,0.6666666666666666,1.0,0.5,2.0
+square meter per kelvin,0.0,0.0,0.0,2.0
+square meter per second,0.5,1.0,0.3333333333333333,3.0
+square meter steradian,0.0,0.0,0.0,2.0
+square mile,0.25,0.16666666666666666,0.5,2.0
+square yard,0.0,0.0,0.0,2.0
+sri lanka rupee,1.0,1.0,1.0,2.0
+standard atmosphere,1.0,1.0,1.0,2.0
+statampere,0.6666666666666666,0.5,1.0,2.0
+statampere per square centimeter,0.0,0.0,0.0,2.0
+statcoulomb,0.5,0.3333333333333333,1.0,2.0
+statcoulomb per mole,0.0,0.0,0.0,2.0
+statcoulomb per square centimeter,0.0,0.0,0.0,2.0
+statfarad,1.0,1.0,1.0,2.0
+stathenry,0.6666666666666666,0.5,1.0,2.0
+stathenry per centimeter,0.0,0.0,0.0,2.0
+statmho,1.0,1.0,1.0,2.0
+statohm,1.0,1.0,1.0,2.0
+statvolt,0.5,0.3333333333333333,1.0,2.0
+statvolt centimeter,0.0,0.0,0.0,2.0
+statvolt per centimeter,0.0,0.0,0.0,2.0
+steradian,0.28571428571428575,0.2,0.5,2.0
+stere,0.8,0.6666666666666666,1.0,2.0
+stilb,1.0,1.0,1.0,2.0
+stokes,0.6666666666666666,1.0,0.5,2.0
+sudanese pound,1.0,1.0,1.0,2.0
+surinam dollar,1.0,1.0,1.0,2.0
+swedish krona,1.0,1.0,1.0,2.0
+swiss franc,1.0,1.0,1.0,2.0
+syrian pound,1.0,1.0,1.0,2.0
+tablespoon,1.0,1.0,1.0,2.0
+tanzanian shilling,1.0,1.0,1.0,2.0
+teaspoon,1.0,1.0,1.0,2.0
+tebi,1.0,1.0,1.0,2.0
+technical atmosphere,0.6666666666666666,1.0,0.5,2.0
+tenge,1.0,1.0,1.0,2.0
+tera,0.6666666666666666,1.0,0.5,2.0
+tesla,0.4,0.25,1.0,1.0
+tesla meter,0.0,0.0,0.0,2.0
+tesla second,0.0,0.0,0.0,2.0
+tex,1.0,1.0,1.0,1.0
+therm ec,1.0,1.0,1.0,2.0
+therm us,0.8,0.6666666666666666,1.0,2.0
+thermochemical calorie,0.6666666666666666,0.5,1.0,2.0
+ton assay,0.6666666666666666,1.0,0.5,2.0
+ton energy,0.6666666666666666,1.0,0.5,2.0
+ton long,0.6666666666666666,0.5,1.0,2.0
+ton long per cubic yard,0.0,0.0,0.0,2.0
+ton metric,0.6666666666666666,0.5,1.0,1.0
+ton of oil equivalent,1.0,1.0,1.0,2.0
+ton of refrigeration,1.0,1.0,1.0,2.0
+ton short,0.0,0.0,0.0,1.0
+ton short per cubic yard,0.8,0.6666666666666666,1.0,2.0
+torr,1.0,1.0,1.0,1.0
+trinidad and tobago dollar,1.0,1.0,1.0,2.0
+tugrik,1.0,1.0,1.0,2.0
+tunisian dinar,1.0,1.0,1.0,2.0
+uganda shilling,1.0,1.0,1.0,2.0
+uic franc special settlement currency,1.0,1.0,1.0,2.0
+unidad de valor real,1.0,1.0,1.0,2.0
+unidades de formento funds code,1.0,1.0,1.0,2.0
+unified atomic mass unit,1.0,1.0,1.0,1.0
+unit pole,1.0,1.0,1.0,2.0
+united arab emirates dirham,1.0,1.0,1.0,2.0
+united states dollar next day funds code,1.0,1.0,1.0,2.0
+united states dollar same day funds code,1.0,1.0,1.0,1.0
+unitless,0.6666666666666666,1.0,0.5,2.0
+us dollar,0.6666666666666666,1.0,0.5,2.0
+us dry pint,1.0,1.0,1.0,2.0
+us dry quart,1.0,1.0,1.0,2.0
+us gallon,0.6666666666666666,0.5,1.0,1.0
+us gallon per day,0.6666666666666666,1.0,0.5,2.0
+us gallon per minute,0.0,0.0,0.0,2.0
+us liquid cup,0.8,0.6666666666666666,1.0,2.0
+us liquid ounce,1.0,1.0,1.0,1.0
+us liquid pint,1.0,1.0,1.0,1.0
+us liquid quart,1.0,1.0,1.0,2.0
+us peck,1.0,1.0,1.0,2.0
+us survey foot,1.0,1.0,1.0,1.0
+uzbekistan som,1.0,1.0,1.0,2.0
+vatu,1.0,1.0,1.0,2.0
+venezuelan bol�var,1.0,1.0,1.0,2.0
+video frame,1.0,1.0,1.0,1.0
+vietnamese ??ng,1.0,1.0,1.0,2.0
+volt,0.28571428571428575,0.2,0.5,2.0
+volt meter,0.0,0.0,0.0,2.0
+volt per meter,0.0,0.0,0.0,3.0
+volt per second,0.6666666666666666,1.0,0.5,2.0
+volt per square meter,0.0,0.0,0.0,3.0
+watt,0.28571428571428575,0.2,0.5,2.0
+watt per meter kelvin,0.0,0.0,0.0,2.0
+watt per square centimeter,0.0,0.0,0.0,2.0
+watt per square foot,0.0,0.0,0.0,2.0
+watt per square inch,0.6666666666666666,1.0,0.5,2.0
+watt per square meter,0.0,0.0,0.0,2.0
+watt per square meter kelvin,0.0,0.0,0.0,2.0
+watt per square meter quartic kelvin,0.5,1.0,0.3333333333333333,3.0
+watt per square meter steradian,0.0,0.0,0.0,2.0
+watt per steradian,0.4,0.2857142857142857,0.6666666666666666,3.0
+watt square meter,0.0,0.0,0.0,2.0
+watt square meter per steradian,0.0,0.0,0.0,3.0
+watthour,0.6666666666666666,1.0,0.5,2.0
+weber,1.0,1.0,1.0,2.0
+wir euro complementary currency,1.0,1.0,1.0,2.0
+wir franc complementary currency,1.0,1.0,1.0,2.0
+yard,0.4,0.25,1.0,2.0
+year 365 day,0.6666666666666666,1.0,0.5,2.0
+year sidereal,1.0,1.0,1.0,1.0
+year tropical,1.0,1.0,1.0,1.0
+yemeni rial,1.0,1.0,1.0,2.0
+yobi,1.0,1.0,1.0,2.0
+yocto,0.6666666666666666,1.0,0.5,2.0
+yotta,0.6666666666666666,1.0,0.5,2.0
+yuan renminbi,1.0,1.0,1.0,2.0
+zambian kwacha,1.0,1.0,1.0,2.0
+zebi,1.0,1.0,1.0,2.0
+zepto,0.6666666666666666,1.0,0.5,2.0
+zetta,1.0,1.0,1.0,1.0
+zimbabwe dollar,1.0,1.0,1.0,2.0
+zloty,1.0,1.0,1.0,2.0
+micro avg,0.6448717948717949,0.6448717948717949,0.6448717948717949,1560.0
+macro avg,0.6535539240995529,0.7074659905383562,0.6653733833959116,1560.0
+weighted avg,0.6349907961651006,0.6968419936045837,0.6448717948717949,1560.0
