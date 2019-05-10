@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import preprocessing
 import platform
+import language_processing
 
 #Setting path to datasets - specific to user/pc
 if 'FIJI-DP' in platform.uname()[1]:
@@ -26,8 +27,6 @@ def create_reference(file, raw_file=True):
         col_to_tokenise = 'native'
 
     if raw_file:
-        #df.replace('\\^\\^xsd:string', '', regex=True, inplace=True)
-        #df.replace("'", '', regex=True, inplace=True)
         if 'unit' in file:
             df = preprocessing.clean_table(df, has_properties=False, units='rdfs:label', has_units=True, has_abbreviations=True)
         if 'property' in file:
@@ -37,7 +36,9 @@ def create_reference(file, raw_file=True):
     tokens = preprocessing.tokenise_column_values(df[col_to_tokenise])
     if 'qudt' in file:
         tokens = tokens.union({'okta', 'hectopascal', 'micromole', 'from'})
-    return tokens
+    #print(len(tokens), tokens)
+    #print(len(tokens - language_processing.filter_stopwords(tokens)), tokens - language_processing.filter_stopwords(tokens))
+    return language_processing.filter_stopwords(tokens)
 
 
 def create_set_of_native(file):

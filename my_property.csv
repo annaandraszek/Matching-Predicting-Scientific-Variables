@@ -59,15 +59,16 @@ acenaphthylene concentration,acenaphthylene concentration
 actinide concentration,actinide concentration
 active sediment layer thickness,active sediment layer thickness
 air pressure,air pressure
+air temperature,3pm temperature
 air temperature,air temperature
-air temperature,minimum temperature
 air temperature,9am temperature
-air temperature,air temperature 1m above ground level
 air temperature,air temperature 4m above ground level
+air temperature,air temperature 1m above ground level
+air temperature,minimum temperature
 air temperature,air temperature 2m above ground level
 air temperature,temperature inside aws electronics box
 air temperature,temperature
-air temperature,3pm temperature
+air temperature,maximum temperature
 albuminoid nitrogen concentration,albuminoid nitrogen concentration
 aldrin concentration,aldrin concentration
 alkali metal concentration,alkali metal concentration
@@ -117,15 +118,28 @@ bromomethane concentration,bromomethane concentration
 bromophos ethyl concentration,bromophos ethyl concentration
 butane concentration,butane concentration
 butanone concentration,butanone concentration
+c10   c14 hydrocarbon fraction concentration,c10   c14 hydrocarbon fraction concentration
+c10   c236 hydrocarbon fraction concentration,c10   c236 hydrocarbon fraction concentration
 c10 c14 hydrocarbon fraction concentration,c10 c14 hydrocarbon fraction concentration
 c10 c236 hydrocarbon fraction concentration,c10 c236 hydrocarbon fraction concentration
+c15   c28 hydrocarbon fraction concentration,c15   c28 hydrocarbon fraction concentration
 c15 c28 hydrocarbon fraction concentration,c15 c28 hydrocarbon fraction concentration
+c29   c36 hydrocarbon fraction concentration,c29   c36 hydrocarbon fraction concentration
 c29 c36 hydrocarbon fraction concentration,c29 c36 hydrocarbon fraction concentration
+c6   c9 hydrocarbon fraction concentration,c6   c9 hydrocarbon fraction concentration
 c6 c9 hydrocarbon fraction concentration,c6 c9 hydrocarbon fraction concentration
 cadmium concentration,cadmium concentration
 caesium concentration,caesium concentration
 calcium carbonate concentration,calcium carbonate concentration
 calcium concentration,calcium concentration
+carbon   average content,carbon   average content
+carbon   dissolved inorganic concentration,carbon   dissolved inorganic concentration
+carbon   dissolved organic concentration,carbon   dissolved organic concentration
+carbon   inorganic concentration,carbon   inorganic concentration
+carbon   organic concentration,carbon   organic concentration
+carbon   suspended inorganic concentration,carbon   suspended inorganic concentration
+carbon   suspended organic concentration,carbon   suspended organic concentration
+carbon   suspended total,carbon   suspended total
 carbon 13 concentration,carbon 13 concentration
 carbon 14 concentration,carbon 14 concentration
 carbon average content,carbon average content
@@ -229,6 +243,7 @@ formaldehyde concentration,formaldehyde concentration
 gadolinium concentration,gadolinium concentration
 gallium concentration,gallium concentration
 gamma hexachlorocyclohexane concentration,gamma hexachlorocyclohexane concentration
+global radiation,global radiation
 global radiation,daily cumulative global radiation downward shortwave since local midnight
 hafnium concentration,hafnium concentration
 halide concentration,halide concentration
@@ -244,6 +259,8 @@ hexan 2 one concentration,hexan 2 one concentration
 hexane concentration,hexane concentration
 holmium concentration,holmium concentration
 hours of sunlight,sunshine
+hours of sunlight,hours of sunlight
+hours of sunlight,sunlight
 hydrocarbon concentration,hydrocarbon concentration
 hydrogen sulfide concentration,hydrogen sulfide concentration
 hydroxide alkalinity as caco3,hydroxide alkalinity as caco3
@@ -270,13 +287,12 @@ lithium concentration,lithium concentration
 lutetium concentration,lutetium concentration
 magnesium concentration,magnesium concentration
 manganese concentration,manganese concentration
-maximum temperature,maximum temperature
 maximum wind gust,maximum wind gust in ten minute period prior to observation time at 2m
+maximum wind gust,maximum wind gust in one hour period prior to observation time at 2m
+maximum wind gust,time of maximum wind gust
+maximum wind gust,direction of maximum wind gust
 maximum wind gust,maximum wind gust in ten minute period prior to observation time at 4m
 maximum wind gust,maximum wind gust in one hour period prior to observation time at 4m
-maximum wind gust,direction of maximum wind gust
-maximum wind gust,time of maximum wind gust
-maximum wind gust,maximum wind gust in one hour period prior to observation time at 2m
 maximum wind gust,speed of maximum wind gust
 mercury concentration,mercury concentration
 metal concentration,metal concentration
@@ -288,6 +304,7 @@ monocyclic aromatic hydrocarbon concentration,monocyclic aromatic hydrocarbon co
 monomethylmercuryii cation concentration,monomethylmercuryii cation concentration
 msl pressure,9am msl pressure
 msl pressure,3pm msl pressure
+msl pressure,mean sea level pressure
 n butane concentration,n butane concentration
 naphthalene concentration,naphthalene concentration
 neodymium concentration,neodymium concentration
@@ -296,6 +313,7 @@ nitrate and nitrite n concentration,nitrate and nitrite n concentration
 nitrate n concentration,nitrate n concentration
 nitrite n concentration,nitrite n concentration
 nitrogen concentration,nitrogen concentration
+nitrogen concentration   kjeldahl method,nitrogen concentration   kjeldahl method
 nitrogen concentration kjeldahl method,nitrogen concentration kjeldahl method
 nitrogen oxides concentration,nitrogen oxides concentration
 nitrogenous biochemical oxygen demand,nitrogenous biochemical oxygen demand
@@ -317,6 +335,7 @@ orthophosphate as po4 concentration,orthophosphate as po4 concentration
 orthophosphate concentration,orthophosphate concentration
 oxygen 18 concentration,oxygen 18 concentration
 oxygen concentration,oxygen concentration
+par,photosynthetically active radiation
 par,par
 particulate inorganic phosphorus concentration,particulate inorganic phosphorus concentration
 pentachloroethane concentration,pentachloroethane concentration
@@ -353,11 +372,11 @@ rain duration,rain duration
 rain intensity,rain intensity
 rainfall,rainfall
 rare earth element concentration,rare earth element concentration
-relative humidity,3pm relative humidity
-relative humidity,9am relative humidity
 relative humidity,relative humidity
 relative humidity,humidity
 relative humidity,relative humidity 4m above ground level
+relative humidity,9am relative humidity
+relative humidity,3pm relative humidity
 residual alkalinity hazard,residual alkalinity hazard
 rubidium concentration,rubidium concentration
 samarium concentration,samarium concentration
@@ -367,6 +386,7 @@ sea water density,sea water density
 sea water potential density,sea water potential density
 sea water temperature,sea water temperature
 sec butylbenzene concentration,sec butylbenzene concentration
+secchi depth   turbidity,secchi depth   turbidity
 secchi depth turbidity,secchi depth turbidity
 selenium concentration,selenium concentration
 semi volatile organic compound concentration,semi volatile organic compound concentration
@@ -381,11 +401,12 @@ sodium concentration,sodium concentration
 streptococcus concentration,streptococcus concentration
 strontium concentration,strontium concentration
 styrene concentration,styrene concentration
-subsurface temperature,subsurface temperature 3m below ground level
 subsurface temperature,subsurface temperature 7m below ground level
 subsurface temperature,subsurface temperature 10cm below ground level
-subsurface temperature,subsurface temperature 10m below ground level
+subsurface temperature,subsurface temperature 3m below ground level
 subsurface temperature,subsurface temperature 1m below ground level
+subsurface temperature,subsurface temperature 10m below ground level
+subsurface temperature,soil temperature
 sulfate as s concentration,sulfate as s concentration
 sulfide concentration or sulphide concentration,sulfide concentration or sulphide concentration
 sulfite as s concentration or sulphite as s concentration,sulfite as s concentration or sulphite as s concentration
@@ -430,11 +451,13 @@ trichlorofluoromethane concentration,trichlorofluoromethane concentration
 tricresol concentration,tricresol concentration
 trihalomethane concentration,trihalomethane concentration
 tritium concentration,tritium concentration
+tsr,total solar radiation
 tsr,tsr
 upward sea water current,upward sea water current
 uranium concentration,uranium concentration
 vanadium concentration,vanadium concentration
 volatile organic compound concentration,volatile organic compound concentration
+water colour,water color
 water colour,water colour
 water density,water density
 water electrical conductivity @ 25c,water electrical conductivity @ 25c
@@ -443,35 +466,36 @@ water reduction potential,water reduction potential
 water sodium adsorption ratio,water sodium adsorption ratio
 water temperature,water temperature
 water turbidity,water turbidity
-wind direction,3pm wind direction
-wind direction,wind direction vector standard 30 minutes
-wind direction,wind direction scalar average 10 minutes
-wind direction,wind direction
-wind direction,wind direction vector average 10 minutes
-wind direction,wind direction vector standard 10 minutes
-wind direction,9am wind direction
-wind direction,one hour mean wind direction 4m above ground level
-wind direction,hourly vector average wind direction 4m above ground level
-wind direction,wind direction vector average 30 minutes
 wind direction,wind direction scalar standard 30 minutes
-wind direction,wind direction scalar standard 10 minutes
+wind direction,one hour mean wind direction 4m above ground level
+wind direction,9am wind direction
 wind direction,wind direction scalar average 30 minutes
-wind speed,wind speed
-wind speed,9am wind speed
-wind speed,one hour mean wind speed 1m above ground level
-wind speed,wind speed scalar avg 10 min
-wind speed,maximum wind speed 30 minutes
-wind speed,maximum wind speed 10 minutes
-wind speed,hourly vector average wind speed 4m above ground level
-wind speed,hourly vector average wind speed
+wind direction,hourly vector average wind direction 4m above ground level
+wind direction,wind direction scalar standard 10 minutes
+wind direction,wind direction scalar average 10 minutes
+wind direction,wind direction vector standard 30 minutes
+wind direction,3pm wind direction
+wind direction,wind direction vector average 10 minutes
+wind direction,wind direction vector average 30 minutes
+wind direction,wind direction
+wind direction,wind direction vector standard 10 minutes
 wind speed,one hour mean wind speed 2m above ground level
+wind speed,maximum wind speed 10 minutes
+wind speed,hourly vector average wind speed
+wind speed,hourly vector average wind speed 4m above ground level
 wind speed,minimum wind speed 30 minutes
 wind speed,3pm wind speed
+wind speed,one hour mean wind speed 1m above ground level
 wind speed,one hour wind speed peak 4m above ground level
-wind speed,minimum wind speed 10 minutes
+wind speed,wind speed scalar avg 10 min
 wind speed,wind speed scalar avg 30 min
+wind speed,minimum wind speed 10 minutes
+wind speed,wind speed
+wind speed,9am wind speed
+wind speed,maximum wind speed 30 minutes
 wind speed,one hour mean wind speed 4m above ground level
 wind velocity,wind vector e / w
+wind velocity,wind velocity
 wind velocity,wind vector n / s
 xylene concentration,xylene concentration
 ytterbium concentration,ytterbium concentration

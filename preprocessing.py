@@ -4,7 +4,7 @@ import stringdist
 import re
 import math
 import resource_creation
-
+import language_processing
 
 # Takes datasets which contain features that will make up the training set, and extracts them
 # each file needs special treatment to get necessary features from it as they come in different internal formats
@@ -64,7 +64,6 @@ def raw_to_clean(filename):
         print('Enter a valid filename')
         return 1
     df = table_to_lower(df)
-
     df = clean_table(df, property_col, has_property, unit_col, has_units)
 
     #create a set of native property/unit names
@@ -119,39 +118,40 @@ def segment_properties_units(raw_strings, segment_on='p'):
 
 # Tries to match terms not in a unit or property set to words in that set, based on string modification distance
 # eg. 'metre' => 'meter', 'meters' => 'meter'
-def solve_similar_spelling(units, unit_terms, max_distance=2, input_is_string=False):
+def solve_similar_spelling(units, unit_terms, input_is_string=False):
     if input_is_string:
         p = units.split()
         for w in p:
             if not w in unit_terms:
-                best_u = ''
-                best_udist = max_distance
-                for u in unit_terms:
-                    dist = stringdist.rdlevenshtein(w, u)
-                    if dist < len(w) - 1:
-                        if dist <= best_udist:
-                            best_udist = dist
-                            best_u = u
-                            print(w, u, dist)
-                if best_u != '':
-                    units = units.replace(w, best_u)
+                replacement = replace_w(w, unit_terms)
+                if replacement:
+                    units = units.replace(w, replacement)
+
     else:
         for s in range(len(units)):
             p = units[s].split(' ')
             for w in p:
                 if not w in unit_terms:
-                    best_u = ''
-                    best_udist = max_distance
-                    for u in unit_terms:
-                        dist = stringdist.rdlevenshtein(w, u)
-                        if dist < len(w) - 1:
-                            if dist <= best_udist:
-                                best_udist = dist
-                                best_u = u
-                                #print(w, u, dist)
-                    if best_u != '':
-                        units[s] = units[s].replace(w, best_u)
+                    replacement = replace_w(w, unit_terms)
+                    if replacement:
+                        units[s] = units[s].replace(w, replacement)
     return units
+
+
+def replace_w(w, unit_terms, max_distance=2):
+    best_u = ''
+    best_udist = max_distance
+    for u in unit_terms:
+        dist = stringdist.rdlevenshtein(w, u)
+        if dist < len(w) - 1:
+            if dist <= best_udist:
+                best_udist = dist
+                best_u = u
+                # print(w, u, dist)
+    if best_u != '':
+        return best_u
+    else:
+        return None
 
 
 # Tries to identify common unit abbreviations and change to the appropriate unit term
@@ -204,10 +204,12 @@ def clean_table(table, properties='parameter', has_properties=True, units='units
         '-': ' ',
         ',': ' ',
         '   ': ' ',
-        '\\^ ': '^',
-        '\\^': ' ^',
+        #'\\^ ': '^',
+        #'\\^': ' ^',
         '\\^1': '',
         '\\*': ' * ',
+        '\\^2': 'square',
+        '\\^3': 'cubic',
     }
     table.replace(replacements, regex=True, inplace=True)
     if has_units:
