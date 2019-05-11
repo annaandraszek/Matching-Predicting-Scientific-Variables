@@ -150,3 +150,13 @@ def create_paired_reference(property_file, unit_file, pre_paired_file):
     #unit_df = pd.read_csv(unit_file, usecols=['class']) # aka my unit
     pre_paired_df = pd.read_csv('raw datasets/' + pre_paired_file, usecols=['rdfs:label', 'qudt:unit']) # aka raw qudt-property
 
+
+def create_binary_classification_file(property_file, unit_file):
+    pdf = pd.read_csv(property_file, usecols=['native'])
+    udf = pd.read_csv(unit_file, usecols=['native'])
+    pdf['class'] = 'property'
+    udf['class'] = 'unit'
+    binary_df = pd.DataFrame()
+    binary_df = pdf.append(udf)
+    binary_df.to_csv('property_or_unit.csv', index=False)
+

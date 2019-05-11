@@ -1,6 +1,6 @@
 import preprocessing
 import resource_creation
-#from ml_keras import NeuralNetwork
+from ml_keras import NeuralNetwork
 from machine_learning import Classifier
 import pandas as pd
 import numpy as np
@@ -19,17 +19,20 @@ unit_vocab = {str.lower(t) for t in resource_creation.create_reference('my_unit.
 property_vocab = {str.lower(t) for t in resource_creation.create_reference('my_property.csv', raw_file=False)}
 
 
-# def nn_train_predict():
-#     model = 'basic'
-#     ml = NeuralNetwork('my_property.csv')
-#     ml.train(model)
-#     print(ml.predict(['wind'], model))
-#
-#
-# def nn_just_predict(string):
-#     model = 'basic'
-#     ml = NeuralNetwork('my_property.csv')
-#     print(ml.predict([string], model))
+def nn_train_predict(file):
+    model = 'binary'
+    ml = NeuralNetwork(file)
+    ml.train(model)
+    test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
+    for x in test_xs:
+        print(ml.predict([x], model))
+
+
+def nn_just_predict(string):
+    model = 'binary'
+    ml = NeuralNetwork('property_or_unit.csv')
+    print(ml.predict([string], model))
+
 
 #Cleans up/pre-processes the raw qudt datasets and saves as files in only_qudt_datasets
 def process_raw_qudt():
@@ -113,6 +116,22 @@ def property_or_unit(s_tokens):
         return 1
 
 
+def user_input_loop():
+    while True:
+        t = process_user_input()
+        if t == 1:
+            break
+        if t == 0:
+            continue
+        else:
+            user_string, type = t
+            #run_classifier() # would recommend against running this method as-is right now - as it would be
+                                # re-trained on every user input
+                                # run if want to re-train the model before making predictions
+            #print(run_classifier_from_saved(user_string, type)) # run if want to use a pre-trained model to make predictions
+            run_classifier_from_saved(user_string, type, ranked=True)
+
+
 if __name__ == '__main__':
     # Process the qudt files first if haven't already
     #process_raw_qudt()
@@ -131,19 +150,15 @@ if __name__ == '__main__':
     # User input-prediction loop
     # Run to make predictions (using Complement Naive Bayes)
 
-    train_classifier()
-    while True:
-        t = process_user_input()
-        if t == 1:
-            break
-        if t == 0:
-            continue
-        else:
-            user_string, type = t
-            #run_classifier() # would recommend against running this method as-is right now - as it would be
-                                # re-trained on every user input
-                                # run if want to re-train the model before making predictions
-            #print(run_classifier_from_saved(user_string, type)) # run if want to use a pre-trained model to make predictions
-            run_classifier_from_saved(user_string, type, ranked=True)
+    #resource_creation.create_binary_classification_file('my_property.csv', 'my_unit.csv')
+    nn_train_predict('property_or_unit.csv')
+    #test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
+    #for x in test_xs:
+    #    nn_just_predict(x)
+    #while True:
+    #    string = str(input('Enter a string to categorise: '))
+    #    nn_just_predict(string)
+    #train_classifier()
+    #user_input_loop()
 
 

@@ -1,0 +1,2014 @@
+native,class
+1 1 1 2 tetrachloroethane concentration,property
+1 1 1 trichloroethane concentration,property
+1 1 2 2 tetrachloroethane concentration,property
+1 1 2 trichloroethane concentration,property
+1 1 dichloro 1 propene concentration,property
+1 1 dichloroethane concentration,property
+1 1 dichloroethene concentration,property
+1 2 3 trichlorobenzene concentration,property
+1 2 3 trichloropropane concentration,property
+1 2 4 trichlorobenzene concentration,property
+1 2 4 trimethylbenzene concentration,property
+1 2 dibromo 3 chloropropane concentration,property
+1 2 dibromoethane concentration,property
+1 2 dichlorobenzene concentration,property
+1 2 dichloroethane concentration,property
+1 2 dichloroethane d4 concentration,property
+1 2 dichloropropane concentration,property
+1 2 dihydroacenaphthylene concentration,property
+1 3 1 4 dimethylbenzene concentration,property
+1 3 5 trimethylbenzene concentration,property
+1 3 dichlorobenzene concentration,property
+1 3 dichloropropane concentration,property
+1 4 dichlorobenzene concentration,property
+1 bromo 4 fluorobenzene concentration,property
+1 chloro 2 methylbenzene concentration,property
+1 chloro 4 methylbenzene concentration,property
+1 phenylbutane concentration,property
+2 2 dichloropropane concentration,property
+2 2 dimethylpropane concentration,property
+2 4 5 trichlorophenol concentration,property
+2 4 6 tribromophenol concentration,property
+2 4 6 trichlorophenol concentration,property
+2 4 dichlorophenol concentration,property
+2 4 dimethylphenol concentration,property
+2 6 dichlorophenol concentration,property
+2 chlorophenol 3 4 5 6 d4 concentration,property
+2 chlorophenol concentration,property
+2 fluorobiphenyl concentration,property
+2 methoxy 2 methylpropane concentration,property
+2 methylphenol concentration,property
+2 nitrophenol concentration,property
+20 day biochemical oxygen demand,property
+20 day nitrogenous biochemical oxygen demand,property
+36cl cl ratio,property
+4 chloro 3 methylphenol concentration,property
+4 isopropyltoluene concentration,property
+4 methylpentan 2 one concentration,property
+4 terphenyl d14 concentration,property
+5 day biochemical oxygen demand,property
+5 day carbonaceous biochemical oxygen demand,property
+5 day nitrogenous biochemical oxygen demand,property
+absorption by colored dissolved organic matter,property
+absorption by coloured and detrital matter,property
+absorption by non algal particles,property
+absorption by particles,property
+absorption by phytoplankton,property
+acenaphthylene concentration,property
+actinide concentration,property
+active sediment layer thickness,property
+air pressure,property
+3pm temperature,property
+air temperature,property
+9am temperature,property
+air temperature 4m above ground level,property
+air temperature 1m above ground level,property
+minimum temperature,property
+air temperature 2m above ground level,property
+temperature inside aws electronics box,property
+temperature,property
+maximum temperature,property
+albuminoid nitrogen concentration,property
+aldrin concentration,property
+alkali metal concentration,property
+alkaline earth metal concentration,property
+alpha endosulfan concentration,property
+alpha hexachlorocyclohexane concentration,property
+aluminium concentration,property
+ammonia and ammonium as n concentration,property
+ammonia and ammonium as nh4 concentration,property
+ammonia and ammonium concentration,property
+ammonia as n concentration,property
+ammonia concentration,property
+ammonium as n concentration,property
+ammonium nh4 concentration,property
+anion concentration,property
+anthracene concentration,property
+anthracene d10 concentration,property
+antimony concentration,property
+arsenic concentration,property
+attenuation coefficient with depth,property
+backscatter by non algal particles,property
+backscatter by particles,property
+backscatter by phytoplankton,property
+bacteria total plate count,property
+barium concentration,property
+barometric pressure,property
+benzaanthracene concentration,property
+benzene  toluene  ethylbenzene  xylene concentration,property
+benzene concentration,property
+benzoapyrene concentration,property
+benzobfluoranthene concentration,property
+benzoghiperylene concentration,property
+benzokfluoranthene concentration,property
+beryllium concentration,property
+beta endosulfan concentration,property
+bicarbonate alkalinity as caco3,property
+bicarbonate concentration,property
+biochemical oxygen demand,property
+bismuth concentration,property
+boron concentration,property
+bromide concentration,property
+bromine concentration,property
+bromobenzene concentration,property
+bromochloromethane concentration,property
+bromodichloromethane concentration,property
+bromomethane concentration,property
+bromophos ethyl concentration,property
+butane concentration,property
+butanone concentration,property
+c10   c14 hydrocarbon fraction concentration,property
+c10   c236 hydrocarbon fraction concentration,property
+c10 c14 hydrocarbon fraction concentration,property
+c10 c236 hydrocarbon fraction concentration,property
+c15   c28 hydrocarbon fraction concentration,property
+c15 c28 hydrocarbon fraction concentration,property
+c29   c36 hydrocarbon fraction concentration,property
+c29 c36 hydrocarbon fraction concentration,property
+c6   c9 hydrocarbon fraction concentration,property
+c6 c9 hydrocarbon fraction concentration,property
+cadmium concentration,property
+caesium concentration,property
+calcium carbonate concentration,property
+calcium concentration,property
+carbon   average content,property
+carbon   dissolved inorganic concentration,property
+carbon   dissolved organic concentration,property
+carbon   inorganic concentration,property
+carbon   organic concentration,property
+carbon   suspended inorganic concentration,property
+carbon   suspended organic concentration,property
+carbon   suspended total,property
+carbon 13 concentration,property
+carbon 14 concentration,property
+carbon average content,property
+carbon concentration,property
+carbon dioxide flux,property
+carbon dioxide storage flux,property
+carbon dissolved inorganic concentration,property
+carbon dissolved organic concentration,property
+carbon disulfide concentration,property
+carbon inorganic concentration,property
+carbon monoxide concentration,property
+carbon organic concentration,property
+carbon suspended inorganic concentration,property
+carbon suspended organic concentration,property
+carbon suspended total,property
+carbonaceous biochemical oxygen demand,property
+carbonate alkalinity as caco3,property
+carbonate concentration,property
+cation concentration,property
+cerium concentration,property
+chemical compound concentration,property
+chemical entity concentration,property
+chemical oxygen demand,property
+chlordane concentration,property
+chloride concentration,property
+chlorinated volatile organic compound concentration,property
+chlorine 36 concentration,property
+chlorine concentration,property
+chlorobenzene concentration,property
+chloroethane concentration,property
+chloroethene concentration,property
+chloroform concentration,property
+chloromethane concentration,property
+chlorophenylmethane concentration,property
+chlorophyll a concentration,property
+chlorophyll b concentration,property
+chlorophyll c concentration,property
+chlorophyll concentration,property
+chlorpyrifos concentration,property
+chromium  hexavalent concentration,property
+chromium  trivalent concentration,property
+chromium concentration,property
+chrysene concentration,property
+cis 1 2 dichloroethene concentration,property
+cis 1 3 dichloropropene concentration,property
+cis 1 4 dichloro 2 butene concentration,property
+clay fraction,property
+3pm cloud amount,property
+9am cloud amount,property
+cobalt concentration,property
+coliform concentration,property
+copper concentration,property
+crocodile concentration,property
+degree heating days,property
+deuterium concentration,property
+dew point temperature,property
+dew point,property
+dibenza hanthracene concentration,property
+dibromochloromethane concentration,property
+dibromomethane concentration,property
+dichlorodifluoromethane concentration,property
+dichlorodiphenyldichloroethane concentration,property
+dichlorodiphenyldichloroethylene concentration,property
+dichlorodiphenyltrichloroethane concentration,property
+dichloromethane concentration,property
+dieldrin concentration,property
+discharge,property
+dissolved inorganic phosphorus concentration,property
+dissolved nitrogen concentration,property
+dissolved organic matter,property
+dissolved organic phosphorus concentration,property
+dissolved oxygen concentration,property
+dissolved volatile solids,property
+dysprosium concentration,property
+eastward sea water current,property
+electrical conductivity of water,property
+endosulfan concentration,property
+endrin concentration,property
+erbium concentration,property
+escherichia coli count,property
+estuarine crocodile concentration,property
+ethane concentration,property
+ethenyl acetate concentration,property
+ethion concentration,property
+ethyl acetate concentration,property
+ethylbenzene concentration,property
+europium concentration,property
+evaporation,property
+faecal coliform concentration,property
+faecal streptococci concentration,property
+figure of merit ratio,property
+filterable reactive phosphate as p concentration,property
+fine total suspended solids,property
+fixed dissolved solids,property
+fixed suspended solids,property
+fluoranthene concentration,property
+fluorene concentration,property
+fluoride concentration,property
+fluorine concentration,property
+formaldehyde concentration,property
+gadolinium concentration,property
+gallium concentration,property
+gamma hexachlorocyclohexane concentration,property
+global radiation,property
+daily cumulative global radiation downward shortwave since local midnight,property
+hafnium concentration,property
+halide concentration,property
+haloalkane concentration,property
+halocarbon concentration,property
+halogen concentration,property
+helium concentration,property
+heptachlor concentration,property
+heptachlor epoxide concentration,property
+hexachlorobenzene concentration,property
+hexachlorobutadiene concentration,property
+hexan 2 one concentration,property
+hexane concentration,property
+holmium concentration,property
+sunshine,property
+hours of sunlight,property
+sunlight,property
+hydrocarbon concentration,property
+hydrogen sulfide concentration,property
+hydroxide alkalinity as caco3,property
+immobilised particulate inorganic phosphorus concentration,property
+indeno1 2 3 c dpyrene concentration,property
+indium concentration,property
+inorganic nitrogen concentration,property
+inorganic phosphorus concentration,property
+iodide concentration,property
+iodine concentration,property
+iodomethane concentration,property
+iron concentration,property
+iron ii concentration,property
+iron iii concentration,property
+iron sulfide concentration or iron sulphide concentration,property
+isobutane concentration,property
+isopentane concentration,property
+isopropylbenzene concentration,property
+johnston\s crocodile concentration,property
+lanthanide concentration,property
+lanthanum concentration,property
+lead concentration,property
+lithium concentration,property
+lutetium concentration,property
+magnesium concentration,property
+manganese concentration,property
+maximum wind gust in ten minute period prior to observation time at 2m,property
+maximum wind gust in one hour period prior to observation time at 2m,property
+time of maximum wind gust,property
+direction of maximum wind gust,property
+maximum wind gust in ten minute period prior to observation time at 4m,property
+maximum wind gust in one hour period prior to observation time at 4m,property
+speed of maximum wind gust,property
+mercury concentration,property
+metal concentration,property
+metalloid concentration,property
+methane concentration,property
+methoxychlor concentration,property
+molybdenum concentration,property
+monocyclic aromatic hydrocarbon concentration,property
+monomethylmercuryii cation concentration,property
+9am msl pressure,property
+3pm msl pressure,property
+mean sea level pressure,property
+n butane concentration,property
+naphthalene concentration,property
+neodymium concentration,property
+nickel concentration,property
+nitrate and nitrite n concentration,property
+nitrate n concentration,property
+nitrite n concentration,property
+nitrogen concentration,property
+nitrogen concentration   kjeldahl method,property
+nitrogen concentration kjeldahl method,property
+nitrogen oxides concentration,property
+nitrogenous biochemical oxygen demand,property
+noble gas concentration,property
+non carbonate hardness,property
+non metal concentration,property
+northward sea water current,property
+nutrient concentration,property
+organic compound concentration,property
+organic nitrogen concentration,property
+organic phosphorus concentration,property
+organic sulphur concentration or organic sulfur concentration,property
+organochlorine concentration,property
+organochlorine pesticide concentration,property
+organophosphate concentration,property
+organophosphate pesticide concentration,property
+orthophosphate as p concentration,property
+orthophosphate as po4 concentration,property
+orthophosphate concentration,property
+oxygen 18 concentration,property
+oxygen concentration,property
+photosynthetically active radiation,property
+par,property
+particulate inorganic phosphorus concentration,property
+pentachloroethane concentration,property
+pentachlorophenol concentration,property
+pentane concentration,property
+pesticide concentration,property
+petroleum hydrocarbon concentration,property
+ph,property
+phenanthrene concentration,property
+phenol concentration,property
+phenol d6 concentration,property
+phosphate as p concentration,property
+phosphate concentration,property
+phosphorus concentration,property
+photosynthetic photon flux,property
+polyatomic ion concentration,property
+polycyclic aromatic hydrocarbon concentration,property
+polyphosphate as po4 concentration,property
+post transition metal concentration,property
+potassium concentration,property
+practical salinity,property
+praseodymium concentration,property
+propane concentration,property
+propylbenzene concentration,property
+purgeable halocarbon concentration,property
+pyrene concentration,property
+pyrite  concentration,property
+radon 220 concentration,property
+radon 222 concentration,property
+radon 226 concentration,property
+radon concentration,property
+rain accumulation,property
+rain duration,property
+rain intensity,property
+rainfall,property
+rare earth element concentration,property
+relative humidity,property
+humidity,property
+relative humidity 4m above ground level,property
+9am relative humidity,property
+3pm relative humidity,property
+residual alkalinity hazard,property
+rubidium concentration,property
+samarium concentration,property
+sand fraction,property
+sea surface elevation,property
+sea water density,property
+sea water potential density,property
+sea water temperature,property
+sec butylbenzene concentration,property
+secchi depth   turbidity,property
+secchi depth turbidity,property
+selenium concentration,property
+semi volatile organic compound concentration,property
+silicate as si concentration,property
+silicate as sio2 concentration,property
+silicon concentration,property
+silicon dioxide concentration,property
+silt fraction,property
+silver concentration,property
+nett snow accumulation since station installation,property
+sodium concentration,property
+streptococcus concentration,property
+strontium concentration,property
+styrene concentration,property
+subsurface temperature 7m below ground level,property
+subsurface temperature 10cm below ground level,property
+subsurface temperature 3m below ground level,property
+subsurface temperature 1m below ground level,property
+subsurface temperature 10m below ground level,property
+soil temperature,property
+sulfate as s concentration,property
+sulfide concentration or sulphide concentration,property
+sulfite as s concentration or sulphite as s concentration,property
+sulfite concentration or sulphite concentration,property
+sulphate concentration or sulfate concentration,property
+sulphide as s concentration or sulfide as s concentration,property
+sulphur concentration or sulfur concentration,property
+sulphur dioxide concentration or sulfur dioxide concentration,property
+suspended volatile solids,property
+tellurium concentration,property
+terbium concentration,property
+tert butylbenzene concentration,property
+tetrachloroethene concentration,property
+tetrachloromethane concentration,property
+thallium concentration,property
+thorium concentration,property
+thulium concentration,property
+tin concentration,property
+titanium concentration,property
+toluene concentration,property
+toluene d8 concentration,property
+total absorption,property
+total alkalinity as caco3,property
+total bacteria,property
+total dissolved carbon dioxide concentration,property
+total dissolved ions,property
+total dissolved solids,property
+total fixed solids,property
+total hardness as caco3,property
+total sediment thickness,property
+total solids,property
+total suspended solids,property
+total volatile solids,property
+trans 1 2 dichloroethene concentration,property
+trans 1 3 dichloropropene concentration,property
+trans 1 4 dichloro 2 butene concentration,property
+transition metal concentration,property
+tribromomethane concentration,property
+trichlorobenzene concentration,property
+trichloroethene concentration,property
+trichlorofluoromethane concentration,property
+tricresol concentration,property
+trihalomethane concentration,property
+tritium concentration,property
+total solar radiation,property
+tsr,property
+upward sea water current,property
+uranium concentration,property
+vanadium concentration,property
+volatile organic compound concentration,property
+water color,property
+water colour,property
+water density,property
+water electrical conductivity @ 25c,property
+water ph,property
+water reduction potential,property
+water sodium adsorption ratio,property
+water temperature,property
+water turbidity,property
+wind direction scalar standard 30 minutes,property
+one hour mean wind direction 4m above ground level,property
+9am wind direction,property
+wind direction scalar average 30 minutes,property
+hourly vector average wind direction 4m above ground level,property
+wind direction scalar standard 10 minutes,property
+wind direction scalar average 10 minutes,property
+wind direction vector standard 30 minutes,property
+3pm wind direction,property
+wind direction vector average 10 minutes,property
+wind direction vector average 30 minutes,property
+wind direction,property
+wind direction vector standard 10 minutes,property
+one hour mean wind speed 2m above ground level,property
+maximum wind speed 10 minutes,property
+hourly vector average wind speed,property
+hourly vector average wind speed 4m above ground level,property
+minimum wind speed 30 minutes,property
+3pm wind speed,property
+one hour mean wind speed 1m above ground level,property
+one hour wind speed peak 4m above ground level,property
+wind speed scalar avg 10 min,property
+wind speed scalar avg 30 min,property
+minimum wind speed 10 minutes,property
+wind speed,property
+9am wind speed,property
+maximum wind speed 30 minutes,property
+one hour mean wind speed 4m above ground level,property
+wind vector e / w,property
+wind velocity,property
+wind vector n / s,property
+xylene concentration,property
+ytterbium concentration,property
+yttrium concentration,property
+zinc concentration,property
+zirconium concentration,property
+abA,unit
+abampere,unit
+abampere per square centimeter,unit
+abA  /  cm ^2,unit
+abC,unit
+abcoulomb,unit
+abcoulomb per square centimeter,unit
+abC / cm ^2,unit
+abfarad,unit
+abF,unit
+abF / cm,unit
+abfarad per centimeter,unit
+abH,unit
+abhenry,unit
+abOhm,unit
+abohm,unit
+aS,unit
+absiemen,unit
+abT,unit
+abtesla,unit
+abV,unit
+abvolt,unit
+abvolt centimeter,unit
+abV cm,unit
+abvolt per centimeter,unit
+abV / cm,unit
+abvolt second,unit
+abV s,unit
+acre,unit
+ac,unit
+ac ft,unit
+acre foot,unit
+AFN,unit
+afghani,unit
+algerian dinar,unit
+DZD,unit
+A,unit
+ampere,unit
+ampere hour,unit
+A hr,unit
+ampere per degree,unit
+A / deg,unit
+ampere per joule,unit
+A J ,unit
+A / m,unit
+ampere per meter,unit
+A / rad,unit
+ampere per radian,unit
+A / m ^2,unit
+ampere per square meter,unit
+ampere turn,unit
+At,unit
+At / in,unit
+ampere turn per inch,unit
+ampere turn per meter,unit
+At / m,unit
+Å,unit
+angstrom,unit
+arcMin,unit
+arc minute,unit
+arc second,unit
+arcSec,unit
+are,unit
+a,unit
+argentine peso,unit
+ARS,unit
+armenian dram,unit
+AMD,unit
+AWG,unit
+aruban guilder,unit
+astronomical unit,unit
+au,unit
+u,unit
+atomic mass unit,unit
+Z,unit
+atomic number,unit
+atto,unit
+australian dollar,unit
+AUD,unit
+azerbaijanian manat,unit
+AZN,unit
+bahamian dollar,unit
+BSD,unit
+bahraini dinar,unit
+BHD,unit
+THB,unit
+baht,unit
+PAB,unit
+balboa,unit
+ban,unit
+BDT,unit
+bangladeshi taka,unit
+bar,unit
+BBD,unit
+barbados dollar,unit
+b,unit
+barn,unit
+barrel,unit
+bbl,unit
+Bq,unit
+becquerel,unit
+belarussian ruble,unit
+BYR,unit
+belize dollar,unit
+BZD,unit
+BMD,unit
+bermuda dollar,unit
+Bi,unit
+biot,unit
+bit,unit
+bits per second,unit
+bps,unit
+board foot,unit
+Bf,unit
+bolivian mvdol funds code,unit
+BOV,unit
+BOB,unit
+boliviano,unit
+BRL,unit
+brazilian real,unit
+breath,unit
+breaths / min,unit
+breath per minute,unit
+Btu,unit
+british thermal unit international steam table,unit
+british thermal unit thermochemical calorie,unit
+brunei dollar,unit
+BND,unit
+Btu ft,unit
+btu foot,unit
+Btu ft / hr ft ^2 degF,unit
+btu foot per square foot hour degree fahrenheit,unit
+Btu in,unit
+btu inch,unit
+btu inch per square foot hour degree fahrenheit,unit
+Btu in / hr ft ^2 degF,unit
+btu inch per square foot second degree fahrenheit,unit
+Btu in / ft ^2 s degF,unit
+btu per degree fahrenheit,unit
+Btu / degF,unit
+btu per degree rankine,unit
+Btu / degR,unit
+Btu / hr,unit
+btu per hour,unit
+btu per hour square foot,unit
+Btu / hr ft ^2,unit
+Btu / lb,unit
+btu per pound,unit
+Btu / lb degF,unit
+btu per pound degree fahrenheit,unit
+btu per pound degree rankine,unit
+Btu / lb degR,unit
+Btu / lb mol,unit
+btu per pound mole,unit
+btu per pound mole degree fahrenheit,unit
+Btu / lb mol degF,unit
+Btu / s,unit
+btu per second,unit
+btu per second square foot,unit
+Btu / s ft ^2,unit
+btu per square foot,unit
+Btu / ft ^2,unit
+Btu / hr ft ^2 degF,unit
+btu per square foot hour degree fahrenheit,unit
+Btu / ft ^2 s degF,unit
+btu per square foot second degree fahrenheit,unit
+BGN,unit
+bulgarian lev,unit
+burundian franc,unit
+BIF,unit
+bu,unit
+bushel,unit
+B,unit
+byte,unit
+calorie per centimeter second degree celsius,unit
+cal / cm s degC,unit
+calorie per gram degree celsius,unit
+kcal / gm degC,unit
+canadian dollar,unit
+CAD,unit
+candela,unit
+cd,unit
+cd / in ^2,unit
+candela per square inch,unit
+candela per square meter,unit
+cd / m ^2,unit
+candle,unit
+candlepower,unit
+CVE,unit
+cape verde escudo,unit
+Nm / ct,unit
+carat,unit
+KYD,unit
+cayman islands dollar,unit
+GHS,unit
+cedi,unit
+c,unit
+centi,unit
+centimeter,unit
+cm,unit
+centimeter of water,unit
+cmH2O,unit
+centimeter per second,unit
+cm / s,unit
+cm / s ^2,unit
+centimeter per second squared,unit
+cm s degC,unit
+centimeter second degree celsius,unit
+centipoise,unit
+cP,unit
+cSt,unit
+centistokes,unit
+cfa franc bceao,unit
+XOF,unit
+cfa franc beac,unit
+XAF,unit
+cfp franc,unit
+XPF,unit
+ch,unit
+chain,unit
+CLP,unit
+chilean peso,unit
+circular mil,unit
+cmil,unit
+clo,unit
+colombian peso,unit
+COP,unit
+colony forming unit,unit
+CFU,unit
+KMF,unit
+comoro franc,unit
+convertible marks,unit
+BAM,unit
+cord,unit
+C,unit
+cordoba oro,unit
+NIO,unit
+costa rican colon,unit
+CRC,unit
+coulomb,unit
+C m,unit
+coulomb meter,unit
+coulomb per cubic meter,unit
+C m ^3,unit
+coulomb per kilogram,unit
+C kg ,unit
+C / m,unit
+coulomb per meter,unit
+coulomb per mole,unit
+C mol ,unit
+coulomb per square meter,unit
+C m ^2,unit
+coulomb square meter,unit
+HRK,unit
+croatian kuna,unit
+cuban peso,unit
+CUP,unit
+cubic centimeter,unit
+cm ^3,unit
+cubic coulomb meter per square joule,unit
+C ^3 m ^3 J ^2,unit
+ft ^3,unit
+cubic foot,unit
+ft ^3 / min,unit
+cubic foot per minute,unit
+ft ^3 / s,unit
+cubic foot per second,unit
+cubic inch,unit
+in ^3,unit
+cubic inch per minute,unit
+in ^3 / min,unit
+km ^3 / s ^2,unit
+cubic kilometer per second squared,unit
+m ^3,unit
+cubic meter,unit
+m ^3 / h,unit
+cubic meter per hour,unit
+cubic meter per kelvin,unit
+m ^3 / K,unit
+cubic meter per kilogram,unit
+m ^3 / kg,unit
+cubic meter per kilogram second squared,unit
+m ^3 kg  s ^2,unit
+cubic meter per mole,unit
+m ^3 mol ,unit
+m ^3 / s,unit
+cubic meter per second,unit
+cubic meter per second squared,unit
+m ^3 / s ^2,unit
+mi ^3,unit
+cubic mile,unit
+cubic millimeter,unit
+cubic yard,unit
+yd ^3,unit
+yd ^3 / min,unit
+cubic yard per minute,unit
+Ci,unit
+curie,unit
+CYP,unit
+cyprus pound,unit
+czech koruna,unit
+CZK,unit
+GMD,unit
+dalasi,unit
+dalton,unit
+Da,unit
+danish krone,unit
+DKK,unit
+d,unit
+day,unit
+day sidereal,unit
+debye,unit
+D,unit
+deca,unit
+da,unit
+deci,unit
+dB,unit
+decibel,unit
+dBc,unit
+decibel carrier unit,unit
+decibel referred to 1mw,unit
+dBm,unit
+decimeter,unit
+°,unit
+degree angle,unit
+degree from north,unit
+direction degree,unit
+degree,unit
+degC,unit
+degree celsius,unit
+degree celsius centimeter,unit
+cm degC,unit
+degC  /  hr,unit
+degree celsius per hour,unit
+degree celsius per minute,unit
+degC  /  m,unit
+degree celsius per second,unit
+degC  /  s,unit
+degree centigrade,unit
+degree fahrenheit,unit
+degF,unit
+degree fahrenheit hour,unit
+degF hr,unit
+degree fahrenheit hour per btu,unit
+degF hr / Btu,unit
+degF  /  h,unit
+degree fahrenheit per hour,unit
+degree fahrenheit per minute,unit
+degF  /  m,unit
+degF  /  s,unit
+degree fahrenheit per second,unit
+deg / h,unit
+degree per hour,unit
+degree per minute,unit
+deg / s,unit
+degree per second,unit
+deg / s ^2,unit
+degree per second squared,unit
+degR,unit
+degree rankine,unit
+degR  /  h,unit
+degree rankine per hour,unit
+degree rankine per minute,unit
+degR  /  m,unit
+degree rankine per second,unit
+degR  /  s,unit
+MKD,unit
+denar,unit
+denier,unit
+diopter,unit
+DJF,unit
+djibouti franc,unit
+STD,unit
+dobra,unit
+dominican peso,unit
+DOP,unit
+dry gal,unit
+dry gallon us,unit
+dyne,unit
+dyn,unit
+dyne centimeter,unit
+dyn cm,unit
+dyn / cm ^2,unit
+dyne per square centimeter,unit
+XCD,unit
+east caribbean dollar,unit
+EGP,unit
+egyptian pound,unit
+eV,unit
+electron volt,unit
+eV K ,unit
+electron volt per kelvin,unit
+eV T ,unit
+electron volt per tesla,unit
+electron volt second,unit
+eV s,unit
+erg,unit
+erg per cubic centimeter,unit
+erg / cm ^3,unit
+erg per gram,unit
+erg / s,unit
+erg per second,unit
+erg per square centimeter second,unit
+erg / cm ^2 s,unit
+erg s,unit
+erg second,unit
+ethiopian birr,unit
+ETB,unit
+EUR,unit
+euro,unit
+XBA,unit
+european composite unit eurco bonds market unit,unit
+XBB,unit
+european monetary unit e.m.u. 6 bonds market unit,unit
+XBD,unit
+european unit of account 17 e.u.a. 17 bonds market unit,unit
+european unit of account 9 e.u.a. 9 bonds market unit,unit
+XBC,unit
+E,unit
+exa,unit
+Ei,unit
+exbi,unit
+FKP,unit
+falkland islands pound,unit
+F,unit
+farad,unit
+F m ,unit
+farad per meter,unit
+faraday,unit
+fath,unit
+fathom,unit
+femto,unit
+f,unit
+fm,unit
+femtometer,unit
+fermi,unit
+fiji dollar,unit
+FJD,unit
+flight,unit
+ft,unit
+foot,unit
+fc,unit
+foot candle,unit
+foot lambert,unit
+ft L,unit
+ftH2O,unit
+foot of water,unit
+foot per hour,unit
+ft / hr,unit
+ft / min,unit
+foot per minute,unit
+foot per second,unit
+ft / s,unit
+foot per second squared,unit
+ft / s ^2,unit
+foot pound force,unit
+ft lbf,unit
+foot pound force per hour,unit
+ft lbf / hr,unit
+foot pound force per minute,unit
+ft lbf / min,unit
+ft lbf / s,unit
+foot pound force per second,unit
+foot pound force per square foot second,unit
+ft lbfft ^2 s,unit
+foot pound force per square meter,unit
+ft lbf / m ^2,unit
+lbf  /  s,unit
+foot pound force second,unit
+foot pound per square foot,unit
+ft lbf / ft ^2,unit
+ft pdl,unit
+foot poundal,unit
+HUF,unit
+forint,unit
+fractional area,unit
+fa,unit
+fps,unit
+frame per second,unit
+franc congolais,unit
+CDF,unit
+franklin,unit
+Fr,unit
+fur,unit
+furlong,unit
+gal,unit
+Gal,unit
+gamma,unit
+gauss,unit
+G,unit
+Gi,unit
+gibi,unit
+GIP,unit
+gibraltar pound,unit
+giga,unit
+GeV,unit
+giga electron volt,unit
+GHz,unit
+gigahertz,unit
+gilbert,unit
+gold franc special settlement currency,unit
+XFO,unit
+gold one troy ounce,unit
+XAU,unit
+gon,unit
+grad,unit
+gr,unit
+grade,unit
+grain,unit
+gr / gal,unit
+grain per gallon,unit
+g,unit
+gram,unit
+gram degree celsius,unit
+g degC,unit
+gravity,unit
+Gy,unit
+gray,unit
+Gy / s,unit
+gray per second,unit
+PYG,unit
+guarani,unit
+guinea franc,unit
+GNF,unit
+guyana dollar,unit
+GYD,unit
+HTG,unit
+haiti gourde,unit
+E h,unit
+hartree,unit
+heart beat,unit
+BPM,unit
+heart beat per minute,unit
+hectare,unit
+ha,unit
+hecto,unit
+h,unit
+hectopascal,unit
+hpa,unit
+henry,unit
+H,unit
+H / m,unit
+henry per meter,unit
+Hz,unit
+hertz,unit
+hertz per kelvin,unit
+Hz K ,unit
+Hz T ,unit
+hertz per tesla,unit
+hertz per volt,unit
+Hz V ,unit
+hong kong dollar,unit
+HKD,unit
+HP,unit
+horsepower,unit
+hp / boiler,unit
+horsepower boiler,unit
+hp / V,unit
+horsepower electric,unit
+hp / m,unit
+horsepower metric,unit
+horsepower water,unit
+hp / H2O,unit
+hr,unit
+hour,unit
+hour sidereal,unit
+hr ft ^2,unit
+hour square foot,unit
+hryvnia,unit
+UAH,unit
+cwt,unit
+hundred weight long,unit
+hundred weight short,unit
+ISK,unit
+iceland krona,unit
+imperial gallon,unit
+imperial ounce,unit
+oz,unit
+pi,unit
+imperial pint,unit
+inch,unit
+in,unit
+inHg,unit
+inch of mercury,unit
+inch of water,unit
+inAq,unit
+inch per second,unit
+inch per second squared,unit
+in / s ^2,unit
+inch pound force,unit
+in lbf,unit
+INR,unit
+indian rupee,unit
+IU,unit
+international unit,unit
+IU / L,unit
+international unit per liter,unit
+inverse second,unit
+s ,unit
+iranian rial,unit
+IRR,unit
+IQD,unit
+iraqi dinar,unit
+jamaican dollar,unit
+JMD,unit
+JPY,unit
+japanese yen,unit
+JOD,unit
+jordanian dinar,unit
+J,unit
+joule,unit
+J m mol ,unit
+joule meter per mole,unit
+J / m ^3,unit
+joule per cubic meter,unit
+joule per cubic meter kelvin,unit
+J / m ^3 K,unit
+J K ,unit
+joule per kelvin,unit
+J / kg,unit
+joule per kilogram,unit
+joule per kilogram kelvin,unit
+J / kg K,unit
+joule per kilogram kelvin per cubic meter,unit
+J / kg K m ^3,unit
+joule per kilogram kelvin per pascal,unit
+J / km K Pa,unit
+J / mol,unit
+joule per mole,unit
+joule per mole kelvin,unit
+J mol  K ,unit
+J / m ^2,unit
+joule per square meter,unit
+joule per square tesla,unit
+J T ^2,unit
+joule per tesla,unit
+J T ,unit
+J s,unit
+joule second,unit
+joule second per mole,unit
+J s mol ,unit
+kat,unit
+katal,unit
+kelvin,unit
+K,unit
+kelvin per hour,unit
+K  /  h,unit
+kelvin per minute,unit
+K  /  m,unit
+K  /  s,unit
+kelvin per second,unit
+K T ,unit
+kelvin per tesla,unit
+kelvin per watt,unit
+K / W,unit
+kenyan shilling,unit
+KES,unit
+Ki,unit
+kibi,unit
+k,unit
+kilo,unit
+keV,unit
+kilo electron volt,unit
+keV / µm,unit
+kilo electron volt per micrometer,unit
+kbps,unit
+kilobit per second,unit
+kcal,unit
+kilocalorie,unit
+kilocalorie per gram,unit
+kcal / gm,unit
+kilocalorie per minute,unit
+kcal / min,unit
+kilocalorie per mole,unit
+kcal / mol,unit
+kcal / mol degC,unit
+kilocalorie per mole degree celsius,unit
+kcal / s,unit
+kilocalorie per second,unit
+kilocalorie per square centimeter,unit
+kcal / cm ^2,unit
+kilocalorie per square centimeter minute,unit
+kcal / cm ^2 min,unit
+kilocalorie per square centimeter second,unit
+kcal / cm ^2 s,unit
+kg,unit
+kilogram,unit
+kgf,unit
+kilogram force,unit
+kilogram force meter,unit
+kgf m,unit
+kgf / cm ^2,unit
+kilogram force per square centimeter,unit
+kg K,unit
+kilogram kelvin,unit
+kilogram meter per second,unit
+kg m s ,unit
+kilogram meter squared,unit
+kg m ^2,unit
+kg / m ^3,unit
+kilogram per cubic meter,unit
+kilogram per hour,unit
+kg / h,unit
+kg / m,unit
+kilogram per meter,unit
+kilogram per mole,unit
+kg mol ,unit
+kg / s,unit
+kilogram per second,unit
+kg / m ^2,unit
+kilogram per square meter,unit
+kilogram second squared,unit
+kg s ^2,unit
+kilohertz,unit
+KHz,unit
+km,unit
+kilometer,unit
+kilometer per hour,unit
+km / hr,unit
+km / s,unit
+kilometer per second,unit
+kilopascal,unit
+KPa,unit
+kilopascal absolute,unit
+KPaA,unit
+kp,unit
+kilopond,unit
+kilowatt,unit
+kW,unit
+kW hr,unit
+kilowatthour,unit
+PGK,unit
+kina,unit
+kip,unit
+kip per square inch,unit
+kip / in ^2,unit
+kn,unit
+knot,unit
+kt / s,unit
+knot per second,unit
+kroon,unit
+EEK,unit
+kuwaiti dinar,unit
+KWD,unit
+kwanza,unit
+AOA,unit
+kyat,unit
+MMK,unit
+L,unit
+lambert,unit
+laos kip,unit
+₭,unit
+GEL,unit
+lari,unit
+LVL,unit
+latvian lats,unit
+launch,unit
+LBP,unit
+lebanese pound,unit
+lek,unit
+ALL,unit
+HNL,unit
+lempira,unit
+SLL,unit
+leone,unit
+liberian dollar,unit
+LRD,unit
+libyan dinar,unit
+LYD,unit
+ly,unit
+light year,unit
+lilangeni,unit
+SZL,unit
+liter,unit
+LTL,unit
+lithuanian litas,unit
+loti,unit
+LSL,unit
+lm,unit
+lumen,unit
+lumen per watt,unit
+lm s,unit
+lumen second,unit
+lux,unit
+lx,unit
+mach,unit
+malagasy ariary,unit
+MGA,unit
+MWK,unit
+malawi kwacha,unit
+malaysian ringgit,unit
+MYR,unit
+maltese lira,unit
+MTL,unit
+TMM,unit
+manat,unit
+MUR,unit
+mauritius rupee,unit
+Mx,unit
+maxwell,unit
+Mi,unit
+mebi,unit
+mega,unit
+M,unit
+MeV,unit
+mega electron volt,unit
+MeV fm,unit
+mega electron volt femtometer,unit
+MeV / cm,unit
+mega electron volt per centimeter,unit
+mega electron volt per speed of light,unit
+MeV / c,unit
+MHz K ,unit
+mega hertz per kelvin,unit
+mega hertz per tesla,unit
+MHz T ,unit
+mbps,unit
+megabit per second,unit
+megahertz,unit
+MHz,unit
+megajoule per square meter,unit
+meter,unit
+m,unit
+meter kelvin,unit
+m K,unit
+meter kelvin per watt,unit
+K m / W,unit
+meter kilogram,unit
+m kg,unit
+meter per farad,unit
+m / F,unit
+m h ,unit
+meter per hour,unit
+m / K,unit
+meter per kelvin,unit
+m min ,unit
+meter per minute,unit
+m s ,unit
+meter per second,unit
+m s ^2,unit
+meter per second squared,unit
+metical,unit
+MZN,unit
+metric ton,unit
+mT,unit
+MXN,unit
+mexican peso,unit
+MXV,unit
+mexican unidad de inversion udi funds code,unit
+mho,unit
+micro,unit
+µ,unit
+micro torr,unit
+µtorr,unit
+microfarad,unit
+microF,unit
+microgravity,unit
+microG,unit
+microhenry,unit
+microH,unit
+in ^6,unit
+microinch,unit
+µm,unit
+micrometer,unit
+micromole per second per square meter,unit
+microsecond,unit
+microsec,unit
+mil angle nato,unit
+mil,unit
+mil length,unit
+mile international standard,unit
+mi,unit
+mile per hour,unit
+mi / hr,unit
+mi / min,unit
+mile per minute,unit
+mile us statute,unit
+milli,unit
+utorr,unit
+milli torr,unit
+mbar,unit
+millibar,unit
+mG,unit
+milligravity,unit
+milliH,unit
+millihenry,unit
+millimeter,unit
+mm,unit
+millimeter of mercury,unit
+mmHg,unit
+millimeter of mercury absolute,unit
+mmHgA,unit
+millimeter per hour,unit
+million us dollars,unit
+Million USD,unit
+million us dollars per flight,unit
+M$ / Flight,unit
+M$ / yr,unit
+million us dollars per year,unit
+millisecond,unit
+ms,unit
+minute angle,unit
+\,unit
+minute sidereal,unit
+min,unit
+minute time,unit
+moldovan leu,unit
+MDL,unit
+mole,unit
+mol,unit
+mol degC,unit
+mole degree celsius,unit
+mol K,unit
+mole kelvin,unit
+mol / m ^3,unit
+mole per cubic meter,unit
+mole per kilogram,unit
+mol / kg,unit
+moroccan dirham,unit
+MAD,unit
+naira,unit
+NGN,unit
+ERN,unit
+nakfa,unit
+NAD,unit
+namibian dollar,unit
+n,unit
+nano,unit
+nanofarad,unit
+nF,unit
+nat,unit
+n mile,unit
+nautical mile,unit
+nmi / hr,unit
+nautical mile per hour,unit
+nautical mile per minute,unit
+nmi / min,unit
+nepalese rupee,unit
+NPR,unit
+NTU,unit
+nephelometry turbidity unit,unit
+netherlands antillian guilder,unit
+ANG,unit
+new israeli shekel,unit
+ILS,unit
+TWD,unit
+new taiwan dollar,unit
+new turkish lira,unit
+TRY,unit
+new zealand dollar,unit
+NZD,unit
+N,unit
+newton,unit
+N m,unit
+newton meter,unit
+N / C,unit
+newton per coulomb,unit
+newton per kilogram,unit
+N / kg,unit
+N / m,unit
+newton per meter,unit
+BTN,unit
+ngultrum,unit
+north korean won,unit
+KPW,unit
+norwegian krone,unit
+NOK,unit
+nuevo sol,unit
+PEN,unit
+number,unit
+#,unit
+number per year,unit
+# / yr,unit
+Cal,unit
+nutritional calorie,unit
+oersted,unit
+Oe,unit
+Oe cm,unit
+oersted centimeter,unit
+ohm,unit
+okta,unit
+ouguiya,unit
+MRO,unit
+ounce force,unit
+ozf,unit
+ounce force inch,unit
+ozf in,unit
+ozm,unit
+ounce mass,unit
+ounce per cubic inch,unit
+oz / in ^3,unit
+oz / gal,unit
+ounce per gallon,unit
+oz / ft ^2,unit
+ounce per square foot,unit
+ounce per square yard,unit
+oz / yd ^2,unit
+ounce troy,unit
+pa\anga,unit
+TOP,unit
+PKR,unit
+pakistan rupee,unit
+palladium one troy ounce,unit
+XPD,unit
+pc,unit
+parsec,unit
+pascal,unit
+Pa,unit
+pascal per hour,unit
+P  /  hr,unit
+P  /  min,unit
+pascal per minute,unit
+pascal per second,unit
+P  /  s,unit
+Pa s,unit
+pascal second,unit
+MOP,unit
+pataca,unit
+Pi,unit
+pebi,unit
+penny weight,unit
+dwt,unit
+per cubic meter,unit
+per meter kelvin unit,unit
+m  K ,unit
+m ,unit
+per meter unit,unit
+mol ,unit
+per mole unit,unit
+GeV ^2,unit
+per square giga electron volt unit,unit
+m  T ,unit
+per tesla meter unit,unit
+s  T ,unit
+per tesla second unit,unit
+%,unit
+percent,unit
+person,unit
+UYU,unit
+peso uruguayo,unit
+peta,unit
+P,unit
+philippine peso,unit
+PHP,unit
+ph,unit
+phot,unit
+Pm,unit
+pica,unit
+p,unit
+pico,unit
+picofarad,unit
+pF,unit
+planck area,unit
+Q p,unit
+planck charge,unit
+planck current,unit
+planck current density,unit
+planck density,unit
+planck energy,unit
+planck force,unit
+planck frequency,unit
+planck length,unit
+l P,unit
+planck mass,unit
+m P,unit
+planck momentum,unit
+planck power,unit
+planck pressure,unit
+planck resistance,unit
+Θ P,unit
+planck temperature,unit
+t P,unit
+planck time,unit
+planck volt,unit
+planck volume,unit
+platinum one troy ounce,unit
+XPT,unit
+point,unit
+pt,unit
+poise,unit
+pound degree fahrenheit,unit
+lb degF,unit
+lb degR,unit
+pound degree rankine,unit
+lbf,unit
+pound force,unit
+pound force foot,unit
+lbf ft,unit
+pound force inch,unit
+lbf in,unit
+pound force per foot,unit
+lbf / ft,unit
+pound force per inch,unit
+lbf / in,unit
+lbf / lb,unit
+pound force per pound,unit
+pound force per square foot,unit
+lbf / ft ^2,unit
+psi,unit
+pound force per square inch,unit
+lbf  /  in ^2 s,unit
+pound force per square inch second,unit
+pound force second per square foot,unit
+lbf s / ft ^2,unit
+lbf s / in ^2,unit
+pound force second per square inch,unit
+pound mass,unit
+lbm,unit
+pound mole,unit
+lb mol,unit
+lb mol degF,unit
+pound mole degree fahrenheit,unit
+pound per cubic foot,unit
+lb / ft ^3,unit
+pound per cubic inch,unit
+lb / in ^3,unit
+lbm / m ^3,unit
+pound per cubic meter,unit
+lb / yd ^3,unit
+pound per cubic yard,unit
+pound per foot,unit
+lb / ft,unit
+pound per foot hour,unit
+lb / ft hr,unit
+pound per foot second,unit
+lb / ft s,unit
+lb / gal,unit
+pound per gallon,unit
+lb / hr,unit
+pound per hour,unit
+lb / in,unit
+pound per inch,unit
+lb / min,unit
+pound per minute,unit
+pound per square foot,unit
+lb / ft ^2,unit
+pound sterling,unit
+GBP,unit
+pound troy,unit
+poundal,unit
+pdl,unit
+pdl / ft ^2,unit
+poundal per square foot,unit
+BWP,unit
+pula,unit
+qatari rial,unit
+QAR,unit
+quad,unit
+C ^4 m ^4 J ^3,unit
+quartic coulomb meter per cubic energy,unit
+GTQ,unit
+quetzal,unit
+rad,unit
+radian,unit
+radian per hour,unit
+rad / h,unit
+radian per second,unit
+rad / s,unit
+rad / m,unit
+rad / s ^2,unit
+radian per second squared,unit
+RT,unit
+register ton,unit
+μr,unit
+relative permeability,unit
+εr,unit
+relative permittivity,unit
+rem,unit
+rev,unit
+revolution,unit
+revolution per hour,unit
+rev / h,unit
+rev / min,unit
+revolution per minute,unit
+rev / s,unit
+revolution per second,unit
+revolution per second squared,unit
+OMR,unit
+rial omani,unit
+KHR,unit
+riel,unit
+rod,unit
+rd,unit
+R,unit
+roentgen,unit
+RON,unit
+romanian new leu,unit
+MVR,unit
+rufiyaa,unit
+IDR,unit
+rupiah,unit
+RUB,unit
+russian ruble,unit
+rwanda franc,unit
+RWF,unit
+SHP,unit
+saint helena pound,unit
+samoan tala,unit
+WST,unit
+sample per second,unit
+SAR,unit
+saudi riyal,unit
+second,unit
+s,unit
+second angle,unit
+"""",unit
+s ft ^2,unit
+second square foot,unit
+second time squared,unit
+s ^2,unit
+serbian dinar,unit
+RSD,unit
+seychelles rupee,unit
+SCR,unit
+Sh,unit
+shake,unit
+ton / hr,unit
+short ton per hour,unit
+S,unit
+siemens,unit
+sievert,unit
+Sv,unit
+silver one troy ounce,unit
+XAG,unit
+singapore dollar,unit
+SGD,unit
+slovak koruna,unit
+SKK,unit
+slug,unit
+slug per cubic foot,unit
+slug / ft ^3,unit
+slug / ft,unit
+slug per foot,unit
+slug per foot second,unit
+slug / ft s,unit
+slug per second,unit
+slug / s,unit
+slug per square foot,unit
+slug / ft ^2,unit
+solomon islands dollar,unit
+SBD,unit
+KGS,unit
+som,unit
+SOS,unit
+somali shilling,unit
+TJS,unit
+somoni,unit
+ZAR,unit
+south african rand,unit
+south korean won,unit
+KRW,unit
+special drawing rights,unit
+XDR,unit
+cm ^2,unit
+square centimeter,unit
+cm ^2 m,unit
+square centimeter minute,unit
+square centimeter second,unit
+cm ^2 s,unit
+C ^2 m ^2 J ,unit
+square coulomb meter per joule,unit
+deg ^2,unit
+square degree,unit
+square foot,unit
+ft ^2,unit
+ft ^2 degF,unit
+square foot degree fahrenheit,unit
+ft ^2 hr degF,unit
+square foot hour degree fahrenheit,unit
+degF hr ft ^2 / Btu,unit
+square foot hour degree fahrenheit per btu,unit
+ft ^2 / Btu in,unit
+square foot per btu inch,unit
+ft ^2 / hr,unit
+square foot per hour,unit
+square foot per second,unit
+ft ^2 / s,unit
+square foot second degree fahrenheit,unit
+ft ^2 s degF,unit
+in ^2,unit
+square inch,unit
+m ^2,unit
+square meter,unit
+square meter kelvin,unit
+m ^2 K,unit
+K ^2m / W,unit
+square meter kelvin per watt,unit
+m ^2 / K,unit
+square meter per kelvin,unit
+square meter per second,unit
+m ^2 s ,unit
+m ^2 sr,unit
+square meter steradian,unit
+square mile,unit
+mi ^2,unit
+square yard,unit
+yd ^2,unit
+LKR,unit
+sri lanka rupee,unit
+atm,unit
+standard atmosphere,unit
+statampere,unit
+statA,unit
+statA  /  cm ^2,unit
+statampere per square centimeter,unit
+statcoulomb,unit
+statC,unit
+statcoulomb per mole,unit
+statC / mol,unit
+statC / cm ^2,unit
+statcoulomb per square centimeter,unit
+statF,unit
+statfarad,unit
+statH,unit
+stathenry,unit
+statH / cm,unit
+stathenry per centimeter,unit
+statS,unit
+statmho,unit
+statohm,unit
+statOhm,unit
+statvolt,unit
+statV,unit
+statvolt centimeter,unit
+statV cm,unit
+statV / cm,unit
+statvolt per centimeter,unit
+sr,unit
+steradian,unit
+st,unit
+stere,unit
+stilb,unit
+sb,unit
+stokes,unit
+St,unit
+SDG,unit
+sudanese pound,unit
+surinam dollar,unit
+SRD,unit
+SEK,unit
+swedish krona,unit
+CHF,unit
+swiss franc,unit
+SYP,unit
+syrian pound,unit
+tablespoon,unit
+tbsp,unit
+TZS,unit
+tanzanian shilling,unit
+teaspoon,unit
+tsp,unit
+tebi,unit
+Ti,unit
+at,unit
+technical atmosphere,unit
+KZT,unit
+tenge,unit
+T,unit
+tera,unit
+tesla,unit
+m T,unit
+tesla meter,unit
+tesla second,unit
+s T,unit
+tex,unit
+therm EC,unit
+therm ec,unit
+therm US,unit
+therm us,unit
+thermochemical calorie,unit
+cal,unit
+AT,unit
+ton assay,unit
+t / lbf,unit
+ton energy,unit
+ton long,unit
+ton,unit
+ton long per cubic yard,unit
+ton / yd ^3,unit
+ton metric,unit
+toe,unit
+ton of oil equivalent,unit
+t / fg,unit
+ton of refrigeration,unit
+ton short,unit
+ton / yd,unit
+ton short per cubic yard,unit
+torr,unit
+trinidad and tobago dollar,unit
+TTD,unit
+tugrik,unit
+MNT,unit
+tunisian dinar,unit
+TND,unit
+UGX,unit
+uganda shilling,unit
+uic franc special settlement currency,unit
+XFU,unit
+unidad de valor real,unit
+COU,unit
+CLF,unit
+unidades de formento funds code,unit
+unified atomic mass unit,unit
+unit pole,unit
+U / nWb,unit
+united arab emirates dirham,unit
+AED,unit
+united states dollar next day funds code,unit
+USN,unit
+united states dollar same day funds code,unit
+unitless,unit
+U,unit
+us dollar,unit
+USD,unit
+us dry pint,unit
+dry pt,unit
+us dry quart,unit
+dry qt,unit
+us gallon,unit
+us gallon per day,unit
+gal / d,unit
+gal / min,unit
+us gallon per minute,unit
+cup,unit
+us liquid cup,unit
+us liquid ounce,unit
+us liquid pint,unit
+us liquid quart,unit
+qt,unit
+us peck,unit
+pk,unit
+us survey foot,unit
+UZS,unit
+uzbekistan som,unit
+vatu,unit
+VUV,unit
+VEB,unit
+venezuelan bol�var,unit
+video frame,unit
+vietnamese ??ng,unit
+VND,unit
+V,unit
+volt,unit
+volt meter,unit
+m V,unit
+volt per meter,unit
+V m ,unit
+volt per second,unit
+V  /  sec,unit
+V m ^2,unit
+volt per square meter,unit
+watt,unit
+W,unit
+W / m * K,unit
+watt per meter kelvin,unit
+watt per square centimeter,unit
+W / cm ^2,unit
+W / ft ^2,unit
+watt per square foot,unit
+W / in ^2,unit
+watt per square inch,unit
+W / m ^2,unit
+watt per square meter,unit
+W / m ^2 K,unit
+watt per square meter kelvin,unit
+watt per square meter quartic kelvin,unit
+W m ^2 K ^4,unit
+W / m ^2 sr,unit
+watt per square meter steradian,unit
+watt per steradian,unit
+W sr ,unit
+watt square meter,unit
+W m ^2,unit
+W m ^2 sr ,unit
+watt square meter per steradian,unit
+watthour,unit
+W hr,unit
+weber,unit
+Wb,unit
+CHE,unit
+wir euro complementary currency,unit
+wir franc complementary currency,unit
+CHW,unit
+yd,unit
+yard,unit
+yr,unit
+year 365 day,unit
+year sidereal,unit
+year tropical,unit
+YER,unit
+yemeni rial,unit
+yobi,unit
+Yi,unit
+y,unit
+yocto,unit
+yotta,unit
+Y,unit
+yuan renminbi,unit
+CNY,unit
+zambian kwacha,unit
+ZMK,unit
+zebi,unit
+Zi,unit
+zepto,unit
+z,unit
+zetta,unit
+ZWD,unit
+zimbabwe dollar,unit
+zloty,unit
+PLN,unit

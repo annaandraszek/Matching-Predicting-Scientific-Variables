@@ -3,9 +3,9 @@ __pycache__/
 .idea/
 my_measurements - backup.csv
 my_units - backup.csv
-
 raw datasets/not in use/
 raw datasets/models/
 raw datasets/AIMS*
 raw datasets/ELI01*
 raw datasets/IDCJDW*
+cnb_*

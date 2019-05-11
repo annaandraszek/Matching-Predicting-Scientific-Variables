@@ -5,6 +5,7 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing import sequence
 from keras.utils import to_categorical
 from keras.models import load_model
+from keras.callbacks import EarlyStopping
 import tensorflow as tf
 
 from sklearn.model_selection import train_test_split
@@ -15,7 +16,7 @@ import pandas as pd
 
 
 class NeuralNetwork(): #give this arguments like: model type, train/test file
-    max_words = 100
+    max_words = 1000
     max_len = 10
     tok = Tokenizer(num_words=max_words)
     y_dict = {}
@@ -36,8 +37,7 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
 
         self.Y = Y
         self.model = self.RNN()
-        #model.summary()
-        self.model.compile(loss='categorical_crossentropy', optimizer=RMSprop(), metrics=['accuracy'])
+        self.model.compile(loss='binary_crossentropy', optimizer=RMSprop(), metrics=['accuracy'])
 
     def train(self, model_name):
         X_train, X_test, Y_train, Y_test = train_test_split(self.X, self.Y, test_size=0.15)
@@ -45,15 +45,16 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         self.tok.fit_on_texts(X_train)
         sequences = self.tok.texts_to_sequences(X_train)
         sequences_matrix = sequence.pad_sequences(sequences, maxlen=self.max_len)
-        y_binary = to_categorical(Y_train)
-        self.model.fit(sequences_matrix, y_binary, batch_size=self.batch_size, epochs=self.epochs,
-                  validation_split=0.2)
+        #y_binary = to_categorical(Y_train)
+        self.model.summary()
+        self.model.fit(sequences_matrix, Y_train, batch_size=self.batch_size, epochs=self.epochs,
+                  validation_split=0.2, callbacks=[EarlyStopping(monitor='val_loss',min_delta=0.0001)])
 
         test_sequences = self.tok.texts_to_sequences(X_test)
         test_sequences_matrix = sequence.pad_sequences(test_sequences, maxlen=self.max_len)
 
-        Y_test_binary = to_categorical(Y_test)
-        accr = self.model.evaluate(test_sequences_matrix, Y_test_binary)
+        #Y_test_binary = to_categorical(Y_test)
+        accr = self.model.evaluate(test_sequences_matrix, Y_test)
         print('Test set\n  Loss: {:0.3f}\n  Accuracy: {:0.3f}'.format(accr[0], accr[1]))
         self.model.save(model_name + '.h5')
 
@@ -64,8 +65,8 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         layer = Dense(256,name='FC1')(layer)
         layer = Activation('relu')(layer)
         layer = Dropout(0.5)(layer)
-        layer = Dense(len(self.y_dict),name='out_layer')(layer)
-        layer = Activation('softmax')(layer)
+        layer = Dense(1, name='out_layer')(layer)
+        layer = Activation('sigmoid')(layer)
         model = Model(inputs=inputs,outputs=layer)
         return model
 
@@ -75,12 +76,12 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         sequences = self.tok.texts_to_sequences(string)
         sequences_matrix = sequence.pad_sequences(sequences, maxlen=self.max_len)
         predictions = model.predict(sequences_matrix)
-        sort_pred = np.argsort(-predictions)
+        # sort_pred = np.argsort(-predictions)
         # print(predictions, sort_pred[:,0], sort_pred[:,1], )
 
-        ranked_predictions = []
-        for p in range(sort_pred.shape[1]):
-            pred = self.y_dict[int(sort_pred[:, p])]
-            ranked_predictions.append(pred)
-
-        return ranked_predictions, model.predict(sequences_matrix)
+        # ranked_predictions = []
+        # for p in range(sort_pred.shape[1]):
+        #     pred = self.y_dict[int(sort_pred[:, p])]
+        #     ranked_predictions.append(pred)
+        classification = ['unit' if p > 0.5 else 'property'for p in predictions]
+        return classification, model.predict(sequences_matrix)
