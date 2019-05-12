@@ -31,7 +31,7 @@ def nn_train_predict(file):
 def nn_just_predict(string):
     model = 'binary'
     ml = NeuralNetwork('property_or_unit.csv')
-    print(ml.predict([string], model))
+    print(ml.predict([string], model, load_from_file=True))
 
 
 #Cleans up/pre-processes the raw qudt datasets and saves as files in only_qudt_datasets
@@ -151,10 +151,10 @@ if __name__ == '__main__':
     # Run to make predictions (using Complement Naive Bayes)
 
     #resource_creation.create_binary_classification_file('my_property.csv', 'my_unit.csv')
-    nn_train_predict('property_or_unit.csv')
-    #test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
-    #for x in test_xs:
-    #    nn_just_predict(x)
+    #nn_train_predict('property_or_unit.csv')
+    test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
+    for x in test_xs:
+        nn_just_predict(x)
     #while True:
     #    string = str(input('Enter a string to categorise: '))
     #    nn_just_predict(string)

@@ -7,6 +7,7 @@ from keras.utils import to_categorical
 from keras.models import load_model
 from keras.callbacks import EarlyStopping
 import tensorflow as tf
+import joblib
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -20,7 +21,7 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
     max_len = 10
     tok = Tokenizer(num_words=max_words)
     y_dict = {}
-    epochs = 100
+    epochs = 10
     batch_size = 11
     tf.logging.set_verbosity(tf.logging.ERROR)
 
@@ -48,7 +49,7 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         #y_binary = to_categorical(Y_train)
         self.model.summary()
         self.model.fit(sequences_matrix, Y_train, batch_size=self.batch_size, epochs=self.epochs,
-                  validation_split=0.2, callbacks=[EarlyStopping(monitor='val_loss',min_delta=0.0001)])
+                  validation_split=0.2) #, callbacks=[EarlyStopping(monitor='val_loss',min_delta=0.0001)]
 
         test_sequences = self.tok.texts_to_sequences(X_test)
         test_sequences_matrix = sequence.pad_sequences(test_sequences, maxlen=self.max_len)
@@ -57,6 +58,7 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         accr = self.model.evaluate(test_sequences_matrix, Y_test)
         print('Test set\n  Loss: {:0.3f}\n  Accuracy: {:0.3f}'.format(accr[0], accr[1]))
         self.model.save(model_name + '.h5')
+        joblib.dump(self.tok, model_name + 'tokeniser.joblib')
 
     def RNN(self):
         inputs = Input(name='inputs',shape=[self.max_len])
@@ -71,11 +73,13 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         return model
 
 
-    def predict(self, string, model_name):
-        model = load_model(model_name + '.h5')
+    def predict(self, string, model_name, load_from_file=False):
+        if load_from_file:
+            self.model = load_model(model_name + '.h5')
+            self.tok = joblib.load(model_name + 'tokeniser.joblib')
         sequences = self.tok.texts_to_sequences(string)
         sequences_matrix = sequence.pad_sequences(sequences, maxlen=self.max_len)
-        predictions = model.predict(sequences_matrix)
+        predictions = self.model.predict(sequences_matrix)
         # sort_pred = np.argsort(-predictions)
         # print(predictions, sort_pred[:,0], sort_pred[:,1], )
 
@@ -84,4 +88,4 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         #     pred = self.y_dict[int(sort_pred[:, p])]
         #     ranked_predictions.append(pred)
         classification = ['unit' if p > 0.5 else 'property'for p in predictions]
-        return classification, model.predict(sequences_matrix)
+        return classification, self.model.predict(sequences_matrix)
