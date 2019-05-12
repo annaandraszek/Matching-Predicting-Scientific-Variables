@@ -41,22 +41,43 @@ def process_raw_qudt():
 
 def segment_user_string(string):
     window_size = 2
-    num_segments = len(string.split()) - (window_size-1)
+    words = string.split(sep=" ")
+    num_segments = len(words) - (window_size-1)
     segments = []
-    for i in range(num_segments):
-        segment = [string.split()[n] for n in range(i, i + window_size)]
-        segments.append(segment)
+
+    if len(words) <= window_size:
+        segments = words
+    else:
+        for i in range(num_segments):
+            segment = [words[n] for n in range(i, i + window_size)]
+            segments.append(segment)
     print(segments)
     labels, probabilities = nn_just_predict(segments)
     property_words = []
     unit_words = []
     for i in range(len(labels)):
+        print(i, segments[i])
         if labels[i] == 'property':
-            property_words[len(property_words):] = segments[i]
+            if len(segments) == 1:
+                property_words.extend([segments[i]])
+            else:
+                #if property_words:
+                #    print(segments[i][0], property_words[-1])
+                if property_words and segments[i][0] == property_words[-1]:
+                    property_words.extend(segments[i][1:])
+                else:
+                    property_words.extend(segments[i])
         if labels[i] == 'unit':
-            unit_words[len(unit_words):] = segments[i]
-
+            if len(segments) == 1:
+                unit_words.extend([segments[i]])
+            else:
+                if unit_words and segments[i][0] == unit_words[-1]:
+                    unit_words.extend((segments[i][1:]))
+                else:
+                    unit_words.extend(segments[i])
+    print(property_words, unit_words)
     return " ".join(property_words), " ".join(unit_words)
+
 
 def process_user_input():
     s = str(input('Enter a string to predict:'))
@@ -143,20 +164,10 @@ def user_input_loop():
             return
         else:
             properties, units = output
-            run_classifier_from_saved(properties, 'p', ranked=True)
-            run_classifier_from_saved(units, 'u', ranked=True)
-        # t = process_user_input()
-        # if t == 1:
-        #     break
-        # if t == 0:
-        #     continue
-        # else:
-        #     user_string, type = t
-        #     #run_classifier() # would recommend against running this method as-is right now - as it would be
-        #                         # re-trained on every user input
-        #                         # run if want to re-train the model before making predictions
-        #     #print(run_classifier_from_saved(user_string, type)) # run if want to use a pre-trained model to make predictions
-        #     run_classifier_from_saved(user_string, type, ranked=True)
+            if len(properties) > 0:
+                run_classifier_from_saved(properties, 'p', ranked=True)
+            if len(units) > 0:
+                run_classifier_from_saved(units, 'u', ranked=True)
 
 
 if __name__ == '__main__':
