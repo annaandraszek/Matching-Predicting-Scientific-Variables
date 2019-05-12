@@ -62,10 +62,13 @@ class Classifier():
         if load_model:
             self.text_clf, self.classes = self.load_model_and_classes(t)
         predicted = self.text_clf.predict_proba(new)
+        results = []
         for doc, predictions in zip(new, predicted):
             sorted_pred = np.argsort(-predictions) # stores indexes
-            for i in range(x):
-                print(i, predictions[sorted_pred[i]], self.classes[sorted_pred[i]])
+            #for i in range(x):
+            #    print(i, predictions[sorted_pred[i]], self.classes[sorted_pred[i]])
+            results.append([[i, self.classes[sorted_pred[i]]] for i in range(x)])
+        return results
 
     # Function to load a model
     def load_model_and_classes(self, t):

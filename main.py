@@ -40,13 +40,13 @@ def process_raw_qudt():
 
 
 def segment_user_string(string):
-    window_size = 2
+    window_size = 1
     words = string.split(sep=" ")
     num_segments = len(words) - (window_size-1)
     segments = []
 
     if len(words) <= window_size:
-        segments = words
+        segments = [words]
     else:
         for i in range(num_segments):
             segment = [words[n] for n in range(i, i + window_size)]
@@ -59,7 +59,7 @@ def segment_user_string(string):
         print(i, segments[i])
         if labels[i] == 'property':
             if len(segments) == 1:
-                property_words.extend([segments[i]])
+                property_words.extend(segments[i])
             else:
                 #if property_words:
                 #    print(segments[i][0], property_words[-1])
@@ -69,10 +69,10 @@ def segment_user_string(string):
                     property_words.extend(segments[i])
         if labels[i] == 'unit':
             if len(segments) == 1:
-                unit_words.extend([segments[i]])
+                unit_words.extend(segments[i])
             else:
                 if unit_words and segments[i][0] == unit_words[-1]:
-                    unit_words.extend((segments[i][1:]))
+                    unit_words.extend(segments[i][1:])
                 else:
                     unit_words.extend(segments[i])
     print(property_words, unit_words)
@@ -96,36 +96,6 @@ def process_user_input():
     user_property, user_unit = segment_user_string(s)
     return user_property, user_unit
 
-    # attempt to replace the below with a method for segmenting the types of input
-    #accepted_inputs_p = resource_creation.create_set_of_native('my_property.csv')
-    #accepted_inputs_u = resource_creation.create_set_of_native('my_unit.csv')
-
-    # inputs = s.split()
-    # pair_scores = []
-    # for i in range(len(inputs)-1):  # search for side-by-side tokens in accepted sets to
-    #     w1, w2 = inputs[i], inputs[i+1]
-    #     p_score, u_score = 0, 0
-    #     for set in accepted_inputs_p:
-    #         if w1 in set and w2 in set:
-    #             p_score += 1
-    #             break   # only increment once per pair of words to avoid sample bias
-    #     for set in accepted_inputs_u:
-    #         if w1 in set and w2 in set:
-    #             u_score +=1
-    #             break
-    #
-    #     pair_scores.append(())
-
-    # t = property_or_unit(s_tokens)
-    # if t == 1:
-    #     t = str(input('Enter p if property u if unit: '))
-    # if t == 'p' or t == 'u':
-    #     return s, t
-    # else:
-    #     print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
-    #     return 0
-
-
 
 #Runs training on the Naive Bayes classifier
 def train_classifier():
@@ -139,7 +109,7 @@ def train_classifier():
 def run_classifier_from_saved(s, t, predictions_to_return=10, ranked=False):
     c = Classifier()
     if ranked:
-        c.predict_top_x([s], predictions_to_return, t, load_model=True)
+        return c.predict_top_x([s], predictions_to_return, t, load_model=True)
     else:
         return c.predict([s], t, load_model=True, have_return=True)
 
@@ -165,9 +135,11 @@ def user_input_loop():
         else:
             properties, units = output
             if len(properties) > 0:
-                run_classifier_from_saved(properties, 'p', ranked=True)
+                property_predictions = run_classifier_from_saved(properties, 'p', ranked=True)
+                print(property_predictions)
             if len(units) > 0:
-                run_classifier_from_saved(units, 'u', ranked=True)
+                unit_predictions = run_classifier_from_saved(units, 'u', ranked=True)
+                print(unit_predictions)
 
 
 if __name__ == '__main__':
