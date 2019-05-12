@@ -24,14 +24,13 @@ def nn_train_predict(file):
     ml = NeuralNetwork(file)
     ml.train(model)
     test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
-    for x in test_xs:
-        print(ml.predict([x], model))
+    print(ml.predict(test_xs, model))
 
 
 def nn_just_predict(string):
     model = 'binary'
     ml = NeuralNetwork('property_or_unit.csv')
-    print(ml.predict([string], model, load_from_file=True))
+    return ml.predict(string, model, load_from_file=True)
 
 
 #Cleans up/pre-processes the raw qudt datasets and saves as files in only_qudt_datasets
@@ -39,6 +38,25 @@ def process_raw_qudt():
     for dataset in raw_qudt_datasets:
         resource_creation.create_reference(dataset, raw_file=True)
 
+
+def segment_user_string(string):
+    window_size = 2
+    num_segments = len(string.split()) - (window_size-1)
+    segments = []
+    for i in range(num_segments):
+        segment = [string.split()[n] for n in range(i, i + window_size)]
+        segments.append(segment)
+    print(segments)
+    labels, probabilities = nn_just_predict(segments)
+    property_words = []
+    unit_words = []
+    for i in range(len(labels)):
+        if labels[i] == 'property':
+            property_words[len(property_words):] = segments[i]
+        if labels[i] == 'unit':
+            unit_words[len(unit_words):] = segments[i]
+
+    return " ".join(property_words), " ".join(unit_words)
 
 def process_user_input():
     s = str(input('Enter a string to predict:'))
@@ -54,6 +72,8 @@ def process_user_input():
         s = preprocessing.solve_similar_spelling(s, property_and_unit_tokens, input_is_string=True)
         s_tokens = set(s.split())
 
+    user_property, user_unit = segment_user_string(s)
+    return user_property, user_unit
 
     # attempt to replace the below with a method for segmenting the types of input
     #accepted_inputs_p = resource_creation.create_set_of_native('my_property.csv')
@@ -75,14 +95,14 @@ def process_user_input():
     #
     #     pair_scores.append(())
 
-    t = property_or_unit(s_tokens)
-    if t == 1:
-        t = str(input('Enter p if property u if unit: '))
-    if t == 'p' or t == 'u':
-        return s, t
-    else:
-        print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
-        return 0
+    # t = property_or_unit(s_tokens)
+    # if t == 1:
+    #     t = str(input('Enter p if property u if unit: '))
+    # if t == 'p' or t == 'u':
+    #     return s, t
+    # else:
+    #     print("Please enter 'p' for property or 'u' for unit or 'xxx' to exit")
+    #     return 0
 
 
 
@@ -118,18 +138,25 @@ def property_or_unit(s_tokens):
 
 def user_input_loop():
     while True:
-        t = process_user_input()
-        if t == 1:
-            break
-        if t == 0:
-            continue
+        output = process_user_input()
+        if output == 1:
+            return
         else:
-            user_string, type = t
-            #run_classifier() # would recommend against running this method as-is right now - as it would be
-                                # re-trained on every user input
-                                # run if want to re-train the model before making predictions
-            #print(run_classifier_from_saved(user_string, type)) # run if want to use a pre-trained model to make predictions
-            run_classifier_from_saved(user_string, type, ranked=True)
+            properties, units = output
+            run_classifier_from_saved(properties, 'p', ranked=True)
+            run_classifier_from_saved(units, 'u', ranked=True)
+        # t = process_user_input()
+        # if t == 1:
+        #     break
+        # if t == 0:
+        #     continue
+        # else:
+        #     user_string, type = t
+        #     #run_classifier() # would recommend against running this method as-is right now - as it would be
+        #                         # re-trained on every user input
+        #                         # run if want to re-train the model before making predictions
+        #     #print(run_classifier_from_saved(user_string, type)) # run if want to use a pre-trained model to make predictions
+        #     run_classifier_from_saved(user_string, type, ranked=True)
 
 
 if __name__ == '__main__':
@@ -152,13 +179,16 @@ if __name__ == '__main__':
 
     #resource_creation.create_binary_classification_file('my_property.csv', 'my_unit.csv')
     #nn_train_predict('property_or_unit.csv')
-    test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
-    for x in test_xs:
-        nn_just_predict(x)
+    #test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
+    #segment_user_string('wind speed degree angle')
+
+    #nn_just_predict(test_xs)
+    #for x in test_xs:
+    #    nn_just_predict(x)
     #while True:
     #    string = str(input('Enter a string to categorise: '))
     #    nn_just_predict(string)
     #train_classifier()
-    #user_input_loop()
+    user_input_loop()
 
 

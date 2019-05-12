@@ -73,11 +73,11 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         return model
 
 
-    def predict(self, string, model_name, load_from_file=False):
+    def predict(self, strings, model_name, load_from_file=False):
         if load_from_file:
             self.model = load_model(model_name + '.h5')
             self.tok = joblib.load(model_name + 'tokeniser.joblib')
-        sequences = self.tok.texts_to_sequences(string)
+        sequences = self.tok.texts_to_sequences(strings)
         sequences_matrix = sequence.pad_sequences(sequences, maxlen=self.max_len)
         predictions = self.model.predict(sequences_matrix)
         # sort_pred = np.argsort(-predictions)
@@ -88,4 +88,4 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         #     pred = self.y_dict[int(sort_pred[:, p])]
         #     ranked_predictions.append(pred)
         classification = ['unit' if p > 0.5 else 'property'for p in predictions]
-        return classification, self.model.predict(sequences_matrix)
+        return classification, predictions
