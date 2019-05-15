@@ -86,6 +86,37 @@ def segment_user_string(string):
     return " ".join(property_words), " ".join(unit_words)
 
 
+def app_process_user_input(s):
+    s_tokens = set(s.split())
+    dictionary_s_tokens = (s_tokens.intersection(unit_vocab)).union(s_tokens.intersection(property_vocab))
+    property_and_unit_tokens = unit_vocab.union(property_vocab)
+    if len(dictionary_s_tokens) != len(s_tokens):
+        s = str.lower(s)
+        # property_and_unit_tokens = [str.lower(token) for token in property_and_unit_tokens]
+        s = preprocessing.solve_abbreviations(s, property_and_unit_tokens,
+                                              input_is_string=True)  # need to adapt this and next method for just strings
+        s = preprocessing.solve_similar_spelling(s, property_and_unit_tokens, input_is_string=True)
+        s_tokens = set(s.split())
+
+    user_property, user_unit = segment_user_string(s)
+    return user_property, user_unit
+
+
+def app_user_input(s):
+    while True:
+        output = app_process_user_input(s)
+        if output == 1:
+            return
+        else:
+            properties, units = output
+            if len(properties) > 0:
+                property_predictions = run_classifier_from_saved(properties, 'p', ranked=True)
+                return property_predictions
+            if len(units) > 0:
+                unit_predictions = run_classifier_from_saved(units, 'u', ranked=True)
+                return unit_predictions
+
+
 def process_user_input():
     s = str(input('Enter a string to predict:'))
     if s == 'xxx':
