@@ -17,16 +17,18 @@ import pandas as pd
 
 
 class NeuralNetwork(): #give this arguments like: model type, train/test file
-    max_words = 1000
+    max_words = 900
     max_len = 10
     tok = Tokenizer(num_words=max_words)
     y_dict = {}
-    epochs = 10
+    epochs = 5
     batch_size = 11
     tf.logging.set_verbosity(tf.logging.ERROR)
 
     def __init__(self, file, model_type='match'):
-        df = pd.read_csv(file)
+        df = pd.read_csv(file, dtype={'class': str, 'native': str})
+        df.dropna(inplace=True)
+        df.reset_index(drop=True, inplace=True)
         self.X = df['native']
         Y = df['class']
         le = LabelEncoder()

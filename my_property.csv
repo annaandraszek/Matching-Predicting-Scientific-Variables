@@ -118,28 +118,28 @@ bromomethane concentration,bromomethane concentration
 bromophos ethyl concentration,bromophos ethyl concentration
 butane concentration,butane concentration
 butanone concentration,butanone concentration
-c10   c14 hydrocarbon fraction concentration,c10   c14 hydrocarbon fraction concentration
-c10   c236 hydrocarbon fraction concentration,c10   c236 hydrocarbon fraction concentration
+,
+,
 c10 c14 hydrocarbon fraction concentration,c10 c14 hydrocarbon fraction concentration
 c10 c236 hydrocarbon fraction concentration,c10 c236 hydrocarbon fraction concentration
-c15   c28 hydrocarbon fraction concentration,c15   c28 hydrocarbon fraction concentration
+,
 c15 c28 hydrocarbon fraction concentration,c15 c28 hydrocarbon fraction concentration
-c29   c36 hydrocarbon fraction concentration,c29   c36 hydrocarbon fraction concentration
+,
 c29 c36 hydrocarbon fraction concentration,c29 c36 hydrocarbon fraction concentration
-c6   c9 hydrocarbon fraction concentration,c6   c9 hydrocarbon fraction concentration
+,
 c6 c9 hydrocarbon fraction concentration,c6 c9 hydrocarbon fraction concentration
 cadmium concentration,cadmium concentration
 caesium concentration,caesium concentration
 calcium carbonate concentration,calcium carbonate concentration
 calcium concentration,calcium concentration
-carbon   average content,carbon   average content
-carbon   dissolved inorganic concentration,carbon   dissolved inorganic concentration
-carbon   dissolved organic concentration,carbon   dissolved organic concentration
-carbon   inorganic concentration,carbon   inorganic concentration
-carbon   organic concentration,carbon   organic concentration
-carbon   suspended inorganic concentration,carbon   suspended inorganic concentration
-carbon   suspended organic concentration,carbon   suspended organic concentration
-carbon   suspended total,carbon   suspended total
+,
+,
+,
+,
+,
+,
+,
+,
 carbon 13 concentration,carbon 13 concentration
 carbon 14 concentration,carbon 14 concentration
 carbon average content,carbon average content
@@ -313,7 +313,7 @@ nitrate and nitrite n concentration,nitrate and nitrite n concentration
 nitrate n concentration,nitrate n concentration
 nitrite n concentration,nitrite n concentration
 nitrogen concentration,nitrogen concentration
-nitrogen concentration   kjeldahl method,nitrogen concentration   kjeldahl method
+,
 nitrogen concentration kjeldahl method,nitrogen concentration kjeldahl method
 nitrogen oxides concentration,nitrogen oxides concentration
 nitrogenous biochemical oxygen demand,nitrogenous biochemical oxygen demand

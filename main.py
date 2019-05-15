@@ -19,6 +19,12 @@ unit_vocab = {str.lower(t) for t in resource_creation.create_reference('my_unit.
 property_vocab = {str.lower(t) for t in resource_creation.create_reference('my_property.csv', raw_file=False)}
 
 
+def nn_train(file):
+    model = 'binary'
+    ml = NeuralNetwork(file)
+    ml.train(model)
+
+
 def nn_train_predict(file):
     model = 'binary'
     ml = NeuralNetwork(file)
@@ -40,7 +46,7 @@ def process_raw_qudt():
 
 
 def segment_user_string(string):
-    window_size = 1
+    window_size = 2
     words = string.split(sep=" ")
     num_segments = len(words) - (window_size-1)
     segments = []
@@ -53,6 +59,7 @@ def segment_user_string(string):
             segments.append(segment)
     print(segments)
     labels, probabilities = nn_just_predict(segments)
+    print(labels, probabilities)
     property_words = []
     unit_words = []
     for i in range(len(labels)):
@@ -157,21 +164,14 @@ if __name__ == '__main__':
     #resource_creation.tag_features('proc_qudt-property.csv', 'property')
     #resource_creation.tag_features('proc_qudt-unit.csv', 'unit')
 
-    # User input-prediction loop
-    # Run to make predictions (using Complement Naive Bayes)
-
+    # Create the file for the binary classifier
     #resource_creation.create_binary_classification_file('my_property.csv', 'my_unit.csv')
-    #nn_train_predict('property_or_unit.csv')
-    #test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
-    #segment_user_string('wind speed degree angle')
 
-    #nn_just_predict(test_xs)
-    #for x in test_xs:
-    #    nn_just_predict(x)
-    #while True:
-    #    string = str(input('Enter a string to categorise: '))
-    #    nn_just_predict(string)
+    # Train classifiers
+    nn_train('property_or_unit.csv')
     #train_classifier()
+
+    # Make predictions from user input
     user_input_loop()
 
 

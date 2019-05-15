@@ -3,6 +3,7 @@ import numpy as np
 import preprocessing
 import platform
 import language_processing
+import itertools
 
 #Setting path to datasets - specific to user/pc
 if 'FIJI-DP' in platform.uname()[1]:
@@ -151,12 +152,36 @@ def create_paired_reference(property_file, unit_file, pre_paired_file):
     pre_paired_df = pd.read_csv('raw datasets/' + pre_paired_file, usecols=['rdfs:label', 'qudt:unit']) # aka raw qudt-property
 
 
+def find_subsequences(sequence):
+    subsequences = set()
+    for i in range(1, len(sequence)):
+        subsequences |= set(itertools.combinations(sequence, i))
+    return list(subsequences)
+
+
+def append_subsequences(df, col):
+    subsequences = [] #pd.Series()
+    for sample in df[col]:
+        subsamples = find_subsequences(str(sample).split(' '))# pd.Series(find_subsequences(str(sample).split(' ')))
+        subsamples = [sample for sample in subsamples if not all(x.isdigit() for x in sample)]
+        subsequences.extend(subsamples)#, ignore_index=True)
+    #df.native = df.native.append(subsequences, ignore_index=True)
+    subsequences = list(set(subsequences))
+    #subsequences = [list(subsequence) for subsequence in subsequences]
+    subsequences = [" ".join(subsequence) for subsequence in subsequences]
+    sdf = pd.DataFrame(subsequences, columns=['native']) #.transpose()
+    df = pd.concat([df, sdf], ignore_index=True)
+    return df
+
+
 def create_binary_classification_file(property_file, unit_file):
     pdf = pd.read_csv(property_file, usecols=['native'])
     udf = pd.read_csv(unit_file, usecols=['native'])
+    pdf = append_subsequences(pdf, 'native')
+    udf = append_subsequences(udf, 'native')
     pdf['class'] = 'property'
     udf['class'] = 'unit'
-    binary_df = pd.DataFrame()
     binary_df = pdf.append(udf)
+    binary_df.dropna(inplace=True)
     binary_df.to_csv('property_or_unit.csv', index=False)
 
