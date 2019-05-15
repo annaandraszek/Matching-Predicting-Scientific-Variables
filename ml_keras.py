@@ -75,19 +75,15 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         return model
 
 
-    def predict(self, strings, model_name, load_from_file=False):
-        if load_from_file:
-            self.model = load_model(model_name + '.h5')
-            self.tok = joblib.load(model_name + 'tokeniser.joblib')
+    def load_model_from_file(self, model_name='binary'):
+        self.model = load_model(model_name + '.h5')
+        self.tok = joblib.load(model_name + 'tokeniser.joblib')
+        self.model._make_predict_function()
+
+
+    def predict(self, strings):
         sequences = self.tok.texts_to_sequences(strings)
         sequences_matrix = sequence.pad_sequences(sequences, maxlen=self.max_len)
         predictions = self.model.predict(sequences_matrix)
-        # sort_pred = np.argsort(-predictions)
-        # print(predictions, sort_pred[:,0], sort_pred[:,1], )
-
-        # ranked_predictions = []
-        # for p in range(sort_pred.shape[1]):
-        #     pred = self.y_dict[int(sort_pred[:, p])]
-        #     ranked_predictions.append(pred)
         classification = ['unit' if p > 0.5 else 'property'for p in predictions]
         return classification, predictions

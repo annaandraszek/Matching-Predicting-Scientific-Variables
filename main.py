@@ -39,13 +39,31 @@ def nn_just_predict(string):
     return ml.predict(string, model, load_from_file=True)
 
 
+def app_binary_predict(string, model):
+    return model.predict(string)
+
+
+def app_class_predict(model, string, t):
+    return model.predict_top_x([string], t)
+
+
+def app_load_models():
+    binary_model = NeuralNetwork('property_or_unit.csv')
+    binary_model.load_model_from_file()
+    properties_model = Classifier()
+    properties_model.load_model_and_classes('p')
+    units_model = Classifier()
+    units_model.load_model_and_classes('u')
+    return binary_model, properties_model, units_model
+
+
 #Cleans up/pre-processes the raw qudt datasets and saves as files in only_qudt_datasets
 def process_raw_qudt():
     for dataset in raw_qudt_datasets:
         resource_creation.create_reference(dataset, raw_file=True)
 
 
-def segment_user_string(string):
+def segment_user_string(string, binary_m):
     window_size = 1
     words = string.split(sep=" ")
     num_segments = len(words) - (window_size-1)
@@ -58,7 +76,7 @@ def segment_user_string(string):
             segment = [words[n] for n in range(i, i + window_size)]
             segments.append(segment)
     print(segments)
-    labels, probabilities = nn_just_predict(segments)
+    labels, probabilities = app_binary_predict(segments, binary_m)
     print(labels, probabilities)
     property_words = []
     unit_words = []
@@ -86,7 +104,7 @@ def segment_user_string(string):
     return " ".join(property_words), " ".join(unit_words)
 
 
-def app_process_user_input(s):
+def app_process_user_input(s, binary_m):
     s_tokens = set(s.split())
     dictionary_s_tokens = (s_tokens.intersection(unit_vocab)).union(s_tokens.intersection(property_vocab))
     property_and_unit_tokens = unit_vocab.union(property_vocab)
@@ -98,23 +116,22 @@ def app_process_user_input(s):
         s = preprocessing.solve_similar_spelling(s, property_and_unit_tokens, input_is_string=True)
         s_tokens = set(s.split())
 
-    user_property, user_unit = segment_user_string(s)
+    user_property, user_unit = segment_user_string(s, binary_m)
     return user_property, user_unit
 
 
-def app_user_input(s):
-    while True:
-        output = app_process_user_input(s)
-        if output == 1:
-            return
-        else:
-            properties, units = output
-            if len(properties) > 0:
-                property_predictions = run_classifier_from_saved(properties, 'p', ranked=True)
-                return property_predictions
-            if len(units) > 0:
-                unit_predictions = run_classifier_from_saved(units, 'u', ranked=True)
-                return unit_predictions
+def app_user_input(s, binary_m, property_m, unit_m):
+    output = app_process_user_input(s, binary_m)
+    if output == 1:
+        return
+    else:
+        properties, units = output
+        if len(properties) > 0:
+            property_predictions = app_run_classifier(properties, 'p', property_m, ranked=True)
+            return property_predictions
+        if len(units) > 0:
+            unit_predictions = app_run_classifier(units, 'u', unit_m, ranked=True)
+            return unit_predictions
 
 
 def process_user_input():
@@ -150,6 +167,13 @@ def run_classifier_from_saved(s, t, predictions_to_return=10, ranked=False):
         return c.predict_top_x([s], predictions_to_return, t, load_model=True)
     else:
         return c.predict([s], t, load_model=True, have_return=True)
+
+
+def app_run_classifier(s, t, model, ranked=False):
+    if ranked:
+        return model.predict_top_x([s], t)
+    else:
+        return model.predict([s], t)
 
 
 #Tries to categorise user input as belonging to property or unit

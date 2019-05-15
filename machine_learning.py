@@ -43,24 +43,20 @@ class Classifier():
             df.to_csv(report_path + t + '_report' + str(datetime.datetime.now().strftime("%Y%m%d-%H%M%S")) + '.csv')
 
     # Print the top class prediction for the input
-    def predict(self, new, t, load_model=False, have_return=False):
-        if load_model:
-            self.text_clf, self.classes = self.load_model_and_classes(t)
+    def predict(self, new, t): #, load_model=False, have_return=False):
+        #if load_model:
+        #    self.text_clf, self.classes = self.load_model_and_classes(t)
         predicted = self.text_clf.predict(new)
-        if not have_return:
-            for doc, category in zip(new, predicted):
-                print('%r => %s' % (doc, self.classes[category]))
-        else:
-            classes = []
-            for doc, category in zip(new, predicted):
-                classes.append(self.classes[category])
-            return classes
+        classes = []
+        for doc, category in zip(new, predicted):
+            classes.append(self.classes[category])
+        return classes
 
 
     # Print x ranked class predictions for the input
-    def predict_top_x(self, new, x, t, load_model=False):
-        if load_model:
-            self.text_clf, self.classes = self.load_model_and_classes(t)
+    def predict_top_x(self, new, t, x=10):#, load_model=False):
+        #if load_model:
+        #    self.text_clf, self.classes = self.load_model_and_classes(t)
         predicted = self.text_clf.predict_proba(new)
         results = []
         for doc, predictions in zip(new, predicted):
@@ -72,7 +68,10 @@ class Classifier():
 
     # Function to load a model
     def load_model_and_classes(self, t):
-        return load(self.model_file_prefix + t + self.file_suffix), load(self.class_file_prefix + t + self.file_suffix)
+        #return load(self.model_file_prefix + t + self.file_suffix), load(self.class_file_prefix + t + self.file_suffix)
+        self.text_clf = load(self.model_file_prefix + t + self.file_suffix)
+        self.classes = load(self.class_file_prefix + t + self.file_suffix)
+
 
     # Function to save a model
     def save_model_and_classes(self, t):

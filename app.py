@@ -1,6 +1,10 @@
 from flask import Flask, request, redirect, url_for, render_template
 app = Flask(__name__)
-from main import app_user_input
+from main import app_user_input, app_load_models
+
+
+bm, pm, um = app_load_models()
+
 
 @app.route('/result/<variable>')
 def result(variable):
@@ -12,7 +16,7 @@ def predict():
         inpt = request.form['var']
         #return render_template('predict.html')
         #return redirect(url_for('result', variable=inpt))
-        result = str(app_user_input(s=str(inpt)))
+        result = str(app_user_input(str(inpt), bm, pm, um))
         return render_template('predict.html', prediction=result)
     else:
         #inpt = request.args.get('var')
