@@ -46,7 +46,7 @@ def process_raw_qudt():
 
 
 def segment_user_string(string):
-    window_size = 2
+    window_size = 1
     words = string.split(sep=" ")
     num_segments = len(words) - (window_size-1)
     segments = []
@@ -168,7 +168,7 @@ if __name__ == '__main__':
     #resource_creation.create_binary_classification_file('my_property.csv', 'my_unit.csv')
 
     # Train classifiers
-    nn_train('property_or_unit.csv')
+    #nn_train('property_or_unit.csv')
     #train_classifier()
 
     # Make predictions from user input
