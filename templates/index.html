@@ -19,22 +19,16 @@
       </form>
     <p>Best guesses:</p>
     {{no_prediction}}
-    <ul style="list-style: none;"> {% for array in prediction %}
+    <ul style="list-style: none;"> {% for dataframe in prediction %}
         <li>
-            <ul style="list-style: none;"> {%for element in array %}
+            <p>
+            <ol>{% for key, value in dataframe.iterrows() %}
                 <li>
-                    <p>
-                    <ol>
-                        {% for num, vocab in element %}
-                        <li>
-                            {{vocab}}
-                        </li>
-                        {% endfor %}
-                    </ol>
-                    </p>
+                    {{ value['proper_name'] }}, <a href="{{ value['url'] }}">{{ value['url'] }}</a>
                 </li>
             {% endfor %}
-            </ul>
+            </ol>
+            </p>
         </li>
     {% endfor %}
     </ul>

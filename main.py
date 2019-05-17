@@ -129,16 +129,24 @@ def app_user_input(s):
         properties, units = output
         if len(properties) > 0 and len(units) <= 0:
             property_predictions = app_run_classifier(properties, 'p', property_model, ranked=True)
-            return property_predictions
+            return find_more_informative_result(property_predictions, 'property')
         if len(units) > 0 and len(properties) <=0:
             unit_predictions = app_run_classifier(units, 'u', unit_model, ranked=True)
-            return unit_predictions
+            return find_more_informative_result(unit_predictions, 'unit')
         elif len(units) > 0 and len(properties) > 0:
             property_predictions = app_run_classifier(properties, 'p', property_model, ranked=True)
             unit_predictions = app_run_classifier(units, 'u', unit_model, ranked=True)
-            return property_predictions, unit_predictions
+            return find_more_informative_result(property_predictions, 'property'), find_more_informative_result(unit_predictions, 'unit')
         else: return "No vocabulary terms found"
 
+
+def find_more_informative_result(results, t):
+    ref_df = pd.read_csv('my_display_'+ t +'.csv')
+    informative_results = pd.DataFrame()
+    for result in results:
+        print(result)
+        informative_results = informative_results.append(ref_df.loc[ref_df['processed_name'] == result[1]], ignore_index=True)
+    return informative_results
 
 #Runs training on the Naive Bayes classifier
 def train_classifier():
@@ -196,9 +204,12 @@ if __name__ == '__main__':
     # Create the file for the binary classifier
     #resource_creation.create_binary_classification_file('my_property.csv', 'my_unit.csv')
 
+    #resource_creation.create_display_files('proc_qudt-property.csv', 'qudt-property.csv', 'property')
+    #resource_creation.create_display_files('proc_qudt-unit.csv', 'qudt-unit.csv', 'unit')
+
     # Train classifiers
-    nn_train('property_or_unit.csv')
-    train_classifier()
+    #nn_train('property_or_unit.csv')
+    #train_classifier()
 
     # Make predictions from user input
     app_load_models()

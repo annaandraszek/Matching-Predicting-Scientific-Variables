@@ -20,13 +20,11 @@ def predict():
         print(result, len(result))
         if isinstance(result, str):
             return render_template('index.html', no_prediction=result)
-        if len(result) <= 1:
+        if len(result) > 2:
             result = [result]
         return render_template('index.html', prediction=result)
     else:
-        #inpt = request.args.get('var')
         return render_template('index.html')
-        #return redirect(url_for('result', variable=inpt))
 
 #def home():
 #    return 'Hi! Go to /predict to enter a scientific variable'

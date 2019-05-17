@@ -63,7 +63,7 @@ class Classifier():
             sorted_pred = np.argsort(-predictions) # stores indexes
             #for i in range(x):
             #    print(i, predictions[sorted_pred[i]], self.classes[sorted_pred[i]])
-            results.append([[i, self.classes[sorted_pred[i]]] for i in range(x)])
+            results.extend([(i, self.classes[sorted_pred[i]]) for i in range(x)])
         return results
 
     # Function to load a model
