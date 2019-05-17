@@ -126,13 +126,17 @@ def app_user_input(s, binary_m, property_m, unit_m):
         return
     else:
         properties, units = output
-        if len(properties) > 0:
+        if len(properties) > 0 and len(units) <= 0:
             property_predictions = app_run_classifier(properties, 'p', property_m, ranked=True)
             return property_predictions
-        if len(units) > 0:
+        if len(units) > 0 and len(properties) <=0:
             unit_predictions = app_run_classifier(units, 'u', unit_m, ranked=True)
             return unit_predictions
-
+        elif len(units) > 0 and len(properties) > 0:
+            property_predictions = app_run_classifier(properties, 'p', property_m, ranked=True)
+            unit_predictions = app_run_classifier(units, 'u', unit_m, ranked=True)
+            return property_predictions, unit_predictions
+        else: return "No vocabulary terms found"
 
 def process_user_input():
     s = str(input('Enter a string to predict:'))
