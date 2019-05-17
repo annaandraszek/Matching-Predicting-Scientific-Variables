@@ -95,32 +95,32 @@ def extract_features_to_tag(datasets):
 
 
 # Takes a dataframe which wants to be saved to my_property/my_unit and merges/saves it to it without duplication or erasure
-def merge_with_my(df, type):
-    if type == 'unit':
-        try:
-            my_units = pd.read_csv('my_' + type + '.csv')
-            df = my_units.append(df, sort=True)
+def merge_with_my(df, type, unique_col='class', native_col='native'):
+    #if type == 'unit':
+    try:
+        my_df = pd.read_csv('my_' + type + '.csv')
+        df = my_df.append(df, sort=True)
 
-        except FileNotFoundError:
-            print('Will make new my_' + type + '.csv')
-            df.drop_duplicates('native', inplace=True)
-            df.to_csv('my_' + type + '.csv', index=False)
-            return
+    except FileNotFoundError:
+        print('Will make new my_' + type + '.csv')
+        df.drop_duplicates(native_col, inplace=True)
+        df.to_csv('my_' + type + '.csv', index=False)
+        return
 
-    elif type == 'property':
-        try:
-            my_properties = pd.read_csv('my_' + type +'.csv')
-            df = my_properties.append(df, sort=True)
+    # elif type == 'property':
+    #     try:
+    #         my_properties = pd.read_csv('my_' + type +'.csv')
+    #         df = my_properties.append(df, sort=True)
+    #
+    #     except FileNotFoundError:
+    #         print('Will make new my_' + type + '.csv')
+    #         df.drop_duplicates('native', inplace=True)
+    #         df.to_csv('my_' + type + '.csv', index=False)
+    #         return
 
-        except FileNotFoundError:
-            print('Will make new my_' + type + '.csv')
-            df.drop_duplicates('native', inplace=True)
-            df.to_csv('my_' + type + '.csv', index=False)
-            return
-
-    df.sort_values(by='class', inplace=True)
-    df.drop_duplicates('native', inplace=True)
-    df.dropna(subset=['native'], inplace=True)
+    df.sort_values(by=unique_col, inplace=True)
+    df.drop_duplicates(native_col, inplace=True)
+    df.dropna(subset=[native_col], inplace=True)
     df.to_csv('my_' + type + '.csv', index=False)
 
 
@@ -184,4 +184,35 @@ def create_binary_classification_file(property_file, unit_file):
     binary_df = pdf.append(udf)
     binary_df.dropna(inplace=True)
     binary_df.to_csv('property_or_unit.csv', index=False)
+
+
+def create_display_files(proc_file, qudt_file, type):
+    display_df = pd.DataFrame()# (columns=['processed_name', 'proper_name', 'url']) #, 'suggested_unit', 'suggested_unit_url'])
+    proc_df = pd.read_csv(datasets_path + proc_file, usecols=['rdfs:label'])
+    display_df['processed_name'] = proc_df.loc[:,'rdfs:label']
+
+    if 'property' in type:
+        qudt_df = pd.read_csv(datasets_path+qudt_file, usecols=['@id', 'rdfs:label', 'qudt:unit'])
+    elif 'unit' in type:
+        qudt_df = pd.read_csv(datasets_path+qudt_file, usecols=['@id', 'rdfs:label', 'qudt:abbreviation', 'qudt:symbol'])
+    else:
+        return 1
+
+    display_df['url'] = qudt_df['@id']
+    display_df['proper_name'] = qudt_df['rdfs:label']
+    if 'property' in type:
+        display_df['suggested_unit_url'] = qudt_df['qudt:unit']
+    if 'unit' in type:
+        display_df['abbreviation'] = qudt_df['qudt:symbol'].mask(qudt_df['qudt:symbol'].isna(), qudt_df['qudt:abbreviation'])
+
+    # Clean qudt file cols of trash values
+    if 'property' in type:
+        display_df['suggested_unit'] = preprocessing.remove_web(qudt_df['qudt:unit'])
+    display_df = preprocessing.remove_trash(display_df)
+
+    if 'property' in type:
+        display_df['suggested_unit'] = preprocessing.from_camelcase(display_df['suggested_unit'])
+        display_df['suggested_unit'] = display_df['suggested_unit'].replace('_', ' ', regex=True)
+
+    merge_with_my(display_df, 'display_'+type, unique_col='processed_name', native_col='processed_name')
 

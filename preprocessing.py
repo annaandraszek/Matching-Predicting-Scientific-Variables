@@ -4,7 +4,7 @@ import stringdist
 import re
 import math
 import resource_creation
-import language_processing
+#import language_processing
 
 # Takes datasets which contain features that will make up the training set, and extracts them
 # each file needs special treatment to get necessary features from it as they come in different internal formats
@@ -184,17 +184,30 @@ def solve_abbreviations(units, unit_terms, input_is_string=False): #todo: do I a
     return units
 
 
-# Performs string-cleaning operations on a dataframe to prepare it for being input to the classifier
-def clean_table(table, properties='parameter', has_properties=True, units='units', has_units=False, has_abbreviations=False):
+def remove_trash(table):
     replacements = {
         '\\^\\^xsd:string': '',
         "'": '',
-        'http://registry.it.csiro.au/def/environment/unit/' : '',
+        '\\<': '',
+        '\\>': '',
+        'http://http://': 'http://',
+        '\\|': ' | ',
+    }
+    return table.replace(replacements, regex=True)
+
+
+def remove_web(table):
+    replacements = {
+        'http://registry.it.csiro.au/def/environment/unit/': '',
         'http://qudt.org/vocab/unit#': '',
         'http://': '',
-        '<': '',
-        '>': '',
-        '\\|': ' or ',
+    }
+    return table.replace(replacements, regex=True)
+
+
+def remove_okayer_trash(table):
+    replacements = {
+        '\\|': 'or',
         '_': ' ',
         '\\(': '',
         '\\)': '',
@@ -204,14 +217,22 @@ def clean_table(table, properties='parameter', has_properties=True, units='units
         '-': ' ',
         ',': ' ',
         '   ': ' ',
-        #'\\^ ': '^',
-        #'\\^': ' ^',
+        # '\\^ ': '^',
+        # '\\^': ' ^',
         '\\^1': '',
         '\\*': ' * ',
         '\\^2': 'square',
         '\\^3': 'cubic',
     }
-    table.replace(replacements, regex=True, inplace=True)
+    return table.replace(replacements, regex=True)
+
+
+# Performs string-cleaning operations on a dataframe to prepare it for being input to the classifier
+def clean_table(table, properties='parameter', has_properties=True, units='units', has_units=False, has_abbreviations=False):
+    table = remove_trash(table)
+    table = remove_web(table)
+    table = remove_okayer_trash(table)
+
     if has_units:
         if has_abbreviations:
             table[units] = from_camelcase(table[units])
