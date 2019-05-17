@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matching scientific variables</title>
+    <style>
+        body { font-size: 14px; font-family: Verdana; color: green;}
+        .label {color: blue;}
+        variable {color: green;}
+        input { border: lined 3px blue;}
+
+    </style>
+</head>
+<body>
+    <form action = "http://localhost:5000/predict" method = "POST">
+         <p id="variable">Enter variable:</p>
+         <p><input type = "text" name = "var" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+    <p>Best guesses:</p>
+    {{no_prediction}}
+    <ul style="list-style: none;"> {% for array in prediction %}
+        <li>
+            <ul style="list-style: none;"> {%for element in array %}
+                <li>
+                    <p>
+                    <ol>
+                        {% for vocab in element %}
+                        <li>
+                            {{vocab}}
+                        </li>
+                        {% endfor %}
+                    </ol>
+                    </p>
+                </li>
+            {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
