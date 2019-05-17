@@ -42,7 +42,7 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         self.model = self.RNN()
         self.model.compile(loss='binary_crossentropy', optimizer=RMSprop(), metrics=['accuracy'])
 
-    def train(self, model_name):
+    def train(self, model_name='binary'):
         X_train, X_test, Y_train, Y_test = train_test_split(self.X, self.Y, test_size=0.15)
 
         self.tok.fit_on_texts(X_train)
