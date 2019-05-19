@@ -18,11 +18,11 @@ import pandas as pd
 
 class NeuralNetwork(): #give this arguments like: model type, train/test file
     max_words = 900
-    max_len = 10
+    max_len = 15
     tok = Tokenizer(num_words=max_words)
     y_dict = {}
     epochs = 5
-    batch_size = 11
+    batch_size = 20
     tf.logging.set_verbosity(tf.logging.ERROR)
 
     def __init__(self, file, model_type='match'):

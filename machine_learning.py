@@ -17,8 +17,8 @@ class Classifier():
     class_file_prefix = 'cnb_classes_'
     file_suffix = '.joblib'
 
-    def __init__(self):
-        self.text_clf = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('clf', ComplementNB(norm=True))])  # pipeline of fit/transforms
+    def __init__(self):                                    #lowercase=False,
+        self.text_clf = Pipeline([('vect', CountVectorizer(token_pattern=r"(?u)\b\w+\b", strip_accents='unicode')), ('tfidf', TfidfTransformer()), ('clf', ComplementNB(norm=True))])  # pipeline of fit/transforms
 
     def train(self, file, t, print_report=False):
         df = pd.read_csv(file)  # loading training set file
