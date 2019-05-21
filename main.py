@@ -129,14 +129,14 @@ def app_user_input(s):
         properties, units = output
         if len(properties) > 0 and len(units) <= 0:
             property_predictions = app_run_classifier(properties, 'p', property_model, ranked=True)
-            return find_more_informative_result(property_predictions, 'property')
+            return ('p', find_more_informative_result(property_predictions, 'property')), ('None',[])
         if len(units) > 0 and len(properties) <=0:
             unit_predictions = app_run_classifier(units, 'u', unit_model, ranked=True)
-            return find_more_informative_result(unit_predictions, 'unit')
+            return ('u', find_more_informative_result(unit_predictions, 'unit')), ('None', [])
         elif len(units) > 0 and len(properties) > 0:
             property_predictions = app_run_classifier(properties, 'p', property_model, ranked=True)
             unit_predictions = app_run_classifier(units, 'u', unit_model, ranked=True)
-            return find_more_informative_result(property_predictions, 'property'), find_more_informative_result(unit_predictions, 'unit')
+            return ('p', find_more_informative_result(property_predictions, 'property')), ('u', find_more_informative_result(unit_predictions, 'unit'))
         else: return "No vocabulary terms found"
 
 
@@ -209,7 +209,7 @@ if __name__ == '__main__':
 
     # Train classifiers
     #nn_train('property_or_unit.csv')
-    #train_classifier()
+    train_classifier()
 
     # Make predictions from user input
     app_load_models()

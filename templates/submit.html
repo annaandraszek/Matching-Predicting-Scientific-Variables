@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit my input</title>
+</head>
+<body>
+        <form action = "http://localhost:5000/submit" method = "POST">
+            <p>Enter your variable (split on property and unit):</p>
+            <p><input type = "text" name = "user_property" placeholder="eg. air temperature"/>Property</p>
+            <p><input type = "text" name = "user_unit" placeholder="eg. degree celsius"/>Unit</p>
+            <p><input type = "submit" value = "submit_for_ingestion" /></p>
+
+            <p>Select their classes:</p>
+            <select name="class_property" size="20"> {% for property in properties}
+                <option value="{{ property }}">{{ property }}</option>
+                {% endfor %}
+            </select>
+            <p></p>
+            <select name="class_unit" size="20"> {% for unit in units}
+                <option value="{{ unit }}">{{ unit }}</option>
+                {% endfor %}
+            </select>
+        </form>
+</body>
+</html>

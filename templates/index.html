@@ -18,29 +18,44 @@
     <form action = "http://localhost:5000/predict" method = "POST">
          <p id="variable">Enter variable:</p>
          <p><input type = "text" name = "var" /></p>
-         <p><input type = "submit" value = "submit" /></p>
+         <p><input type = "submit" value = "Predict" name="submit_for_prediction"/></p>
       </form>
     <p>Best guesses:</p>
-    {{no_prediction}}
-    <ul style="list-style: none;"> {% for dataframe in prediction %}
-        <li>
-            <p>
-            <ol>{% for key, value in dataframe.iterrows() %}
-                <li>
-                    {{ value['proper_name'] }}, <a href="{{ value['url'] }}">{{ value['url'] }}</a>
-                </li>
-            {% endfor %}
-            </ol>
-            </p>
-        </li>
-    {% endfor %}
+    {% if no_prediction %}
+        {{no_prediction}}
+    {% elif prediction %}
+        <ul style="list-style: none;"> {% for dataframe in prediction %}
+            {%if not dataframe[1].empty %}
+            <li>
+                <p>
+                    <ol>
+                        {% for key, value in dataframe[1].iterrows() %}
+                            <li>
+                            {% if 'p' in dataframe[0] %}
+                                <a href="{{ value['url'] }}">{{ value['proper_name'] }}</a>
+                                {%if suggested_units==True %}
+                                    {% if value['suggested_unit'] is not number %}
+                                        <p>Suggested unit(s):
+                                            {% for unit, url in zip(value['suggested_unit'].split(" | "), value['suggested_unit_url'].split(" | ")) %}
+                                                <a href="{{ url }}">{{ unit }}</a>
+                                            {% endfor %}
+                                    {% endif %}
+                                {% endif %}
+                            {% elif 'u' in dataframe[0] %}
+                                <a href="{{ value['url'] }}">{{ value['proper_name'] }} ({{ value['abbreviation']}})</a>
+                            {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </p>
+            </li>
+            {% endif %}
+        {% endfor %}
     </ul>
-    <p>Not happy with the result? Would you like to add your input to the training set to improve these predictions?</p>
-        <form action = "http://localhost:5000/submit" method = "POST">
-            <p>Enter your variable (split on property and unit):</p>
-            <p><input type = "text" name = "property" placeholder="property"/></p>
-            <p><input type = "text" name = "unit" placeholder="unit"/></p>
-            <p><input type = "submit" value = "submit" /></p>
+    {% endif %}
+    <p>Not happy with the result? Click here add your input to the training set to improve these predictions:</p>
+        <form action="/submit" method="get">
+            <button type="submit">Train on my input</button>
         </form>
 </body>
 </html>
