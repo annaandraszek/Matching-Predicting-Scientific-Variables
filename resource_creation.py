@@ -47,6 +47,10 @@ def create_set_of_native(file):
     accepted_inputs = [line for line in df['native']] # {frozenset(line.split()) for line in df['native']}
     return accepted_inputs
 
+def create_list_of_column(file, column):
+    df = pd.read_csv(file)
+    return [line for line in df[column]]
+
 # Extracts unlabelled properties, units from raw datasets and saves to a file to label manually
 def extract_features_to_tag(datasets):
     path = 'raw datasets/'
@@ -80,48 +84,25 @@ def extract_features_to_tag(datasets):
             print('Will make new hand_tagged_' + t + '.csv')
             units_df.to_csv(path+'hand_tagged_' + t + '.csv', index=False)
 
-    # try:
-    #     tagged_properties = pd.read_csv(path+'hand_tagged_property.csv')
-    #     properties_df = tagged_properties.append(properties_df, sort=True)
-    #     properties_df.sort_values(by='class', inplace=True)
-    #     properties_df.drop_duplicates('native', inplace=True)
-    #     properties_df.to_csv(path+'hand_tagged_property.csv', index=False)
-    # except FileNotFoundError:
-    #     print('Will make new hand_tagged_property.csv')
-    #     properties_df.to_csv(path+'hand_tagged_property.csv', index=False)
-
-    #merge_with_my(units_df, 'unit')
-    #merge_with_my(properties_df, 'property')
 
 
 # Takes a dataframe which wants to be saved to my_property/my_unit and merges/saves it to it without duplication or erasure
-def merge_with_my(df, type, unique_col='class', native_col='native'):
-    #if type == 'unit':
+def merge_with_my(df, type, sorting_col='class', native_col='native', prefix='my_'):
     try:
-        my_df = pd.read_csv('my_' + type + '.csv')
+        my_df = pd.read_csv(prefix + type + '.csv')
         df = my_df.append(df, sort=True)
 
     except FileNotFoundError:
-        print('Will make new my_' + type + '.csv')
+        print('Will make new ' + prefix + type + '.csv')
         df.drop_duplicates(native_col, inplace=True)
-        df.to_csv('my_' + type + '.csv', index=False)
+        df.to_csv(prefix + type + '.csv', index=False)
         return
 
-    # elif type == 'property':
-    #     try:
-    #         my_properties = pd.read_csv('my_' + type +'.csv')
-    #         df = my_properties.append(df, sort=True)
-    #
-    #     except FileNotFoundError:
-    #         print('Will make new my_' + type + '.csv')
-    #         df.drop_duplicates('native', inplace=True)
-    #         df.to_csv('my_' + type + '.csv', index=False)
-    #         return
-
-    df.sort_values(by=unique_col, inplace=True)
+    df.sort_values(by=sorting_col, inplace=True)
     df.drop_duplicates(native_col, inplace=True)
     df.dropna(subset=[native_col], inplace=True)
-    df.to_csv('my_' + type + '.csv', index=False)
+    df.to_csv(prefix + type + '.csv', index=False)
+
 
 
 # Extracts properties, units from qudt files and saves to my_property/my_unit as themselves and their labels
@@ -214,5 +195,18 @@ def create_display_files(proc_file, qudt_file, type):
         display_df['suggested_unit'] = preprocessing.from_camelcase(display_df['suggested_unit'])
         display_df['suggested_unit'] = display_df['suggested_unit'].replace('_', ' ', regex=True)
 
-    merge_with_my(display_df, 'display_'+type, unique_col='processed_name', native_col='processed_name')
+    merge_with_my(display_df, 'display_' + type, sorting_col='processed_name', native_col='processed_name')
 
+
+def add_to_user_training_set(user_property, user_unit, class_property, class_unit):
+    user_str = user_property + ' (' + user_unit + ')'
+    df = pd.DataFrame(columns=['native', 'property_class', 'unit_class'])
+    df.native = np.asarray([user_str])
+    df.property_class = np.asarray([class_property])
+    df.unit_class = np.asarray([class_unit])
+    merge_with_my(df, sorting_col='property_class', prefix='user_', type='trainingset')
+
+def get_class_names():
+    properties = create_list_of_column('my_display_property.csv', 'proper_name')
+    units = create_list_of_column('my_display_unit.csv', 'proper_name')
+    return properties, units

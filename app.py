@@ -1,7 +1,7 @@
 from flask import Flask, request, redirect, url_for, render_template
 app = Flask(__name__)
 from main import app_user_input, app_load_models
-from resource_creation import add_to_user_training_set
+from resource_creation import add_to_user_training_set, get_class_names
 app_load_models()
 import pandas as pd
 
@@ -43,12 +43,17 @@ def predict():
 @app.route('/submit', methods=['POST', 'GET'])
 def submit():
     if request.method == 'POST':
-        user_property = request.form['submitted_property']
-        user_unit = request.form['submitted_unit']
-        add_to_user_training_set(user_property, user_unit)
-        return render_template('submit.html')
+        properties, units = get_class_names()
+        user_property = request.form['user_property']
+        user_unit = request.form['user_unit']
+        class_property = request.form['class_property']
+        class_unit = request.form['class_unit']
+
+        add_to_user_training_set(user_property, user_unit, class_property, class_unit)
+        return render_template('submit.html', properties=properties, units=units)
     else:
-        return render_template('submit.html')
+        properties, units = get_class_names()
+        return render_template('submit.html', properties=properties, units=units)
 
 
 
