@@ -12,7 +12,6 @@
             <p>Enter your variable (split on property and unit):</p>
             <p>Property <input type = "text" name="user_property" placeholder="eg. air temperature"/></p>
             <p>Unit <input type = "text" name="user_unit" placeholder="eg. degree celsius"/></p>
-            <p><input type = "submit" name="submit_for_ingestion" value="Submit"/></p>
 
             <p>Select their classes:</p>
                 <select name="class_property" size="20"> {% for property in properties %}
@@ -23,6 +22,7 @@
                     <option value="{{ unit }}">{{ unit }}</option>
                         {% endfor %}
                 </select>
+            <p><input type = "submit" name="submit_for_ingestion" value="Submit"/></p>
         </form>
 </body>
 </html>
