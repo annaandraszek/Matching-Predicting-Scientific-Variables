@@ -24,6 +24,7 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
     epochs = 5
     batch_size = 20
     tf.logging.set_verbosity(tf.logging.ERROR)
+    model_path = 'models/'
 
     def __init__(self, file, model_type='match'):
         df = pd.read_csv(file, dtype={'class': str, 'native': str})
@@ -59,8 +60,8 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
         #Y_test_binary = to_categorical(Y_test)
         accr = self.model.evaluate(test_sequences_matrix, Y_test)
         print('Test set\n  Loss: {:0.3f}\n  Accuracy: {:0.3f}'.format(accr[0], accr[1]))
-        self.model.save(model_name + '.h5')
-        joblib.dump(self.tok, model_name + 'tokeniser.joblib')
+        self.model.save(self.model_path + model_name + '.h5')
+        joblib.dump(self.tok, self.model_path + model_name + 'tokeniser.joblib')
 
     def RNN(self):
         inputs = Input(name='inputs',shape=[self.max_len])
@@ -76,8 +77,8 @@ class NeuralNetwork(): #give this arguments like: model type, train/test file
 
 
     def load_model_from_file(self, model_name='binary'):
-        self.model = load_model(model_name + '.h5')
-        self.tok = joblib.load(model_name + 'tokeniser.joblib')
+        self.model = load_model(self.model_path + model_name + '.h5')
+        self.tok = joblib.load(self.model_path + model_name + 'tokeniser.joblib')
         self.model._make_predict_function()
 
 

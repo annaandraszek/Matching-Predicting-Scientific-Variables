@@ -10,6 +10,7 @@ from sklearn.model_selection import GridSearchCV
 import datetime
 
 report_path = 'reports/'
+model_path = 'models/'
 # Machine learning classifier using Naive Bayes method
 class Classifier():
     test_size = 0.15  # percentage of training set to use as testing set
@@ -69,14 +70,14 @@ class Classifier():
     # Function to load a model
     def load_model_and_classes(self, t):
         #return load(self.model_file_prefix + t + self.file_suffix), load(self.class_file_prefix + t + self.file_suffix)
-        self.text_clf = load(self.model_file_prefix + t + self.file_suffix)
-        self.classes = load(self.class_file_prefix + t + self.file_suffix)
+        self.text_clf = load(model_path + self.model_file_prefix + t + self.file_suffix)
+        self.classes = load(model_path + self.class_file_prefix + t + self.file_suffix)
 
 
     # Function to save a model
     def save_model_and_classes(self, t):
-        dump(self.text_clf, self.model_file_prefix + t + self.file_suffix)
-        dump(self.classes, self.class_file_prefix + t + self.file_suffix)
+        dump(self.text_clf, model_path + self.model_file_prefix + t + self.file_suffix)
+        dump(self.classes, model_path + self.class_file_prefix + t + self.file_suffix)
 
     # Prints a series of classifier attributes
     def get_attributes(self):
