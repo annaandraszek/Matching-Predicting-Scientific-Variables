@@ -10,7 +10,7 @@ import sys
 if 'FIJI-DP' in platform.uname()[1]:
     datasets_path = "C:/Users/AND522/Documents/Matching-Predicting-Scientific-Variables/" #/raw datasets/"
 else:
-    datasets_path = "C:/Users/Anna/Documents/ml_approach/" #/raw datasets/"
+    datasets_path = "C:/Users/Anna/Documents/Matching-Predicting-Scientific-Variables/" #/raw datasets/"
 
 
 # Creates a set of tokens (words) contained in a file

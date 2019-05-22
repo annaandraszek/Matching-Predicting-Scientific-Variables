@@ -197,6 +197,7 @@ def user_input_loop(notebook=False):
 
                 else:
                     print(result[1])
+        print('-----------------------------------------------------------')
 
 if __name__ == '__main__':
     # Process the qudt files first if haven't already
