@@ -104,6 +104,7 @@ def segment_user_string(string):
 
 
 def app_process_user_input(s):
+    s = " ".join(preprocessing.from_camelcase([s]))
     s_tokens = set(s.split())
     dictionary_s_tokens = (s_tokens.intersection(unit_vocab)).union(s_tokens.intersection(property_vocab))
     property_and_unit_tokens = unit_vocab.union(property_vocab)
