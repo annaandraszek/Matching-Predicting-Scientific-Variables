@@ -44,13 +44,31 @@ def predict():
 def submit():
     if request.method == 'POST':
         properties, units = get_class_names()
-        user_property = request.form['user_property']
-        user_unit = request.form['user_unit']
-        class_property = request.form['class_property']
-        class_unit = request.form['class_unit']
 
-        add_to_user_training_set(user_property, user_unit, class_property, class_unit)
-        return render_template('submit.html', properties=properties, units=units)
+        class_unit = None
+        class_property = None
+        user_property = request.form['user_property']
+        if user_property:
+            try:
+                class_property = request.form['class_property']
+            except KeyError:
+                return render_template('submit.html', properties=properties, units=units, message="Please select a class for your property.")
+
+        user_unit = request.form['user_unit']
+        if user_unit:
+            try:
+                class_unit = request.form['class_unit']
+            except KeyError:
+                return render_template('submit.html', properties=properties, units=units, message="Please select a class for your unit.")
+
+        if class_unit and class_property:
+            add_to_user_training_set(user_property, user_unit, class_property, class_unit)
+        elif class_unit and not class_property:
+            add_to_user_training_set('', user_unit, '', class_unit)
+        elif class_property and not class_unit:
+            add_to_user_training_set(user_property, '', class_property, '')
+
+        return render_template('submit.html', properties=properties, units=units, message="Submission successful.")
     else:
         properties, units = get_class_names()
         return render_template('submit.html', properties=properties, units=units)

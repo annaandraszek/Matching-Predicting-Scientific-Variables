@@ -35,7 +35,8 @@ ARS,argentine peso,Argentine Peso,http://registry.it.csiro.au/def/qudt/1.1/qudt-
 AMD,armenian dram,Armenian Dram,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/ArmenianDram
 AWG,aruban guilder,Aruban Guilder,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/ArubanGuilder
 au,astronomical unit,Astronomical Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/AstronomicalUnit
-u,atomic mass unit,Atomic mass unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Dalton2
+atm,standard atmosphere,Standard Atmosphere,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/AtmosphereStandard
+at,technical atmosphere,Technical Atmosphere,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/AtmosphereTechnical
 Z,atomic number,Atomic Number,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/AtomicNumber
 a,atto,Atto,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Atto
 AUD,australian dollar,Australian Dollar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/AustralianDollar
@@ -89,8 +90,11 @@ BGN,bulgarian lev,Bulgarian Lev,http://registry.it.csiro.au/def/qudt/1.1/qudt-un
 BIF,burundian franc,Burundian Franc,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/BurundianFranc
 bu,bushel,Bushel,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Bushel
 B,byte,Byte,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Byte
-cal/(cm-s-degC),calorie per centimeter second degree celsius,Calorie per Centimeter Second Degree Celsius,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerCentimeterSecondDegreeCelsius
-kcal/(gm-degC),calorie per gram degree celsius,Calorie per Gram Degree Celsius,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerGramDegreeCelsius
+XOF,cfa franc bceao,CFA Franc BCEAO,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CFAFrancBCEAO
+XAF,cfa franc beac,CFA Franc BEAC,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CFAFrancBEAC
+XPF,cfp franc,CFP franc,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CFPFranc
+Cal,nutritional calorie,Nutritional Calorie,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CalorieNutritional
+cal,thermochemical calorie,Thermochemical Calorie,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CalorieThermochemical
 CAD,canadian dollar,Canadian Dollar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CanadianDollar
 cd,candela,Candela,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Candela
 cd/in^2,candela per square inch,Candela per Square Inch,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CandelaPerSquareInch
@@ -109,9 +113,6 @@ cm/s^2,centimeter per second squared,Centimeter per Second Squared,http://regist
 cm-s-degC,centimeter second degree celsius,Centimeter Second Degree Celsius,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CentimeterSecondDegreeCelsius
 cP,centipoise,Centipoise,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Centipoise
 cSt,centistokes,Centistokes,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Centistokes
-XOF,cfa franc bceao,CFA Franc BCEAO,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CFAFrancBCEAO
-XAF,cfa franc beac,CFA Franc BEAC,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CFAFrancBEAC
-XPF,cfp franc,CFP franc,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CFPFranc
 ch,chain,Chain,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Chain
 CLP,chilean peso,Chilean Peso,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/ChileanPeso
 cmil,circular mil,Circular Mil,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CircularMil
@@ -158,6 +159,7 @@ CYP,cyprus pound,Cyprus Pound,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit
 CZK,czech koruna,Czech Koruna,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CzechKoruna
 GMD,dalasi,Dalasi,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Dalasi
 Da,dalton,Dalton,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Dalton
+u,atomic mass unit,Atomic mass unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Dalton2
 DKK,danish krone,Danish Krone,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DanishKrone
 d,day,Day,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Day
 d,day sidereal,Day Sidereal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DaySidereal
@@ -196,6 +198,8 @@ DJF,djibouti franc,Djibouti Franc,http://registry.it.csiro.au/def/qudt/1.1/qudt-
 STD,dobra,Dobra,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Dobra
 DOP,dominican peso,Dominican Peso,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DominicanPeso
 dry_gal,dry gallon us,Dry Gallon US,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DryGallonUS
+dry_pt,us dry pint,US Dry Pint,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DryPintUS
+dry_qt,us dry quart,US Dry Quart,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DryQuartUS
 dyn,dyne,Dyne,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Dyne
 dyn-cm,dyne centimeter,Dyne Centimeter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DyneCentimeter
 dyn/cm^2,dyne per square centimeter,Dyne per Square Centimeter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DynePerSquareCentimeter
@@ -241,11 +245,12 @@ ft-lbf,foot pound force,Foot Pound Force,http://registry.it.csiro.au/def/qudt/1.
 ft-lbf/hr,foot pound force per hour,Foot Pound Force per Hour,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForcePerHour
 ft-lbf/min,foot pound force per minute,Foot Pound Force per Minute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForcePerMinute
 ft-lbf/s,foot pound force per second,Foot Pound Force per Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForcePerSecond
+ft-lbf/ft^2,foot pound per square foot,Foot Pound per Square Foot,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForcePerSquareFoot
 ft-lbf(ft^2-s),foot pound force per square foot second,Foot Pound Force per Square Foot Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForcePerSquareFootSecond
 ft-lbf/m^2,foot pound force per square meter,Foot Pound Force per Square Meter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForcePerSquareMeter
 lbf / s,foot pound force second,Foot Pound Force Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForceSecond
-ft-lbf/ft^2,foot pound per square foot,Foot Pound per Square Foot,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundForcePerSquareFoot
 ft-pdl,foot poundal,Foot Poundal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootPoundal
+ft,us survey foot,US Survey Foot,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootUSSurvey
 HUF,forint,Forint,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Forint
 fa,fractional area,Fractional area,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FractionalArea
 fps,frame per second,Frame per Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FramePerSecond
@@ -253,6 +258,10 @@ CDF,franc congolais,Franc Congolais,http://registry.it.csiro.au/def/qudt/1.1/qud
 Fr,franklin,Franklin,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Franklin
 fur,furlong,Furlong,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Furlong
 Gal,gal,Gal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Gal
+gal,imperial gallon,Imperial Gallon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonImperial
+gal,us gallon,US Gallon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonUS
+gal/d,us gallon per day,US Gallon per Day,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonUSPerDay
+gal/min,us gallon per minute,US Gallon per Minute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonUSPerMinute
 gamma,gamma,Gamma,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Gamma
 G,gauss,Gauss,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Gauss
 Gi,gibi,Gibi,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Gibi
@@ -261,8 +270,8 @@ G,giga,Giga,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Giga
 GeV,giga electron volt,Giga Electron Volt,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GigaElectronVolt
 GHz,gigahertz,Gigahertz,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GigaHertz
 Gi,gilbert,Gilbert,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Gilbert
-XFO,gold franc special settlement currency,Gold franc (special settlement currency),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GoldFranc
 XAU,gold one troy ounce,Gold (one Troy ounce),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Gold-OunceTroy
+XFO,gold franc special settlement currency,Gold franc (special settlement currency),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GoldFranc
 gon,gon,Gon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Gon
 grad,grad,Grad,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Grad
 gr,grade,Grade,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Grade
@@ -301,9 +310,6 @@ UAH,hryvnia,Hryvnia,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Hryvnia
 cwt,hundred weight long,Hundred Weight - Long,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/HundredWeightLong
 cwt,hundred weight short,Hundred Weight - Short,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/HundredWeightShort
 ISK,iceland krona,Iceland Krona,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/IcelandKrona
-gal,imperial gallon,Imperial Gallon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonImperial
-oz,imperial ounce,Imperial Ounce,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OunceImperial
-pi,imperial pint,Imperial Pint,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PintImperial
 in,inch,Inch,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Inch
 inHg,inch of mercury,Inch of Mercury,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/InchOfMercury
 inAq,inch of water,Inch of Water,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/InchOfWater
@@ -313,7 +319,6 @@ in-lbf,inch pound force,Inch Pound Force,http://registry.it.csiro.au/def/qudt/1.
 INR,indian rupee,Indian Rupee,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/IndianRupee
 IU,international unit,International Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/InternationalUnit
 IU/L,international unit per liter,International Unit per Liter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/InternationalUnitPerLiter
-s^-1,inverse second,Inverse Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerSecond
 IRR,iranian rial,Iranian Rial,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/IranianRial
 IQD,iraqi dinar,Iraqi Dinar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/IraqiDinar
 JMD,jamaican dollar,Jamaican Dollar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/JamaicanDollar
@@ -347,9 +352,15 @@ Ki,kibi,Kibi,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Kibi
 k,kilo,Kilo,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Kilo
 keV,kilo electron volt,Kilo Electron Volt,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloElectronVolt
 keV/µm,kilo electron volt per micrometer,Kilo Electron Volt per Micrometer,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloElectronVoltPerMicrometer
+KHz,kilohertz,Kilohertz,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloHertz
+KPa,kilopascal,Kilopascal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloPascal
+KPaA,kilopascal absolute,Kilopascal Absolute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloPascalAbsolute
+kp,kilopond,Kilopond,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloPond
 kbps,kilobit per second,Kilobit per Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilobitsPerSecond
 kcal,kilocalorie,Kilocalorie,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Kilocalorie
+cal/(cm-s-degC),calorie per centimeter second degree celsius,Calorie per Centimeter Second Degree Celsius,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerCentimeterSecondDegreeCelsius
 kcal/gm,kilocalorie per gram,Kilocalorie per Gram,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerGram
+kcal/(gm-degC),calorie per gram degree celsius,Calorie per Gram Degree Celsius,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerGramDegreeCelsius
 kcal/min,kilocalorie per minute,Kilocalorie per Minute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerMinute
 kcal/mol,kilocalorie per mole,Kilocalorie per Mole,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerMole
 kcal/(mol-degC),kilocalorie per mole degree celsius,Kilocalorie per Mole Degree Celsius,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilocaloriePerMoleDegreeCelsius
@@ -371,13 +382,9 @@ kg mol^-1,kilogram per mole,Kilogram per Mole,http://registry.it.csiro.au/def/qu
 kg/s,kilogram per second,Kilogram per Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilogramPerSecond
 kg/m^2,kilogram per square meter,Kilogram per Square Meter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilogramPerSquareMeter
 kg-s^2,kilogram second squared,Kilogram Second Squared,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilogramSecondSquared
-KHz,kilohertz,Kilohertz,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloHertz
 km,kilometer,Kilometer ,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Kilometer
 km/hr,kilometer per hour,Kilometer per Hour,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilometerPerHour
 km/s,kilometer per second,Kilometer per Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KilometerPerSecond
-KPa,kilopascal,Kilopascal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloPascal
-KPaA,kilopascal absolute,Kilopascal Absolute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloPascalAbsolute
-kp,kilopond,Kilopond,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/KiloPond
 kW,kilowatt,Kilowatt,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Kilowatt
 kW-hr,kilowatthour,Kilowatthour,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Kilowatthour
 PGK,kina,Kina,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Kina
@@ -402,6 +409,10 @@ LRD,liberian dollar,Liberian Dollar,http://registry.it.csiro.au/def/qudt/1.1/qud
 LYD,libyan dinar,Libyan Dinar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LibyanDinar
 ly,light year,Light Year,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LightYear
 SZL,lilangeni,Lilangeni,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Lilangeni
+cup,us liquid cup,US Liquid Cup,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidCupUS
+oz,us liquid ounce,US Liquid Ounce,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidOunceUS
+pt,us liquid pint,US Liquid Pint,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidPintUS
+qt,us liquid quart,US Liquid Quart,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidQuartUS
 L,liter,Liter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Liter
 LTL,lithuanian litas,Lithuanian Litas,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LithuanianLitas
 LSL,loti,Loti,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Loti
@@ -423,10 +434,10 @@ MeV,mega electron volt,Mega Electron Volt,http://registry.it.csiro.au/def/qudt/1
 MeV fm,mega electron volt femtometer,Mega Electron Volt Femtometer,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegaElectronVoltFemtometer
 MeV/cm,mega electron volt per centimeter,Mega Electron Volt per Centimeter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegaElectronVoltPerCentimeter
 MeV/c,mega electron volt per speed of light,Mega Electron Volt per Speed of Light,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegaElectronVoltPerSpeedOfLight
+MHz,megahertz,Megahertz,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegaHertz
 MHz K^-1,mega hertz per kelvin,Mega Hertz per Kelvin,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegaHertzPerKelvin
 MHz T^-1,mega hertz per tesla,Mega Hertz per Tesla,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegaHertzPerTesla
 mbps,megabit per second,Megabit per Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegabitsPerSecond
-MHz,megahertz,Megahertz,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MegaHertz
 m,meter,Meter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Meter
 m K,meter kelvin,Meter Kelvin,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MeterKelvin
 K-m/W,meter kelvin per watt,Meter Kelvin per Watt,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MeterKelvinPerWatt
@@ -443,13 +454,13 @@ MXN,mexican peso,Mexican Peso,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit
 MXV,mexican unidad de inversion udi funds code,Mexican Unidad de Inversion (UDI) (Funds code),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MexicanUnidadDeInversion
 mho,mho,Mho,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Mho
 µ,micro,Micro,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Micro
-µtorr,micro torr,MicroTorr,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MicroTorr
 microF,microfarad,Microfarad,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MicroFarad
-microG,microgravity,Microgravity,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Microgravity
 microH,microhenry,Microhenry,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MicroHenry
 in^-6,microinch,Microinch,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MicroInch
-µm,micrometer,Micrometer,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Micrometer
 microsec,microsecond,Microsecond,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MicroSecond
+µtorr,micro torr,MicroTorr,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MicroTorr
+microG,microgravity,Microgravity,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Microgravity
+µm,micrometer,Micrometer,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Micrometer
 mil,mil angle nato,Mil Angle (NATO),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilAngle
 mil,mil length,Mil Length,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilLength
 mi,mile international standard,Mile - International Standard,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MileInternational
@@ -457,17 +468,17 @@ mi/hr,mile per hour,Mile per Hour,http://registry.it.csiro.au/def/qudt/1.1/qudt-
 mi/min,mile per minute,Mile per Minute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilePerMinute
 mi,mile us statute,Mile US Statute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MileUSStatute
 m,milli,Milli,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Milli
+milliH,millihenry,Millihenry,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilliHenry
+ms,millisecond,Millisecond,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilliSecond
 utorr,milli torr,MilliTorr,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilliTorr
 mbar,millibar,Millibar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Millibar
 mG,milligravity,Milligravity,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Milligravity
-milliH,millihenry,Millihenry,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilliHenry
 mm,millimeter,Millimeter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Millimeter
 mmHg,millimeter of mercury,Millimeter of Mercury,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MillimeterOfMercury
 mmHgA,millimeter of mercury absolute,Millimeter of Mercury - Absolute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MillimeterOfMercuryAbsolute
-Million USD,million us dollars,Million US Dollars,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MillionUSDollars
 M$/Flight,million us dollars per flight,Million US Dollars per Flight,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MillionDollarsPerFlight
 M$/yr,million us dollars per year,Million US Dollars per Year,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MillionDollarsPerYear
-ms,millisecond,Millisecond,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MilliSecond
+Million USD,million us dollars,Million US Dollars,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MillionUSDollars
 \,minute angle,Minute Angle,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MinuteAngle
 min,minute sidereal,Minute Sidereal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MinuteSidereal
 min,minute time,Minute Time,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/MinuteTime
@@ -505,13 +516,14 @@ NOK,norwegian krone,Norwegian Krone,http://registry.it.csiro.au/def/qudt/1.1/qud
 PEN,nuevo sol,Nuevo Sol,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/NuevoSol
 #,number,Number,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Number
 #/yr,number per year,Number per Year,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/NumberPerYear
-Cal,nutritional calorie,Nutritional Calorie,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CalorieNutritional
 Oe,oersted,Oersted,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Oersted
 Oe-cm,oersted centimeter,Oersted Centimeter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OerstedCentimeter
 ohm,ohm,Ohm,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Ohm
+OMR,rial omani,Rial Omani,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OmaniRial
 MRO,ouguiya,Ouguiya,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Ouguiya
 ozf,ounce force,Ounce Force,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OunceForce
 ozf-in,ounce force inch,Ounce Force Inch,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OunceForceInch
+oz,imperial ounce,Imperial Ounce,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OunceImperial
 ozm,ounce mass,Ounce Mass,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OunceMass
 oz/in^3,ounce per cubic inch,Ounce per Cubic Inch,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OuncePerCubicInch
 oz/gal,ounce per gallon,Ounce per Gallon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OuncePerGallon
@@ -529,23 +541,25 @@ P / s,pascal per second,Pascal per Second,http://registry.it.csiro.au/def/qudt/1
 Pa-s,pascal second,Pascal Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PascalSecond
 MOP,pataca,Pataca,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Pataca
 Pi,pebi,Pebi,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Pebi
+pk,us peck,US Peck,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Peck
 dwt,penny weight,Penny Weight,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PennyWeight
 m^-3,per cubic meter,Per Cubic Meter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerCubicMeter
-m^-1 K^-1,per meter kelvin unit,Per Meter Kelvin Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerMeterKelvin
 m^-1,per meter unit,Per Meter Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerMeter
+m^-1 K^-1,per meter kelvin unit,Per Meter Kelvin Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerMeterKelvin
 mol^-1,per mole unit,Per Mole Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerMole
+s^-1,inverse second,Inverse Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerSecond
 GeV^-2,per square giga electron volt unit,Per Square Giga Electron Volt Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerSquareGigaElectronVolt
 m^-1 T^-1,per tesla meter unit,Per Tesla Meter Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerTeslaMeter
 s^-1 T^-1,per tesla second unit,Per Tesla Second Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PerTeslaSecond
 %,percent,Percent,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Percent
 person,person,Person,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Person
-UYU,peso uruguayo,Peso Uruguayo,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UruguayPeso
 P,peta,Peta,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Peta
 PHP,philippine peso,Philippine Peso,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PhilippinePeso
 ph,phot,Phot,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Phot
 Pm,pica,Pica,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Pica
 p,pico,Pico,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Pico
 pF,picofarad,Picofarad,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PicoFarad
+pi,imperial pint,Imperial Pint,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PintImperial
 ,planck area,Planck Area,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PlanckArea
 Q_p,planck charge,Planck Charge,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PlanckCharge
 ,planck current,Planck Current,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/PlanckCurrent
@@ -618,7 +632,6 @@ rev/h,revolution per hour,Revolution per Hour,http://registry.it.csiro.au/def/qu
 rev/min,revolution per minute,Revolution per Minute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/RevolutionPerMinute
 rev/s,revolution per second,Revolution per Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/RevolutionPerSecond
 ,revolution per second squared,Revolution per Second Squared,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/RevolutionPerSecondSquared
-OMR,rial omani,Rial Omani,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/OmaniRial
 KHR,riel,Riel,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Riel
 rd,rod,Rod,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Rod
 R,roentgen,Roentgen,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Roentgen
@@ -631,14 +644,13 @@ SHP,saint helena pound,Saint Helena Pound,http://registry.it.csiro.au/def/qudt/1
 WST,samoan tala,Samoan Tala,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SamoanTala
 ,sample per second,Sample per second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SamplePerSecond
 SAR,saudi riyal,Saudi Riyal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SaudiRiyal
-s,second,Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SecondTime
 """",second angle,Second Angle,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SecondAngle
 s-ft^2,second square foot,Second Square Foot,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SecondSquareFoot
+s,second,Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SecondTime
 s^2,second time squared,Second Time Squared,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SecondTimeSquared
 RSD,serbian dinar,Serbian Dinar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SerbianDinar
 SCR,seychelles rupee,Seychelles Rupee,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SeychellesRupee
 Sh,shake,Shake,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Shake
-ton/hr,short ton per hour,Short Ton per Hour,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonShortPerHour
 S,siemens,Siemens,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Siemens
 Sv,sievert,Sievert,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Sievert
 XAG,silver one troy ounce,Silver (one Troy ounce),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Silver-OunceTroy
@@ -680,7 +692,6 @@ m^2-sr,square meter steradian,Square Meter Steradian,http://registry.it.csiro.au
 mi^2,square mile,Square Mile,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SquareMile
 yd^2,square yard,Square Yard,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SquareYard
 LKR,sri lanka rupee,Sri Lanka Rupee,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/SriLankaRupee
-atm,standard atmosphere,Standard Atmosphere,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/AtmosphereStandard
 statA,statampere,Statampere,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Statampere
 statA / cm^2,statampere per square centimeter,Statampere per Square Centimeter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/StatamperePerSquareCentimeter
 statC,statcoulomb,Statcoulomb,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Statcoulomb
@@ -707,7 +718,6 @@ tbsp,tablespoon,Tablespoon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Ta
 TZS,tanzanian shilling,Tanzanian Shilling,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TanzanianShilling
 tsp,teaspoon,Teaspoon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Teaspoon
 Ti,tebi,Tebi,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Tebi
-at,technical atmosphere,Technical Atmosphere,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/AtmosphereTechnical
 KZT,tenge,Tenge,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Tenge
 T,tera,Tera,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Tera
 T,tesla,Tesla,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Tesla
@@ -716,7 +726,6 @@ s T,tesla second,Tesla Second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit
 tex,tex,Tex,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Tex
 therm (EC),therm ec,Therm EC,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/ThermEEC
 therm (US),therm us,Therm US,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/ThermUS
-cal,thermochemical calorie,Thermochemical Calorie,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/CalorieThermochemical
 AT,ton assay,Ton Assay,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonAssay
 t/lbf,ton energy,Ton Energy,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonEnergy
 ton,ton long,Ton - Long,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonLong
@@ -726,35 +735,26 @@ toe,ton of oil equivalent,Ton of Oil Equivalent,http://registry.it.csiro.au/def/
 t/fg,ton of refrigeration,Ton of Refrigeration,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonOfRefrigeration
 ton,ton short,Ton - Short,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonShort
 ton/yd,ton short per cubic yard,Ton Short per Cubic Yard,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonShortPerCubicYard
+ton/hr,short ton per hour,Short Ton per Hour,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TonShortPerHour
 torr,torr,Torr,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Torr
 TTD,trinidad and tobago dollar,Trinidad and Tobago Dollar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TrinidadAndTobagoDollar
 MNT,tugrik,Tugrik,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Tugrik
 TND,tunisian dinar,Tunisian Dinar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/TunisianDinar
-UGX,uganda shilling,Uganda Shilling,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UgandaShilling
+AED,united arab emirates dirham,United Arab Emirates dirham,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UAEDirham
 XFU,uic franc special settlement currency,UIC franc (special settlement currency),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UICFranc
+USD,us dollar,US Dollar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/USDollar
+USN,united states dollar next day funds code,United States Dollar (next day) (funds code),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/USDollar-NextDay
+,united states dollar same day funds code,United States Dollar (same day) (funds code),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/USDollar-SameDay
+UGX,uganda shilling,Uganda Shilling,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UgandaShilling
 COU,unidad de valor real,Unidad de Valor Real,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UnidadDeValorReal
 CLF,unidades de formento funds code,Unidades de formento (Funds code),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UnidadesDeFormento
 u,unified atomic mass unit,Unified Atomic Mass Unit,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UnifiedAtomicMassUnit
 U/nWb,unit pole,Unit Pole,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UnitPole
-AED,united arab emirates dirham,United Arab Emirates dirham,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UAEDirham
-USN,united states dollar next day funds code,United States Dollar (next day) (funds code),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/USDollar-NextDay
-,united states dollar same day funds code,United States Dollar (same day) (funds code),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/USDollar-SameDay
 U,unitless,Unitless,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Unitless
-USD,us dollar,US Dollar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/USDollar
-dry_pt,us dry pint,US Dry Pint,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DryPintUS
-dry_qt,us dry quart,US Dry Quart,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/DryQuartUS
-gal,us gallon,US Gallon,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonUS
-gal/d,us gallon per day,US Gallon per Day,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonUSPerDay
-gal/min,us gallon per minute,US Gallon per Minute,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/GallonUSPerMinute
-cup,us liquid cup,US Liquid Cup,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidCupUS
-oz,us liquid ounce,US Liquid Ounce,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidOunceUS
-pt,us liquid pint,US Liquid Pint,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidPintUS
-qt,us liquid quart,US Liquid Quart,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/LiquidQuartUS
-pk,us peck,US Peck,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Peck
-ft,us survey foot,US Survey Foot,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/FootUSSurvey
+UYU,peso uruguayo,Peso Uruguayo,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UruguayPeso
 UZS,uzbekistan som,Uzbekistan Som,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/UzbekistanSom
 VUV,vatu,Vatu,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Vatu
-VEB,venezuelan bol�var,Venezuelan bol�var,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/VenezuelanBolvar
+VEB,venezuelan bolivar,Venezuelan bolivar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/VenezuelanBolvar
 ,video frame,Video Frame,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/VideoFrame
 VND,vietnamese ??ng,Vietnamese ??ng,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/VietnameseDong
 V,volt,Volt,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Volt
@@ -762,6 +762,8 @@ m V,volt meter,Volt Meter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Vol
 V m^-1,volt per meter,Volt per Meter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/VoltPerMeter
 V / sec,volt per second,Volt per second,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/VoltPerSecond
 V m^-2,volt per square meter,Volt per Square Meter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/VoltPerSquareMeter
+CHE,wir euro complementary currency,WIR Euro (complementary currency),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/WIREuro
+CHW,wir franc complementary currency,WIR Franc (complementary currency),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/WIRFranc
 W,watt,Watt,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Watt
 W/(m*K),watt per meter kelvin,Watt per Meter Kelvin,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/WattPerMeterKelvin
 W/cm^2,watt per square centimeter,Watt per Square Centimeter,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/WattPerSquareCentimeter
@@ -776,8 +778,6 @@ W m^2,watt square meter,Watt Square Meter,http://registry.it.csiro.au/def/qudt/1
 W m^2 sr^-1,watt square meter per steradian,Watt Square Meter per Steradian,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/WattSquareMeterPerSteradian
 W-hr,watthour,Watthour,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Watthour
 Wb,weber,Weber,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Weber
-CHE,wir euro complementary currency,WIR Euro (complementary currency),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/WIREuro
-CHW,wir franc complementary currency,WIR Franc (complementary currency),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/WIRFranc
 yd,yard,Yard,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Yard
 yr,year 365 day,Year (365 Day),http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Year365Day
 yr,year sidereal,Year Sidereal,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/YearSidereal
@@ -793,3 +793,8 @@ z,zepto,Zepto,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Zepto
 Z,zetta,Zetta,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Zetta
 ZWD,zimbabwe dollar,Zimbabwe Dollar,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/ZimbabweDollar
 PLN,zloty,Zloty,http://registry.it.csiro.au/def/qudt/1.1/qudt-unit/Zloty
+HPa,hectopascal,hectopascal,http://registry.it.csiro.au/sandbox/environment/unit/_HPa
+,megajoule per square meter,megajoule per square meter,
+umols-1m-2,micromole per second per square meter,Micromole per Second per Metre squared,http://registry.it.csiro.au/def/environment/unit/_MicroMolPerSecondPerMetreSquared
+mm/hr,millimeter per hour,Millimeter per Hour,http://registry.it.csiro.au/def/environment/unit/_MillimeterPerHour
+,okta,okta,

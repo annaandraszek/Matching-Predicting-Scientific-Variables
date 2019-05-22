@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to matching scientific variables using machine learning</h1>
+    <h1>Matching Scientific Variables using Machine Learning</h1>
     <form action = "http://localhost:5000/predict" method = "POST">
          <p id="variable">Enter variable:</p>
          <p><input type = "text" name = "var" /></p>
@@ -42,7 +42,10 @@
                                     {% endif %}
                                 {% endif %}
                             {% elif 'u' in dataframe[0] %}
-                                <a href="{{ value['url'] }}">{{ value['proper_name'] }} ({{ value['abbreviation']}})</a>
+                                {% if value['url'] %}
+                                    <a href="{{ value['url'] }}">
+                                        {% endif %}
+                                        {{ value['proper_name'] }} ({{ value['abbreviation']}})</a>
                             {% endif %}
                             </li>
                         {% endfor %}

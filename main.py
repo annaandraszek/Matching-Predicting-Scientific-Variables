@@ -206,6 +206,8 @@ if __name__ == '__main__':
 
     #resource_creation.create_display_files('proc_qudt-property.csv', 'qudt-property.csv', 'property')
     #resource_creation.create_display_files('proc_qudt-unit.csv', 'qudt-unit.csv', 'unit')
+    #resource_creation.extend_display_file('my_property.csv', 'property')
+    #resource_creation.extend_display_file('my_unit.csv', 'unit')
 
     # Train classifiers
     #nn_train('property_or_unit.csv')

@@ -198,6 +198,13 @@ def create_display_files(proc_file, qudt_file, type):
     merge_with_my(display_df, 'display_' + type, sorting_col='processed_name', native_col='processed_name')
 
 
+def extend_display_file(file, type):
+    display_df = pd.DataFrame()
+    file_df = pd.read_csv(file, usecols=['class'])
+    display_df['processed_name'] = file_df.loc[:,'class']
+    merge_with_my(display_df, 'display_' + type, sorting_col='url', native_col='processed_name')
+
+
 def add_to_user_training_set(user_property, user_unit, class_property, class_unit):
     user_str = user_property + ' (' + user_unit + ')'
     df = pd.DataFrame(columns=['native', 'property_class', 'unit_class'])
