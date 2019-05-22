@@ -4,27 +4,29 @@ import preprocessing
 import platform
 import language_processing
 import itertools
+import sys
 
 #Setting path to datasets - specific to user/pc
 if 'FIJI-DP' in platform.uname()[1]:
-    datasets_path = "C:/Users/AND522/Documents/Matching-Predicting-Scientific-Variables/raw datasets/"
+    datasets_path = "C:/Users/AND522/Documents/Matching-Predicting-Scientific-Variables/" #/raw datasets/"
 else:
-    datasets_path = "C:/Users/Anna/Documents/ml_approach/raw datasets/"
+    datasets_path = "C:/Users/Anna/Documents/ml_approach/" #/raw datasets/"
 
 
 # Creates a set of tokens (words) contained in a file
 # raw_file indicates whether to clean the file, save it, and create tokens, or only create tokens
 def create_reference(file, raw_file=True):
     path = 'raw datasets/'
+    #print(sys.path)
     if 'qudt-property' in file:
-        df = pd.read_csv(path+file, usecols=['rdfs:label'])
+        df = pd.read_csv(datasets_path + path +file, usecols=['rdfs:label'])
         col_to_tokenise = 'rdfs:label'
     elif 'qudt-unit' in file:
-        df = pd.read_csv(path+file, usecols=['rdfs:label', 'qudt:symbol', 'qudt:abbreviation'])
+        df = pd.read_csv(datasets_path + path +file, usecols=['rdfs:label', 'qudt:symbol', 'qudt:abbreviation'])
         col_to_tokenise = 'rdfs:label'
 
     else:
-        df = pd.read_csv(file)
+        df = pd.read_csv(datasets_path+file)
         col_to_tokenise = 'native'
 
     if raw_file:
@@ -32,7 +34,7 @@ def create_reference(file, raw_file=True):
             df = preprocessing.clean_table(df, has_properties=False, units='rdfs:label', has_units=True, has_abbreviations=True)
         if 'property' in file:
             df = preprocessing.clean_table(df, properties='rdfs:label') #, units='qudt:unit', has_units=True)
-        df.to_csv(path + 'proc_' + file, index=False)
+        df.to_csv(datasets_path + 'proc_' + file, index=False)
 
     tokens = preprocessing.tokenise_column_values(df[col_to_tokenise])
     if 'qudt' in file:

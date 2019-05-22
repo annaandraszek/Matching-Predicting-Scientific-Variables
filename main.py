@@ -4,6 +4,8 @@ from ml_keras import NeuralNetwork
 from machine_learning import Classifier
 import pandas as pd
 import numpy as np
+from IPython.display import display, HTML
+
 
 # Raw downloaded/created datasets which will have features (properties/units) extracted and used in the training set
 datasets = ['AIMS_NingalooReef_AirTemperature_WindSpeed(Scalaravg10min)_WindDirection(VectorA-edited.csv',
@@ -74,13 +76,13 @@ def segment_user_string(string):
         for i in range(num_segments):
             segment = [words[n] for n in range(i, i + window_size)]
             segments.append(segment)
-    print(segments)
+    #print(segments)
     labels, probabilities = app_binary_predict(segments)
-    print(labels, probabilities)
+    #print(labels, probabilities)
     property_words = []
     unit_words = []
     for i in range(len(labels)):
-        print(i, segments[i])
+        #print(i, segments[i])
         if labels[i] == 'property':
             if len(segments) == 1:
                 property_words.extend(segments[i])
@@ -99,7 +101,7 @@ def segment_user_string(string):
                     unit_words.extend(segments[i][1:])
                 else:
                     unit_words.extend(segments[i])
-    print(property_words, unit_words)
+    #print(property_words, unit_words)
     return " ".join(property_words), " ".join(unit_words)
 
 
@@ -145,18 +147,18 @@ def find_more_informative_result(results, t):
     ref_df = pd.read_csv('my_display_'+ t +'.csv')
     informative_results = pd.DataFrame()
     for result in results:
-        print(result)
+        #print(result)
         informative_results = informative_results.append(ref_df.loc[ref_df['processed_name'] == result[1]], ignore_index=True)
     return informative_results
 
 #Runs training on the Naive Bayes classifier
-def train_classifier():
+def train_classifier(print_report=False):
     global unit_model
     unit_model = Classifier()
-    unit_model.train('my_unit.csv', t='u')
+    unit_model.train('my_unit.csv', t='u', print_report=print_report)
     global property_model
     property_model = Classifier()
-    property_model.train('my_property.csv', t='p')
+    property_model.train('my_property.csv', t='p', print_report=print_report)
 
 
 def app_run_classifier(s, t, model, ranked=False):
@@ -179,13 +181,22 @@ def property_or_unit(s_tokens):
         return 1
 
 
-def user_input_loop():
+def user_input_loop(notebook=False):
     while True:
         s = str(input('Enter a string to predict:'))
         if s == 'xxx':
             return
         predictions = app_user_input(s)
-        print(predictions)
+        for result in predictions:
+            if not result[0]:
+                break
+            else:
+                if notebook:
+                    df = pd.DataFrame(result[1])
+                    display(HTML(df.to_html()))
+
+                else:
+                    print(result[1])
 
 if __name__ == '__main__':
     # Process the qudt files first if haven't already
@@ -212,7 +223,7 @@ if __name__ == '__main__':
 
     # Train classifiers
     #nn_train('property_or_unit.csv')
-    train_classifier()
+    #train_classifier()
 
     # Make predictions from user input
     app_load_models()
