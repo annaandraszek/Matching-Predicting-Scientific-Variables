@@ -1,8 +1,13 @@
 venv/
 __pycache__/
 .idea/
+.ipynb_checkpoints/
+reports/
+
 my_measurements - backup.csv
 my_units - backup.csv
+user_trainingset.csv
+
 raw datasets/not in use/
 raw datasets/models/
 raw datasets/AIMS*
