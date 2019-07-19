@@ -76,3 +76,12 @@ class TestProcessing(unittest.TestCase):
         inputs = ['wnd', 'wind', 'fahrenheit', 'farenheit', 'metre', 'meters']
         print([language_processing.fix_spelling(input) for input in inputs])
 
+
+class TestSegmentation(unittest.TestCase):
+
+    def test_segmentation(self):
+        main.app_load_models()
+        inputs = ["carbon concentration percent", "water hp metre", "water hp", "water depth", "water colour hp", "hp water", "water depth m"]
+
+        for input in inputs:
+            print(main.segment_user_string(input))

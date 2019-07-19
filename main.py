@@ -3,7 +3,6 @@ import resource_creation
 from ml_keras import NeuralNetwork
 from machine_learning import Classifier
 import pandas as pd
-import numpy as np
 from IPython.display import display, HTML
 
 
@@ -29,7 +28,6 @@ def nn_train(file):
 
 def nn_train_predict(file):
     global binary_model
-    #model = 'binary'
     binary_model = NeuralNetwork(file)
     binary_model.train()
     test_xs = ['wind', 'degree', 'horsepower', 'hp water', 'foot', 'concentration']
@@ -55,7 +53,6 @@ def app_load_models():
     global unit_model
     unit_model = Classifier()
     unit_model.load_model_and_classes('u')
-    #return binary_model, properties_model, units_model
 
 
 #Cleans up/pre-processes the raw qudt datasets and saves as files in only_qudt_datasets
@@ -65,7 +62,7 @@ def process_raw_qudt():
 
 
 def segment_user_string(string):
-    window_size = 1
+    window_size = 2
     words = string.split(sep=" ")
     num_segments = len(words) - (window_size-1)
     segments = []
@@ -76,19 +73,14 @@ def segment_user_string(string):
         for i in range(num_segments):
             segment = [words[n] for n in range(i, i + window_size)]
             segments.append(segment)
-    #print(segments)
     labels, probabilities = app_binary_predict(segments)
-    #print(labels, probabilities)
     property_words = []
     unit_words = []
     for i in range(len(labels)):
-        #print(i, segments[i])
         if labels[i] == 'property':
             if len(segments) == 1:
                 property_words.extend(segments[i])
             else:
-                #if property_words:
-                #    print(segments[i][0], property_words[-1])
                 if property_words and segments[i][0] == property_words[-1]:
                     property_words.extend(segments[i][1:])
                 else:
@@ -101,7 +93,6 @@ def segment_user_string(string):
                     unit_words.extend(segments[i][1:])
                 else:
                     unit_words.extend(segments[i])
-    #print(property_words, unit_words)
     return " ".join(property_words), " ".join(unit_words)
 
 
