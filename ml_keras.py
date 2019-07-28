@@ -4,6 +4,7 @@ from keras.optimizers import RMSprop
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing import sequence
 from keras.models import load_model
+import tensorflow as tf
 import joblib
 
 from sklearn.model_selection import train_test_split
