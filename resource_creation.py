@@ -5,12 +5,14 @@ import platform
 import language_processing
 import itertools
 import sys
+import os
 
 #Setting path to datasets - specific to user/pc
-if 'FIJI-DP' in platform.uname()[1]:
-    datasets_path = "C:/Users/AND522/Documents/Matching-Predicting-Scientific-Variables/" #/raw datasets/"
-else:
-    datasets_path = "C:/Users/Anna/Documents/Matching-Predicting-Scientific-Variables/" #/raw datasets/"
+# if 'FIJI-DP' in platform.uname()[1]:
+#     datasets_path = "C:/Users/AND522/Documents/Matching-Predicting-Scientific-Variables/" #/raw datasets/"
+# else:
+#     datasets_path = "C:/Users/Anna/Documents/Matching-Predicting-Scientific-Variables/" #/raw datasets/"
+datasets_path = os.getcwd() + '/'
 
 
 # Creates a set of tokens (words) contained in a file

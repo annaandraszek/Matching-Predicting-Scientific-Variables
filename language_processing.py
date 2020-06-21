@@ -6,7 +6,7 @@ from nltk.corpus import stopwords
 from nltk.corpus import wordnet
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
-from pattern.en import suggest
+#from pattern.en import suggest
 
 def tokenise(string):
     return nltk.word_tokenize(string)

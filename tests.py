@@ -72,9 +72,9 @@ class TestProcessing(unittest.TestCase):
         print([language_processing.find_lemma(input) for input in inputs])
 
 
-    def test_fix_spelling(self):
-        inputs = ['wnd', 'wind', 'fahrenheit', 'farenheit', 'metre', 'meters']
-        print([language_processing.fix_spelling(input) for input in inputs])
+    # def test_fix_spelling(self):
+    #     inputs = ['wnd', 'wind', 'fahrenheit', 'farenheit', 'metre', 'meters']
+    #     print([language_processing.fix_spelling(input) for input in inputs])
 
 
 class TestSegmentation(unittest.TestCase):
