@@ -1,0 +1,26 @@
+string,source
+Air temperature 4m above ground level (degrees Celsius),http://aws.acecrc.org.au/BrownGl.html
+Air temperature 2m above ground level (degrees Celsius),http://aws.acecrc.org.au/BrownGl.html
+Relative humidity 4m above ground level (percent),http://aws.acecrc.org.au/BrownGl.html
+Temperature inside AWS electronics box (degrees Celsius),http://aws.acecrc.org.au/BrownGl.html
+Daily cumulative global radiation (downward shortwave) since local midnight (MJ per square metre),http://aws.acecrc.org.au/BrownGl.html
+One hour mean wind speed 4m above ground level (m/s),http://aws.acecrc.org.au/BrownGl.html
+Hourly vector-average wind speed 4m above ground level (m/s),http://aws.acecrc.org.au/BrownGl.html
+Hourly vector-average wind direction 4m above ground level (degrees from north),http://aws.acecrc.org.au/BrownGl.html
+Subsurface temperature 10cm below ground level (degrees Celsius),http://aws.acecrc.org.au/A028.html
+Subsurface temperature 1m below ground level (degrees Celsius),http://aws.acecrc.org.au/AM01.html
+Subsurface temperature 3m below ground level (degrees Celsius),http://aws.acecrc.org.au/AM01.html
+Subsurface temperature 10m below ground level (degrees Celsius),http://aws.acecrc.org.au/AM01.html
+One hour mean wind speed 2m above ground level (m/s),http://aws.acecrc.org.au/AM01.html
+Nett snow accumulation since station installation (m),http://aws.acecrc.org.au/AM01.html
+One hour wind speed peak 4m above ground level (m/s),http://aws.acecrc.org.au/B9Biceberg.html
+One hour mean wind direction 4m above ground level (degrees from north),http://aws.acecrc.org.au/B9Biceberg.html
+Air temperature 1m above ground level (degrees Celsius),http://aws.acecrc.org.au/DomeA.html
+Hourly vector-average wind speed (m/s),http://aws.acecrc.org.au/Lanyon-A.html
+Subsurface temperature 7m below ground level (degrees Celsius),http://aws.acecrc.org.au/MtBrown.html
+One hour mean wind speed 1m above ground level (m/s),http://aws.acecrc.org.au/MtBrown.html
+Air temperature 2m above ground level (degrees Celsius),http://aws.acecrc.org.au/Ranvik.html
+Maximum wind gust in ten minute period prior to observation time at 4m (m/s),http://aws.acecrc.org.au/Ranvik.html
+Maximum wind gust in one hour period prior to observation time at 4m (m/s),http://aws.acecrc.org.au/Ranvik.html
+Maximum wind gust in ten minute period prior to observation time at 2m (m/s),http://aws.acecrc.org.au/Ranvik.html
+Maximum wind gust in one hour period prior to observation time at 2m (m/s),http://aws.acecrc.org.au/Ranvik.html

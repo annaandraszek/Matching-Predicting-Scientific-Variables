@@ -1,0 +1,504 @@
+class,native
+1 1 1 2 tetrachloroethane concentration,1 1 1 2 tetrachloroethane concentration
+1 1 1 trichloroethane concentration,1 1 1 trichloroethane concentration
+1 1 2 2 tetrachloroethane concentration,1 1 2 2 tetrachloroethane concentration
+1 1 2 trichloroethane concentration,1 1 2 trichloroethane concentration
+1 1 dichloro 1 propene concentration,1 1 dichloro 1 propene concentration
+1 1 dichloroethane concentration,1 1 dichloroethane concentration
+1 1 dichloroethene concentration,1 1 dichloroethene concentration
+1 2 3 trichlorobenzene concentration,1 2 3 trichlorobenzene concentration
+1 2 3 trichloropropane concentration,1 2 3 trichloropropane concentration
+1 2 4 trichlorobenzene concentration,1 2 4 trichlorobenzene concentration
+1 2 4 trimethylbenzene concentration,1 2 4 trimethylbenzene concentration
+1 2 dibromo 3 chloropropane concentration,1 2 dibromo 3 chloropropane concentration
+1 2 dibromoethane concentration,1 2 dibromoethane concentration
+1 2 dichlorobenzene concentration,1 2 dichlorobenzene concentration
+1 2 dichloroethane concentration,1 2 dichloroethane concentration
+1 2 dichloroethane d4 concentration,1 2 dichloroethane d4 concentration
+1 2 dichloropropane concentration,1 2 dichloropropane concentration
+1 2 dihydroacenaphthylene concentration,1 2 dihydroacenaphthylene concentration
+1 3 1 4 dimethylbenzene concentration,1 3 1 4 dimethylbenzene concentration
+1 3 5 trimethylbenzene concentration,1 3 5 trimethylbenzene concentration
+1 3 dichlorobenzene concentration,1 3 dichlorobenzene concentration
+1 3 dichloropropane concentration,1 3 dichloropropane concentration
+1 4 dichlorobenzene concentration,1 4 dichlorobenzene concentration
+1 bromo 4 fluorobenzene concentration,1 bromo 4 fluorobenzene concentration
+1 chloro 2 methylbenzene concentration,1 chloro 2 methylbenzene concentration
+1 chloro 4 methylbenzene concentration,1 chloro 4 methylbenzene concentration
+1 phenylbutane concentration,1 phenylbutane concentration
+2 2 dichloropropane concentration,2 2 dichloropropane concentration
+2 2 dimethylpropane concentration,2 2 dimethylpropane concentration
+2 4 5 trichlorophenol concentration,2 4 5 trichlorophenol concentration
+2 4 6 tribromophenol concentration,2 4 6 tribromophenol concentration
+2 4 6 trichlorophenol concentration,2 4 6 trichlorophenol concentration
+2 4 dichlorophenol concentration,2 4 dichlorophenol concentration
+2 4 dimethylphenol concentration,2 4 dimethylphenol concentration
+2 6 dichlorophenol concentration,2 6 dichlorophenol concentration
+2 chlorophenol 3 4 5 6 d4 concentration,2 chlorophenol 3 4 5 6 d4 concentration
+2 chlorophenol concentration,2 chlorophenol concentration
+2 fluorobiphenyl concentration,2 fluorobiphenyl concentration
+2 methoxy 2 methylpropane concentration,2 methoxy 2 methylpropane concentration
+2 methylphenol concentration,2 methylphenol concentration
+2 nitrophenol concentration,2 nitrophenol concentration
+20 day biochemical oxygen demand,20 day biochemical oxygen demand
+20 day nitrogenous biochemical oxygen demand,20 day nitrogenous biochemical oxygen demand
+36cl cl ratio,36cl cl ratio
+4 chloro 3 methylphenol concentration,4 chloro 3 methylphenol concentration
+4 isopropyltoluene concentration,4 isopropyltoluene concentration
+4 methylpentan 2 one concentration,4 methylpentan 2 one concentration
+4 terphenyl d14 concentration,4 terphenyl d14 concentration
+5 day biochemical oxygen demand,5 day biochemical oxygen demand
+5 day carbonaceous biochemical oxygen demand,5 day carbonaceous biochemical oxygen demand
+5 day nitrogenous biochemical oxygen demand,5 day nitrogenous biochemical oxygen demand
+absorption by colored dissolved organic matter,absorption by colored dissolved organic matter
+absorption by coloured and detrital matter,absorption by coloured and detrital matter
+absorption by non algal particles,absorption by non algal particles
+absorption by particles,absorption by particles
+absorption by phytoplankton,absorption by phytoplankton
+acenaphthylene concentration,acenaphthylene concentration
+actinide concentration,actinide concentration
+active sediment layer thickness,active sediment layer thickness
+air pressure,air pressure
+air temperature,3pm temperature
+air temperature,air temperature
+air temperature,9am temperature
+air temperature,air temperature 4m above ground level
+air temperature,air temperature 1m above ground level
+air temperature,minimum temperature
+air temperature,air temperature 2m above ground level
+air temperature,temperature inside aws electronics box
+air temperature,temperature
+air temperature,maximum temperature
+albuminoid nitrogen concentration,albuminoid nitrogen concentration
+aldrin concentration,aldrin concentration
+alkali metal concentration,alkali metal concentration
+alkaline earth metal concentration,alkaline earth metal concentration
+alpha endosulfan concentration,alpha endosulfan concentration
+alpha hexachlorocyclohexane concentration,alpha hexachlorocyclohexane concentration
+aluminium concentration,aluminium concentration
+ammonia and ammonium as n concentration,ammonia and ammonium as n concentration
+ammonia and ammonium as nh4 concentration,ammonia and ammonium as nh4 concentration
+ammonia and ammonium concentration,ammonia and ammonium concentration
+ammonia as n concentration,ammonia as n concentration
+ammonia concentration,ammonia concentration
+ammonium as n concentration,ammonium as n concentration
+ammonium nh4 concentration,ammonium nh4 concentration
+anion concentration,anion concentration
+anthracene concentration,anthracene concentration
+anthracene d10 concentration,anthracene d10 concentration
+antimony concentration,antimony concentration
+arsenic concentration,arsenic concentration
+attenuation coefficient with depth,attenuation coefficient with depth
+backscatter by non algal particles,backscatter by non algal particles
+backscatter by particles,backscatter by particles
+backscatter by phytoplankton,backscatter by phytoplankton
+bacteria total plate count,bacteria total plate count
+barium concentration,barium concentration
+barometric pressure,barometric pressure
+benzaanthracene concentration,benzaanthracene concentration
+benzene  toluene  ethylbenzene  xylene concentration,benzene  toluene  ethylbenzene  xylene concentration
+benzene concentration,benzene concentration
+benzoapyrene concentration,benzoapyrene concentration
+benzobfluoranthene concentration,benzobfluoranthene concentration
+benzoghiperylene concentration,benzoghiperylene concentration
+benzokfluoranthene concentration,benzokfluoranthene concentration
+beryllium concentration,beryllium concentration
+beta endosulfan concentration,beta endosulfan concentration
+bicarbonate alkalinity as caco3,bicarbonate alkalinity as caco3
+bicarbonate concentration,bicarbonate concentration
+biochemical oxygen demand,biochemical oxygen demand
+bismuth concentration,bismuth concentration
+boron concentration,boron concentration
+bromide concentration,bromide concentration
+bromine concentration,bromine concentration
+bromobenzene concentration,bromobenzene concentration
+bromochloromethane concentration,bromochloromethane concentration
+bromodichloromethane concentration,bromodichloromethane concentration
+bromomethane concentration,bromomethane concentration
+bromophos ethyl concentration,bromophos ethyl concentration
+butane concentration,butane concentration
+butanone concentration,butanone concentration
+,
+,
+c10 c14 hydrocarbon fraction concentration,c10 c14 hydrocarbon fraction concentration
+c10 c236 hydrocarbon fraction concentration,c10 c236 hydrocarbon fraction concentration
+,
+c15 c28 hydrocarbon fraction concentration,c15 c28 hydrocarbon fraction concentration
+,
+c29 c36 hydrocarbon fraction concentration,c29 c36 hydrocarbon fraction concentration
+,
+c6 c9 hydrocarbon fraction concentration,c6 c9 hydrocarbon fraction concentration
+cadmium concentration,cadmium concentration
+caesium concentration,caesium concentration
+calcium carbonate concentration,calcium carbonate concentration
+calcium concentration,calcium concentration
+,
+,
+,
+,
+,
+,
+,
+,
+carbon 13 concentration,carbon 13 concentration
+carbon 14 concentration,carbon 14 concentration
+carbon average content,carbon average content
+carbon concentration,carbon concentration
+carbon dioxide flux,carbon dioxide flux
+carbon dioxide storage flux,carbon dioxide storage flux
+carbon dissolved inorganic concentration,carbon dissolved inorganic concentration
+carbon dissolved organic concentration,carbon dissolved organic concentration
+carbon disulfide concentration,carbon disulfide concentration
+carbon inorganic concentration,carbon inorganic concentration
+carbon monoxide concentration,carbon monoxide concentration
+carbon organic concentration,carbon organic concentration
+carbon suspended inorganic concentration,carbon suspended inorganic concentration
+carbon suspended organic concentration,carbon suspended organic concentration
+carbon suspended total,carbon suspended total
+carbonaceous biochemical oxygen demand,carbonaceous biochemical oxygen demand
+carbonate alkalinity as caco3,carbonate alkalinity as caco3
+carbonate concentration,carbonate concentration
+cation concentration,cation concentration
+cerium concentration,cerium concentration
+chemical compound concentration,chemical compound concentration
+chemical entity concentration,chemical entity concentration
+chemical oxygen demand,chemical oxygen demand
+chlordane concentration,chlordane concentration
+chloride concentration,chloride concentration
+chlorinated volatile organic compound concentration,chlorinated volatile organic compound concentration
+chlorine 36 concentration,chlorine 36 concentration
+chlorine concentration,chlorine concentration
+chlorobenzene concentration,chlorobenzene concentration
+chloroethane concentration,chloroethane concentration
+chloroethene concentration,chloroethene concentration
+chloroform concentration,chloroform concentration
+chloromethane concentration,chloromethane concentration
+chlorophenylmethane concentration,chlorophenylmethane concentration
+chlorophyll a concentration,chlorophyll a concentration
+chlorophyll b concentration,chlorophyll b concentration
+chlorophyll c concentration,chlorophyll c concentration
+chlorophyll concentration,chlorophyll concentration
+chlorpyrifos concentration,chlorpyrifos concentration
+chromium  hexavalent concentration,chromium  hexavalent concentration
+chromium  trivalent concentration,chromium  trivalent concentration
+chromium concentration,chromium concentration
+chrysene concentration,chrysene concentration
+cis 1 2 dichloroethene concentration,cis 1 2 dichloroethene concentration
+cis 1 3 dichloropropene concentration,cis 1 3 dichloropropene concentration
+cis 1 4 dichloro 2 butene concentration,cis 1 4 dichloro 2 butene concentration
+clay fraction,clay fraction
+cloud amount,3pm cloud amount
+cloud amount,9am cloud amount
+cobalt concentration,cobalt concentration
+coliform concentration,coliform concentration
+copper concentration,copper concentration
+crocodile concentration,crocodile concentration
+degree heating days,degree heating days
+deuterium concentration,deuterium concentration
+dew point temperature,dew point temperature
+dew point temperature,dew point
+dibenza hanthracene concentration,dibenza hanthracene concentration
+dibromochloromethane concentration,dibromochloromethane concentration
+dibromomethane concentration,dibromomethane concentration
+dichlorodifluoromethane concentration,dichlorodifluoromethane concentration
+dichlorodiphenyldichloroethane concentration,dichlorodiphenyldichloroethane concentration
+dichlorodiphenyldichloroethylene concentration,dichlorodiphenyldichloroethylene concentration
+dichlorodiphenyltrichloroethane concentration,dichlorodiphenyltrichloroethane concentration
+dichloromethane concentration,dichloromethane concentration
+dieldrin concentration,dieldrin concentration
+discharge,discharge
+dissolved inorganic phosphorus concentration,dissolved inorganic phosphorus concentration
+dissolved nitrogen concentration,dissolved nitrogen concentration
+dissolved organic matter,dissolved organic matter
+dissolved organic phosphorus concentration,dissolved organic phosphorus concentration
+dissolved oxygen concentration,dissolved oxygen concentration
+dissolved volatile solids,dissolved volatile solids
+dysprosium concentration,dysprosium concentration
+eastward sea water current,eastward sea water current
+electrical conductivity of water,electrical conductivity of water
+endosulfan concentration,endosulfan concentration
+endrin concentration,endrin concentration
+erbium concentration,erbium concentration
+escherichia coli count,escherichia coli count
+estuarine crocodile concentration,estuarine crocodile concentration
+ethane concentration,ethane concentration
+ethenyl acetate concentration,ethenyl acetate concentration
+ethion concentration,ethion concentration
+ethyl acetate concentration,ethyl acetate concentration
+ethylbenzene concentration,ethylbenzene concentration
+europium concentration,europium concentration
+evaporation,evaporation
+faecal coliform concentration,faecal coliform concentration
+faecal streptococci concentration,faecal streptococci concentration
+figure of merit ratio,figure of merit ratio
+filterable reactive phosphate as p concentration,filterable reactive phosphate as p concentration
+fine total suspended solids,fine total suspended solids
+fixed dissolved solids,fixed dissolved solids
+fixed suspended solids,fixed suspended solids
+fluoranthene concentration,fluoranthene concentration
+fluorene concentration,fluorene concentration
+fluoride concentration,fluoride concentration
+fluorine concentration,fluorine concentration
+formaldehyde concentration,formaldehyde concentration
+gadolinium concentration,gadolinium concentration
+gallium concentration,gallium concentration
+gamma hexachlorocyclohexane concentration,gamma hexachlorocyclohexane concentration
+global radiation,global radiation
+global radiation,daily cumulative global radiation downward shortwave since local midnight
+hafnium concentration,hafnium concentration
+halide concentration,halide concentration
+haloalkane concentration,haloalkane concentration
+halocarbon concentration,halocarbon concentration
+halogen concentration,halogen concentration
+helium concentration,helium concentration
+heptachlor concentration,heptachlor concentration
+heptachlor epoxide concentration,heptachlor epoxide concentration
+hexachlorobenzene concentration,hexachlorobenzene concentration
+hexachlorobutadiene concentration,hexachlorobutadiene concentration
+hexan 2 one concentration,hexan 2 one concentration
+hexane concentration,hexane concentration
+holmium concentration,holmium concentration
+hours of sunlight,sunshine
+hours of sunlight,hours of sunlight
+hours of sunlight,sunlight
+hydrocarbon concentration,hydrocarbon concentration
+hydrogen sulfide concentration,hydrogen sulfide concentration
+hydroxide alkalinity as caco3,hydroxide alkalinity as caco3
+immobilised particulate inorganic phosphorus concentration,immobilised particulate inorganic phosphorus concentration
+indeno1 2 3 c dpyrene concentration,indeno1 2 3 c dpyrene concentration
+indium concentration,indium concentration
+inorganic nitrogen concentration,inorganic nitrogen concentration
+inorganic phosphorus concentration,inorganic phosphorus concentration
+iodide concentration,iodide concentration
+iodine concentration,iodine concentration
+iodomethane concentration,iodomethane concentration
+iron concentration,iron concentration
+iron ii concentration,iron ii concentration
+iron iii concentration,iron iii concentration
+iron sulfide concentration or iron sulphide concentration,iron sulfide concentration or iron sulphide concentration
+isobutane concentration,isobutane concentration
+isopentane concentration,isopentane concentration
+isopropylbenzene concentration,isopropylbenzene concentration
+johnston\s crocodile concentration,johnston\s crocodile concentration
+lanthanide concentration,lanthanide concentration
+lanthanum concentration,lanthanum concentration
+lead concentration,lead concentration
+lithium concentration,lithium concentration
+lutetium concentration,lutetium concentration
+magnesium concentration,magnesium concentration
+manganese concentration,manganese concentration
+maximum wind gust,maximum wind gust in ten minute period prior to observation time at 2m
+maximum wind gust,maximum wind gust in one hour period prior to observation time at 2m
+maximum wind gust,time of maximum wind gust
+maximum wind gust,direction of maximum wind gust
+maximum wind gust,maximum wind gust in ten minute period prior to observation time at 4m
+maximum wind gust,maximum wind gust in one hour period prior to observation time at 4m
+maximum wind gust,speed of maximum wind gust
+mercury concentration,mercury concentration
+metal concentration,metal concentration
+metalloid concentration,metalloid concentration
+methane concentration,methane concentration
+methoxychlor concentration,methoxychlor concentration
+molybdenum concentration,molybdenum concentration
+monocyclic aromatic hydrocarbon concentration,monocyclic aromatic hydrocarbon concentration
+monomethylmercuryii cation concentration,monomethylmercuryii cation concentration
+msl pressure,9am msl pressure
+msl pressure,3pm msl pressure
+msl pressure,mean sea level pressure
+n butane concentration,n butane concentration
+naphthalene concentration,naphthalene concentration
+neodymium concentration,neodymium concentration
+nickel concentration,nickel concentration
+nitrate and nitrite n concentration,nitrate and nitrite n concentration
+nitrate n concentration,nitrate n concentration
+nitrite n concentration,nitrite n concentration
+nitrogen concentration,nitrogen concentration
+,
+nitrogen concentration kjeldahl method,nitrogen concentration kjeldahl method
+nitrogen oxides concentration,nitrogen oxides concentration
+nitrogenous biochemical oxygen demand,nitrogenous biochemical oxygen demand
+noble gas concentration,noble gas concentration
+non carbonate hardness,non carbonate hardness
+non metal concentration,non metal concentration
+northward sea water current,northward sea water current
+nutrient concentration,nutrient concentration
+organic compound concentration,organic compound concentration
+organic nitrogen concentration,organic nitrogen concentration
+organic phosphorus concentration,organic phosphorus concentration
+organic sulphur concentration or organic sulfur concentration,organic sulphur concentration or organic sulfur concentration
+organochlorine concentration,organochlorine concentration
+organochlorine pesticide concentration,organochlorine pesticide concentration
+organophosphate concentration,organophosphate concentration
+organophosphate pesticide concentration,organophosphate pesticide concentration
+orthophosphate as p concentration,orthophosphate as p concentration
+orthophosphate as po4 concentration,orthophosphate as po4 concentration
+orthophosphate concentration,orthophosphate concentration
+oxygen 18 concentration,oxygen 18 concentration
+oxygen concentration,oxygen concentration
+par,photosynthetically active radiation
+par,par
+particulate inorganic phosphorus concentration,particulate inorganic phosphorus concentration
+pentachloroethane concentration,pentachloroethane concentration
+pentachlorophenol concentration,pentachlorophenol concentration
+pentane concentration,pentane concentration
+pesticide concentration,pesticide concentration
+petroleum hydrocarbon concentration,petroleum hydrocarbon concentration
+ph,ph
+phenanthrene concentration,phenanthrene concentration
+phenol concentration,phenol concentration
+phenol d6 concentration,phenol d6 concentration
+phosphate as p concentration,phosphate as p concentration
+phosphate concentration,phosphate concentration
+phosphorus concentration,phosphorus concentration
+photosynthetic photon flux,photosynthetic photon flux
+polyatomic ion concentration,polyatomic ion concentration
+polycyclic aromatic hydrocarbon concentration,polycyclic aromatic hydrocarbon concentration
+polyphosphate as po4 concentration,polyphosphate as po4 concentration
+post transition metal concentration,post transition metal concentration
+potassium concentration,potassium concentration
+practical salinity,practical salinity
+praseodymium concentration,praseodymium concentration
+propane concentration,propane concentration
+propylbenzene concentration,propylbenzene concentration
+purgeable halocarbon concentration,purgeable halocarbon concentration
+pyrene concentration,pyrene concentration
+pyrite  concentration,pyrite  concentration
+radon 220 concentration,radon 220 concentration
+radon 222 concentration,radon 222 concentration
+radon 226 concentration,radon 226 concentration
+radon concentration,radon concentration
+rain accumulation,rain accumulation
+rain duration,rain duration
+rain intensity,rain intensity
+rainfall,rainfall
+rare earth element concentration,rare earth element concentration
+relative humidity,relative humidity
+relative humidity,humidity
+relative humidity,relative humidity 4m above ground level
+relative humidity,9am relative humidity
+relative humidity,3pm relative humidity
+residual alkalinity hazard,residual alkalinity hazard
+rubidium concentration,rubidium concentration
+samarium concentration,samarium concentration
+sand fraction,sand fraction
+sea surface elevation,sea surface elevation
+sea water density,sea water density
+sea water potential density,sea water potential density
+sea water temperature,sea water temperature
+sec butylbenzene concentration,sec butylbenzene concentration
+secchi depth   turbidity,secchi depth   turbidity
+secchi depth turbidity,secchi depth turbidity
+selenium concentration,selenium concentration
+semi volatile organic compound concentration,semi volatile organic compound concentration
+silicate as si concentration,silicate as si concentration
+silicate as sio2 concentration,silicate as sio2 concentration
+silicon concentration,silicon concentration
+silicon dioxide concentration,silicon dioxide concentration
+silt fraction,silt fraction
+silver concentration,silver concentration
+snow accumulation,nett snow accumulation since station installation
+sodium concentration,sodium concentration
+streptococcus concentration,streptococcus concentration
+strontium concentration,strontium concentration
+styrene concentration,styrene concentration
+subsurface temperature,subsurface temperature 7m below ground level
+subsurface temperature,subsurface temperature 10cm below ground level
+subsurface temperature,subsurface temperature 3m below ground level
+subsurface temperature,subsurface temperature 1m below ground level
+subsurface temperature,subsurface temperature 10m below ground level
+subsurface temperature,soil temperature
+sulfate as s concentration,sulfate as s concentration
+sulfide concentration or sulphide concentration,sulfide concentration or sulphide concentration
+sulfite as s concentration or sulphite as s concentration,sulfite as s concentration or sulphite as s concentration
+sulfite concentration or sulphite concentration,sulfite concentration or sulphite concentration
+sulphate concentration or sulfate concentration,sulphate concentration or sulfate concentration
+sulphide as s concentration or sulfide as s concentration,sulphide as s concentration or sulfide as s concentration
+sulphur concentration or sulfur concentration,sulphur concentration or sulfur concentration
+sulphur dioxide concentration or sulfur dioxide concentration,sulphur dioxide concentration or sulfur dioxide concentration
+suspended volatile solids,suspended volatile solids
+tellurium concentration,tellurium concentration
+terbium concentration,terbium concentration
+tert butylbenzene concentration,tert butylbenzene concentration
+tetrachloroethene concentration,tetrachloroethene concentration
+tetrachloromethane concentration,tetrachloromethane concentration
+thallium concentration,thallium concentration
+thorium concentration,thorium concentration
+thulium concentration,thulium concentration
+tin concentration,tin concentration
+titanium concentration,titanium concentration
+toluene concentration,toluene concentration
+toluene d8 concentration,toluene d8 concentration
+total absorption,total absorption
+total alkalinity as caco3,total alkalinity as caco3
+total bacteria,total bacteria
+total dissolved carbon dioxide concentration,total dissolved carbon dioxide concentration
+total dissolved ions,total dissolved ions
+total dissolved solids,total dissolved solids
+total fixed solids,total fixed solids
+total hardness as caco3,total hardness as caco3
+total sediment thickness,total sediment thickness
+total solids,total solids
+total suspended solids,total suspended solids
+total volatile solids,total volatile solids
+trans 1 2 dichloroethene concentration,trans 1 2 dichloroethene concentration
+trans 1 3 dichloropropene concentration,trans 1 3 dichloropropene concentration
+trans 1 4 dichloro 2 butene concentration,trans 1 4 dichloro 2 butene concentration
+transition metal concentration,transition metal concentration
+tribromomethane concentration,tribromomethane concentration
+trichlorobenzene concentration,trichlorobenzene concentration
+trichloroethene concentration,trichloroethene concentration
+trichlorofluoromethane concentration,trichlorofluoromethane concentration
+tricresol concentration,tricresol concentration
+trihalomethane concentration,trihalomethane concentration
+tritium concentration,tritium concentration
+tsr,total solar radiation
+tsr,tsr
+upward sea water current,upward sea water current
+uranium concentration,uranium concentration
+vanadium concentration,vanadium concentration
+volatile organic compound concentration,volatile organic compound concentration
+water colour,water color
+water colour,water colour
+water density,water density
+water electrical conductivity @ 25c,water electrical conductivity @ 25c
+water ph,water ph
+water reduction potential,water reduction potential
+water sodium adsorption ratio,water sodium adsorption ratio
+water temperature,water temperature
+water turbidity,water turbidity
+wind direction,wind direction scalar standard 30 minutes
+wind direction,one hour mean wind direction 4m above ground level
+wind direction,9am wind direction
+wind direction,wind direction scalar average 30 minutes
+wind direction,hourly vector average wind direction 4m above ground level
+wind direction,wind direction scalar standard 10 minutes
+wind direction,wind direction scalar average 10 minutes
+wind direction,wind direction vector standard 30 minutes
+wind direction,3pm wind direction
+wind direction,wind direction vector average 10 minutes
+wind direction,wind direction vector average 30 minutes
+wind direction,wind direction
+wind direction,wind direction vector standard 10 minutes
+wind speed,one hour mean wind speed 2m above ground level
+wind speed,maximum wind speed 10 minutes
+wind speed,hourly vector average wind speed
+wind speed,hourly vector average wind speed 4m above ground level
+wind speed,minimum wind speed 30 minutes
+wind speed,3pm wind speed
+wind speed,one hour mean wind speed 1m above ground level
+wind speed,one hour wind speed peak 4m above ground level
+wind speed,wind speed scalar avg 10 min
+wind speed,wind speed scalar avg 30 min
+wind speed,minimum wind speed 10 minutes
+wind speed,wind speed
+wind speed,9am wind speed
+wind speed,maximum wind speed 30 minutes
+wind speed,one hour mean wind speed 4m above ground level
+wind velocity,wind vector e / w
+wind velocity,wind velocity
+wind velocity,wind vector n / s
+xylene concentration,xylene concentration
+ytterbium concentration,ytterbium concentration
+yttrium concentration,yttrium concentration
+zinc concentration,zinc concentration
+zirconium concentration,zirconium concentration

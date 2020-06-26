@@ -1,0 +1,29 @@
+version: '3'  # latest version of docker
+services:
+    matching-variables:
+        build: ./backend
+        volumes: 
+            - ./backend:/app
+        ports:
+            - 5001:5001
+        container_name: mv-server
+    website:
+        #image: nginx:alpine
+        build: ./frontend
+        volumes:
+            - ./frontend:/app
+        ports:
+            - 5000:5000
+        depends_on:
+            - matching-variables
+        container_name: mv-client
+            
+#stuff previously specified in the docker run command
+#use flask_restful api?
+
+#in tutorial, explains that instead of me using http://localhost,
+#to talk between containers use the container name there instead
+#and the docker compose file will know what that's referring to
+
+#don't ahve to make a dockerfile for the next container, as convenient
+#to do this in hte compose instead
