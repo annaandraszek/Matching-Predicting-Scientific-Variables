@@ -15,3 +15,5 @@ The vocabulary terms include observable properties and units, most of which can 
 This implementation uses docker containers. 
 
 Install Docker and execute: <code>  docker-compose up </code>
+
+Once both containers are running, the app can be accessed at http://localhost:5000.
