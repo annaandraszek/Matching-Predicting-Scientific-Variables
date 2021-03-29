@@ -42,7 +42,7 @@ portend==2.4
 prompt-toolkit==2.0.9
 protobuf==3.7.1
 pycryptodome==3.8.1
-Pygments==2.4.0
+Pygments==2.7.4
 python-dateutil==2.8.0
 python-docx==0.8.10
 pytz==2019.1
