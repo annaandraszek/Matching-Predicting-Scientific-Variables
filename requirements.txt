@@ -56,7 +56,7 @@ sortedcontainers==2.1.0
 StringDist==1.0.9
 tempora==1.14.1
 tensorboard==1.13.1
-tensorflow==1.13.1
+tensorflow==2.6.4
 tensorflow-estimator==1.13.0
 termcolor==1.1.0
 traitlets==4.3.2
